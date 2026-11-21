@@ -6,8 +6,6 @@
 ![HTML Portal](https://img.shields.io/badge/HTML%20Портал-5.7%20МБ%20%7C%20Офлайн%20PWA-7c3aed?style=for-the-badge)
 ![CI](https://img.shields.io/badge/Формулы%20и%20схема-0%20ошибок-16a34a?style=for-the-badge)
 
-> 🌐 **[Открыть онлайн веб-портал (без скачивания)](https://tapocket.github.io/monitor_full_database/)** • 🤖 **[Telegram-бот @monitor_fdb_bot](https://t.me/monitor_fdb_bot)** • 📡 **[JSON API](https://tapocket.github.io/monitor_full_database/api/v1/monitors.json)**
-
 Открытая инженерная база мониторов (**2 763 модели**, **84 бренда**) с единым источником истины (`database_master.json`), книгой Excel на **18 вкладок (69 столбцов)**, плоской выгрузкой CSV (32 столбца), автономным веб-порталом (`monitor_full_database.html`), **Тест-Лабораторией на 46 стендов** (включая реальный HDR-тест и Экспресс-мастер приёмки в ПВЗ), автоматическим CI/CD на GitHub Actions и Telegram-ботом подбора.
 
 ---

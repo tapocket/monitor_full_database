@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Pluggable Russian store price collector (JSON-LD Offer.price extractor) for Russian VPS cron.
-
-Reads tracked items from `data/prices_rf_snapshot.json`, fetches product pages with
-polite rate limiting, extracts structured Schema.org JSON-LD `price` values when available,
-validates sanity bounds, and updates `data/prices_rf_snapshot.json` in place.
-"""
+"""Pluggable Russian store price collector (JSON-LD + OpenGraph/meta Offer.price extractor)."""
 
 import argparse
 import datetime
@@ -15,7 +10,7 @@ import urllib.request
 
 
 def extract_jsonld_price(html_text: str) -> int | None:
-    """Extract numeric RUB price from Schema.org JSON-LD blocks (Product / Offer)."""
+    """Extract numeric RUB price from Schema.org JSON-LD or OpenGraph/meta price tags."""
     scripts = re.findall(
         r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>([\s\S]*?)</script>',
         html_text or "",
@@ -42,6 +37,19 @@ def extract_jsonld_price(html_text: str) -> int | None:
                 for v in node.values():
                     if isinstance(v, (dict, list)):
                         stack.append(v)
+
+    for pat in (
+        r'<meta[^>]+property=["\']product:price:amount["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+itemprop=["\']price["\'][^>]+content=["\']([^"\']+)["\']',
+    ):
+        m = re.search(pat, html_text or "", flags=re.I)
+        if m:
+            raw_p = m.group(1).replace(" ", "").replace("\u00a0", "").replace(",", ".")
+            dm = re.search(r"\d+(?:\.\d+)?", raw_p)
+            if dm:
+                val = int(round(float(dm.group(0))))
+                if 3000 <= val <= 900000:
+                    return val
     return None
 
 
@@ -58,7 +66,7 @@ def fetch_page(url: str, timeout: int = 12) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Collect live Russian store prices via JSON-LD into prices_rf_snapshot.json")
+    parser = argparse.ArgumentParser(description="Collect live Russian store prices into prices_rf_snapshot.json")
     parser.add_argument("--snapshot", default="data/prices_rf_snapshot.json")
     parser.add_argument("--delay", type=float, default=1.5, help="Delay between requests in seconds")
     parser.add_argument("--best-effort", action="store_true", help="Exit 0 even if individual stores block requests")

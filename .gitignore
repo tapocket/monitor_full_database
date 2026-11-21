@@ -8,3 +8,7 @@ dist/
 venv/
 .idea/
 .vscode/
+.env
+bot/.env
+alerts.db
+bot/alerts.db

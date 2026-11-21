@@ -3,7 +3,14 @@ name: Deploy Portal & Static JSON API to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "README.md"
+      - "docs/**"
   workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 permissions:
   contents: read

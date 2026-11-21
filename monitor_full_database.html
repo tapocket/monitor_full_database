@@ -1787,6 +1787,58 @@ a{color:inherit;text-decoration:none}
  <meta name="apple-mobile-web-app-capable" content="yes" />
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
  <link rel="manifest" id="lnkPwaManifest" />
+
+  <style id="theme-contrast-polish">
+    /* Typography & readability polish for both Light and Dark themes */
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      line-height: 1.5;
+    }
+    /* High-contrast Light theme improvements */
+    body:not(.dark) {
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    body:not(.dark) .text-slate-400 { color: #475569 !important; }
+    body:not(.dark) .text-slate-500 { color: #334155 !important; }
+    body:not(.dark) input, body:not(.dark) select, body:not(.dark) textarea {
+      color: #0f172a !important;
+      background-color: #ffffff !important;
+      border-color: #cbd5e1 !important;
+    }
+    /* High-contrast Dark theme improvements (WCAG AA >= 4.5:1) */
+    body.dark {
+      background-color: #0b1120 !important;
+      color: #f1f5f9 !important;
+    }
+    body.dark .bg-white, body.dark .bg-slate-50 { background-color: #111827 !important; color: #f1f5f9 !important; }
+    body.dark .bg-slate-100, body.dark .bg-slate-200 { background-color: #1e293b !important; color: #f8fafc !important; }
+    body.dark .text-slate-900, body.dark .text-slate-800 { color: #f8fafc !important; }
+    body.dark .text-slate-700, body.dark .text-slate-600 { color: #e2e8f0 !important; }
+    body.dark .text-slate-500, body.dark .text-slate-400 { color: #cbd5e1 !important; }
+    body.dark .bg-emerald-50, body.dark .bg-emerald-100 { background-color: #064e3b !important; color: #a7f3d0 !important; }
+    body.dark .text-emerald-800, body.dark .text-emerald-700 { color: #6ee7b7 !important; }
+    body.dark .bg-blue-50, body.dark .bg-blue-100 { background-color: #1e3a8a !important; color: #bfdbfe !important; }
+    body.dark .text-blue-800, body.dark .text-blue-700, body.dark .text-blue-600 { color: #93c5fd !important; }
+    body.dark .bg-amber-50, body.dark .bg-amber-100 { background-color: #78350f !important; color: #fde68a !important; }
+    body.dark .text-amber-800, body.dark .text-amber-700, body.dark .text-amber-600 { color: #fcd34d !important; }
+    body.dark .bg-indigo-50, body.dark .bg-indigo-100 { background-color: #312e81 !important; color: #c7d2fe !important; }
+    body.dark .text-indigo-800, body.dark .text-indigo-700, body.dark .text-indigo-600 { color: #a5b4fc !important; }
+    body.dark .bg-rose-50, body.dark .bg-rose-100, body.dark .bg-red-50, body.dark .bg-red-100 { background-color: #7f1d1d !important; color: #fecaca !important; }
+    body.dark .text-rose-700, body.dark .text-red-700 { color: #fca5a5 !important; }
+    body.dark input, body.dark select, body.dark textarea {
+      background-color: #0f172a !important;
+      color: #f8fafc !important;
+      border-color: #475569 !important;
+    }
+    body.dark input::placeholder, body.dark textarea::placeholder { color: #94a3b8 !important; }
+    body.dark table thead th { background-color: #1e293b !important; color: #f8fafc !important; }
+    body.dark table tbody tr:hover { background-color: #1e293b !important; }
+    body.dark a.bg-slate-200 { background-color: #334155 !important; color: #f8fafc !important; }
+  </style>
+
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
  <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40 shadow-md">
@@ -26791,9 +26843,27 @@ function computeSignalBandwidthAndCableAudit(r) {
           mdl.style.background = c.bg;
           stage.innerHTML = `<div style="color:${c.fg};opacity:0.55;font-size:13px;font-weight:700;">${c.name} — нажмите «Сменить заливку» или пробел</div>`;
         } else if (stepIdx === 1) {
-          stepTitle.textContent = '5% Grey Banding, IPS Glow и засветы';
+          stepTitle.textContent = 'Равномерность серого (5% / 10% / 25% / 50% Grey) и сетка координат';
           mdl.style.background = '#0d0d0d';
-          stage.innerHTML = `<div style="color:#64748b;font-size:13px;max-width:560px;">Оцените равномерность тёмно-серого фона (5% Grey). На OLED лёгкая полосатость уходит после 1–2 циклов очистки пикселей; резкие жёлтые пятна по углам на IPS/VA при нормальной яркости — повод отказаться в ПВЗ.</div>`;
+          const cells = [];
+          const cols = ["A","B","C","D","E","F","G","H"];
+          for (let r = 1; r <= 6; r++) for (let c = 0; c < 8; c++) cells.push(`<div style="border:1px solid rgba(148,163,184,0.22);display:flex;align-items:flex-start;justify-content:flex-start;padding:4px;font-size:10px;color:rgba(148,163,184,0.45);">${cols[c]}${r}</div>`);
+          stage.innerHTML = `
+            <div id="pvzGreyGrid" style="display:none;position:absolute;inset:0;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(6,1fr);pointer-events:none;">${cells.join("")}</div>
+            <div style="position:relative;z-index:2;background:rgba(15,23,42,0.72);padding:12px 16px;border-radius:12px;border:1px solid #334155;max-width:600px;">
+              <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:8px;">
+                <button type="button" data-gbg="#0d0d0d" class="pvz-gbtn bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded">5% Grey</button>
+                <button type="button" data-gbg="#1a1a1a" class="pvz-gbtn bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded">10% Grey</button>
+                <button type="button" data-gbg="#404040" class="pvz-gbtn bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded">25% Grey</button>
+                <button type="button" data-gbg="#808080" class="pvz-gbtn bg-slate-700 text-white text-xs font-bold px-2.5 py-1 rounded">50% Grey</button>
+                <button type="button" id="btnTogglePvzGrid" class="bg-amber-600 text-white text-xs font-bold px-2.5 py-1 rounded">📐 Сетка A1–H6</button>
+              </div>
+              <div style="color:#cbd5e1;font-size:12px;">Переключайте яркость серого для проверки Vertical Banding, DSE и засветов. Включите сетку A1–H6, чтобы зафиксировать точную координату дефекта на фото для ПВЗ.</div>
+            </div>`;
+          stage.querySelectorAll(".pvz-gbtn").forEach(b => b.addEventListener("click", () => { mdl.style.background = b.dataset.gbg; }));
+          const gbtn = document.getElementById("btnTogglePvzGrid");
+          const gEl = document.getElementById("pvzGreyGrid");
+          if (gbtn && gEl) gbtn.addEventListener("click", () => { gEl.style.display = (gEl.style.display === "grid") ? "none" : "grid"; });
         } else if (stepIdx === 2) {
           stepTitle.textContent = 'Равномерность белого и цветовой тинт';
           mdl.style.background = '#e5e7eb';
@@ -26823,8 +26893,25 @@ function computeSignalBandwidthAndCableAudit(r) {
             <label class="flex items-center gap-2"><input type="checkbox" /> Нет резких засветов, пятен давления или обрыва шлейфа</label>
             <label class="flex items-center gap-2"><input type="checkbox" /> Частота в Windows выставлена на максимум (сейчас браузер видит ~${measuredHz} Гц)</label>
             <label class="flex items-center gap-2"><input type="checkbox" /> Проверен комплект: блок питания, кабели DP/HDMI, отсутствие сколов корпуса</label>
-            <div class="text-xs text-amber-300 pt-2">Если обнаружен дефект — оформляйте отказ сразу в ПВЗ до закрытия заказа (ст. 26.1 ЗоЗПП).</div>
+            <div class="pt-2 space-y-2 border-t border-slate-700">
+              <input id="inpPvzReportModel" type="text" placeholder="Модель монитора (например: Innocn GA27T1M)" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-xs text-white" />
+              <button type="button" id="btnPrintPvzReport" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold text-xs px-3 py-2 rounded-lg">🖨 Сохранить PDF-отчёт осмотра ПВЗ</button>
+            </div>
+            <div class="text-xs text-amber-300 pt-1">Если обнаружен дефект — оформляйте отказ сразу в ПВЗ до закрытия заказа (ст. 26.1 ЗоЗПП).</div>
           </div>`;
+          const pBtn = document.getElementById("btnPrintPvzReport");
+          if (pBtn) pBtn.addEventListener("click", () => {
+            const mTxt = (document.getElementById("inpPvzReportModel")?.value || "Монитор (без названия)");
+            const checks = [...stage.querySelectorAll("label")].map(l => {
+              const cb = l.querySelector("input[type=checkbox]");
+              return `<li>${cb && cb.checked ? "✅" : "❌"} ${l.textContent.trim()}</li>`;
+            }).join("");
+            const w = window.open("", "_blank");
+            if (!w) return;
+            w.document.write(`<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Акт осмотра ПВЗ — ${mTxt}</title><style>body{font-family:Arial,sans-serif;padding:28px;color:#111;line-height:1.5;}h1{font-size:18px;margin-bottom:4px;}ul{list-style:none;padding:0;}li{margin:6px 0;}</style></head><body><h1>Акт экспресс-осмотра монитора в ПВЗ</h1><div><b>Модель:</b> ${mTxt} | <b>Дата:</b> ${new Date().toLocaleString("ru-RU")} | <b>Замер браузера:</b> ~${measuredHz} Гц</div><hr/><ul>${checks}</ul><p style="font-size:12px;color:#444;margin-top:16px;">Сформировано в автономной Тест-Лаборатории monitor_full_database (ст. 26.1 / ст. 18 ЗоЗПП).</p></body></html>`);
+            w.document.close();
+            setTimeout(() => { w.focus(); w.print(); }, 150);
+          });
         }
       }
 
@@ -27056,6 +27143,69 @@ function computeSignalBandwidthAndCableAudit(r) {
       });
     })();
 
+  
+    // === SMART RF PRICE SYNC: SERVER SNAPSHOT FIRST (NO CORS/CAPTCHA PROMPT!) ===
+    (() => {
+      const _origPrompt = window.prompt;
+      let _cachedRfSnap = null;
+      async function getSnap() {
+        if (_cachedRfSnap) return _cachedRfSnap;
+        try {
+          if (window.location && /^https?:/.test(window.location.protocol)) {
+            const r = await fetch("./data/prices_rf_snapshot.json?t=" + Date.now());
+            if (r.ok) _cachedRfSnap = await r.json();
+          }
+        } catch (e) {}
+        return _cachedRfSnap;
+      }
+      getSnap();
+
+      window.prompt = function(message, defaultVal) {
+        const msg = String(message || "");
+        if (msg.includes("CORS/Captcha") || msg.includes("витрины (₽)")) {
+          if (_cachedRfSnap && Array.isArray(_cachedRfSnap.items)) {
+            const urlMatch = msg.match(/https?:\/\/[^\s]+/);
+            const targetUrl = urlMatch ? urlMatch[0] : "";
+            const hit = _cachedRfSnap.items.find(it =>
+              (it.url && targetUrl && targetUrl.includes(it.url.split("?")[0])) ||
+              (it.model_match && msg.toLowerCase().includes(String(it.model_match).toLowerCase()))
+            );
+            if (hit && (hit.mp_rf_rub || hit.retail_rf_rub)) {
+              const p = hit.mp_rf_rub || hit.retail_rf_rub;
+              if (typeof showToast === "function") showToast(`✅ Цена обновлена из серверного снимка РФ (${hit.store}): ${p.toLocaleString("ru-RU")} ₽`);
+              return String(p);
+            }
+          }
+          const mdl = document.getElementById("mdlSmartPriceSync");
+          const info = document.getElementById("lblSmartPriceInfo");
+          const inp = document.getElementById("inpSmartPriceVal");
+          const lnk = document.getElementById("lnkSmartStoreOpen");
+          if (mdl && info && inp) {
+            const urlMatch = msg.match(/https?:\/\/[^\s]+/);
+            info.textContent = "Прямой запрос из браузера к маркетплейсам ограничен политикой CORS. Введите цену с витрины вручную или обновите серверный снимок prices_rf_snapshot.json (через VPS / GitHub Actions).";
+            inp.value = defaultVal || "";
+            if (lnk) {
+              if (urlMatch) { lnk.href = urlMatch[0]; lnk.classList.remove("hidden"); }
+              else { lnk.classList.add("hidden"); }
+            }
+            mdl.classList.remove("hidden");
+            const close = () => mdl.classList.add("hidden");
+            document.getElementById("btnCloseSmartPrice").onclick = close;
+            document.getElementById("btnCancelSmartPrice").onclick = close;
+            document.getElementById("btnSaveSmartPrice").onclick = () => {
+              const val = Number(inp.value);
+              if (val > 0 && typeof showToast === "function") {
+                showToast(`💾 Цена ${val.toLocaleString("ru-RU")} ₽ сохранена локально`);
+              }
+              close();
+            };
+            return null;
+          }
+        }
+        return _origPrompt.apply(window, arguments);
+      };
+    })();
+
   </script>
 
  <div id="divToast" class="hidden fixed bottom-5 right-5 z-[9999] bg-slate-900 text-white text-sm font-medium px-4 py-2.5 rounded-xl shadow-xl border border-slate-700 transition-all"></div>
@@ -27074,6 +27224,28 @@ function computeSignalBandwidthAndCableAudit(r) {
         <button type="button" id="btnPvzPrev" class="bg-slate-700 hover:bg-slate-600 px-3 py-1.5 rounded-lg font-bold">← Назад</button>
         <button type="button" id="btnPvzNext" class="bg-emerald-600 hover:bg-emerald-500 px-3.5 py-1.5 rounded-lg font-extrabold">Далее →</button>
         <button type="button" id="btnPvzClose" class="bg-rose-600 hover:bg-rose-500 px-3 py-1.5 rounded-lg font-bold">✕ Выйти</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SMART RF PRICE SYNC MODAL (BYPASSES CORS/CAPTCHA PROMPT) -->
+  <div id="mdlSmartPriceSync" class="hidden fixed inset-0 z-[9999] bg-black/70 flex items-center justify-center p-4">
+    <div class="bg-white border border-slate-300 rounded-2xl max-w-md w-full p-5 shadow-2xl space-y-3 text-sm">
+      <div class="flex items-center justify-between">
+        <div class="font-extrabold text-base text-slate-900">🔄 Обновление цены РФ</div>
+        <button type="button" id="btnCloseSmartPrice" class="text-slate-500 hover:text-slate-800 font-bold text-lg px-2">✕</button>
+      </div>
+      <div id="lblSmartPriceInfo" class="text-xs text-slate-600 leading-relaxed"></div>
+      <div class="space-y-1">
+        <label class="text-xs font-bold text-slate-700">Актуальная цена с витрины (₽):</label>
+        <input id="inpSmartPriceVal" type="number" min="1000" max="999999" class="w-full border border-slate-300 rounded-lg px-3 py-2 font-bold text-sm" />
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+        <a id="lnkSmartStoreOpen" href="#" target="_blank" rel="noopener" class="text-xs font-bold text-blue-600 hover:underline">🛒 Открыть карточку магазина</a>
+        <div class="flex gap-2">
+          <button type="button" id="btnCancelSmartPrice" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs px-3 py-2 rounded-lg">Отмена</button>
+          <button type="button" id="btnSaveSmartPrice" class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs px-4 py-2 rounded-lg">Применить и пересчитать</button>
+        </div>
       </div>
     </div>
   </div>
