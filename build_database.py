@@ -258,16 +258,16 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
             ws.cell(tr, 63).value = f"=ROUND(AVERAGE(BK5:BK{last_data}), 0)"
             copy_cell_style(ws.cell(tr, 12), ws.cell(tr, 63))
             ws.cell(tr, 63).number_format = "0"
-            ws["A1"] = str(ws["A1"].value).replace("62 СТОЛБЦА", "65 СТОЛБЦОВ")
+            ws["A1"] = str(ws["A1"].value).replace("62 СТОЛБЦА", "69 СТОЛБЦОВ")
 
         ws.freeze_panes = "C5"
 
     # Update Sheet 0 & Sheet 1 A1 column counts (65 cols)
     ws0 = wb["0. ИНФА и Гайд по таблице"]
-    ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 65 СТОЛБЦОВ • 18 ВКЛАДОК)"'
+    ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 69 СТОЛБЦОВ • 18 ВКЛАДОК)"'
 
     ws1 = wb["1. Общая база мониторов"]
-    ws1["A1"] = '="ПОЛНАЯ ИНЖЕНЕРНАЯ БАЗА МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ — " & COUNTA(B5:B5000) & " МОДЕЛЕЙ — 65 СТОЛБЦОВ)"'
+    ws1["A1"] = '="ПОЛНАЯ ИНЖЕНЕРНАЯ БАЗА МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ — " & COUNTA(B5:B5000) & " МОДЕЛЕЙ — 69 СТОЛБЦОВ)"'
 
     # Update Sheet 13 to average pure numeric BK (Col 63) for Avg Hz (Col 21 / U)
     ws13 = wb["13. Сводная по брендам"]
@@ -277,7 +277,7 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
     for r in range(5, s13_last + 1):
         ws13.cell(r, 21).value = f"=IFERROR(ROUND(AVERAGEIF({S1}!$A$5:$A${LAST_S1}, B{r}, {S1}!$BK$5:$BK${LAST_S1}), 0), 0)"
     ws13.cell(ws13.max_row, 21).value = f"=ROUND(AVERAGE({S1}!$BK$5:$BK${LAST_S1}), 0)"
-    ws13["A1"] = f'="СВОДНАЯ АНАЛИТИКА БАЗЫ МОНИТОРОВ ПО " & COUNTA(B5:B{s13_last}) & " БРЕНДАМ (" & SUM(C5:C{s13_last}) & " МОДЕЛЕЙ — 65 СТОЛБЦОВ)"'
+    ws13["A1"] = f'="СВОДНАЯ АНАЛИТИКА БАЗЫ МОНИТОРОВ ПО " & COUNTA(B5:B{s13_last}) & " БРЕНДАМ (" & SUM(C5:C{s13_last}) & " МОДЕЛЕЙ — 69 СТОЛБЦОВ)"'
 
     wb.save(out_xlsx)
     wb.close()
@@ -438,12 +438,20 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
     with open(template_html, "r", encoding="utf-8") as fp:
         html = fp.read()
 
-    # 1. Replace raw `const DB = {...};` with dictionary-compressed lossless unpacker
-    m = re.search(r"const DB\s*=\s*\{[\s\S]*?\};\s*\n", html)
-    if not m:
-        raise RuntimeError("Could not locate `const DB = {...};` in template HTML")
+    # 1. Replace either raw `const DB = {...};` OR compressed `const DB = (() => {...})();`
     compressed_db_js = compress_db_for_html(master)
-    html = html[:m.start()] + compressed_db_js + "\n" + html[m.end():]
+    s_comp = html.find("const DB = (() => {")
+    if s_comp != -1:
+        end_marker = "return Object.assign({ catalog: _cat }, _P.o);\n})();"
+        e_comp = html.find(end_marker, s_comp)
+        if e_comp == -1:
+            raise RuntimeError("Could not locate end of compressed DB block in template HTML")
+        html = html[:s_comp] + compressed_db_js + html[e_comp + len(end_marker):]
+    else:
+        m = re.search(r"const DB\s*=\s*\{[\s\S]*?\};\s*\n", html)
+        if not m:
+            raise RuntimeError("Could not locate `const DB = ...` in template HTML")
+        html = html[:m.start()] + compressed_db_js + "\n" + html[m.end():]
 
     # 2. Inject compact Offline CSS Fallback right BEFORE Tailwind script so Tailwind overrides it online,
     #    and fallback takes over seamlessly offline!

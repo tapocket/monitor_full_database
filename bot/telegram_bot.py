@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
-"""Telegram-бот подбора мониторов, шпаргалок ПВЗ и уведомлений о снижении цен РФ.
-Поддерживает:
-  • /start, /find, /model, /pvz
-  • /alert <модель> <целевая_цена> — подписка на снижение цены (SQLite)
-  • /myalerts, /delalert <id> — управление подписками
-  • Inline-режим (@botname запрос) в любом чате Telegram
+"""Telegram-бот подбора мониторов с интерактивным кнопочным меню, сравнением,
+Inline-режимом (@monitor_fdb_bot) и уведомлениями о снижении цен РФ (SQLite).
 """
 
 import asyncio
@@ -13,13 +9,28 @@ import json
 import os
 import re
 import sqlite3
-from telegram import InlineQueryResultArticle, InputTextMessageContent, Update
-from telegram.ext import Application, CommandHandler, ContextTypes, InlineQueryHandler
+import urllib.parse
+from telegram import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InlineQueryResultArticle,
+    InputTextMessageContent,
+    Update,
+)
+from telegram.ext import (
+    Application,
+    CallbackQueryHandler,
+    CommandHandler,
+    ContextTypes,
+    InlineQueryHandler,
+)
 
 MASTER_PATH = os.environ.get("MONITOR_DB_MASTER", "database_master.json")
 SNAPSHOT_PATH = os.environ.get("MONITOR_DB_SNAPSHOT", "data/prices_rf_snapshot.json")
 ALERTS_DB_PATH = os.environ.get("MONITOR_DB_ALERTS_DB", "alerts.db")
 ALERT_CHECK_INTERVAL_SEC = int(os.environ.get("ALERT_CHECK_INTERVAL_SEC", "3600"))
+PORTAL_URL = os.environ.get("MONITOR_PORTAL_URL", "https://tapocket.github.io/monitor_full_database/")
+REPO_URL = os.environ.get("MONITOR_REPO_URL", "https://github.com/tapocket/monitor_full_database")
 
 
 def load_catalog() -> list[dict]:
@@ -97,6 +108,7 @@ def find_triggered_alerts(snapshot_path: str = SNAPSHOT_PATH, db_path: str = ALE
 
 
 CATALOG = load_catalog() if os.path.exists(MASTER_PATH) else []
+BY_ID = {int(m["id"]): m for m in CATALOG if "id" in m}
 TIER_RANK = {"S": 0, "A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6}
 
 
@@ -121,7 +133,7 @@ def search_models(query_tokens: list[str], limit: int = 5) -> list[dict]:
         price = m.get("price_mp_rf") or m.get("hand") or m.get("rub") or 0
         if budget is not None and (price <= 0 or price > budget):
             continue
-        if diag_filter is not None and abs(float(m.get("diag", 0)) - diag_filter) > 1.2:
+        if diag_filter is not None and abs(float(m.get("diag", 0)) - diag_filter) > 1.5:
             continue
         blob = f"{m.get('brand','')} {m.get('brand_canonical','')} {m.get('model','')} {m.get('ptype','')} {m.get('res','')}".lower()
         if all(t in blob for t in tokens):
@@ -138,8 +150,14 @@ def search_models(query_tokens: list[str], limit: int = 5) -> list[dict]:
 
 
 def format_model_card(m: dict) -> str:
-    mp = fmt_rub(m.get("price_mp_rf") or m.get("hand") or m.get("rub"))
-    retail = m.get("price_retail_rf") or 0
+    mp = int(m.get("price_mp_rf") or m.get("hand") or m.get("rub") or 0)
+    retail = int(m.get("price_retail_rf") or 0)
+    diff_line = ""
+    if retail > 0 and mp > 0 and retail != mp:
+        diff = retail - mp
+        pct = round(diff / mp * 100)
+        sign = "+" if diff > 0 else ""
+        diff_line = f"\n• ⚖️ Разница розницы РФ vs МП: *{sign}{fmt_rub(diff)} ₽ ({sign}{pct}%)*"
     retail_line = f" | Розница РФ: *{fmt_rub(retail)} ₽*" if retail > 0 else ""
     return (
         f"🖥 *{m['model']}*\n"
@@ -147,38 +165,78 @@ def format_model_card(m: dict) -> str:
         f"• Экран: {m.get('diag')}″ {m.get('res')} • {m.get('max_hz')} Гц\n"
         f"• Матрица: `{str(m.get('pmodel',''))[:90]}`\n"
         f"• Отклик GtG 80%: {m.get('gtg80')} мс | Контраст: {m.get('cr')}:1 | HDR: {m.get('hdr')} нит\n"
-        f"• Цена «на руки» (МП/Ozon): *{mp} ₽*{retail_line}\n"
+        f"• Цена «на руки» (МП/Ozon): *{fmt_rub(mp)} ₽*{retail_line}{diff_line}\n"
         f"• Обзор: {m.get('rev_url') or 'Нет прямой ссылки'}"
     )
+
+
+def model_card_keyboard(m: dict) -> InlineKeyboardMarkup:
+    mid = int(m["id"])
+    mp = int(m.get("price_mp_rf") or m.get("hand") or m.get("rub") or 0)
+    target_10 = max(5000, int(round(mp * 0.9 / 500) * 500)) if mp > 0 else 30000
+    enc_model = urllib.parse.quote(str(m.get("model", "")))
+    issue_url = f"{REPO_URL}/issues/new?template=price-update-rf.yml&title=%5B%D0%A6%D0%B5%D0%BD%D0%B0+%D0%A0%D0%A4%5D+{enc_model}"
+    return InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("🌐 Открыть портал", url=PORTAL_URL),
+            InlineKeyboardButton(f"🔔 Алерт ≤ {fmt_rub(target_10)} ₽", callback_data=f"al:{mid}:{target_10}"),
+        ],
+        [
+            InlineKeyboardButton("📋 Чек-лист ПВЗ", callback_data="menu:pvz"),
+            InlineKeyboardButton("💰 Сообщить цену РФ", url=issue_url),
+        ],
+        [InlineKeyboardButton("🎯 Новый подбор", callback_data="menu:pick")],
+    ])
+
+
+def main_menu_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎯 Подобрать монитор по шагам", callback_data="menu:pick")],
+        [
+            InlineKeyboardButton("🔥 Топ OLED до 70к", callback_data="quick:70000:all:oled"),
+            InlineKeyboardButton("⚡ Топ Mini-LED до 45к", callback_data="quick:45000:all:mini-led"),
+        ],
+        [
+            InlineKeyboardButton("📋 Чек-лист ПВЗ", callback_data="menu:pvz"),
+            InlineKeyboardButton("🔔 Мои подписки", callback_data="menu:alerts"),
+        ],
+        [InlineKeyboardButton("🌐 Открыть веб-портал (2 763 модели)", url=PORTAL_URL)],
+    ])
 
 
 async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     text = (
         f"👋 *monitor_full_database* — инженерная база ({len(CATALOG)} моделей).\n\n"
-        "Команды:\n"
-        "• `/find 40000 27 OLED` — топ-5 моделей до бюджета (₽ на руки)\n"
-        "• `/model Innocn GA27T1M` — карточка и шпаргалка ПВЗ\n"
-        "• `/alert TCL 27R83U 45000` — уведомить, когда цена упадёт ниже 45 000 ₽\n"
-        "• `/myalerts` / `/delalert <id>` — управление подписками на цены\n"
-        "• `/pvz` — чек-лист приёмки в ПВЗ за 3 минуты\n\n"
-        "💡 *Inline-режим*: `@имя_бота PG32UCDM` в любом чате Telegram."
+        "Выберите действие кнопками ниже или используйте команды:\n"
+        "• `/find 50000 27 OLED` — быстрый поиск\n"
+        "• `/model TCL 27R83U` — карточка модели\n"
+        "• `/compare PG32UCDM vs 321URX` — сравнение двух моделей\n"
+        "• `/alert TCL 27R83U 45000` — подписка на снижение цены\n\n"
+        "💡 В любом чате работает Inline-поиск: `@monitor_fdb_bot PG32UCDM`"
     )
-    await update.message.reply_text(text, parse_mode="Markdown")
+    await update.message.reply_text(text, parse_mode="Markdown", reply_markup=main_menu_keyboard())
 
 
 async def cmd_find(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     results = search_models(context.args or [], limit=5)
     if not results:
-        await update.message.reply_text("Ничего не найдено по этим фильтрам. Попробуйте изменить бюджет или запрос.")
+        await update.message.reply_text("Ничего не найдено по этим фильтрам. Попробуйте изменить бюджет или запрос.", reply_markup=main_menu_keyboard())
         return
-    lines = ["🎯 *Подборка по вашему запросу:*"]
+    await send_search_results(update.message.reply_text, results, "🎯 *Подборка по вашему запросу:*")
+
+
+async def send_search_results(reply_fn, results: list[dict], header: str) -> None:
+    lines = [header]
+    kb = []
     for i, m in enumerate(results, 1):
         mp = fmt_rub(m.get("price_mp_rf") or m.get("hand"))
         lines.append(
             f"{i}. *{m['model']}*\n"
-            f"   {m.get('diag')}″ • {m.get('res')} • {m.get('max_hz')} Гц • Тир `{str(m.get('tier',''))[:1]}` | На руки: *{mp} ₽*"
+            f"   {m.get('diag')}″ • {m.get('res')} • {m.get('max_hz')} Гц • Тир `{str(m.get('tier',''))[:1]}` | *{mp} ₽*"
         )
-    await update.message.reply_text("\n".join(lines), parse_mode="Markdown")
+        kb.append([InlineKeyboardButton(f"🖥 {i}. {str(m['model'])[:38]}", callback_data=f"card:{m['id']}")])
+    kb.append([InlineKeyboardButton("🎯 Новый подбор", callback_data="menu:pick")])
+    await reply_fn("\n".join(lines), parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(kb))
 
 
 async def cmd_model(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -190,7 +248,40 @@ async def cmd_model(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not results:
         await update.message.reply_text("Модель не найдена. Проверьте точный индекс.")
         return
-    await update.message.reply_text(format_model_card(results[0]), parse_mode="Markdown")
+    m = results[0]
+    await update.message.reply_text(format_model_card(m), parse_mode="Markdown", reply_markup=model_card_keyboard(m))
+
+
+async def cmd_compare(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    raw = " ".join(context.args or []).strip()
+    if " vs " not in raw.lower():
+        await update.message.reply_text("Формат: `/compare PG32UCDM vs 321URX`", parse_mode="Markdown")
+        return
+    p1, p2 = re.split(r"\s+vs\s+", raw, maxsplit=1, flags=re.I)
+    r1, r2 = search_models(p1.split(), limit=1), search_models(p2.split(), limit=1)
+    if not r1 or not r2:
+        await update.message.reply_text("Не удалось найти одну из моделей для сравнения. Проверьте названия.")
+        return
+    a, b = r1[0], r2[0]
+    text = (
+        f"⚔️ *Сравнение в лоб:*\n"
+        f"1️⃣ *{a['model']}*\n"
+        f"2️⃣ *{b['model']}*\n\n"
+        f"• Экран: `{a.get('diag')}″ {a.get('res')}` vs `{b.get('diag')}″ {b.get('res')}`\n"
+        f"• Частота: *{a.get('max_hz')} Гц* vs *{b.get('max_hz')} Гц*\n"
+        f"• GtG 80%: *{a.get('gtg80')} мс* vs *{b.get('gtg80')} мс*\n"
+        f"• HDR пик: *{a.get('hdr')} нит* vs *{b.get('hdr')} нит*\n"
+        f"• Контраст: `{a.get('cr')}:1` vs `{b.get('cr')}:1`\n"
+        f"• Тир: `{str(a.get('tier',''))[:1]}` vs `{str(b.get('tier',''))[:1]}`\n"
+        f"• Цена «на руки»: *{fmt_rub(a.get('price_mp_rf') or a.get('hand'))} ₽* vs *{fmt_rub(b.get('price_mp_rf') or b.get('hand'))} ₽*"
+    )
+    kb = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton(f"1️⃣ Карточка {str(a['model'])[:18]}", callback_data=f"card:{a['id']}"),
+            InlineKeyboardButton(f"2️⃣ Карточка {str(b['model'])[:18]}", callback_data=f"card:{b['id']}"),
+        ]
+    ])
+    await update.message.reply_text(text, parse_mode="Markdown", reply_markup=kb)
 
 
 async def cmd_alert(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -229,15 +320,95 @@ async def cmd_delalert(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await update.message.reply_text("🗑 Подписка удалена." if ok else "Подписка с таким ID не найдена.")
 
 
+PVZ_TEXT = (
+    "📋 *Чек-лист приёмки монитора в ПВЗ за 3 минуты:*\n"
+    "1. Заливки R/G/B/Белый/Чёрный — проверка битых и горящих субпикселей.\n"
+    "2. Тёмно-серый 5% Grey — проверка засветов (Backlight Bleed) и полосатости OLED.\n"
+    "3. Однородный белый — проверка цветового тинта по краям и грязных пятен DSE.\n"
+    "4. В параметрах дисплея Windows выставить максимальные Гц и проверить комплект кабелей.\n\n"
+    "💡 Полноэкранный тест-мастер ПВЗ доступен офлайн прямо на веб-портале (Вкладка 11)."
+)
+
+
 async def cmd_pvz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    text = (
-        "📋 *Чек-лист приёмки монитора в ПВЗ за 3 минуты:*\n"
-        "1. Заливки R/G/B/Белый/Чёрный — проверка битых и горящих субпикселей.\n"
-        "2. Тёмно-серый 5% Grey — проверка засветов (Backlight Bleed) и полосатости OLED.\n"
-        "3. Однородный белый — проверка цветового тинта по краям и грязных пятен DSE.\n"
-        "4. В параметрах дисплея Windows выставить максимальные Гц и проверить комплект кабелей."
-    )
-    await update.message.reply_text(text, parse_mode="Markdown")
+    await update.message.reply_text(PVZ_TEXT, parse_mode="Markdown", reply_markup=main_menu_keyboard())
+
+
+async def on_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    q = update.callback_query
+    await q.answer()
+    data = q.data or ""
+
+    if data == "menu:pick":
+        kb = InlineKeyboardMarkup([
+            [InlineKeyboardButton("До 20 000 ₽", callback_data="pb:20000"), InlineKeyboardButton("До 35 000 ₽", callback_data="pb:35000")],
+            [InlineKeyboardButton("До 60 000 ₽", callback_data="pb:60000"), InlineKeyboardButton("До 100 000 ₽", callback_data="pb:100000")],
+            [InlineKeyboardButton("Любой бюджет", callback_data="pb:999999")],
+        ])
+        await q.edit_message_text("💰 *Шаг 1 / 3:* Выберите бюджет «на руки» (₽):", parse_mode="Markdown", reply_markup=kb)
+
+    elif data.startswith("pb:"):
+        b = data.split(":")[1]
+        kb = InlineKeyboardMarkup([
+            [InlineKeyboardButton("24″", callback_data=f"pd:{b}:24.5"), InlineKeyboardButton("27″", callback_data=f"pd:{b}:27")],
+            [InlineKeyboardButton("32″", callback_data=f"pd:{b}:32"), InlineKeyboardButton("34″+", callback_data=f"pd:{b}:34")],
+            [InlineKeyboardButton("Любая диагональ", callback_data=f"pd:{b}:all")],
+        ])
+        await q.edit_message_text("📐 *Шаг 2 / 3:* Выберите диагональ экрана:", parse_mode="Markdown", reply_markup=kb)
+
+    elif data.startswith("pd:"):
+        _, b, d = data.split(":")
+        kb = InlineKeyboardMarkup([
+            [InlineKeyboardButton("OLED", callback_data=f"quick:{b}:{d}:oled"), InlineKeyboardButton("Mini-LED", callback_data=f"quick:{b}:{d}:mini-led")],
+            [InlineKeyboardButton("Fast IPS", callback_data=f"quick:{b}:{d}:ips"), InlineKeyboardButton("VA / HVA", callback_data=f"quick:{b}:{d}:va")],
+            [InlineKeyboardButton("Любая матрица", callback_data=f"quick:{b}:{d}:all")],
+        ])
+        await q.edit_message_text("🎨 *Шаг 3 / 3:* Выберите тип матрицы:", parse_mode="Markdown", reply_markup=kb)
+
+    elif data.startswith("quick:"):
+        _, b, d, mat = data.split(":")
+        tokens = [b]
+        if d != "all":
+            tokens.append(d)
+        if mat != "all":
+            tokens.append(mat)
+        results = search_models(tokens, limit=5)
+        if not results:
+            await q.edit_message_text("По выбранным параметрам моделей не нашлось. Попробуйте увеличить бюджет.", reply_markup=main_menu_keyboard())
+            return
+        await send_search_results(q.edit_message_text, results, "🎯 *Топ-5 мониторов по вашим параметрам:*")
+
+    elif data.startswith("card:"):
+        mid = int(data.split(":")[1])
+        m = BY_ID.get(mid)
+        if not m:
+            await q.edit_message_text("Модель не найдена.", reply_markup=main_menu_keyboard())
+            return
+        await q.edit_message_text(format_model_card(m), parse_mode="Markdown", reply_markup=model_card_keyboard(m))
+
+    elif data.startswith("al:"):
+        _, mid_s, tgt_s = data.split(":")
+        m = BY_ID.get(int(mid_s))
+        if m:
+            aid = add_alert(q.message.chat_id, m["model"], int(tgt_s))
+            await q.message.reply_text(
+                f"🔔 Подписка `#{aid}` оформлена: напишу, когда *{m['model']}* станет дешевле *{fmt_rub(int(tgt_s))} ₽*.",
+                parse_mode="Markdown",
+            )
+
+    elif data == "menu:pvz":
+        await q.edit_message_text(PVZ_TEXT, parse_mode="Markdown", reply_markup=main_menu_keyboard())
+
+    elif data == "menu:alerts":
+        rows = list_alerts(q.message.chat_id)
+        if not rows:
+            await q.edit_message_text("Активных подписок пока нет. Откройте любую модель и нажмите «🔔 Алерт».", reply_markup=main_menu_keyboard())
+        else:
+            lines = ["🔔 *Ваши подписки:*"] + [
+                f"• `#{aid}` — *{mq}* ≤ *{fmt_rub(tgt)} ₽* ({'✅' if trig else '⏳'})"
+                for aid, mq, tgt, trig in rows
+            ]
+            await q.edit_message_text("\n".join(lines), parse_mode="Markdown", reply_markup=main_menu_keyboard())
 
 
 async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -278,7 +449,7 @@ async def alert_loop(app: Application) -> None:
 
 
 async def post_init(app: Application) -> None:
-    app.create_task(alert_loop(app))
+    asyncio.create_task(alert_loop(app))
 
 
 def main() -> None:
@@ -290,12 +461,14 @@ def main() -> None:
     app.add_handler(CommandHandler("start", cmd_start))
     app.add_handler(CommandHandler("find", cmd_find))
     app.add_handler(CommandHandler("model", cmd_model))
+    app.add_handler(CommandHandler("compare", cmd_compare))
     app.add_handler(CommandHandler("alert", cmd_alert))
     app.add_handler(CommandHandler("myalerts", cmd_myalerts))
     app.add_handler(CommandHandler("delalert", cmd_delalert))
     app.add_handler(CommandHandler("pvz", cmd_pvz))
+    app.add_handler(CallbackQueryHandler(on_callback))
     app.add_handler(InlineQueryHandler(inline_query))
-    print(f"Telegram bot (commands + inline + price alerts) started ({len(CATALOG)} models)...")
+    print(f"Telegram bot (menu + compare + inline + alerts) started ({len(CATALOG)} models)...")
     app.run_polling()
 
 
