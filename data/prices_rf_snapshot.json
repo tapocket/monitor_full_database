@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21T23:00:00Z",
   "market": "RU (DNS, Ситилинк, Регард, ОнлайнТрейд, Яндекс Маркет, Ozon, Wildberries)",
   "items": [
     {
@@ -45,12 +45,12 @@
     {
       "model_match": "Xiaomi G Pro 27i",
       "sku_rf": "ELA5585EU",
-      "retail_rf_rub": 45440,
+      "retail_rf_rub": 32490,
       "mp_rf_rub": 43626,
       "min_90d_rub": 42990,
-      "store": "Яндекс Маркет / Ozon",
-      "url": "https://market.yandex.ru/card/monitor-xiaomi-mini-led-gaming-monitor-g-pro-27i-chernyy/4458263115",
-      "checked_at": "2026-11-20"
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/XIAOMI/",
+      "checked_at": "2026-11-21"
     },
     {
       "model_match": "TCL 27R83U",
@@ -61,6 +61,3429 @@
       "store": "Яндекс Маркет / Ozon / DNS",
       "url": "https://www.pepper.ru/deals/monitor-tcl-27r83u-27-miniled-gaming-mnt-503534",
       "checked_at": "2026-11-20"
+    },
+    {
+      "model_match": "GIGABYTE GO27Q24",
+      "sku_rf": "GO27Q24",
+      "retail_rf_rub": 45850,
+      "mp_rf_rub": 43230,
+      "min_90d_rub": 40200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 341CQP QD-OLED X28",
+      "sku_rf": "341CQPX28",
+      "retail_rf_rub": 92160,
+      "mp_rf_rub": 94200,
+      "min_90d_rub": 86700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE MO27Q28GR",
+      "sku_rf": "MO27Q28GR",
+      "retail_rf_rub": 54300,
+      "mp_rf_rub": 49990,
+      "min_90d_rub": 47800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE MO32U24",
+      "sku_rf": "MO32U24",
+      "retail_rf_rub": 100000,
+      "mp_rf_rub": 80000,
+      "min_90d_rub": 73600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 272QP QD-OLED X24",
+      "sku_rf": "272QPX24",
+      "retail_rf_rub": 45620,
+      "mp_rf_rub": 52400,
+      "min_90d_rub": 42900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27GX704A",
+      "sku_rf": "27GX704A",
+      "retail_rf_rub": 53260,
+      "mp_rf_rub": 53000,
+      "min_90d_rub": 48800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 32X3A",
+      "sku_rf": "32X3A",
+      "retail_rf_rub": 84990,
+      "mp_rf_rub": 89000,
+      "min_90d_rub": 81900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE MO27Q2A",
+      "sku_rf": "MO27Q2A",
+      "retail_rf_rub": 52300,
+      "mp_rf_rub": 50670,
+      "min_90d_rub": 46000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE MO27Q2A ICE",
+      "sku_rf": "MO27Q2A",
+      "retail_rf_rub": 52300,
+      "mp_rf_rub": 54110,
+      "min_90d_rub": 43900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE GO27Q24A",
+      "sku_rf": "GO27Q24A",
+      "retail_rf_rub": 43300,
+      "mp_rf_rub": 41169,
+      "min_90d_rub": 38300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Digma Pro Vision L",
+      "sku_rf": "PROL",
+      "retail_rf_rub": 79990,
+      "mp_rf_rub": 89990,
+      "min_90d_rub": 79990,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 271QP QD-OLED X28",
+      "sku_rf": "271QPX28",
+      "retail_rf_rub": 57540,
+      "mp_rf_rub": 58000,
+      "min_90d_rub": 53400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MPG 341CQPX",
+      "sku_rf": "341CQPX",
+      "retail_rf_rub": 90420,
+      "mp_rf_rub": 94700,
+      "min_90d_rub": 87100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS ROG Swift OLED PG27UCDM",
+      "sku_rf": "PG27UCDM",
+      "retail_rf_rub": 114380,
+      "mp_rf_rub": 103000,
+      "min_90d_rub": 94800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC Q27G40ZDF",
+      "sku_rf": "Q27G40ZDF",
+      "retail_rf_rub": 46720,
+      "mp_rf_rub": 44630,
+      "min_90d_rub": 41500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC Q27G4ZD",
+      "sku_rf": "Q27G4ZD",
+      "retail_rf_rub": 52680,
+      "mp_rf_rub": 51500,
+      "min_90d_rub": 47400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 39GX90SA",
+      "sku_rf": "39GX90SA",
+      "retail_rf_rub": 125410,
+      "mp_rf_rub": 142400,
+      "min_90d_rub": 125410,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC AGON Pro AG276UZD",
+      "sku_rf": "PROAG276UZD",
+      "retail_rf_rub": 76500,
+      "mp_rf_rub": 67790,
+      "min_90d_rub": 63000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27M2N8800",
+      "sku_rf": "27M2N8800",
+      "retail_rf_rub": 82740,
+      "mp_rf_rub": 86050,
+      "min_90d_rub": 78000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell S3225QC",
+      "sku_rf": "S3225QC",
+      "retail_rf_rub": 98620,
+      "mp_rf_rub": 94800,
+      "min_90d_rub": 87200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MPG 272URX",
+      "sku_rf": "272URX",
+      "retail_rf_rub": 114000,
+      "mp_rf_rub": 109580,
+      "min_90d_rub": 94700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MPG 272URX QD-OLED",
+      "sku_rf": "272URX",
+      "retail_rf_rub": 114000,
+      "mp_rf_rub": 109580,
+      "min_90d_rub": 94800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MPG 271QRX",
+      "sku_rf": "271QRX",
+      "retail_rf_rub": 88390,
+      "mp_rf_rub": 75520,
+      "min_90d_rub": 63300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MPG 271QRX QD-OLED",
+      "sku_rf": "271QRX",
+      "retail_rf_rub": 88390,
+      "mp_rf_rub": 75520,
+      "min_90d_rub": 63400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI PRO MAX 341QPXW14G",
+      "sku_rf": "341QPXW14G",
+      "retail_rf_rub": 102210,
+      "mp_rf_rub": 99370,
+      "min_90d_rub": 78000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory--oled-m/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Digma Pro Action M",
+      "sku_rf": "PROM",
+      "retail_rf_rub": 39990,
+      "mp_rf_rub": 42990,
+      "min_90d_rub": 39600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 244F",
+      "sku_rf": "244F",
+      "retail_rf_rub": 9700,
+      "mp_rf_rub": 13400,
+      "min_90d_rub": 9700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI Pro MP273Q E7",
+      "sku_rf": "MP273QE7",
+      "retail_rf_rub": 13000,
+      "mp_rf_rub": 16200,
+      "min_90d_rub": 13000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 346CQDF E20",
+      "sku_rf": "346CQDFE20",
+      "retail_rf_rub": 28780,
+      "mp_rf_rub": 31735,
+      "min_90d_rub": 27500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 272F",
+      "sku_rf": "272F",
+      "retail_rf_rub": 13980,
+      "mp_rf_rub": 12000,
+      "min_90d_rub": 11300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI PRO MP273W E14A",
+      "sku_rf": "MP273WE14A",
+      "retail_rf_rub": 11670,
+      "mp_rf_rub": 9800,
+      "min_90d_rub": 9200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 272QPF E20",
+      "sku_rf": "272QPFE20",
+      "retail_rf_rub": 21790,
+      "mp_rf_rub": 20000,
+      "min_90d_rub": 18800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 274QF X24",
+      "sku_rf": "274QFX24",
+      "retail_rf_rub": 21310,
+      "mp_rf_rub": 20950,
+      "min_90d_rub": 19500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 275CQF E18",
+      "sku_rf": "275CQFE18",
+      "retail_rf_rub": 18150,
+      "mp_rf_rub": 18200,
+      "min_90d_rub": 17100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 274QF E20",
+      "sku_rf": "274QFE20",
+      "retail_rf_rub": 19730,
+      "mp_rf_rub": 27400,
+      "min_90d_rub": 19730,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 274QRFW E20",
+      "sku_rf": "274QRFWE20",
+      "retail_rf_rub": 23020,
+      "mp_rf_rub": 28200,
+      "min_90d_rub": 17100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 274QRFW X32",
+      "sku_rf": "274QRFWX32",
+      "retail_rf_rub": 29590,
+      "mp_rf_rub": 28200,
+      "min_90d_rub": 26500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI Pro Max 271PHW E14",
+      "sku_rf": "271PHWE14",
+      "retail_rf_rub": 19730,
+      "mp_rf_rub": 9600,
+      "min_90d_rub": 9000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 346CQ",
+      "sku_rf": "346CQ",
+      "retail_rf_rub": 29590,
+      "mp_rf_rub": 33200,
+      "min_90d_rub": 29590,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "MSI MAG 274QPF X30MV",
+      "sku_rf": "274QPFX30MV",
+      "retail_rf_rub": 46100,
+      "mp_rf_rub": 38000,
+      "min_90d_rub": 33800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/MSI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE G27Q20",
+      "sku_rf": "G27Q20",
+      "retail_rf_rub": 16840,
+      "mp_rf_rub": 16300,
+      "min_90d_rub": 15300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE G27Q2",
+      "sku_rf": "G27Q2",
+      "retail_rf_rub": 19300,
+      "mp_rf_rub": 24750,
+      "min_90d_rub": 14500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27Q2 QD",
+      "sku_rf": "M27Q2",
+      "retail_rf_rub": 24650,
+      "mp_rf_rub": 15400,
+      "min_90d_rub": 14500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27Q2",
+      "sku_rf": "M27Q2",
+      "retail_rf_rub": 24650,
+      "mp_rf_rub": 14200,
+      "min_90d_rub": 13300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE GS25F14",
+      "sku_rf": "GS25F14",
+      "retail_rf_rub": 11010,
+      "mp_rf_rub": 10400,
+      "min_90d_rub": 9800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27Q3",
+      "sku_rf": "M27Q3",
+      "retail_rf_rub": 29600,
+      "mp_rf_rub": 28400,
+      "min_90d_rub": 22000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE G25F2A",
+      "sku_rf": "G25F2A",
+      "retail_rf_rub": 15750,
+      "mp_rf_rub": 12600,
+      "min_90d_rub": 11800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27QS",
+      "sku_rf": "M27QS",
+      "retail_rf_rub": 37900,
+      "mp_rf_rub": 41070,
+      "min_90d_rub": 13700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE GS27U",
+      "sku_rf": "GS27U",
+      "retail_rf_rub": 30410,
+      "mp_rf_rub": 27000,
+      "min_90d_rub": 24800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE G34WQC2",
+      "sku_rf": "G34WQC2",
+      "retail_rf_rub": 30400,
+      "mp_rf_rub": 33000,
+      "min_90d_rub": 30400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27UP",
+      "sku_rf": "M27UP",
+      "retail_rf_rub": 37500,
+      "mp_rf_rub": 28200,
+      "min_90d_rub": 26500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "GIGABYTE M27UP ICE",
+      "sku_rf": "M27UP",
+      "retail_rf_rub": 37500,
+      "mp_rf_rub": 28200,
+      "min_90d_rub": 25900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 24B36XE",
+      "sku_rf": "24B36XE",
+      "retail_rf_rub": 8190,
+      "mp_rf_rub": 10800,
+      "min_90d_rub": 8190,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 27B36XE",
+      "sku_rf": "27B36XE",
+      "retail_rf_rub": 9990,
+      "mp_rf_rub": 11000,
+      "min_90d_rub": 9990,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC CU34G4",
+      "sku_rf": "CU34G4",
+      "retail_rf_rub": 28890,
+      "mp_rf_rub": 26160,
+      "min_90d_rub": 24300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC Q27G4ZMN",
+      "sku_rf": "Q27G4ZMN",
+      "retail_rf_rub": 36060,
+      "mp_rf_rub": 27500,
+      "min_90d_rub": 25300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 27B36X",
+      "sku_rf": "27B36X",
+      "retail_rf_rub": 10990,
+      "mp_rf_rub": 9300,
+      "min_90d_rub": 8700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC Q27E4U",
+      "sku_rf": "Q27E4U",
+      "retail_rf_rub": 19100,
+      "mp_rf_rub": 16100,
+      "min_90d_rub": 15100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 24G4HA",
+      "sku_rf": "24G4HA",
+      "retail_rf_rub": 12220,
+      "mp_rf_rub": 10800,
+      "min_90d_rub": 10200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC CU34G2XP",
+      "sku_rf": "CU34G2XP",
+      "retail_rf_rub": 39260,
+      "mp_rf_rub": 31840,
+      "min_90d_rub": 29600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC U27G4R",
+      "sku_rf": "U27G4R",
+      "retail_rf_rub": 36080,
+      "mp_rf_rub": 28700,
+      "min_90d_rub": 27000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 24B36X",
+      "sku_rf": "24B36X",
+      "retail_rf_rub": 9000,
+      "mp_rf_rub": 9200,
+      "min_90d_rub": 8600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC 24G4H",
+      "sku_rf": "24G4H",
+      "retail_rf_rub": 11400,
+      "mp_rf_rub": 10200,
+      "min_90d_rub": 9600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC Q25G4SR",
+      "sku_rf": "Q25G4SR",
+      "retail_rf_rub": 28060,
+      "mp_rf_rub": 22800,
+      "min_90d_rub": 21400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "AOC U27G4",
+      "sku_rf": "U27G4",
+      "retail_rf_rub": 31830,
+      "mp_rf_rub": 28100,
+      "min_90d_rub": 25900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/AOC/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG259QMR5A",
+      "sku_rf": "VG259QMR5A",
+      "retail_rf_rub": 18440,
+      "mp_rf_rub": 15600,
+      "min_90d_rub": 14700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG27AQL5A",
+      "sku_rf": "VG27AQL5A",
+      "retail_rf_rub": 20490,
+      "mp_rf_rub": 18400,
+      "min_90d_rub": 16900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VG27AQL5A",
+      "sku_rf": "VG27AQL5A",
+      "retail_rf_rub": 20490,
+      "mp_rf_rub": 18300,
+      "min_90d_rub": 16800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS ROG Strix XG27ACMS",
+      "sku_rf": "XG27ACMS",
+      "retail_rf_rub": 37400,
+      "mp_rf_rub": 37290,
+      "min_90d_rub": 26500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG279Q5A",
+      "sku_rf": "VG279Q5A",
+      "retail_rf_rub": 15750,
+      "mp_rf_rub": 13000,
+      "min_90d_rub": 12200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG249Q5A",
+      "sku_rf": "VG249Q5A",
+      "retail_rf_rub": 14300,
+      "mp_rf_rub": 15600,
+      "min_90d_rub": 14300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG259QL5A",
+      "sku_rf": "VG259QL5A",
+      "retail_rf_rub": 13640,
+      "mp_rf_rub": 14000,
+      "min_90d_rub": 13200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG34WQL5A",
+      "sku_rf": "VG34WQL5A",
+      "retail_rf_rub": 35160,
+      "mp_rf_rub": 34700,
+      "min_90d_rub": 32300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VA279QGS",
+      "sku_rf": "VA279QGS",
+      "retail_rf_rub": 15600,
+      "mp_rf_rub": 11100,
+      "min_90d_rub": 10400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VA279QGSE",
+      "sku_rf": "VA279QGSE",
+      "retail_rf_rub": 16990,
+      "mp_rf_rub": 10600,
+      "min_90d_rub": 10000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VA249QGS",
+      "sku_rf": "VA249QGS",
+      "retail_rf_rub": 14050,
+      "mp_rf_rub": 11999,
+      "min_90d_rub": 9000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VZ279HG",
+      "sku_rf": "VZ279HG",
+      "retail_rf_rub": 11850,
+      "mp_rf_rub": 11100,
+      "min_90d_rub": 10400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VP227HF",
+      "sku_rf": "VP227HF",
+      "retail_rf_rub": 7260,
+      "mp_rf_rub": 9400,
+      "min_90d_rub": 7260,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VA27AQ",
+      "sku_rf": "VA27AQ",
+      "retail_rf_rub": 14850,
+      "mp_rf_rub": 17000,
+      "min_90d_rub": 14850,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VG259QMRL5A",
+      "sku_rf": "VG259QMRL5A",
+      "retail_rf_rub": 20200,
+      "mp_rf_rub": 16200,
+      "min_90d_rub": 14900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS TUF Gaming VG259QMRL5A",
+      "sku_rf": "VG259QMRL5A",
+      "retail_rf_rub": 20200,
+      "mp_rf_rub": 17400,
+      "min_90d_rub": 16000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS VA279QG",
+      "sku_rf": "VA279QG",
+      "retail_rf_rub": 12170,
+      "mp_rf_rub": 9900,
+      "min_90d_rub": 9300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS ROG Strix OLED XG32UCWMG",
+      "sku_rf": "XG32UCWMG",
+      "retail_rf_rub": 104550,
+      "mp_rf_rub": 102800,
+      "min_90d_rub": 94600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "ASUS ROG Strix XG27AQNGV",
+      "sku_rf": "XG27AQNGV",
+      "retail_rf_rub": 72200,
+      "mp_rf_rub": 27600,
+      "min_90d_rub": 25900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ASUS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Samsung Odyssey G5 G55C S27CG550EI (LS27CG550EIXCI)",
+      "sku_rf": "S27CG550",
+      "retail_rf_rub": 16490,
+      "mp_rf_rub": 19280,
+      "min_90d_rub": 16490,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Samsung Odyssey G5 C34G55TWWI",
+      "sku_rf": "G5C34G55TWWI",
+      "retail_rf_rub": 25890,
+      "mp_rf_rub": 28990,
+      "min_90d_rub": 25890,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Samsung Odyssey G4 G40B S25BG400EI (LS25BG400EIXCI)",
+      "sku_rf": "S25BG400",
+      "retail_rf_rub": 16020,
+      "mp_rf_rub": 19999,
+      "min_90d_rub": 16020,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Samsung Odyssey G5 G55C S32CG550EI (LS32CG550EIXCI)",
+      "sku_rf": "S32CG550",
+      "retail_rf_rub": 23880,
+      "mp_rf_rub": 23999,
+      "min_90d_rub": 21999,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 24G411A",
+      "sku_rf": "24G411A",
+      "retail_rf_rub": 7990,
+      "mp_rf_rub": 7990,
+      "min_90d_rub": 7990,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27U411B",
+      "sku_rf": "27U411B",
+      "retail_rf_rub": 9400,
+      "mp_rf_rub": 10600,
+      "min_90d_rub": 9400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27GS85Q",
+      "sku_rf": "27GS85Q",
+      "retail_rf_rub": 25150,
+      "mp_rf_rub": 25140,
+      "min_90d_rub": 17600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27U631A",
+      "sku_rf": "27U631A",
+      "retail_rf_rub": 11910,
+      "mp_rf_rub": 16700,
+      "min_90d_rub": 11910,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27U421A",
+      "sku_rf": "27U421A",
+      "retail_rf_rub": 9510,
+      "mp_rf_rub": 10400,
+      "min_90d_rub": 9510,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27G523B",
+      "sku_rf": "27G523B",
+      "retail_rf_rub": 12560,
+      "mp_rf_rub": 13200,
+      "min_90d_rub": 12400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 34U620B",
+      "sku_rf": "34U620B",
+      "retail_rf_rub": 24560,
+      "mp_rf_rub": 26200,
+      "min_90d_rub": 24400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 25G550B",
+      "sku_rf": "25G550B",
+      "retail_rf_rub": 16120,
+      "mp_rf_rub": 15850,
+      "min_90d_rub": 14700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 25G523B",
+      "sku_rf": "25G523B",
+      "retail_rf_rub": 10600,
+      "mp_rf_rub": 11800,
+      "min_90d_rub": 10600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 34U530A",
+      "sku_rf": "34U530A",
+      "retail_rf_rub": 22300,
+      "mp_rf_rub": 18400,
+      "min_90d_rub": 17300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 32U720A",
+      "sku_rf": "32U720A",
+      "retail_rf_rub": 27040,
+      "mp_rf_rub": 23300,
+      "min_90d_rub": 21900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 29U531A",
+      "sku_rf": "29U531A",
+      "retail_rf_rub": 16360,
+      "mp_rf_rub": 14600,
+      "min_90d_rub": 13700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 24U411B",
+      "sku_rf": "24U411B",
+      "retail_rf_rub": 7950,
+      "mp_rf_rub": 11000,
+      "min_90d_rub": 7950,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 34U640B",
+      "sku_rf": "34U640B",
+      "retail_rf_rub": 24950,
+      "mp_rf_rub": 25680,
+      "min_90d_rub": 23900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27G810A",
+      "sku_rf": "27G810A",
+      "retail_rf_rub": 40550,
+      "mp_rf_rub": 33900,
+      "min_90d_rub": 31200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27G550B",
+      "sku_rf": "27G550B",
+      "retail_rf_rub": 21300,
+      "mp_rf_rub": 16800,
+      "min_90d_rub": 15800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27GR93U",
+      "sku_rf": "27GR93U",
+      "retail_rf_rub": 52810,
+      "mp_rf_rub": 33400,
+      "min_90d_rub": 30700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27U730B",
+      "sku_rf": "27U730B",
+      "retail_rf_rub": 26590,
+      "mp_rf_rub": 24000,
+      "min_90d_rub": 22600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 32U889SA",
+      "sku_rf": "32U889SA",
+      "retail_rf_rub": 87980,
+      "mp_rf_rub": 53800,
+      "min_90d_rub": 49500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 27G440A",
+      "sku_rf": "27G440A",
+      "retail_rf_rub": 19410,
+      "mp_rf_rub": 15600,
+      "min_90d_rub": 14700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "LG 45GX90SA",
+      "sku_rf": "45GX90SA",
+      "retail_rf_rub": 134490,
+      "mp_rf_rub": 168600,
+      "min_90d_rub": 134490,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/LG/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer XV270U X1bmiiprx",
+      "sku_rf": "XV270UX1",
+      "retail_rf_rub": 16490,
+      "mp_rf_rub": 16490,
+      "min_90d_rub": 15200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer EK271 Gbmix",
+      "sku_rf": "EK271G",
+      "retail_rf_rub": 8890,
+      "mp_rf_rub": 9600,
+      "min_90d_rub": 8890,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer CB272U Gbmiiprx",
+      "sku_rf": "CB272UG",
+      "retail_rf_rub": 16670,
+      "mp_rf_rub": 15200,
+      "min_90d_rub": 14300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer SA243Y P1bi",
+      "sku_rf": "SA243YP1",
+      "retail_rf_rub": 7960,
+      "mp_rf_rub": 9900,
+      "min_90d_rub": 7960,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer EK271 P6bi",
+      "sku_rf": "EK271P6",
+      "retail_rf_rub": 10520,
+      "mp_rf_rub": 10400,
+      "min_90d_rub": 9800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer EK271 P6bmix",
+      "sku_rf": "EK271P6",
+      "retail_rf_rub": 10520,
+      "mp_rf_rub": 11000,
+      "min_90d_rub": 10300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer V247Y Gbmipx",
+      "sku_rf": "V247YG",
+      "retail_rf_rub": 8300,
+      "mp_rf_rub": 11200,
+      "min_90d_rub": 8300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer V247Y Gbmix",
+      "sku_rf": "V247YG",
+      "retail_rf_rub": 8300,
+      "mp_rf_rub": 10000,
+      "min_90d_rub": 8300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer CB272 Gbmiprux",
+      "sku_rf": "CB272G",
+      "retail_rf_rub": 12180,
+      "mp_rf_rub": 9600,
+      "min_90d_rub": 9000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer SB272K bmiipx",
+      "sku_rf": "SB272KBMIIPX",
+      "retail_rf_rub": 21150,
+      "mp_rf_rub": 19400,
+      "min_90d_rub": 18200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer Nitro VG270K V4bmiipx",
+      "sku_rf": "VG270KV4BMIIPX",
+      "retail_rf_rub": 29310,
+      "mp_rf_rub": 27800,
+      "min_90d_rub": 26100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Acer Nitro VG270K L1bmiipx",
+      "sku_rf": "VG270KL1BMIIPX",
+      "retail_rf_rub": 16990,
+      "mp_rf_rub": 20600,
+      "min_90d_rub": 16990,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/ACER/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27M2N3500PF",
+      "sku_rf": "27M2N3500PF",
+      "retail_rf_rub": 15400,
+      "mp_rf_rub": 15400,
+      "min_90d_rub": 15400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27E2N2500",
+      "sku_rf": "27E2N2500",
+      "retail_rf_rub": 13000,
+      "mp_rf_rub": 15600,
+      "min_90d_rub": 13000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27B2N3500J",
+      "sku_rf": "27B2N3500J",
+      "retail_rf_rub": 18560,
+      "mp_rf_rub": 16200,
+      "min_90d_rub": 15200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27E1N1200A",
+      "sku_rf": "27E1N1200A",
+      "retail_rf_rub": 11450,
+      "mp_rf_rub": 9200,
+      "min_90d_rub": 8600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 24E1N1200A",
+      "sku_rf": "24E1N1200A",
+      "retail_rf_rub": 9300,
+      "mp_rf_rub": 9800,
+      "min_90d_rub": 9200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27E2N1500L",
+      "sku_rf": "27E2N1500L",
+      "retail_rf_rub": 12030,
+      "mp_rf_rub": 14800,
+      "min_90d_rub": 12030,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 24B2N2200",
+      "sku_rf": "24B2N2200",
+      "retail_rf_rub": 10450,
+      "mp_rf_rub": 9200,
+      "min_90d_rub": 8600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27E2N1110",
+      "sku_rf": "27E2N1110",
+      "retail_rf_rub": 10500,
+      "mp_rf_rub": 9000,
+      "min_90d_rub": 8500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27E3U7903",
+      "sku_rf": "27E3U7903",
+      "retail_rf_rub": 104520,
+      "mp_rf_rub": 55100,
+      "min_90d_rub": 51800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Philips 27M2N5901A",
+      "sku_rf": "27M2N5901A",
+      "retail_rf_rub": 35760,
+      "mp_rf_rub": 27400,
+      "min_90d_rub": 25800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell U2725QE",
+      "sku_rf": "U2725QE",
+      "retail_rf_rub": 79990,
+      "mp_rf_rub": 53000,
+      "min_90d_rub": 48800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2725DE",
+      "sku_rf": "P2725DE",
+      "retail_rf_rub": 34200,
+      "mp_rf_rub": 16800,
+      "min_90d_rub": 15800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell S2725DSM",
+      "sku_rf": "S2725DSM",
+      "retail_rf_rub": 28990,
+      "mp_rf_rub": 16400,
+      "min_90d_rub": 15400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell U3225QE",
+      "sku_rf": "U3225QE",
+      "retail_rf_rub": 100290,
+      "mp_rf_rub": 75100,
+      "min_90d_rub": 69100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2725D",
+      "sku_rf": "P2725D",
+      "retail_rf_rub": 29470,
+      "mp_rf_rub": 15000,
+      "min_90d_rub": 14100,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2425DE",
+      "sku_rf": "P2425DE",
+      "retail_rf_rub": 38600,
+      "mp_rf_rub": 15800,
+      "min_90d_rub": 14900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell Alienware AW2525HM",
+      "sku_rf": "AW2525HM",
+      "retail_rf_rub": 34900,
+      "mp_rf_rub": 17600,
+      "min_90d_rub": 16500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell UltraSharp U3425WE",
+      "sku_rf": "U3425WE",
+      "retail_rf_rub": 101290,
+      "mp_rf_rub": 94900,
+      "min_90d_rub": 82500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2425D",
+      "sku_rf": "P2425D",
+      "retail_rf_rub": 29980,
+      "mp_rf_rub": 16600,
+      "min_90d_rub": 15600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell E2225HM",
+      "sku_rf": "E2225HM",
+      "retail_rf_rub": 11860,
+      "mp_rf_rub": 11200,
+      "min_90d_rub": 10500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell S2425HSM",
+      "sku_rf": "S2425HSM",
+      "retail_rf_rub": 17790,
+      "mp_rf_rub": 11200,
+      "min_90d_rub": 10500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell Alienware AW2725DM",
+      "sku_rf": "AW2725DM",
+      "retail_rf_rub": 37600,
+      "mp_rf_rub": 41120,
+      "min_90d_rub": 17900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell E2425HM",
+      "sku_rf": "E2425HM",
+      "retail_rf_rub": 12060,
+      "mp_rf_rub": 11100,
+      "min_90d_rub": 10400,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell E2425HSM",
+      "sku_rf": "E2425HSM",
+      "retail_rf_rub": 13750,
+      "mp_rf_rub": 11400,
+      "min_90d_rub": 10700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell SE2425HM",
+      "sku_rf": "SE2425HM",
+      "retail_rf_rub": 11300,
+      "mp_rf_rub": 9000,
+      "min_90d_rub": 8500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell E2725HM",
+      "sku_rf": "E2725HM",
+      "retail_rf_rub": 13800,
+      "mp_rf_rub": 9600,
+      "min_90d_rub": 9000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P3225QE",
+      "sku_rf": "P3225QE",
+      "retail_rf_rub": 66490,
+      "mp_rf_rub": 24200,
+      "min_90d_rub": 22700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2426HE",
+      "sku_rf": "P2426HE",
+      "retail_rf_rub": 25200,
+      "mp_rf_rub": 10600,
+      "min_90d_rub": 10000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2725QE",
+      "sku_rf": "P2725QE",
+      "retail_rf_rub": 56670,
+      "mp_rf_rub": 24000,
+      "min_90d_rub": 22600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell Alienware AW2725D",
+      "sku_rf": "AW2725D",
+      "retail_rf_rub": 60220,
+      "mp_rf_rub": 58400,
+      "min_90d_rub": 53700,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell Alienware AW2725Q",
+      "sku_rf": "AW2725Q",
+      "retail_rf_rub": 107150,
+      "mp_rf_rub": 103500,
+      "min_90d_rub": 95200,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Dell P2726HE",
+      "sku_rf": "P2726HE",
+      "retail_rf_rub": 28500,
+      "mp_rf_rub": 9200,
+      "min_90d_rub": 8600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/DELL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 27P1AD",
+      "sku_rf": "27P1AD",
+      "retail_rf_rub": 14990,
+      "mp_rf_rub": 12500,
+      "min_90d_rub": 11800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 27P2A",
+      "sku_rf": "27P2A",
+      "retail_rf_rub": 19990,
+      "mp_rf_rub": 24000,
+      "min_90d_rub": 19990,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 32G64",
+      "sku_rf": "32G64",
+      "retail_rf_rub": 31990,
+      "mp_rf_rub": 19800,
+      "min_90d_rub": 18600,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 25G64",
+      "sku_rf": "25G64",
+      "retail_rf_rub": 16990,
+      "mp_rf_rub": 17999,
+      "min_90d_rub": 12900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 27P2A Pro",
+      "sku_rf": "27P2APRO",
+      "retail_rf_rub": 27990,
+      "mp_rf_rub": 17900,
+      "min_90d_rub": 16500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 34C2A",
+      "sku_rf": "34C2A",
+      "retail_rf_rub": 49990,
+      "mp_rf_rub": 44990,
+      "min_90d_rub": 41500,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 32R84",
+      "sku_rf": "32R84",
+      "retail_rf_rub": 66990,
+      "mp_rf_rub": 52000,
+      "min_90d_rub": 47800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 25P1AD",
+      "sku_rf": "25P1AD",
+      "retail_rf_rub": 11990,
+      "mp_rf_rub": 9700,
+      "min_90d_rub": 8900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 25P2A Pro",
+      "sku_rf": "25P2APRO",
+      "retail_rf_rub": 24990,
+      "mp_rf_rub": 24700,
+      "min_90d_rub": 22000,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "TCL 27C2A",
+      "sku_rf": "27C2A",
+      "retail_rf_rub": 36990,
+      "mp_rf_rub": 34000,
+      "min_90d_rub": 31300,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/TCL/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Xiaomi Gaming Monitor G24i 2026",
+      "sku_rf": "G24I2026",
+      "retail_rf_rub": 11580,
+      "mp_rf_rub": 11600,
+      "min_90d_rub": 8800,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/XIAOMI/",
+      "checked_at": "2026-11-21"
+    },
+    {
+      "model_match": "Xiaomi G27Qi 2026",
+      "sku_rf": "G27QI2026",
+      "retail_rf_rub": 18920,
+      "mp_rf_rub": 17999,
+      "min_90d_rub": 13900,
+      "store": "Ситилинк",
+      "url": "https://www.citilink.ru/catalog/monitory/XIAOMI/",
+      "checked_at": "2026-11-21"
     }
-  ]
+  ],
+  "source": "Multi-Store Audit (DNS + Regard + OnlineTrade + AliExpress TITAN ARMY Official)",
+  "prices": {
+    "ASUS ROG Swift OLED PG34WCDN": {
+      "price_rub": 160400,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQM5F": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQML5F": {
+      "price_rub": 29870,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG34WQL5A": {
+      "price_rub": 30790,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG32WQ3B": {
+      "price_rub": 24299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG34VQL3A": {
+      "price_rub": 30499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27UQEL5A": {
+      "price_rub": 24499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Swift Pro PG248QP": {
+      "price_rub": 115720,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDPG": {
+      "price_rub": 86999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG32UCWMG": {
+      "price_rub": 94520,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDNG": {
+      "price_rub": 60799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix XG27ACMS": {
+      "price_rub": 37290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQM5A": {
+      "price_rub": 35160,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQML5A": {
+      "price_rub": 28960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG27AQML5A": {
+      "price_rub": 28960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQWMG": {
+      "price_rub": 66299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG32VQM5B": {
+      "price_rub": 25999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA32UCDMR-K": {
+      "price_rub": 194410,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDMES": {
+      "price_rub": 43999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Swift OLED PG27UCDM": {
+      "price_rub": 104999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG259QM5A": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG279QM5A": {
+      "price_rub": 19299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQ5A": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG259Q5A": {
+      "price_rub": 12499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA27UCGE": {
+      "price_rub": 86310,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix XG32UCG": {
+      "price_rub": 53999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG279QE5A": {
+      "price_rub": 14799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA278CGRV": {
+      "price_rub": 34999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA278QGV": {
+      "price_rub": 26499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA249HG": {
+      "price_rub": 7399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA249QGS": {
+      "price_rub": 15399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279HG": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279QG": {
+      "price_rub": 11599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279QGS": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VZ249HG": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA32UCE": {
+      "price_rub": 133800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDMG": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS XG27ACS": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS XG27UCS": {
+      "price_rub": 42999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG249Q1A": {
+      "price_rub": 15799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG28UQL1A": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VY249HGE": {
+      "price_rub": 8099,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQR QD-OLED X36": {
+      "price_rub": 102212,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 271KPD7": {
+      "price_rub": 51499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QPF X30MV": {
+      "price_rub": 39192,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 341CQP QD-OLED X28": {
+      "price_rub": 83799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP X24": {
+      "price_rub": 77999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321UP QD-OLED X24": {
+      "price_rub": 98999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP QD-OLED E16": {
+      "price_rub": 73499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G275L E14": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI PRO MAX 341QPXW14G": {
+      "price_rub": 88070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP245PHG E14": {
+      "price_rub": 14699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 241PHW E14": {
+      "price_rub": 17199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271QPHW E14": {
+      "price_rub": 25299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271QPX14G": {
+      "price_rub": 48340,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271UPX12G": {
+      "price_rub": 73999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271UPXW12G": {
+      "price_rub": 75999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 242R X60N": {
+      "price_rub": 69490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QP QD-OLED X50": {
+      "price_rub": 63999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QR QD-OLED X50": {
+      "price_rub": 100260,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272QRF X36": {
+      "price_rub": 59999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272URDF E16": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QRFW X32": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274UPDF E16M": {
+      "price_rub": 46999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 274UPDF E16M": {
+      "price_rub": 46999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 274URDFW E16M": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 271QP QD-OLED X28": {
+      "price_rub": 56860,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QPW QD-OLED X28": {
+      "price_rub": 49999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 245F X24": {
+      "price_rub": 12999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272F X24": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP QD-OLED X24": {
+      "price_rub": 77999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QF X24": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QP QD-OLED X24": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272URX": {
+      "price_rub": 107530,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272URX QD-OLED": {
+      "price_rub": 107530,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 346CQRF X24": {
+      "price_rub": 38999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 242F": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 244F": {
+      "price_rub": 10199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QRFW E20": {
+      "price_rub": 21799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 275QF E20": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 342CQRF E20": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 242C": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321CQF E18": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 325QF E18V": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 346CQ": {
+      "price_rub": 31820,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 322UP QD-OLED E16": {
+      "price_rub": 78260,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 322URDF E16": {
+      "price_rub": 54660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G242L E14": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 275UPD E14": {
+      "price_rub": 32999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 491CQP": {
+      "price_rub": 89999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP275W E2": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP273QW E2": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPHG": {
+      "price_rub": 33780,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPHW": {
+      "price_rub": 31150,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPSW": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QRX": {
+      "price_rub": 76930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QRX QD-OLED": {
+      "price_rub": 76930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321UPX": {
+      "price_rub": 98490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 321URX": {
+      "price_rub": 94043,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 321URX QD-OLED": {
+      "price_rub": 94043,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQPX": {
+      "price_rub": 89999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G255F": {
+      "price_rub": 9499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G255PF E2": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G272QPF E2": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung S27HG802S": {
+      "price_rub": 105110,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G53F S27FG532EI": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung S32HG732S": {
+      "price_rub": 95660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey OLED G6 G60SD": {
+      "price_rub": 63999,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G4": {
+      "price_rub": 16199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 25G550B": {
+      "price_rub": 16699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G550B": {
+      "price_rub": 21299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 52G930B": {
+      "price_rub": 134999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 25G523B": {
+      "price_rub": 10599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G523B": {
+      "price_rub": 12899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32G620B": {
+      "price_rub": 27299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U411B": {
+      "price_rub": 8399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U411B": {
+      "price_rub": 9399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U620B": {
+      "price_rub": 24499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U640B": {
+      "price_rub": 20799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U601B": {
+      "price_rub": 22699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX950A": {
+      "price_rub": 173999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G640A": {
+      "price_rub": 30999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GX700A": {
+      "price_rub": 54499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G440A": {
+      "price_rub": 17399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GX704A": {
+      "price_rub": 51660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34GX900A": {
+      "price_rub": 98930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34GX90SA": {
+      "price_rub": 122999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 39GX900A": {
+      "price_rub": 106499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 39GX90SA": {
+      "price_rub": 120010,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX900A": {
+      "price_rub": 135499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX90SA": {
+      "price_rub": 133800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G610A": {
+      "price_rub": 16799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32G600A": {
+      "price_rub": 22799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32GS85Q": {
+      "price_rub": 37690,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G411A": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U411A": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U411A": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U421A": {
+      "price_rub": 10499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U421A": {
+      "price_rub": 9599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U631A": {
+      "price_rub": 12399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32U720A": {
+      "price_rub": 29949,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32U889SA": {
+      "price_rub": 84499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GS75Q": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GS85Q": {
+      "price_rub": 25899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24GS60F-B": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32GR93U-B": {
+      "price_rub": 56799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GP95R-B": {
+      "price_rub": 64799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32X3A": {
+      "price_rub": 84999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25P2A Pro": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27C2A": {
+      "price_rub": 36999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P2A": {
+      "price_rub": 29999,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25P1AD": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P1AD": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P3A": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25G64": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 57R94": {
+      "price_rub": 199999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32G64": {
+      "price_rub": 39999,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32R84": {
+      "price_rub": 63999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "iFFALCON R25Q51 Mini LED": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "iFFALCON R24Q51 Mini LED": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army X276T": {
+      "price_rub": 32341,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P326MV Plus": {
+      "price_rub": 43241,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2710H Plus": {
+      "price_rub": 15262,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army KG277R": {
+      "price_rub": 12045,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P276MV": {
+      "price_rub": 29797,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510H": {
+      "price_rub": 10199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510H Plus": {
+      "price_rub": 13809,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army G2785S": {
+      "price_rub": 39999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army C32A1R": {
+      "price_rub": 19799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2410G": {
+      "price_rub": 10799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2710R": {
+      "price_rub": 18199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P40UG": {
+      "price_rub": 35299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510S": {
+      "price_rub": 15299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A2R": {
+      "price_rub": 15799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P23H2M": {
+      "price_rub": 11299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A2V": {
+      "price_rub": 35999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A6V": {
+      "price_rub": 39799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G Pro 27Qi": {
+      "price_rub": 29199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G Pro 27i": {
+      "price_rub": 32490,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G34WQi": {
+      "price_rub": 27199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A24i": {
+      "price_rub": 8799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27i": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi A27Qi": {
+      "price_rub": 13399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27Ui": {
+      "price_rub": 25699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MKCF25F300M": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MJF24F200": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MKQ27F240L": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MK-ZQ27F210L": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2426HE": {
+      "price_rub": 25199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2726HE": {
+      "price_rub": 28499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2725QC": {
+      "price_rub": 54350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2525HM": {
+      "price_rub": 37999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725D": {
+      "price_rub": 60220,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725Q": {
+      "price_rub": 107150,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725DM": {
+      "price_rub": 41120,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2425HSM": {
+      "price_rub": 17399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2725DSM": {
+      "price_rub": 30660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3225QC": {
+      "price_rub": 111450,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3225QS": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3425DW": {
+      "price_rub": 50999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell U2725QE": {
+      "price_rub": 80910,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell U3225QE": {
+      "price_rub": 100290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2425D": {
+      "price_rub": 30280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2425DE": {
+      "price_rub": 38820,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725D": {
+      "price_rub": 31600,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725DE": {
+      "price_rub": 34299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725QE": {
+      "price_rub": 51999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3225DE": {
+      "price_rub": 52999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3225QE": {
+      "price_rub": 73350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3425WE": {
+      "price_rub": 72350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725DF": {
+      "price_rub": 86299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW3225QF": {
+      "price_rub": 131999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW3423DWF": {
+      "price_rub": 103999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO34WQC36": {
+      "price_rub": 94999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G27Q3": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q28GR": {
+      "price_rub": 54299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE AORUS Elite FO32U24G": {
+      "price_rub": 110080,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24A": {
+      "price_rub": 42240,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24G": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO32U24": {
+      "price_rub": 94050,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q3": {
+      "price_rub": 55690,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27Q3": {
+      "price_rub": 29600,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27UP": {
+      "price_rub": 35970,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27UP ICE": {
+      "price_rub": 35970,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q28G": {
+      "price_rub": 55800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q2A": {
+      "price_rub": 51440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24": {
+      "price_rub": 44310,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS25F2A": {
+      "price_rub": 10499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS27FC2": {
+      "price_rub": 12499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27U2": {
+      "price_rub": 73130,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G34WQC2": {
+      "price_rub": 27999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27Q2": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS32QA": {
+      "price_rub": 24899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27QS": {
+      "price_rub": 41440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G27U": {
+      "price_rub": 30280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27B2U4601H": {
+      "price_rub": 30770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U5900C": {
+      "price_rub": 54050,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3800A": {
+      "price_rub": 32470,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3500PF": {
+      "price_rub": 15399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N6501L": {
+      "price_rub": 48430,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N8800": {
+      "price_rub": 74999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N5901A": {
+      "price_rub": 35760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3200NF": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 24E1N1200A": {
+      "price_rub": 9599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U3600C": {
+      "price_rub": 37030,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U3600CH": {
+      "price_rub": 41880,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 32B2N3500": {
+      "price_rub": 29100,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 32B2U3601": {
+      "price_rub": 32130,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27E3U7903": {
+      "price_rub": 104230,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 24M1N3200ZS EVNIA 3000": {
+      "price_rub": 10899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Predator X32Xbmiipphuzx": {
+      "price_rub": 98499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Nitro XV275K P5biipruzx": {
+      "price_rub": 39999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4H": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG246FK6": {
+      "price_rub": 64830,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CS24A": {
+      "price_rub": 61999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG276QKD2": {
+      "price_rub": 76400,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZDR": {
+      "price_rub": 46210,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4SRU": {
+      "price_rub": 34770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27G4": {
+      "price_rub": 29870,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27G4R": {
+      "price_rub": 36080,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 25G4S": {
+      "price_rub": 18299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CS25G": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q25G4SR": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZD": {
+      "price_rub": 44760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZR": {
+      "price_rub": 21499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 24G11ZE": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 27G11ZE2": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG276UZD": {
+      "price_rub": 76500,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4Z": {
+      "price_rub": 44999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G40E": {
+      "price_rub": 14499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G40ZDF": {
+      "price_rub": 46720,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G41ZDF": {
+      "price_rub": 46190,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZMN": {
+      "price_rub": 36060,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 24B36X": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 27B36X": {
+      "price_rub": 9499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27B30S3": {
+      "price_rub": 11599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27E4CV": {
+      "price_rub": 29040,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G2XP": {
+      "price_rub": 36760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ViewSonic VA3420C-2": {
+      "price_rub": 30610,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Apple Studio Display XDR": {
+      "price_rub": 385999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming OLED AQ27H1O": {
+      "price_rub": 42799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3 белый": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3 обновлённый": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity Pro AQ27H1 Pro": {
+      "price_rub": 16599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Portal AF24H1": {
+      "price_rub": 11699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Sidewinder AQ27H1U": {
+      "price_rub": 20999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Supernova Pro AQ32H1UE": {
+      "price_rub": 25199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Vega Pro AQ25H1U": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Nova Ultra AU27H1UE": {
+      "price_rub": 30499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkstar AF24N1": {
+      "price_rub": 9699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQ32H3": {
+      "price_rub": 21999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AF24H1UE": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQ27H3": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity AF27H1": {
+      "price_rub": 14299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Hisense 27G6K-PRO": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASRock PG27FFX1B": {
+      "price_rub": 36900,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "ASRock PG27FFX2A": {
+      "price_rub": 64299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Digma Pro Vision L": {
+      "price_rub": 81250,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Digma Pro Action M": {
+      "price_rub": 43730,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline CF24N1S": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline CF24N4": {
+      "price_rub": 7499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DF24N1S2": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DQ27N1S2": {
+      "price_rub": 11899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline GS CF24N4": {
+      "price_rub": 7499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline GS CF27N4": {
+      "price_rub": 11899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DF24N1": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 34C2A": {
+      "price_rub": 49999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Mini LED Gaming Monitor G Pro 27Qi 2026": {
+      "price_rub": 27910,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQR X36": {
+      "price_rub": 102212,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q2A ICE": {
+      "price_rub": 51440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 346CQDF E20": {
+      "price_rub": 29070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G25i 2026": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27i 2026": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QP QD-OLED X24": {
+      "price_rub": 44490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G27i 2026": {
+      "price_rub": 13499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G24i 2026": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A24i 2026": {
+      "price_rub": 8199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Curved Gaming Monitor G34WQi 2026": {
+      "price_rub": 27199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 7 Pro 727pm": {
+      "price_rub": 117760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 7 Pro 727pu": {
+      "price_rub": 75280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 534pm": {
+      "price_rub": 85960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pm": {
+      "price_rub": 57770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pu": {
+      "price_rub": 43860,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pq": {
+      "price_rub": 33800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 524pm": {
+      "price_rub": 43860,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG UltraGear 24GS65F-B": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkhaven AF27N1": {
+      "price_rub": 12199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 24F240": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Skyline 32QC180L": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Black Warrior 27F300L": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Zero 25F400LM": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Predator X34F1bmiipphuzx": {
+      "price_rub": 97999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P2A Pro": {
+      "price_rub": 27999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Hisense 27N3Q": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Nitro XV242Fbmiiprx": {
+      "price_rub": 54070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27UP850K-W": {
+      "price_rub": 31999,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G27Qi 2026": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell UltraSharp U4025QW": {
+      "price_rub": 243550,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell UltraSharp U3425WE": {
+      "price_rub": 101290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 27Q320L": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 27Q210L": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity Ultra AQ27H1": {
+      "price_rub": 19199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 C34G55TWWI": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP DF24N1S": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkmoon AQ27N1 белый": {
+      "price_rub": 15299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MK-ZF24F200 (23.8″ FHD 200Hz Fast IPS ΔE<2)": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G55C S27CG550EI (LS27CG550EIXCI)": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G55C S32CG550EI (LS32CG550EIXCI)": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G3 G30H S27HG300EI": {
+      "price_rub": 17599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP DF24H1S (23.8″ FHD 100Hz Frameless Home & Office)": {
+      "price_rub": 7699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG UltraGear 32G403B-B (31.5″ QHD 180Hz Fast IPS)": {
+      "price_rub": 21499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI PRO MP273A (27″ FHD 100Hz IPS Eye-Ergo + Speakers)": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    }
+  }
 }
