@@ -1841,7 +1841,6 @@ a{color:inherit;text-decoration:none}
 
 <!-- MODERN_UI_TESTLAB_CSS_START -->
 <style id="modernUiAndTestLabStyles">
-  /* Modern Refined Surface & Typography */
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1887,15 +1886,15 @@ a{color:inherit;text-decoration:none}
     border-radius: 9px !important;
     font-size: 12px !important;
   }
-  /* Cleaner, softer tab bar */
   .tab-btn {
     border-radius: 10px !important;
     transition: background-color 0.16s ease, color 0.16s ease, transform 0.12s ease;
   }
-    /* Hide legacy duplicate Rubricator bar in Test Lab so only the clean modern category bar shows */
-  #divBuiltInTestLab .lab-cat-filter-btn,
-  #divBuiltInTestLab .lab-cat-filter-btn ~ *,
-  #divLabExpressAndFilterBar .lab-cat-btn { display: none !important; }
+  /* Hide BOTH legacy duplicate Test Lab category bars cleanly */
+  #divLabCategoryFilterBar,
+  #divLabExpressAndFilterBar #divLabCatTabs {
+    display: none !important;
+  }
   /* Modern Test Lab styling */
   #divBuiltInTestLab {
     background: linear-gradient(160deg, #0b1120 0%, #111c33 55%, #0b1120 100%) !important;
@@ -1909,33 +1908,34 @@ a{color:inherit;text-decoration:none}
     border: 1px solid rgba(148, 163, 184, 0.22);
     box-shadow: 0 8px 24px rgba(2, 6, 23, 0.45);
   }
-  #divLabCatTabs .lab-cat-pill {
-    padding: 6px 12px;
+  #divModernLabCategories .lab-cat-pill {
+    padding: 6px 13px;
     border-radius: 999px;
     font-size: 12px;
     font-weight: 700;
     border: 1px solid rgba(148, 163, 184, 0.24);
-    background: rgba(15, 23, 42, 0.72);
+    background: rgba(15, 23, 42, 0.78);
     color: #cbd5e1;
     cursor: pointer;
     transition: all 0.15s ease;
   }
-  #divLabCatTabs .lab-cat-pill:hover {
+  #divModernLabCategories .lab-cat-pill:hover {
     border-color: rgba(99, 102, 241, 0.65);
     color: #ffffff;
   }
-  #divLabCatTabs .lab-cat-pill.active {
+  #divModernLabCategories .lab-cat-pill.active {
     background: linear-gradient(135deg, #4f46e5, #2563eb);
     border-color: #818cf8;
     color: #ffffff;
     box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
   }
-  .lab-tool-btn.lab-cat-hidden {
+  /* Immune to legacy b.className=... overwrites */
+  .lab-tool-btn[data-cat-hidden="1"] {
     display: none !important;
   }
   #divLabNativeGuideCard {
-    background: rgba(15, 23, 42, 0.85);
-    border: 1px solid rgba(56, 189, 248, 0.28);
+    background: rgba(15, 23, 42, 0.88);
+    border: 1px solid rgba(56, 189, 248, 0.32);
     border-radius: 14px;
     padding: 12px 14px;
   }
@@ -7582,7 +7582,7 @@ function computeSignalBandwidthAndCableAudit(r) {
  const b1 = document.getElementById("lblLiveHzBadge");
  const b2 = document.getElementById("lblLabUfoFpsStats");
  const msFrame = (1000 / Math.max(1, labMeasuredHz)).toFixed(2);
- if (b1) b1.textContent = `⚡ Экран сейчас: ${labMeasuredHz} Гц (${msFrame} мс/кадр)`;
+ if (b1) b1.textContent = `⚡ Экран сейчас: ${labMeasuredHz} Гц (${msFrame} мс/кадр)`; const _w60 = document.getElementById("lblHz60Warning"); if (_w60 && labMeasuredHz > 65) _w60.classList.add("hidden");
  if (b2) b2.textContent = `⚡ Реальная частота вашего монитора: ${labMeasuredHz} Гц (${msFrame} мс на кадр)`;
  }
 
@@ -27387,12 +27387,12 @@ function computeSignalBandwidthAndCableAudit(r) {
 
   const LAB_CATEGORIES = [
     { id: "top8", label: "⭐ Главные 8 (Старт)", tools: ["pixels", "ufo", "fald", "gradients", "sharpness_geo", "vrr_coil", "near_black_banding", "real_hdr"] },
-    { id: "pvz", label: "🔍 Приёмка в ПВЗ", tools: ["pixels", "pixel_grid_photo", "glow_bleed_detector", "tint_d65", "nine_zone_tint", "offaxis_glow", "va_gamma_cone", "audio_stereo_dac"] },
-    { id: "motion", label: "⚡ Отклик и Гц", tools: ["ufo", "hz_divider", "mprt_pwm", "strobe_crosstalk", "ksf_overdrive", "vrr_coil", "cinema_judder", "reaction_lag", "aim_frametime", "smooth_pursuit_trainer", "mouse_polling_sync", "dsc_handshake_timer"] },
-    { id: "oled_fald", label: "🌑 OLED и Mini-LED", tools: ["fald", "fald_starfield", "fald_cursor_bloom", "flashbang_fald", "abl_window_sizer", "psu_apl_torture", "hdr_clipping", "hdr_apl_clipping", "real_hdr"] },
-    { id: "color", label: "🌈 Цвет и Тени", tools: ["gradients", "bit_depth_ramp", "near_black_banding", "near_black_crush", "srgb_p3_clamp", "color_blind_hue"] },
-    { id: "text", label: "🔤 Текст и Чёткость", tools: ["sharpness_geo", "subpixel_fringing", "ide_cleartype", "font_scaling_ppi", "chroma_444", "code_excel_themes", "corner_convergence", "inversion", "pixel_walk_inversion", "real_size_ruler", "aspect_crop_sim"] },
-    { id: "all", label: "📋 Все стенды", tools: null }
+    { id: "pvz", label: "🔍 Приёмка в ПВЗ (8)", tools: ["pixels", "pixel_grid_photo", "glow_bleed_detector", "tint_d65", "nine_zone_tint", "offaxis_glow", "va_gamma_cone", "audio_stereo_dac"] },
+    { id: "motion", label: "⚡ Отклик и Гц (12)", tools: ["ufo", "hz_divider", "mprt_pwm", "strobe_crosstalk", "ksf_overdrive", "vrr_coil", "cinema_judder", "reaction_lag", "aim_frametime", "smooth_pursuit_trainer", "mouse_polling_sync", "dsc_handshake_timer"] },
+    { id: "oled_fald", label: "🌑 OLED и Mini-LED (9)", tools: ["fald", "fald_starfield", "fald_cursor_bloom", "flashbang_fald", "abl_window_sizer", "psu_apl_torture", "hdr_clipping", "hdr_apl_clipping", "real_hdr"] },
+    { id: "color", label: "🌈 Цвет и Тени (6)", tools: ["gradients", "bit_depth_ramp", "near_black_banding", "near_black_crush", "srgb_p3_clamp", "color_blind_hue"] },
+    { id: "text", label: "🔤 Текст и Чёткость (11)", tools: ["sharpness_geo", "subpixel_fringing", "ide_cleartype", "font_scaling_ppi", "chroma_444", "code_excel_themes", "corner_convergence", "inversion", "pixel_walk_inversion", "real_size_ruler", "aspect_crop_sim"] },
+    { id: "all", label: "📋 Все 46 стендов", tools: null }
   ];
 
   const LAB_GUIDES = {
@@ -27403,13 +27403,13 @@ function computeSignalBandwidthAndCableAudit(r) {
       bad: "Яркие «горящие» субпиксели в центре, тёмные пятна/пыль под матрицей или резкие вертикальные полосы на 5% сером у OLED."
     },
     ufo: {
-      title: "Отклик матрицы, шлейфы и Overdrive (UFO)",
+      title: "Отклик матрицы, шлейфы и Overdrive (UFO • 1440×360)",
       check: "Следите взглядом за движущимся НЛО на тёмном, сером и светлом фоне; подберите режим Overdrive в меню монитора.",
       ok: "Контуры НЛО и 3 жёлтых окна чёткие, без длинного чёрного хвоста (на VA) и без белых/инверсных ореолов на светлом фоне.",
       bad: "Тёмные разводы на чёрном (VA Black Smearing) или яркие белые контуры позади НЛО — снизьте Overdrive на 1 ступень."
     },
     fald: {
-      title: "Ореолы зон Mini-LED (FALD Blooming) и OLED ABL",
+      title: "Ореолы зон Mini-LED (FALD Blooming • 1440×420) и OLED ABL",
       check: "Перемещайте светлый объект на абсолютно чёрном фоне при высокой яркости (особенно в HDR).",
       ok: "Чёткий контур без широкого серого облака вокруг; на OLED ореолы отсутствуют полностью (0%).",
       bad: "Крупные квадратные засветы вокруг курсора или сильное «дыхание» яркости на соседних участках."
@@ -27418,10 +27418,10 @@ function computeSignalBandwidthAndCableAudit(r) {
       title: "Градиенты 8/10-бит, тени (RGB 1–24) и света",
       check: "Проверьте плавность переходов и видимость самых тёмных квадратов RGB 2–8 на расстоянии работы.",
       ok: "Плавный переход без резких ступенек (бандинга); различимы оттенки начиная с RGB 3–5 и выше.",
-      bad: "Все тёмные квадраты сливаются в чёрный (Black Crush) или видны грубые цветные полосы — проверьте режим 10-bit и диапазон Full RGB 0–255."
+      bad: "Все тёмные квадраты сливаются в чёрный (Black Crush) или видны грубые цветные полосы — проверьте режим 10-bit и Full RGB 0–255."
     },
     sharpness_geo: {
-      title: "Резкость (Sharpness), сетка 1:1 и Звезда Сименса",
+      title: "Резкость (Sharpness), сетка 1:1 и Звезда Сименса (1440×360)",
       check: "Смотрите на тонкие линии 1 px и центр звезды Сименса в родном разрешении монитора (масштаб 100%).",
       ok: "Линии ровные без двойных белых контуров; в центре звезды нет цветного муара.",
       bad: "Белые ореолы вокруг линий — резкость (Sharpness) в OSD завышена, снизьте до заводского нейтрального значения (обычно 50 или 0)."
@@ -27430,7 +27430,7 @@ function computeSignalBandwidthAndCableAudit(r) {
       title: "Мерцание VRR (G-Sync / FreeSync Flicker) и писк БП",
       check: "Запустите тест на тёмно-сером фоне при включённом VRR и прислушайтесь к задней стенке монитора.",
       ok: "Ровная яркость без пульсаций в тёмных участках, отсутствие высокочастотного писка дросселей.",
-      bad: "Заметное мерцание яркости на тёмно-сером (частая особенность OLED/VA при скачках FPS) — ограничьте FPS чуть ниже Гц или проверьте режим VRR Anti-Flicker."
+      bad: "Заметное мерцание яркости на тёмно-сером (особенность OLED/VA при скачках FPS) — ограничьте FPS чуть ниже Гц или включите VRR Anti-Flicker."
     },
     near_black_banding: {
       title: "Однородность 1%–15% серого (OLED Banding & DSE)",
@@ -27442,27 +27442,26 @@ function computeSignalBandwidthAndCableAudit(r) {
       title: "Реальный HDR и удержание яркости (окна APL 2%–100%)",
       check: "Включите HDR в Windows (Win+Alt+B) и переключайте размер белого окна от 2% до 100%.",
       ok: "Окна 2–10% заметно ярче обычного SDR, детали в светах не сливаются в одно белое пятно.",
-      bad: "Тусклая серая картинка (HDR не откалиброван в Windows HDR Calibration) или агрессивное падение яркости при открытии окон."
+      bad: "Тусклая серая картинка (откалибруйте через Windows HDR Calibration) или агрессивное падение яркости при открытии окон."
     }
   };
 
   function setupNativeTestLab() {
     try {
       const lab = document.getElementById("divBuiltInTestLab");
-      if (!lab || document.getElementById("divLabCatTabs")) return;
+      if (!lab || document.getElementById("divModernLabCategories")) return;
+      const btnWrap = document.getElementById("divLabToolButtonsWrap");
       const toolBtns = Array.from(lab.querySelectorAll(".lab-tool-btn[data-lab-tool]"));
-      if (!toolBtns.length) return;
-      const btnWrap = toolBtns[0].parentElement;
+      if (!btnWrap || !toolBtns.length) return;
 
-      // Hide legacy duplicate rubricator bar cleanly
-      const legacyBtn = lab.querySelector(".lab-cat-filter-btn");
-      if (legacyBtn && legacyBtn.parentElement) legacyBtn.parentElement.style.display = "none";
-      // 1. Category pill bar
+      // 1. Clean modern category pill bar
       const catBar = document.createElement("div");
-      catBar.id = "divLabCatTabs";
+      catBar.id = "divModernLabCategories";
       catBar.className = "flex flex-wrap items-center gap-1.5 pt-1";
 
+      let activeCatId = "top8";
       function applyCategory(catId) {
+        activeCatId = catId;
         const cat = LAB_CATEGORIES.find(c => c.id === catId) || LAB_CATEGORIES[0];
         catBar.querySelectorAll(".lab-cat-pill").forEach(p => {
           p.classList.toggle("active", p.dataset.catId === cat.id);
@@ -27471,11 +27470,16 @@ function computeSignalBandwidthAndCableAudit(r) {
         toolBtns.forEach(btn => {
           const t = btn.dataset.labTool;
           const show = !cat.tools || cat.tools.includes(t);
-          btn.classList.toggle("lab-cat-hidden", !show);
-          if (show && !firstVisible) firstVisible = btn;
+          if (show) {
+            btn.removeAttribute("data-cat-hidden");
+            btn.classList.remove("hidden");
+            if (!firstVisible) firstVisible = btn;
+          } else {
+            btn.setAttribute("data-cat-hidden", "1");
+          }
         });
-        const activeBtn = toolBtns.find(b => b.classList.contains("bg-indigo-600") || b.classList.contains("ring-2"));
-        if ((!activeBtn || activeBtn.classList.contains("lab-cat-hidden")) && firstVisible) {
+        const activeBtn = toolBtns.find(b => b.className.indexOf("bg-indigo-600") !== -1);
+        if ((!activeBtn || activeBtn.getAttribute("data-cat-hidden") === "1") && firstVisible) {
           firstVisible.click();
         }
       }
@@ -27508,10 +27512,8 @@ function computeSignalBandwidthAndCableAudit(r) {
         + '<button type="button" id="btnLabActiveFullscreen" class="bg-sky-600 hover:bg-sky-500 text-white font-bold px-3.5 py-2 rounded-xl shadow text-xs transition">⛶ Активный стенд на весь экран</button>'
         + '</div>';
 
-      if (btnWrap && btnWrap.parentElement) {
-        btnWrap.parentElement.insertBefore(catBar, btnWrap);
-        btnWrap.parentElement.insertBefore(guideCard, btnWrap.nextSibling);
-      }
+      btnWrap.parentElement.insertBefore(catBar, btnWrap);
+      btnWrap.parentElement.insertBefore(guideCard, btnWrap.nextSibling);
 
       function updateGuide(toolId, btnText) {
         const g = LAB_GUIDES[toolId] || {
@@ -27546,6 +27548,23 @@ function computeSignalBandwidthAndCableAudit(r) {
           updateGuide(currentToolId, btn.textContent.trim());
         });
       });
+
+      // Keep search input working across all 46 stands
+      const searchInp = document.getElementById("inpLabSearch");
+      if (searchInp) {
+        searchInp.addEventListener("input", () => {
+          const q = (searchInp.value || "").trim().toLowerCase();
+          if (q) {
+            toolBtns.forEach(btn => {
+              const match = btn.textContent.toLowerCase().indexOf(q) !== -1 || (btn.dataset.labTool || "").toLowerCase().indexOf(q) !== -1;
+              if (match) btn.removeAttribute("data-cat-hidden");
+              else btn.setAttribute("data-cat-hidden", "1");
+            });
+          } else {
+            applyCategory(activeCatId);
+          }
+        });
+      }
 
       const btnFs = document.getElementById("btnLabActiveFullscreen");
       if (btnFs) {
