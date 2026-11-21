@@ -1020,7 +1020,12 @@
       "hand": 27600,
       "usd": 292,
       "cny": 2099,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -1871,7 +1876,12 @@
       "hand": 16200,
       "usd": 171,
       "cny": 1249,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "https://www.bilibili.com/video/BV1akWszPEyX/",
       "rev_auth": "Bilibili: Лабораторный тест",
       "is_rev_pair": false,
@@ -3943,6 +3953,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "",
@@ -5435,7 +5449,12 @@
       "hand": 10600,
       "usd": 112,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -6127,6 +6146,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "https://tftcentral.co.uk/reviews/asus-rog-strix-xg32ucwmg",
@@ -6474,6 +6497,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "",
@@ -6557,7 +6584,12 @@
       "hand": 15600,
       "usd": 165,
       "cny": 1199,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -6639,7 +6671,12 @@
       "hand": 17400,
       "usd": 184,
       "cny": 1299,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "https://www.bilibili.com/video/BV1RYwuzBEuS/",
       "rev_auth": "Bilibili: Лабораторный тест",
       "is_rev_pair": false,
@@ -8429,6 +8466,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/asus/rog-swift-oled-pg27ucdm",
@@ -8589,12 +8630,17 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 15 600 ₽ — без таможенного сбора) (Итого на руки: 15 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~14 700 ₽",
-      "rub": 15600,
+      "rub": 14300,
       "duty": 0,
-      "hand": 15600,
+      "hand": 14300,
       "usd": 165,
       "cny": 1199,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -8621,7 +8667,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 15600,
+      "price_retail_rf": 14300,
       "price_mp_rf": 15600
     },
     {
@@ -9101,7 +9147,12 @@
       "hand": 18400,
       "usd": 195,
       "cny": 1399,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -9183,7 +9234,12 @@
       "hand": 18300,
       "usd": 194,
       "cny": 1399,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "https://www.bilibili.com/video/BV1LXTCzHEbM/",
       "rev_auth": "Bilibili: Лабораторный тест",
       "is_rev_pair": false,
@@ -9511,12 +9567,17 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 14 000 ₽ — без таможенного сбора) (Итого на руки: 14 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~13 200 ₽",
-      "rub": 14000,
+      "rub": 13640,
       "duty": 0,
-      "hand": 14000,
+      "hand": 13640,
       "usd": 148,
       "cny": 1049,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -9543,7 +9604,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 14000,
+      "price_retail_rf": 13640,
       "price_mp_rf": 14000
     },
     {
@@ -9598,7 +9659,12 @@
       "hand": 13000,
       "usd": 138,
       "cny": 999,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -11116,15 +11182,19 @@
       "h_mm": "Фиксированная высота ножки: нижний край рамки на высоте ~75 мм от стола (регулируется только наклон -5°..+20°; для настройки высоты нужен VESA-кронштейн)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины, проверка до оплаты и 14 дней на возврат).",
-      "rub": 15399,
+      "rub": 14050,
       "duty": 0,
-      "hand": 15399,
+      "hand": 14050,
       "usd": 127,
       "cny": 909,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/b4d58c16646e7c20/238-monitor-asus-va249qgs-w-belyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "",
@@ -11153,7 +11223,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 15399,
+      "price_retail_rf": 14050,
       "price_mp_rf": 11999
     },
     {
@@ -11299,6 +11369,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "",
@@ -11377,15 +11451,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 11 100 ₽ — без таможенного сбора) (Итого на руки: 11 100 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 400 ₽",
-      "rub": 16499,
+      "rub": 15600,
       "duty": 0,
-      "hand": 16499,
+      "hand": 15600,
       "usd": 117,
       "cny": 849,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
         }
       ],
       "rev_url": "",
@@ -11414,7 +11492,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 16499,
+      "price_retail_rf": 15600,
       "price_mp_rf": 11100
     },
     {
@@ -11556,7 +11634,12 @@
       "hand": 11100,
       "usd": 117,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -11715,12 +11798,17 @@
       "h_mm": "Фиксированная высота ножки: нижний край рамки на высоте ~75 мм от стола (регулируется только наклон -5°..+20°; для настройки высоты нужен VESA-кронштейн)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 9 400 ₽ — без таможенного сбора) (Итого на руки: 9 400 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~8 800 ₽",
-      "rub": 9400,
+      "rub": 7260,
       "duty": 0,
-      "hand": 9400,
+      "hand": 7260,
       "usd": 99,
       "cny": 699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -11747,7 +11835,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 9400,
+      "price_retail_rf": 7260,
       "price_mp_rf": 9400
     },
     {
@@ -12125,12 +12213,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 17 000 ₽ — без таможенного сбора) (Итого на руки: 17 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~16 000 ₽",
-      "rub": 17000,
+      "rub": 14850,
       "duty": 0,
-      "hand": 17000,
+      "hand": 14850,
       "usd": 180,
       "cny": 1299,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ASUS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -12157,7 +12250,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "ASUS",
       "subbrand": "",
-      "price_retail_rf": 17000,
+      "price_retail_rf": 14850,
       "price_mp_rf": 17000
     },
     {
@@ -16041,6 +16134,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/msi/mag-274qpf-x30mv",
@@ -16140,6 +16237,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -17263,6 +17364,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -17346,7 +17451,12 @@
       "hand": 9800,
       "usd": 104,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -17766,7 +17876,12 @@
       "hand": 9600,
       "usd": 102,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -18934,6 +19049,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/0928223a23dfd582/27-monitor-msi-mag-274qrfw-x32-belyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "",
@@ -19557,12 +19676,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 27 400 ₽ — без таможенного сбора) (Итого на руки: 27 400 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~25 800 ₽",
-      "rub": 27400,
+      "rub": 19730,
       "duty": 0,
-      "hand": 27400,
+      "hand": 19730,
       "usd": 290,
       "cny": 2099,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -19589,7 +19713,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 27400,
+      "price_retail_rf": 19730,
       "price_mp_rf": 27400
     },
     {
@@ -19734,6 +19858,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -20863,6 +20991,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/msi/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "",
@@ -21214,6 +21346,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/product/752838/monitor-msi-27-mpg-272urx-qd-oled"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -21309,6 +21445,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/product/752838/monitor-msi-27-mpg-272urx-qd-oled"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/msi/mpg-272urx-qd-oled",
@@ -21739,15 +21879,19 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 13 400 ₽ — без таможенного сбора) (Итого на руки: 13 400 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~12 600 ₽",
-      "rub": 10199,
+      "rub": 9700,
       "duty": 0,
-      "hand": 10199,
+      "hand": 9700,
       "usd": 142,
       "cny": 999,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "",
@@ -21776,7 +21920,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 10199,
+      "price_retail_rf": 9700,
       "price_mp_rf": 13400
     },
     {
@@ -22005,7 +22149,12 @@
       "hand": 12000,
       "usd": 127,
       "cny": 899,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -22351,6 +22500,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/0928223a23dfd582/27-monitor-msi-mag-274qrfw-x32-belyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "",
@@ -22946,7 +23099,12 @@
       "hand": 20000,
       "usd": 212,
       "cny": 1499,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -23110,12 +23268,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 18 200 ₽ — без таможенного сбора) (Итого на руки: 18 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~17 100 ₽",
-      "rub": 18200,
+      "rub": 18150,
       "duty": 0,
-      "hand": 18200,
+      "hand": 18150,
       "usd": 193,
       "cny": 1399,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -23142,7 +23305,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 18200,
+      "price_retail_rf": 18150,
       "price_mp_rf": 18200
     },
     {
@@ -23627,9 +23790,9 @@
       "h_mm": "Мин. ~60 мм – Макс. ~170 мм от столешницы до нижней рамки изогнутого экрана (ход газлифта 110 мм)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 33 200 ₽ — без таможенного сбора) (Итого на руки: 33 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~31 200 ₽",
-      "rub": 31820,
+      "rub": 29590,
       "duty": 0,
-      "hand": 31820,
+      "hand": 29590,
       "usd": 351,
       "cny": 2499,
       "stores": [
@@ -23640,6 +23803,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_url": "",
@@ -23668,7 +23835,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 31820,
+      "price_retail_rf": 29590,
       "price_mp_rf": 33200
     },
     {
@@ -24507,12 +24674,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 16 200 ₽ — без таможенного сбора) (Итого на руки: 16 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~15 200 ₽",
-      "rub": 16200,
+      "rub": 13000,
       "duty": 0,
-      "hand": 16200,
+      "hand": 13000,
       "usd": 171,
       "cny": 1249,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -24539,7 +24711,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 16200,
+      "price_retail_rf": 13000,
       "price_mp_rf": 16200
     },
     {
@@ -25630,6 +25802,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=YYCKQ2Pcgw0",
@@ -33398,9 +33574,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 15 850 ₽ — без таможенного сбора  покупка внутри РФ/ЕАЭС  официальная гарантия 1–3 года в Регард / DNS / Ситилинк / ОнлайнТрейд). | Ист. мин. цена: ~14 700 ₽",
-      "rub": 16699,
+      "rub": 16120,
       "duty": 0,
-      "hand": 16699,
+      "hand": 16120,
       "usd": 168,
       "cny": 1201,
       "stores": [
@@ -33411,6 +33587,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -33439,7 +33619,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 16699,
+      "price_retail_rf": 16120,
       "price_mp_rf": 15850
     },
     {
@@ -33498,6 +33678,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -33840,6 +34024,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -34082,15 +34270,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 13 200 ₽ — без таможенного сбора) (Итого на руки: 13 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~12 400 ₽",
-      "rub": 12899,
+      "rub": 12560,
       "duty": 0,
-      "hand": 12899,
+      "hand": 12560,
       "usd": 140,
       "cny": 999,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -34119,7 +34311,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 12899,
+      "price_retail_rf": 12560,
       "price_mp_rf": 13200
     },
     {
@@ -34420,15 +34612,19 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 11 000 ₽ — без таможенного сбора) (Итого на руки: 11 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 300 ₽",
-      "rub": 8399,
+      "rub": 7950,
       "duty": 0,
-      "hand": 8399,
+      "hand": 7950,
       "usd": 116,
       "cny": 849,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -34457,7 +34653,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 8399,
+      "price_retail_rf": 7950,
       "price_mp_rf": 11000
     },
     {
@@ -34516,6 +34712,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -34698,6 +34898,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -35442,7 +35646,12 @@
       "hand": 24000,
       "usd": 254,
       "cny": 1799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -35775,7 +35984,12 @@
       "hand": 33900,
       "usd": 359,
       "cny": 2599,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
+        }
+      ],
       "rev_url": "https://www.bilibili.com/video/BV1d2nczaErm/",
       "rev_auth": "Bilibili: Лабораторный тест",
       "is_rev_pair": false,
@@ -36298,6 +36512,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -36393,6 +36611,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -37033,6 +37255,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -38725,15 +38951,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 10 400 ₽ — без таможенного сбора) (Итого на руки: 10 400 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~9 800 ₽",
-      "rub": 9599,
+      "rub": 9510,
       "duty": 0,
-      "hand": 9599,
+      "hand": 9510,
       "usd": 110,
       "cny": 799,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -38762,7 +38992,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 9599,
+      "price_retail_rf": 9510,
       "price_mp_rf": 10400
     },
     {
@@ -38894,15 +39124,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 16 700 ₽ — без таможенного сбора) (Итого на руки: 16 700 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~15 700 ₽",
-      "rub": 12399,
+      "rub": 11910,
       "duty": 0,
-      "hand": 12399,
+      "hand": 11910,
       "usd": 177,
       "cny": 1249,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -38931,7 +39165,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 12399,
+      "price_retail_rf": 11910,
       "price_mp_rf": 16700
     },
     {
@@ -39068,7 +39302,12 @@
       "hand": 14600,
       "usd": 154,
       "cny": 1099,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -39396,7 +39635,12 @@
       "hand": 18400,
       "usd": 195,
       "cny": 1399,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -39965,15 +40209,19 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 23 300 ₽ — без таможенного сбора) (Итого на руки: 23 300 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~21 900 ₽",
-      "rub": 29949,
+      "rub": 27040,
       "duty": 0,
-      "hand": 29949,
+      "hand": 27040,
       "usd": 247,
       "cny": 1749,
       "stores": [
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -40002,7 +40250,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 29949,
+      "price_retail_rf": 27040,
       "price_mp_rf": 23300
     },
     {
@@ -40315,6 +40563,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "",
@@ -40972,9 +41224,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "[Взято из таблицы Гоши]: Инфа об панели(инж меню) 1) Мульти обзор 2) Обзор Такое по калибровке, сборке и особенно цене",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины, проверка до оплаты и 14 дней на возврат).",
-      "rub": 25899,
+      "rub": 25150,
       "duty": 0,
-      "hand": 25899,
+      "hand": 25150,
       "usd": 266,
       "cny": 1905,
       "stores": [
@@ -40985,6 +41237,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/product/700202/monitor-lg-27-27gs85q-b"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
         }
       ],
       "rev_url": "https://www.bilibili.com/video/BV1ft421j7WU/",
@@ -41013,7 +41269,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "LG",
       "subbrand": "",
-      "price_retail_rf": 25899,
+      "price_retail_rf": 25150,
       "price_mp_rf": 25140
     },
     {
@@ -42497,7 +42753,12 @@
       "hand": 33400,
       "usd": 353,
       "cny": 2549,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/LG/"
+        }
+      ],
       "rev_url": "https://www.youtube.com/watch?v=BVuH1f1c_GE",
       "rev_auth": "YouTube: Monitors Unboxed",
       "is_rev_pair": false,
@@ -42574,9 +42835,9 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "Протестирован на канале Джун: флагманский 31.5\" 4K 240 Гц / FHD 480 Гц Dual-Mode монитор на матовой панели LG WOLED+ (MLA+) с премиальным дизайном, акустикой Bang & Olufsen в подставке, Type-C 90W, пиком 1300 нит и уникальной регулировкой яркости и ЦТ прямо в HDR!",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 89 000 ₽ — без таможенного сбора) (Итого на руки: 89 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~81 900 ₽",
-      "rub": 84999,
+      "rub": 84990,
       "duty": 0,
-      "hand": 84999,
+      "hand": 84990,
       "usd": 940,
       "cny": 6599,
       "stores": [
@@ -42591,6 +42852,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=ciH4riLcR6I",
@@ -42619,7 +42884,7 @@
       "panel_gen": "woled_gen4",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 84999,
+      "price_retail_rf": 84990,
       "price_mp_rf": 89000
     },
     {
@@ -42669,9 +42934,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "[Инженерное досье ]: 180 зон QD-Mini LED",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 24 700 ₽ — без таможенного сбора) (Итого на руки: 24 700 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~22 000 ₽",
-      "rub": 24999,
+      "rub": 24990,
       "duty": 0,
-      "hand": 24999,
+      "hand": 24990,
       "usd": 261,
       "cny": 1599,
       "stores": [
@@ -42682,6 +42947,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "",
@@ -42710,7 +42979,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 24999,
+      "price_retail_rf": 24990,
       "price_mp_rf": 24700
     },
     {
@@ -42760,9 +43029,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Протестирован на канале Джун: образцовый 27\" 4K 160 Гц / FHD 320 Гц Dual-Mode Mini-LED (1152 зоны без ШИМ) с локальной гарантией РФ (~34 000 ₽). Пресеты запоминают свой уровень Local Dimming и позволяют включать точный зажим sRGB / DCI-P3 (ΔE < 1.0) одновременно с FALD!",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 34 000 ₽ — без таможенного сбора) (Итого на руки: 34 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~31 300 ₽",
-      "rub": 36999,
+      "rub": 36990,
       "duty": 0,
-      "hand": 36999,
+      "hand": 36990,
       "usd": 358,
       "cny": 2499,
       "stores": [
@@ -42777,6 +43046,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=KHGrA-lA6JI",
@@ -42805,7 +43078,7 @@
       "panel_gen": "miniled_gen2",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 36999,
+      "price_retail_rf": 36990,
       "price_mp_rf": 34000
     },
     {
@@ -43024,9 +43297,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "[Инженерное досье ]: 180 зон QD-Mini LED. Спецификация/индекс: 27P2A Pro",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 24 000 ₽ — без таможенного сбора) (Итого на руки: 24 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~22 100 ₽",
-      "rub": 29999,
+      "rub": 19990,
       "duty": 0,
-      "hand": 29999,
+      "hand": 19990,
       "usd": 254,
       "cny": 1599,
       "stores": [
@@ -43037,6 +43310,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=GyoOwv8muqs",
@@ -43065,7 +43342,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 29999,
+      "price_retail_rf": 19990,
       "price_mp_rf": 24000
     },
     {
@@ -43361,9 +43638,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "[Взято из таблицы Гоши]: Киберкатлетные 300 герцов",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 9 700 ₽ — без таможенного сбора) (Итого на руки: 9 700 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~8 900 ₽",
-      "rub": 11999,
+      "rub": 11990,
       "duty": 0,
-      "hand": 11999,
+      "hand": 11990,
       "usd": 103,
       "cny": 649,
       "stores": [
@@ -43374,6 +43651,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "",
@@ -43402,7 +43683,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 11999,
+      "price_retail_rf": 11990,
       "price_mp_rf": 9700
     },
     {
@@ -43452,9 +43733,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "[Взято из таблицы Гоши]: Для пожилых киберкатлет",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 12 500 ₽ — без таможенного сбора) (Итого на руки: 12 500 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~11 800 ₽",
-      "rub": 14999,
+      "rub": 14990,
       "duty": 0,
-      "hand": 14999,
+      "hand": 14990,
       "usd": 132,
       "cny": 799,
       "stores": [
@@ -43465,6 +43746,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "",
@@ -43493,7 +43778,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 14999,
+      "price_retail_rf": 14990,
       "price_mp_rf": 12500
     },
     {
@@ -43923,7 +44208,7 @@
       "id": 515,
       "brand": "TCL",
       "model": "TCL 25G64",
-      "reg": "[Global / RU — Российская розница]",
+      "reg": "[Global / RU — Розница РФ]",
       "is_ru": true,
       "oem": "Собственный завод: TCL CSOT (TCL Display) | Прямые аппаратные близнецы (клоны): Thunderbird F6, FFalcon F6 | Региональная связка платформы: TCL 25G64 [Global / RU, официальная розница DNS / Ситилинк / Я.Маркет с гарантией РФ 1–3 года] ↔ iFFALCON Thunderbird F6 (25Q5A) [CN, суббренд TCL для рынка Китая на Ozon Global]",
       "year": 2025,
@@ -43966,9 +44251,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "[Global / RU — Российская розница] [Взято из таблицы Гоши]: 1) Обзор 2) Мульти обзор Тупо выносит на помойку весь рынок 240-400 герц монов, слишком имба Вне треульника ~150% sRGB по колориметру и ~140% по спектрорадиометру(тут точнее) (Региональная связка платформы: TCL 25G64 [Global / RU, официальная розница DNS / Ситилинк / Я.Маркет с гарантией РФ 1–3 года] ↔ iFFALCON Thunderbird F6 (25Q5A) [CN, суббренд TCL для рынка Китая на Ozon Global])",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины, проверка до оплаты и 14 дней на возврат).",
-      "rub": 16999,
+      "rub": 16990,
       "duty": 0,
-      "hand": 16999,
+      "hand": 16990,
       "usd": 190,
       "cny": 1364,
       "stores": [
@@ -44011,7 +44296,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 16999,
+      "price_retail_rf": 16990,
       "price_mp_rf": 17999
     },
     {
@@ -44242,15 +44527,19 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "[Инженерное досье ]: 336 зон QD-Mini LED FALD, Fast HVA 180 Гц",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 19 800 ₽ — без таможенного сбора) (Итого на руки: 19 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~18 600 ₽",
-      "rub": 39999,
+      "rub": 31990,
       "duty": 0,
-      "hand": 39999,
+      "hand": 31990,
       "usd": 210,
       "cny": 1299,
       "stores": [
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "",
@@ -44279,7 +44568,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 39999,
+      "price_retail_rf": 31990,
       "price_mp_rf": 19800
     },
     {
@@ -44433,6 +44722,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/tcl/32r84",
@@ -81873,6 +82166,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -82210,6 +82507,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -83523,9 +83824,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 17 600 ₽ — без таможенного сбора) (Итого на руки: 17 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~16 500 ₽",
-      "rub": 37999,
+      "rub": 34900,
       "duty": 0,
-      "hand": 37999,
+      "hand": 34900,
       "usd": 186,
       "cny": 1349,
       "stores": [
@@ -83540,6 +83841,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -83568,7 +83873,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 37999,
+      "price_retail_rf": 34900,
       "price_mp_rf": 17600
     },
     {
@@ -83631,6 +83936,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -83726,6 +84035,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/dell/alienware-aw2725q",
@@ -84050,9 +84363,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 41 120 ₽ — без таможенного сбора  покупка внутри РФ/ЕАЭС  официальная гарантия 1–3 года в Регард / DNS / Ситилинк / ОнлайнТрейд). | Ист. мин. цена: ~17 900 ₽",
-      "rub": 41120,
+      "rub": 37600,
       "duty": 0,
-      "hand": 41120,
+      "hand": 37600,
       "usd": 435,
       "cny": 3115,
       "stores": [
@@ -84063,6 +84376,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/dell/alienware-aw2725dm",
@@ -84091,7 +84408,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 41120,
+      "price_retail_rf": 37600,
       "price_mp_rf": 41120
     },
     {
@@ -84314,6 +84631,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -84392,9 +84713,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 16 400 ₽ — без таможенного сбора) (Итого на руки: 16 400 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~15 400 ₽",
-      "rub": 30660,
+      "rub": 28990,
       "duty": 0,
-      "hand": 30660,
+      "hand": 28990,
       "usd": 174,
       "cny": 1249,
       "stores": [
@@ -84405,6 +84726,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -84433,7 +84758,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 30660,
+      "price_retail_rf": 28990,
       "price_mp_rf": 16400
     },
     {
@@ -84647,15 +84972,19 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "[Инженерное досье ]: Протестированный RTINGS мультимедийный 32\" 4K QD-OLED монитор с пространственным 3D-звуком (5 динамиков) и USB-C 90 Вт",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 94 800 ₽ — без таможенного сбора) (Итого на руки: 94 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~87 200 ₽",
-      "rub": 111450,
+      "rub": 98620,
       "duty": 0,
-      "hand": 111450,
+      "hand": 98620,
       "usd": 1003,
       "cny": 7199,
       "stores": [
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/dell/s3225qc",
@@ -84684,7 +85013,7 @@
       "panel_gen": "qd_oled_gen3",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 111450,
+      "price_retail_rf": 98620,
       "price_mp_rf": 94800
     },
     {
@@ -84916,9 +85245,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 53 000 ₽ — без таможенного сбора) (Итого на руки: 53 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~48 800 ₽",
-      "rub": 80910,
+      "rub": 79990,
       "duty": 0,
-      "hand": 80910,
+      "hand": 79990,
       "usd": 561,
       "cny": 4049,
       "stores": [
@@ -84929,6 +85258,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/dell/u2725qe",
@@ -84957,7 +85290,7 @@
       "panel_gen": "ips_black",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 80910,
+      "price_retail_rf": 79990,
       "price_mp_rf": 53000
     },
     {
@@ -85020,6 +85353,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "https://www.rtings.com/monitor/reviews/dell/u3225qe",
@@ -85103,7 +85440,12 @@
       "hand": 11200,
       "usd": 119,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -85267,7 +85609,12 @@
       "hand": 11100,
       "usd": 117,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -85349,7 +85696,12 @@
       "hand": 11400,
       "usd": 121,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -85431,7 +85783,12 @@
       "hand": 9600,
       "usd": 102,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -85508,9 +85865,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 16 600 ₽ — без таможенного сбора) (Итого на руки: 16 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~15 600 ₽",
-      "rub": 30280,
+      "rub": 29980,
       "duty": 0,
-      "hand": 30280,
+      "hand": 29980,
       "usd": 176,
       "cny": 1249,
       "stores": [
@@ -85521,6 +85878,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -85549,7 +85910,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 30280,
+      "price_retail_rf": 29980,
       "price_mp_rf": 16600
     },
     {
@@ -85599,9 +85960,9 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 15 800 ₽ — без таможенного сбора) (Итого на руки: 15 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~14 900 ₽",
-      "rub": 38820,
+      "rub": 38600,
       "duty": 0,
-      "hand": 38820,
+      "hand": 38600,
       "usd": 167,
       "cny": 1199,
       "stores": [
@@ -85612,6 +85973,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -85640,7 +86005,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 38820,
+      "price_retail_rf": 38600,
       "price_mp_rf": 15800
     },
     {
@@ -85690,15 +86055,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 15 000 ₽ — без таможенного сбора) (Итого на руки: 15 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~14 100 ₽",
-      "rub": 31600,
+      "rub": 29470,
       "duty": 0,
-      "hand": 31600,
+      "hand": 29470,
       "usd": 159,
       "cny": 1149,
       "stores": [
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -85727,7 +86096,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 31600,
+      "price_retail_rf": 29470,
       "price_mp_rf": 15000
     },
     {
@@ -85777,9 +86146,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 16 800 ₽ — без таможенного сбора) (Итого на руки: 16 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~15 800 ₽",
-      "rub": 34299,
+      "rub": 34200,
       "duty": 0,
-      "hand": 34299,
+      "hand": 34200,
       "usd": 178,
       "cny": 1299,
       "stores": [
@@ -85794,6 +86163,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -85822,7 +86195,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 34299,
+      "price_retail_rf": 34200,
       "price_mp_rf": 16800
     },
     {
@@ -85885,6 +86258,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -86054,15 +86431,19 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 24 200 ₽ — без таможенного сбора) (Итого на руки: 24 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~22 700 ₽",
-      "rub": 73350,
+      "rub": 66490,
       "duty": 0,
-      "hand": 73350,
+      "hand": 66490,
       "usd": 256,
       "cny": 1849,
       "stores": [
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "",
@@ -86091,7 +86472,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Dell",
       "subbrand": "Alienware",
-      "price_retail_rf": 73350,
+      "price_retail_rf": 66490,
       "price_mp_rf": 24200
     },
     {
@@ -86233,7 +86614,12 @@
       "hand": 9000,
       "usd": 95,
       "cny": 699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -90742,6 +91128,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.reddit.com/r/OLED_Gaming/comments/1sn288n/ultimate_value_1440p_oled_gets_better_gigabyte",
@@ -91096,6 +91486,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -91369,6 +91763,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=gNXJUGalJ3s",
@@ -91719,6 +92117,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "",
@@ -91814,6 +92216,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "",
@@ -91909,6 +92315,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "https://www.notebookcheck.net/Gigabyte-M27UP-ICE-debuts-as-160-320Hz-dual-mode-monitor.1019865.0.html",
@@ -91987,9 +92397,9 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "[Инженерное досье ]: Базовая версия на 4-м поколении Primary RGB Tandem WOLED с матовым покрытием AGLR",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 55 640 ₽ — без таможенного сбора  покупка внутри РФ/ЕАЭС  официальная гарантия 1–3 года в Регард / DNS / Ситилинк / ОнлайнТрейд). | Ист. мин. цена: ~47 800 ₽",
-      "rub": 55800,
+      "rub": 54150,
       "duty": 0,
-      "hand": 55800,
+      "hand": 54150,
       "usd": 589,
       "cny": 4215,
       "stores": [
@@ -92004,6 +92414,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/product/769339/monitor-gigabyte-27-mo27q28g"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=bn-bbk_p3Do",
@@ -92032,7 +92446,7 @@
       "panel_gen": "woled_gen4",
       "brand_canonical": "GIGABYTE",
       "subbrand": "",
-      "price_retail_rf": 55800,
+      "price_retail_rf": 54150,
       "price_mp_rf": 49990
     },
     {
@@ -92099,6 +92513,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/gigabyte/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=we5mYFV-OIM",
@@ -92182,7 +92600,12 @@
       "hand": 12600,
       "usd": 133,
       "cny": 949,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -92272,6 +92695,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -92788,15 +93215,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 24 750 ₽ — без таможенного сбора  покупка внутри РФ/ЕАЭС  официальная гарантия 1–3 года в Регард / DNS / Ситилинк / ОнлайнТрейд). | Ист. мин. цена: ~14 500 ₽",
-      "rub": 24750,
+      "rub": 19300,
       "duty": 0,
-      "hand": 24750,
+      "hand": 19300,
       "usd": 262,
       "cny": 1875,
       "stores": [
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/gigabyte/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "",
@@ -92825,7 +93256,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "GIGABYTE",
       "subbrand": "",
-      "price_retail_rf": 24750,
+      "price_retail_rf": 19300,
       "price_mp_rf": 24750
     },
     {
@@ -92880,7 +93311,12 @@
       "hand": 16300,
       "usd": 172,
       "cny": 1249,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -92962,7 +93398,12 @@
       "hand": 15400,
       "usd": 163,
       "cny": 1149,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -93138,6 +93579,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=LUwVzsYqXpk",
@@ -93389,6 +93834,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "",
@@ -93554,15 +94003,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 41 070 ₽ — без таможенного сбора  покупка внутри РФ/ЕАЭС  официальная гарантия 1–3 года в Регард / DNS / Ситилинк / ОнлайнТрейд). | Ист. мин. цена: ~13 700 ₽",
-      "rub": 41440,
+      "rub": 37900,
       "duty": 0,
-      "hand": 41440,
+      "hand": 37900,
       "usd": 435,
       "cny": 3111,
       "stores": [
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/product/756870/monitor-gigabyte-27-m27qs"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "",
@@ -93591,7 +94044,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "GIGABYTE",
       "subbrand": "",
-      "price_retail_rf": 41440,
+      "price_retail_rf": 37900,
       "price_mp_rf": 41070
     },
     {
@@ -93905,6 +94358,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/32b4768e3238d9cb/27-monitor-gigabyte-gs27u-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=Ts1ieyoVNOk",
@@ -94070,7 +94527,12 @@
       "hand": 10400,
       "usd": 110,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/GIGABYTE/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -99896,6 +100358,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/77e0fa5ca5561b4a/27-monitor-philips-27m2n3500pf-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
         }
       ],
       "rev_url": "https://www.bilibili.com/video/BV1go5jzJEjc/",
@@ -100246,6 +100712,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -100583,6 +101053,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
         }
       ],
       "rev_url": "",
@@ -100999,7 +101473,12 @@
       "hand": 9200,
       "usd": 97,
       "cny": 699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -101486,15 +101965,19 @@
       "h_mm": "Фиксированная высота ножки: нижний край рамки на высоте ~75 мм от стола (регулируется только наклон -5°..+20°; для настройки высоты нужен VESA-кронштейн)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 9 800 ₽ — без таможенного сбора) (Итого на руки: 9 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~9 200 ₽",
-      "rub": 9599,
+      "rub": 9300,
       "duty": 0,
-      "hand": 9599,
+      "hand": 9300,
       "usd": 104,
       "cny": 749,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
         }
       ],
       "rev_url": "",
@@ -101523,7 +102006,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Philips",
       "subbrand": "",
-      "price_retail_rf": 9599,
+      "price_retail_rf": 9300,
       "price_mp_rf": 9800
     },
     {
@@ -101578,7 +102061,12 @@
       "hand": 16200,
       "usd": 171,
       "cny": 1249,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -101988,7 +102476,12 @@
       "hand": 9200,
       "usd": 97,
       "cny": 699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -102070,7 +102563,12 @@
       "hand": 9000,
       "usd": 95,
       "cny": 699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -102147,12 +102645,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 15 600 ₽ — без таможенного сбора) (Итого на руки: 15 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~14 700 ₽",
-      "rub": 15600,
+      "rub": 13000,
       "duty": 0,
-      "hand": 15600,
+      "hand": 13000,
       "usd": 165,
       "cny": 1199,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -102179,7 +102682,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Philips",
       "subbrand": "",
-      "price_retail_rf": 15600,
+      "price_retail_rf": 13000,
       "price_mp_rf": 15600
     },
     {
@@ -103163,12 +103666,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 14 800 ₽ — без таможенного сбора) (Итого на руки: 14 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~13 900 ₽",
-      "rub": 14800,
+      "rub": 12030,
       "duty": 0,
-      "hand": 14800,
+      "hand": 12030,
       "usd": 157,
       "cny": 1149,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -103195,7 +103703,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Philips",
       "subbrand": "",
-      "price_retail_rf": 14800,
+      "price_retail_rf": 12030,
       "price_mp_rf": 14800
     },
     {
@@ -103340,6 +103848,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/PHILIPS/"
         }
       ],
       "rev_url": "",
@@ -108771,12 +109283,17 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 9 900 ₽ — без таможенного сбора) (Итого на руки: 9 900 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~9 300 ₽",
-      "rub": 9900,
+      "rub": 7960,
       "duty": 0,
-      "hand": 9900,
+      "hand": 7960,
       "usd": 105,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -108803,7 +109320,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 9900,
+      "price_retail_rf": 7960,
       "price_mp_rf": 9900
     },
     {
@@ -109022,7 +109539,12 @@
       "hand": 9600,
       "usd": 102,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -114289,6 +114811,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/3cda25ae27fded20/monitor-acer-27-nitro-xv270ubmiiprx-75hz2560x1440-ips4msgtg1msvrb-350cdm2wx2-hasfreesync-nvidia-3d-2xhdmidp/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
         }
       ],
       "rev_url": "",
@@ -115607,7 +116133,12 @@
       "hand": 27800,
       "usd": 294,
       "cny": 2099,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -116591,7 +117122,12 @@
       "hand": 10400,
       "usd": 110,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -116668,12 +117204,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 11 000 ₽ — без таможенного сбора) (Итого на руки: 11 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 300 ₽",
-      "rub": 11000,
+      "rub": 10520,
       "duty": 0,
-      "hand": 11000,
+      "hand": 10520,
       "usd": 116,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -116700,7 +117241,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 11000,
+      "price_retail_rf": 10520,
       "price_mp_rf": 11000
     },
     {
@@ -117657,7 +118198,12 @@
       "hand": 15200,
       "usd": 161,
       "cny": 1149,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -117898,12 +118444,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 9 600 ₽ — без таможенного сбора) (Итого на руки: 9 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~9 000 ₽",
-      "rub": 9600,
+      "rub": 8890,
       "duty": 0,
-      "hand": 9600,
+      "hand": 8890,
       "usd": 102,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -117930,7 +118481,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 9600,
+      "price_retail_rf": 8890,
       "price_mp_rf": 9600
     },
     {
@@ -118718,12 +119269,17 @@
       "h_mm": "Фиксированная высота ножки: нижний край рамки на высоте ~75 мм от стола (регулируется только наклон -5°..+20°; для настройки высоты нужен VESA-кронштейн)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 11 200 ₽ — без таможенного сбора) (Итого на руки: 11 200 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 500 ₽",
-      "rub": 11200,
+      "rub": 8300,
       "duty": 0,
-      "hand": 11200,
+      "hand": 8300,
       "usd": 119,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -118750,7 +119306,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 11200,
+      "price_retail_rf": 8300,
       "price_mp_rf": 11200
     },
     {
@@ -118800,12 +119356,17 @@
       "h_mm": "Фиксированная высота ножки: нижний край рамки на высоте ~75 мм от стола (регулируется только наклон -5°..+20°; для настройки высоты нужен VESA-кронштейн)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 10 000 ₽ — без таможенного сбора) (Итого на руки: 10 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~9 400 ₽",
-      "rub": 10000,
+      "rub": 8300,
       "duty": 0,
-      "hand": 10000,
+      "hand": 8300,
       "usd": 106,
       "cny": 749,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -118832,7 +119393,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 10000,
+      "price_retail_rf": 8300,
       "price_mp_rf": 10000
     },
     {
@@ -119625,7 +120186,12 @@
       "hand": 19400,
       "usd": 205,
       "cny": 1449,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -120030,12 +120596,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 20 600 ₽ — без таможенного сбора) (Итого на руки: 20 600 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~19 400 ₽",
-      "rub": 20600,
+      "rub": 16990,
       "duty": 0,
-      "hand": 20600,
+      "hand": 16990,
       "usd": 218,
       "cny": 1549,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/ACER/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -120062,7 +120633,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Acer",
       "subbrand": "",
-      "price_retail_rf": 20600,
+      "price_retail_rf": 16990,
       "price_mp_rf": 20600
     },
     {
@@ -130067,12 +130638,17 @@
       "h_mm": "Мин. ~38 мм (опускается почти вплотную к коврику для киберспорта) – Макс. ~168 мм над столом (ход газлифта 130 мм, свободно помещается саундбар или ЦАП)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 10 800 ₽ — без таможенного сбора) (Итого на руки: 10 800 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 200 ₽",
-      "rub": 10800,
+      "rub": 8190,
       "duty": 0,
-      "hand": 10800,
+      "hand": 8190,
       "usd": 114,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -130099,7 +130675,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "AOC",
       "subbrand": "",
-      "price_retail_rf": 10800,
+      "price_retail_rf": 8190,
       "price_mp_rf": 10800
     },
     {
@@ -130477,12 +131053,17 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "Каталожная спецификация 2025–2026 гг. (прямых текстовых пометок в таблице Гоши нет — ориентироваться на инструментальный профиль панели и скалера).",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 11 000 ₽ — без таможенного сбора) (Итого на руки: 11 000 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~10 300 ₽",
-      "rub": 11000,
+      "rub": 9990,
       "duty": 0,
-      "hand": 11000,
+      "hand": 9990,
       "usd": 116,
       "cny": 849,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -130509,7 +131090,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "AOC",
       "subbrand": "",
-      "price_retail_rf": 11000,
+      "price_retail_rf": 9990,
       "price_mp_rf": 11000
     },
     {
@@ -135123,6 +135704,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "https://www.bilibili.com/video/BV1269RYkEJ8/",
@@ -135460,6 +136045,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "https://www.notebookcheck.net/4K-gaming-monitor-with-320Hz-mode-AOC-U27G4R-aims-for-good-price-performance-ratio.1011752.0.html",
@@ -136381,6 +136970,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "",
@@ -136964,6 +137557,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "",
@@ -138382,6 +138979,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_url": "https://www.notebookcheck.net/AOC-Agon-Pro-AG276UZD-Fast-and-colorful-QD-OLED-4K-gaming-monitor-launches-globally.1026116.0.html",
@@ -139169,6 +139770,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "https://www.bilibili.com/video/BV1HQceeFER7/",
@@ -139667,7 +140272,12 @@
       "hand": 10200,
       "usd": 108,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -139749,7 +140359,12 @@
       "hand": 10800,
       "usd": 114,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -141084,6 +141699,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "",
@@ -142497,6 +143116,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "",
@@ -143076,6 +143699,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "",
@@ -145870,7 +146497,12 @@
       "hand": 16100,
       "usd": 170,
       "cny": 1199,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
+        }
+      ],
       "rev_url": "",
       "rev_auth": "Нет обзора (Ожидается тест)",
       "is_rev_pair": false,
@@ -150041,6 +150673,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/AOC/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=lz0pQNyWzWI",
@@ -187185,7 +187821,7 @@
       "id": 2235,
       "brand": "Digma Pro / GMNG",
       "model": "Digma Pro Vision L",
-      "reg": "[Global / RU — Официальная розница РФ]",
+      "reg": "[Global / RU — Розница РФ]",
       "is_ru": true,
       "oem": "OEM-завод: KTC (Shenzhen KTC Technology) | Уникальная конфигурация шасси / прямых клонов под другими марками не выявлено",
       "year": 2025,
@@ -187228,9 +187864,9 @@
       "h_mm": "Мин. ~55 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 120 мм; в нижнем положении взгляд приходится точно в верхнюю треть экрана)",
       "comm": "[Инженерное досье ]: Флагман Digma Pro: 31.5\" 4K UHD 240 Гц на базе QD-OLED Gen 3 в металлическом корпусе, USB-C 90 Вт, KVM. Спецификация/индекс: DM27SP04",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 89 990 ₽ — без таможенного сбора) (Итого на руки: 89 990 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~82 800 ₽",
-      "rub": 81250,
+      "rub": 79990,
       "duty": 0,
-      "hand": 81250,
+      "hand": 79990,
       "usd": 952,
       "cny": 6849,
       "stores": [
@@ -187273,7 +187909,7 @@
       "panel_gen": "qd_oled_gen3",
       "brand_canonical": "Digma Pro / GMNG",
       "subbrand": "",
-      "price_retail_rf": 81250,
+      "price_retail_rf": 79990,
       "price_mp_rf": 89990
     },
     {
@@ -187984,15 +188620,19 @@
       "h_mm": "Мин. ~45 мм – Макс. ~175 мм от столешницы до нижней рамки (ход газлифта 130 мм; на максимуме под экраном помещается колонка/саундбар высотой до 17 см)",
       "comm": "[Взято из таблицы Гоши]: Обзор Откик а не стоит боятся, это OSRTT 0:. Спецификация/индекс: DM27SP05",
       "risk": "Пошлина РФ: 0 ₽ (Итого на руки: 42 990 ₽ — без таможенного сбора) (Итого на руки: 42 990 ₽ — без таможенного сбора) (покупка внутри РФ/ЕАЭС без таможенной пошлины  евровилка в комплекте  локальная гарантия 1–3 года в DNS / Ситилинк / СЦ). | Ист. мин. цена: ~39 600 ₽",
-      "rub": 43730,
+      "rub": 39990,
       "duty": 0,
-      "hand": 43730,
+      "hand": 39990,
       "usd": 455,
       "cny": 3249,
       "stores": [
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/"
         }
       ],
       "rev_url": "https://3dnews.ru/1118770/obzor-digma-pro-action-m",
@@ -188021,7 +188661,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "Digma Pro / GMNG",
       "subbrand": "",
-      "price_retail_rf": 43730,
+      "price_retail_rf": 39990,
       "price_mp_rf": 42990
     },
     {
@@ -198828,10 +199468,10 @@
       "pwr": "SDR (150 нит): ~38 Вт | HDR Пик: до 95 Вт | Standby: <0.5 Вт",
       "box": "Кабель питания, кабель DisplayPort 1.4, кабель HDMI, кабель USB-C, отчет о калибровке",
       "comm": "Свежая 34-дюймовая ультраширокая QD-Mini-LED новинка TCL 2026 года в белом корпусе (200 Гц, 1200 нит HDR, матрица CSOT Fast HVA).",
-      "rub": 49999,
+      "rub": 49990,
       "min_rub": 41500,
       "duty": 0,
-      "hand": 49999,
+      "hand": 49990,
       "usd": 476,
       "cny": 3408,
       "stores": [
@@ -198846,6 +199486,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_auth": "Сайт: Клуб DNS",
@@ -198857,7 +199501,7 @@
       "panel_gen": "miniled_gen1",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 49999,
+      "price_retail_rf": 49990,
       "price_mp_rf": 44990
     },
     {
@@ -203509,6 +204153,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_auth": "Сайт: TechPowerUp",
@@ -205062,16 +205710,20 @@
       "pwr": "SDR (140 нит): ~33 Вт | Макс.: до 58 Вт | Standby: <0.5 Вт",
       "box": "Кабель питания, кабель DP 1.4",
       "comm": "Универсальный 34-дюймовый ультраширокий монитор 2026 года MSI MAG 346CQDF E20 на быстрой матрице Rapid VA (контраст 4000:1) с уникальным переключением Dual-Mode между 3440×1440 @ 200 Гц и 2560×1080 @ 400 Гц.",
-      "rub": 29070,
+      "rub": 28780,
       "min_rub": 27500,
       "duty": 0,
-      "hand": 29070,
+      "hand": 28780,
       "usd": 316,
       "cny": 2260,
       "stores": [
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/MSI/"
         }
       ],
       "rev_auth": "Сайт: TFTCentral",
@@ -205083,7 +205735,7 @@
       "panel_gen": "fast_va",
       "brand_canonical": "MSI",
       "subbrand": "",
-      "price_retail_rf": 29070,
+      "price_retail_rf": 28780,
       "price_mp_rf": 31735
     },
     {
@@ -212583,6 +213235,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory--oled-m/"
         }
       ],
       "rev_auth": "Сайт: NotebookCheck",
@@ -212843,6 +213499,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/xiaomi/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/XIAOMI/"
         }
       ],
       "rev_auth": "Сайт: DisplaySpecifications",
@@ -221159,9 +221819,9 @@
       "h_mm": "Мин. ~50 мм – Макс. ~175 мм над столом",
       "comm": "Новинка 2026 года от TCL на родной 320-герцовой матрице CSOT SG270HG05-1: высокая контрастность ~1350:1 и честные 320 Гц в QHD.",
       "risk": "Пошлина РФ: 0 ₽ (Отсутствует лотерея матриц — TCL ставит собственную панель CSOT)",
-      "rub": 27999,
+      "rub": 27990,
       "duty": 0,
-      "hand": 27999,
+      "hand": 27990,
       "usd": 188,
       "cny": 1299,
       "stores": [
@@ -221176,6 +221836,10 @@
         {
           "name": "🛒 Регард",
           "url": "https://www.regard.ru/catalog/1035/monitory"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/TCL/"
         }
       ],
       "rev_url": "https://www.youtube.com/watch?v=cN5IIxghcVE",
@@ -221204,7 +221868,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "TCL",
       "subbrand": "",
-      "price_retail_rf": 27999,
+      "price_retail_rf": 27990,
       "price_mp_rf": 17900
     },
     {
@@ -222347,6 +223011,10 @@
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/f7f76ce3bbb5d582/27-monitor-xiaomi-g27qi-2026-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/XIAOMI/"
         }
       ],
       "rev_url": "https://www.notebookcheck.net/Xiaomi-2K-Gaming-Monitor-G27Qi-2026-New-gaming-monitor-gains-first-release.1218196.0.html",
@@ -222707,6 +223375,10 @@
         {
           "name": "🛒 ОнлайнТрейд",
           "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/DELL/"
         }
       ],
       "rev_url": "https://www.notebookcheck.net/Dell-UltraSharp-34-Curved-Thunderbolt-Hub-Monitor-U3425WE-debuts-with-Thunderbolt-4-connectivity-and-120-Hz-panel.788681.0.html",
@@ -227989,7 +228661,7 @@
       "id": 2722,
       "brand": "Samsung",
       "model": "Samsung Odyssey G5 G55C S27CG550EI (LS27CG550EIXCI)",
-      "reg": "[РФ Розница ДНС — Изогнутый 27″ QHD (2560×1440) 165 Гц 1000R VA монитор высокой контрастности 2500:1]",
+      "reg": "[Global / RU — Розница РФ]",
       "is_ru": true,
       "oem": "Samsung | CSOT 27.0″ QHD (2560×1440) 165Hz Curved 1000R VA [LS27CG550EIXCI]",
       "year": 2024,
@@ -228032,15 +228704,19 @@
       "h_mm": "Рекомендуется настольный кронштейн VESA 75×75",
       "comm": "Популярный в сети ДНС изогнутый 1000R монитор Samsung Odyssey G5 G55C S27CG550EI (19 280 ₽) даёт 2.5-кратное преимущество по глубине чёрного над обычными IPS-панелями.",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины). Учитывайте крутой изгиб 1000R и крепление VESA 75×75.",
-      "rub": 16499,
+      "rub": 16490,
       "duty": 0,
-      "hand": 16499,
+      "hand": 16490,
       "usd": 204,
       "cny": 1460,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/2f2b0f34f246d9cb/27-monitor-samsung-odyssey-g5-g55c-s27cg550ei-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/"
         }
       ],
       "rev_url": "https://www.dns-shop.ru/product/2f2b0f34f246d9cb/27-monitor-samsung-odyssey-g5-g55c-s27cg550ei-cernyj/",
@@ -228069,14 +228745,14 @@
       "panel_gen": "hva",
       "brand_canonical": "Samsung",
       "subbrand": "",
-      "price_retail_rf": 16499,
+      "price_retail_rf": 16490,
       "price_mp_rf": 19280
     },
     {
       "id": 2723,
       "brand": "Samsung",
       "model": "Samsung Odyssey G5 G55C S32CG550EI (LS32CG550EIXCI)",
-      "reg": "[РФ Розница ДНС — Крупноформатный изогнутый 31.5″ QHD (2560×1440) 165 Гц 1000R VA монитор]",
+      "reg": "[Global / RU — Розница РФ]",
       "is_ru": true,
       "oem": "Samsung | CSOT 31.5″ QHD (2560×1440) 165Hz Curved 1000R VA [LS32CG550EIXCI]",
       "year": 2024,
@@ -228119,15 +228795,19 @@
       "h_mm": "Поддержка кронштейнов VESA 75×75",
       "comm": "31.5-дюймовая версия Samsung Odyssey G5 G55C S32CG550EI (код ДНС 5451819) удобна тем, что плотность 93 PPI позволяет работать в Windows на масштабе 100% без дробного масштабирования.",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины).",
-      "rub": 24999,
+      "rub": 23880,
       "duty": 0,
-      "hand": 24999,
+      "hand": 23880,
       "usd": 254,
       "cny": 1818,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/52b3656de110ed20/315-monitor-samsung-odyssey-g5-g55c-s32cg550ei-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/"
         }
       ],
       "rev_url": "https://www.dns-shop.ru/product/52b3656de110ed20/315-monitor-samsung-odyssey-g5-g55c-s32cg550ei-cernyj/",
@@ -228156,14 +228836,14 @@
       "panel_gen": "hva",
       "brand_canonical": "Samsung",
       "subbrand": "",
-      "price_retail_rf": 24999,
+      "price_retail_rf": 23880,
       "price_mp_rf": 23999
     },
     {
       "id": 2724,
       "brand": "Samsung",
       "model": "Samsung Odyssey G4 G40B S25BG400EI (LS25BG400EIXCI)",
-      "reg": "[РФ Розница ДНС — Киберспортивный 25″ Full HD (1920×1080) 240 Гц Fast IPS монитор с полной эргономикой HAS + Pivot]",
+      "reg": "[Global / RU — Розница РФ]",
       "is_ru": true,
       "oem": "Samsung | BOE 24.5″ FHD (1920×1080) 240Hz Fast IPS (400 nits, G-Sync Compatible) [LS25BG400EIXCI]",
       "year": 2024,
@@ -228206,15 +228886,19 @@
       "h_mm": "Регулировка высоты 120 мм из коробки",
       "comm": "Samsung Odyssey G4 S25BG400EI (код ДНС 5080005) — один из самых сбалансированных 240 Гц Fast IPS мониторов в рознице ДНС благодаря высокой яркости 400 нит и шикарной подставке с газлифтом и поворотом.",
       "risk": "Официальная розница РФ (ДНС — 0 ₽ таможенной пошлины).",
-      "rub": 19999,
+      "rub": 16020,
       "duty": 0,
-      "hand": 19999,
+      "hand": 16020,
       "usd": 212,
       "cny": 1515,
       "stores": [
         {
           "name": "🛒 DNS",
           "url": "https://www.dns-shop.ru/product/ea56687e4f71ed20/25-monitor-samsung-odyssey-g4-g40b-s25bg400ei-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/catalog/monitory/SAMSUNG/"
         }
       ],
       "rev_url": "https://www.dns-shop.ru/product/ea56687e4f71ed20/25-monitor-samsung-odyssey-g4-g40b-s25bg400ei-cernyj/",
@@ -228243,7 +228927,7 @@
       "panel_gen": "fast_ips",
       "brand_canonical": "Samsung",
       "subbrand": "",
-      "price_retail_rf": 19999,
+      "price_retail_rf": 16020,
       "price_mp_rf": 19999
     },
     {

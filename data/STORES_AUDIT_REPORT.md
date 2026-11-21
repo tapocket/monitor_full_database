@@ -1,10 +1,35 @@
-# Отчёт ревизии цен по 4 магазинам (2026-11-21)
+# Отчёт ревизии цен по 5 магазинам (2026-11-21)
 
-- **DNS:** 608 уникальных моделей (5 399 – 498 999 ₽) → совпадений в базе: **260**
-- **Регард:** 314 моделей (27 630 – 362 070 ₽) → совпадений в базе: **138**
-- **ОнлайнТрейд:** 278 моделей (28 800 – 243 550 ₽) → совпадений в базе: **128**
-- **AliExpress (TITAN ARMY Official Store):** 8 моделей (7 в наличии + 1 раскуплена, с прямыми ссылками) → совпадений в базе: **7**
-- **Всего обновлено уникальных моделей в базе:** **359** (установлена минимальная актуальная цена среди проверенных магазинов РФ)
+- **[DNS](https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/):** 608 уникальных моделей (5 399 – 498 999 ₽) → в базе: **456**
+- **[Ситилинк](https://www.citilink.ru/catalog/monitory/):** 348 уникальных моделей (6 990 – 199 990 ₽, 14 разделов: Главная, OLED, 27" 4K, MSI, GIGABYTE, AOC, ASUS, SAMSUNG, LG, ACER, PHILIPS, DELL, TCL, XIAOMI) → совпадений в базе: **167** (обновлена минимальная цена у **58** моделей, добавлена ссылка магазина у **157**)
+- **[Регард](https://www.regard.ru/catalog/1035/monitory):** 314 моделей (27 630 – 362 070 ₽) → в базе: **171**
+- **[ОнлайнТрейд](https://www.onlinetrade.ru/catalogue/monitory-c23/):** 278 моделей (28 800 – 243 550 ₽) → в базе: **141**
+- **[AliExpress (TITAN ARMY Official Store)](https://aliexpress.ru/store/1105605814?g=true&page=1&spm=a2g2w.detail.0.0.467a70a7VyfJCH):** 8 моделей (7 в наличии + 1 раскуплена, прямые ссылки) → в базе: **17**
+- **Всего моделей в базе с привязкой к проверенным магазинам (5 источников):** **632** из 2753
+
+## Топ снижений цен после добавления Ситилинка
+| Модель | Было (₽) | Цена Ситилинка (₽) | Магазин | Разница |
+|---|---:|---:|---|---:|
+| Dell S3225QC | 111 450 | 98 620 | [Ситилинк](https://www.citilink.ru/catalog/monitory--oled-m/) | -12 830 ₽ |
+| TCL 27P2A | 29 999 | 19 990 | [Ситилинк](https://www.citilink.ru/catalog/monitory/TCL/) | -10 009 ₽ |
+| TCL 32G64 | 39 999 | 31 990 | [Ситилинк](https://www.citilink.ru/catalog/monitory/TCL/) | -8 009 ₽ |
+| MSI MAG 274QF E20 | 27 400 | 19 730 | [Ситилинк](https://www.citilink.ru/catalog/monitory/MSI/) | -7 670 ₽ |
+| Dell P3225QE | 73 350 | 66 490 | [Ситилинк](https://www.citilink.ru/catalog/monitory/DELL/) | -6 860 ₽ |
+| GIGABYTE G27Q2 | 24 750 | 19 300 | [Ситилинк](https://www.citilink.ru/catalog/monitory/GIGABYTE/) | -5 450 ₽ |
+| Samsung Odyssey G4 G40B S25BG400EI (LS25BG400EIXCI) | 19 999 | 16 020 | [Ситилинк](https://www.citilink.ru/catalog/monitory/SAMSUNG/) | -3 979 ₽ |
+| Digma Pro Action M | 43 730 | 39 990 | [Ситилинк](https://www.citilink.ru/catalog/monitory/) | -3 740 ₽ |
+| Acer Nitro VG270K L1bmiipx | 20 600 | 16 990 | [Ситилинк](https://www.citilink.ru/catalog/monitory/ACER/) | -3 610 ₽ |
+| GIGABYTE M27QS | 41 440 | 37 900 | [Ситилинк](https://www.citilink.ru/catalog/monitory/GIGABYTE/) | -3 540 ₽ |
+| Dell Alienware AW2725DM | 41 120 | 37 600 | [Ситилинк](https://www.citilink.ru/catalog/monitory/DELL/) | -3 520 ₽ |
+| MSI Pro MP273Q E7 | 16 200 | 13 000 | [Ситилинк](https://www.citilink.ru/catalog/monitory/MSI/) | -3 200 ₽ |
+| Dell Alienware AW2525HM | 37 999 | 34 900 | [Ситилинк](https://www.citilink.ru/catalog/monitory/DELL/) | -3 099 ₽ |
+| LG 32U720A | 29 949 | 27 040 | [Ситилинк](https://www.citilink.ru/catalog/monitory/LG/) | -2 909 ₽ |
+| Acer V247Y Gbmipx | 11 200 | 8 300 | [Ситилинк](https://www.citilink.ru/catalog/monitory/ACER/) | -2 900 ₽ |
+| Philips 27E2N1500L | 14 800 | 12 030 | [Ситилинк](https://www.citilink.ru/catalog/monitory/PHILIPS/) | -2 770 ₽ |
+| AOC 24B36XE | 10 800 | 8 190 | [Ситилинк](https://www.citilink.ru/catalog/monitory/AOC/) | -2 610 ₽ |
+| Philips 27E2N2500 | 15 600 | 13 000 | [Ситилинк](https://www.citilink.ru/catalog/monitory/PHILIPS/) | -2 600 ₽ |
+| MSI MAG 346CQ | 31 820 | 29 590 | [Ситилинк](https://www.citilink.ru/catalog/monitory/MSI/) | -2 230 ₽ |
+| ASUS VA27AQ | 17 000 | 14 850 | [Ситилинк](https://www.citilink.ru/catalog/monitory/ASUS/) | -2 150 ₽ |
 
 ## AliExpress — TITAN ARMY Official Store (все 8 моделей)
 | Модель | Цена (₽) | С купоном (₽) | Наличие | Прямая ссылка |
