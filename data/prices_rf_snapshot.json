@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T18:30:00Z",
+  "updated_at": "2026-11-21T20:00:00Z",
   "market": "RU (DNS, Ситилинк, Регард, ОнлайнТрейд, Яндекс Маркет, Ozon, Wildberries)",
   "items": [
     {
@@ -63,5 +63,1777 @@
       "checked_at": "2026-11-20"
     }
   ],
-  "source": "DNS Catalog Full Revision (https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/)"
+  "source": "Multi-Store Audit (DNS + Regard + OnlineTrade + AliExpress TITAN ARMY Official)",
+  "prices": {
+    "ASUS ROG Swift OLED PG34WCDN": {
+      "price_rub": 160400,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQM5F": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQML5F": {
+      "price_rub": 29870,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG34WQL5A": {
+      "price_rub": 30790,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG32WQ3B": {
+      "price_rub": 24299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG34VQL3A": {
+      "price_rub": 30499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27UQEL5A": {
+      "price_rub": 24499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Swift Pro PG248QP": {
+      "price_rub": 115720,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDPG": {
+      "price_rub": 86999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG32UCWMG": {
+      "price_rub": 94520,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDNG": {
+      "price_rub": 60799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix XG27ACMS": {
+      "price_rub": 37290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQM5A": {
+      "price_rub": 35160,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQML5A": {
+      "price_rub": 28960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG27AQML5A": {
+      "price_rub": 28960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQWMG": {
+      "price_rub": 66299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG32VQM5B": {
+      "price_rub": 25999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA32UCDMR-K": {
+      "price_rub": 194410,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDMES": {
+      "price_rub": 43999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Swift OLED PG27UCDM": {
+      "price_rub": 104999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG259QM5A": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG279QM5A": {
+      "price_rub": 19299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG27AQ5A": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG259Q5A": {
+      "price_rub": 12499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA27UCGE": {
+      "price_rub": 86310,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix XG32UCG": {
+      "price_rub": 53999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS TUF Gaming VG279QE5A": {
+      "price_rub": 14799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA278CGRV": {
+      "price_rub": 34999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA278QGV": {
+      "price_rub": 26499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA249HG": {
+      "price_rub": 7399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA249QGS": {
+      "price_rub": 15399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279HG": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279QG": {
+      "price_rub": 11599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VA279QGS": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VZ249HG": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS PA32UCE": {
+      "price_rub": 133800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS ROG Strix OLED XG27AQDMG": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS XG27ACS": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS XG27UCS": {
+      "price_rub": 42999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG249Q1A": {
+      "price_rub": 15799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VG28UQL1A": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASUS VY249HGE": {
+      "price_rub": 8099,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQR QD-OLED X36": {
+      "price_rub": 102212,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 271KPD7": {
+      "price_rub": 51499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QPF X30MV": {
+      "price_rub": 39192,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 341CQP QD-OLED X28": {
+      "price_rub": 83799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP X24": {
+      "price_rub": 77999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321UP QD-OLED X24": {
+      "price_rub": 98999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP QD-OLED E16": {
+      "price_rub": 73499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G275L E14": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI PRO MAX 341QPXW14G": {
+      "price_rub": 88070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP245PHG E14": {
+      "price_rub": 14699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 241PHW E14": {
+      "price_rub": 17199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271QPHW E14": {
+      "price_rub": 25299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271QPX14G": {
+      "price_rub": 48340,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271UPX12G": {
+      "price_rub": 73999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro Max 271UPXW12G": {
+      "price_rub": 75999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 242R X60N": {
+      "price_rub": 69490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QP QD-OLED X50": {
+      "price_rub": 63999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QR QD-OLED X50": {
+      "price_rub": 100260,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272QRF X36": {
+      "price_rub": 59999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272URDF E16": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QRFW X32": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274UPDF E16M": {
+      "price_rub": 46999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 274UPDF E16M": {
+      "price_rub": 46999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 274URDFW E16M": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 271QP QD-OLED X28": {
+      "price_rub": 56860,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QPW QD-OLED X28": {
+      "price_rub": 49999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 245F X24": {
+      "price_rub": 12999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272F X24": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272UP QD-OLED X24": {
+      "price_rub": 77999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QF X24": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QP QD-OLED X24": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272URX": {
+      "price_rub": 107530,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 272URX QD-OLED": {
+      "price_rub": 107530,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 346CQRF X24": {
+      "price_rub": 38999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 242F": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 244F": {
+      "price_rub": 10199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 274QRFW E20": {
+      "price_rub": 21799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 275QF E20": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 342CQRF E20": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 242C": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321CQF E18": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 325QF E18V": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 346CQ": {
+      "price_rub": 31820,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 322UP QD-OLED E16": {
+      "price_rub": 78260,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 322URDF E16": {
+      "price_rub": 54660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G242L E14": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 275UPD E14": {
+      "price_rub": 32999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 491CQP": {
+      "price_rub": 89999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP275W E2": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Pro MP273QW E2": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPHG": {
+      "price_rub": 33780,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPHW": {
+      "price_rub": 31150,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "MSI Modern MD272UPSW": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QRX": {
+      "price_rub": 76930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 271QRX QD-OLED": {
+      "price_rub": 76930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 321UPX": {
+      "price_rub": 98490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 321URX": {
+      "price_rub": 94043,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 321URX QD-OLED": {
+      "price_rub": 94043,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQPX": {
+      "price_rub": 89999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G255F": {
+      "price_rub": 9499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G255PF E2": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI G272QPF E2": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung S27HG802S": {
+      "price_rub": 105110,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G53F S27FG532EI": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung S32HG732S": {
+      "price_rub": 95660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey OLED G6 G60SD": {
+      "price_rub": 63999,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G4": {
+      "price_rub": 16199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 25G550B": {
+      "price_rub": 16699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G550B": {
+      "price_rub": 21299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 52G930B": {
+      "price_rub": 134999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 25G523B": {
+      "price_rub": 10599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G523B": {
+      "price_rub": 12899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32G620B": {
+      "price_rub": 27299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U411B": {
+      "price_rub": 8399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U411B": {
+      "price_rub": 9399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U620B": {
+      "price_rub": 24499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U640B": {
+      "price_rub": 20799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34U601B": {
+      "price_rub": 22699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX950A": {
+      "price_rub": 173999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G640A": {
+      "price_rub": 30999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GX700A": {
+      "price_rub": 54499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G440A": {
+      "price_rub": 17399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GX704A": {
+      "price_rub": 51660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34GX900A": {
+      "price_rub": 98930,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 34GX90SA": {
+      "price_rub": 122999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 39GX900A": {
+      "price_rub": 106499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 39GX90SA": {
+      "price_rub": 120010,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX900A": {
+      "price_rub": 135499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 45GX90SA": {
+      "price_rub": 133800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G610A": {
+      "price_rub": 16799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32G600A": {
+      "price_rub": 22799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32GS85Q": {
+      "price_rub": 37690,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27G411A": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U411A": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U411A": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24U421A": {
+      "price_rub": 10499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U421A": {
+      "price_rub": 9599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27U631A": {
+      "price_rub": 12399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32U720A": {
+      "price_rub": 29949,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32U889SA": {
+      "price_rub": 84499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GS75Q": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GS85Q": {
+      "price_rub": 25899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 24GS60F-B": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 32GR93U-B": {
+      "price_rub": 56799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27GP95R-B": {
+      "price_rub": 64799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32X3A": {
+      "price_rub": 84999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25P2A Pro": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27C2A": {
+      "price_rub": 36999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P2A": {
+      "price_rub": 29999,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25P1AD": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P1AD": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P3A": {
+      "price_rub": 29999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 25G64": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 57R94": {
+      "price_rub": 199999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32G64": {
+      "price_rub": 39999,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 32R84": {
+      "price_rub": 63999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "iFFALCON R25Q51 Mini LED": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "iFFALCON R24Q51 Mini LED": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army X276T": {
+      "price_rub": 32341,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P326MV Plus": {
+      "price_rub": 43241,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2710H Plus": {
+      "price_rub": 15262,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army KG277R": {
+      "price_rub": 12045,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P276MV": {
+      "price_rub": 29797,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510H": {
+      "price_rub": 10199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510H Plus": {
+      "price_rub": 13809,
+      "store": "AliExpress (TITAN ARMY)",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army G2785S": {
+      "price_rub": 39999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army C32A1R": {
+      "price_rub": 19799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2410G": {
+      "price_rub": 10799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2710R": {
+      "price_rub": 18199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P40UG": {
+      "price_rub": 35299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P2510S": {
+      "price_rub": 15299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A2R": {
+      "price_rub": 15799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P23H2M": {
+      "price_rub": 11299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A2V": {
+      "price_rub": 35999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Titan Army P27A6V": {
+      "price_rub": 39799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G Pro 27Qi": {
+      "price_rub": 29199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G Pro 27i": {
+      "price_rub": 32490,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G34WQi": {
+      "price_rub": 27199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A24i": {
+      "price_rub": 8799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27i": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi A27Qi": {
+      "price_rub": 13399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27Ui": {
+      "price_rub": 25699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MKCF25F300M": {
+      "price_rub": 16999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MJF24F200": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MKQ27F240L": {
+      "price_rub": 19999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MK-ZQ27F210L": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2426HE": {
+      "price_rub": 25199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2726HE": {
+      "price_rub": 28499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2725QC": {
+      "price_rub": 54350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2525HM": {
+      "price_rub": 37999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725D": {
+      "price_rub": 60220,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725Q": {
+      "price_rub": 107150,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725DM": {
+      "price_rub": 41120,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2425HSM": {
+      "price_rub": 17399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S2725DSM": {
+      "price_rub": 30660,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3225QC": {
+      "price_rub": 111450,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3225QS": {
+      "price_rub": 47999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell S3425DW": {
+      "price_rub": 50999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell U2725QE": {
+      "price_rub": 80910,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell U3225QE": {
+      "price_rub": 100290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2425D": {
+      "price_rub": 30280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2425DE": {
+      "price_rub": 38820,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725D": {
+      "price_rub": 31600,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725DE": {
+      "price_rub": 34299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P2725QE": {
+      "price_rub": 51999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3225DE": {
+      "price_rub": 52999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3225QE": {
+      "price_rub": 73350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell P3425WE": {
+      "price_rub": 72350,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW2725DF": {
+      "price_rub": 86299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW3225QF": {
+      "price_rub": 131999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell Alienware AW3423DWF": {
+      "price_rub": 103999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO34WQC36": {
+      "price_rub": 94999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G27Q3": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q28GR": {
+      "price_rub": 54299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE AORUS Elite FO32U24G": {
+      "price_rub": 110080,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24A": {
+      "price_rub": 42240,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24G": {
+      "price_rub": 41999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO32U24": {
+      "price_rub": 94050,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q3": {
+      "price_rub": 55690,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27Q3": {
+      "price_rub": 29600,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27UP": {
+      "price_rub": 35970,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27UP ICE": {
+      "price_rub": 35970,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q28G": {
+      "price_rub": 55800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q2A": {
+      "price_rub": 51440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GO27Q24": {
+      "price_rub": 44310,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS25F2A": {
+      "price_rub": 10499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS27FC2": {
+      "price_rub": 12499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27U2": {
+      "price_rub": 73130,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G34WQC2": {
+      "price_rub": 27999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27Q2": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE GS32QA": {
+      "price_rub": 24899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE M27QS": {
+      "price_rub": 41440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE G27U": {
+      "price_rub": 30280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27B2U4601H": {
+      "price_rub": 30770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U5900C": {
+      "price_rub": 54050,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3800A": {
+      "price_rub": 32470,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3500PF": {
+      "price_rub": 15399,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N6501L": {
+      "price_rub": 48430,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N8800": {
+      "price_rub": 74999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N5901A": {
+      "price_rub": 35760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27M2N3200NF": {
+      "price_rub": 13999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 24E1N1200A": {
+      "price_rub": 9599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U3600C": {
+      "price_rub": 37030,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 34B2U3600CH": {
+      "price_rub": 41880,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 32B2N3500": {
+      "price_rub": 29100,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 32B2U3601": {
+      "price_rub": 32130,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 27E3U7903": {
+      "price_rub": 104230,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Philips 24M1N3200ZS EVNIA 3000": {
+      "price_rub": 10899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Predator X32Xbmiipphuzx": {
+      "price_rub": 98499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Nitro XV275K P5biipruzx": {
+      "price_rub": 39999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4H": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG246FK6": {
+      "price_rub": 64830,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CS24A": {
+      "price_rub": 61999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG276QKD2": {
+      "price_rub": 76400,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZDR": {
+      "price_rub": 46210,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4SRU": {
+      "price_rub": 34770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27G4": {
+      "price_rub": 29870,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27G4R": {
+      "price_rub": 36080,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 25G4S": {
+      "price_rub": 18299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CS25G": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q25G4SR": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZD": {
+      "price_rub": 44760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZR": {
+      "price_rub": 21499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 24G11ZE": {
+      "price_rub": 11499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 27G11ZE2": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC AGON Pro AG276UZD": {
+      "price_rub": 76500,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4Z": {
+      "price_rub": 44999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G40E": {
+      "price_rub": 14499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G40ZDF": {
+      "price_rub": 46720,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G41ZDF": {
+      "price_rub": 46190,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27G4ZMN": {
+      "price_rub": 36060,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G4": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 24B36X": {
+      "price_rub": 8999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC 27B36X": {
+      "price_rub": 9499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC Q27B30S3": {
+      "price_rub": 11599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "AOC U27E4CV": {
+      "price_rub": 29040,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "AOC CU34G2XP": {
+      "price_rub": 36760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "ViewSonic VA3420C-2": {
+      "price_rub": 30610,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Apple Studio Display XDR": {
+      "price_rub": 385999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming OLED AQ27H1O": {
+      "price_rub": 42799,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3 белый": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3 обновлённый": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity Pro AQ27H1 Pro": {
+      "price_rub": 16599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Portal AF24H1": {
+      "price_rub": 11699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Sidewinder AQ27H1U": {
+      "price_rub": 20999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Supernova Pro AQ32H1UE": {
+      "price_rub": 25199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Vega Pro AQ25H1U": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Nova Ultra AU27H1UE": {
+      "price_rub": 30499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkstar AF24N1": {
+      "price_rub": 9699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQ32H3": {
+      "price_rub": 21999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQW34H3": {
+      "price_rub": 26999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AF24H1UE": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming AQ27H3": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity AF27H1": {
+      "price_rub": 14299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Hisense 27G6K-PRO": {
+      "price_rub": 18999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "ASRock PG27FFX1B": {
+      "price_rub": 36900,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "ASRock PG27FFX2A": {
+      "price_rub": 64299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Digma Pro Vision L": {
+      "price_rub": 81250,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Digma Pro Action M": {
+      "price_rub": 43730,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline CF24N1S": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline CF24N4": {
+      "price_rub": 7499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DF24N1S2": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DQ27N1S2": {
+      "price_rub": 11899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline GS CF24N4": {
+      "price_rub": 7499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP Aceline GS CF27N4": {
+      "price_rub": 11899,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP GS DF24N1": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 34C2A": {
+      "price_rub": 49999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Mini LED Gaming Monitor G Pro 27Qi 2026": {
+      "price_rub": 27910,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MPG 341CQR X36": {
+      "price_rub": 102212,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "GIGABYTE MO27Q2A ICE": {
+      "price_rub": 51440,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 346CQDF E20": {
+      "price_rub": 29070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G25i 2026": {
+      "price_rub": 11999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A27i 2026": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI MAG 272QP QD-OLED X24": {
+      "price_rub": 44490,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G27i 2026": {
+      "price_rub": 13499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Gaming Monitor G24i 2026": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Monitor A24i 2026": {
+      "price_rub": 8199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi Curved Gaming Monitor G34WQi 2026": {
+      "price_rub": 27199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 7 Pro 727pm": {
+      "price_rub": 117760,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 7 Pro 727pu": {
+      "price_rub": 75280,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 534pm": {
+      "price_rub": 85960,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pm": {
+      "price_rub": 57770,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pu": {
+      "price_rub": 43860,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 527pq": {
+      "price_rub": 33800,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "HP Series 5 Pro 524pm": {
+      "price_rub": 43860,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG UltraGear 24GS65F-B": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkhaven AF27N1": {
+      "price_rub": 12199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 24F240": {
+      "price_rub": 10999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Skyline 32QC180L": {
+      "price_rub": 22999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Black Warrior 27F300L": {
+      "price_rub": 17999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Zero 25F400LM": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Predator X34F1bmiipphuzx": {
+      "price_rub": 97999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "TCL 27P2A Pro": {
+      "price_rub": 27999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Hisense 27N3Q": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Acer Nitro XV242Fbmiiprx": {
+      "price_rub": 54070,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "LG 27UP850K-W": {
+      "price_rub": 31999,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Xiaomi G27Qi 2026": {
+      "price_rub": 14999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Dell UltraSharp U4025QW": {
+      "price_rub": 243550,
+      "store": "ОнлайнТрейд",
+      "checked_at": "2026-11-21"
+    },
+    "Dell UltraSharp U3425WE": {
+      "price_rub": 101290,
+      "store": "Регард",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 27Q320L": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Thunderobot Light Saber 27Q210L": {
+      "price_rub": 15999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Infinity Ultra AQ27H1": {
+      "price_rub": 19199,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 C34G55TWWI": {
+      "price_rub": 23999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP DF24N1S": {
+      "price_rub": 6999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Ardor Gaming Darkmoon AQ27N1 белый": {
+      "price_rub": 15299,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Machenike MK-ZF24F200 (23.8″ FHD 200Hz Fast IPS ΔE<2)": {
+      "price_rub": 7999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G55C S27CG550EI (LS27CG550EIXCI)": {
+      "price_rub": 16499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G5 G55C S32CG550EI (LS32CG550EIXCI)": {
+      "price_rub": 24999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "Samsung Odyssey G3 G30H S27HG300EI": {
+      "price_rub": 17599,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "DEXP DF24H1S (23.8″ FHD 100Hz Frameless Home & Office)": {
+      "price_rub": 7699,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "LG UltraGear 32G403B-B (31.5″ QHD 180Hz Fast IPS)": {
+      "price_rub": 21499,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    },
+    "MSI PRO MP273A (27″ FHD 100Hz IPS Eye-Ergo + Speakers)": {
+      "price_rub": 9999,
+      "store": "DNS",
+      "checked_at": "2026-11-21"
+    }
+  }
 }
