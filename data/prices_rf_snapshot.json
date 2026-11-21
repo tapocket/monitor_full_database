@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21",
+  "updated_at": "2026-11-21T18:30:00Z",
   "market": "RU (DNS, Ситилинк, Регард, ОнлайнТрейд, Яндекс Маркет, Ozon, Wildberries)",
   "items": [
     {
@@ -26,18 +26,18 @@
       "model_match": "GIGABYTE AORUS FO32U2P",
       "sku_rf": "FO32U2P",
       "retail_rf_rub": 130763,
-      "mp_rf_rub": 113968,
-      "min_90d_rub": 113968,
+      "mp_rf_rub": 130763,
+      "min_90d_rub": 125000,
       "store": "Яндекс Маркет / Ozon",
       "url": "https://market.yandex.ru/search?text=gigabyte%20aorus%20fo32u2p",
-      "checked_at": "2026-11-21"
+      "checked_at": "2026-11-20"
     },
     {
       "model_match": "MSI MPG 321URX QD-OLED",
       "sku_rf": "9S6-3DD29A-055",
       "retail_rf_rub": 155000,
       "mp_rf_rub": 135000,
-      "min_90d_rub": 135000,
+      "min_90d_rub": 130000,
       "store": "DNS / Ситилинк / Я.Маркет",
       "url": "https://www.dns-shop.ru/product/752c43e0b5e0ed20/315-monitor-msi-mpg-321urx-qd-oled-cernyj/",
       "checked_at": "2026-11-20"
@@ -47,7 +47,7 @@
       "sku_rf": "ELA5585EU",
       "retail_rf_rub": 45440,
       "mp_rf_rub": 43626,
-      "min_90d_rub": 43626,
+      "min_90d_rub": 42990,
       "store": "Яндекс Маркет / Ozon",
       "url": "https://market.yandex.ru/card/monitor-xiaomi-mini-led-gaming-monitor-g-pro-27i-chernyy/4458263115",
       "checked_at": "2026-11-20"
@@ -62,5 +62,6 @@
       "url": "https://www.pepper.ru/deals/monitor-tcl-27r83u-27-miniled-gaming-mnt-503534",
       "checked_at": "2026-11-20"
     }
-  ]
+  ],
+  "source": "DNS Catalog Full Revision (https://www.dns-shop.ru/catalog/17a8943716404e77/monitory/)"
 }

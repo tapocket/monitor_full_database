@@ -146,7 +146,17 @@ def search_models(query_tokens: list[str], limit: int = 5) -> list[dict]:
             x.get("price_mp_rf") or x.get("hand") or 999999,
         )
     )
-    return matches[:limit]
+    deduped = []
+    seen_models = set()
+    for m in matches:
+        mk = re.sub(r"\s+", " ", str(m.get("model", "")).strip().lower())
+        if mk in seen_models:
+            continue
+        seen_models.add(mk)
+        deduped.append(m)
+        if len(deduped) >= limit:
+            break
+    return deduped
 
 
 def format_model_card(m: dict) -> str:
