@@ -1,0 +1,32 @@
+name: Community Issue to Pull Request
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  issue-to-pr:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Apply structured update from Issue body
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          python3 scripts/parse_issue_update.py --body "$ISSUE_BODY" --snapshot data/prices_rf_snapshot.json
+          python3 scripts/record_price_history.py --snapshot data/prices_rf_snapshot.json --history-dir data/price_history
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: community/issue-${{ github.event.issue.number }}
+          title: "data: обновление из Issue #${{ github.event.issue.number }}"
+          body: "Автоматическое обновление данных из одобренного Issue #${{ github.event.issue.number }}."
+          commit-message: "data: apply approved community update #${{ github.event.issue.number }}"

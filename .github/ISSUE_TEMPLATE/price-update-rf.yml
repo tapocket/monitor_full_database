@@ -1,0 +1,36 @@
+name: "💰 Обновление цены / ссылки в магазине РФ"
+description: "Сообщить актуальную цену в DNS, Ситилинк, Регард, ОнлайнТрейд, Ozon, WB или Я.Маркет"
+title: "[Цена РФ] "
+labels: ["price-rf", "community-data"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: "Модель монитора"
+      placeholder: "Например: Samsung Odyssey OLED G8 S32HG802SIXCI"
+    validations:
+      required: true
+  - type: dropdown
+    id: channel
+    attributes:
+      label: "Канал продажи"
+      options:
+        - "Офлайн-розница РФ (DNS / Ситилинк / Регард / ОнлайнТрейд)"
+        - "Маркетплейс со склада РФ (Ozon / Wildberries / Яндекс Маркет)"
+        - "Из-за рубежа с пошлиной (Ozon Global / AliExpress)"
+    validations:
+      required: true
+  - type: input
+    id: price_rub
+    attributes:
+      label: "Актуальная цена (₽)"
+      placeholder: "Например: 96890"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: "Прямая ссылка на карточку товара"
+      placeholder: "https://www.dns-shop.ru/product/..."
+    validations:
+      required: true

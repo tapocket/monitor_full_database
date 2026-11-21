@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://monitor-full-database.local/schema/monitor.schema.json",
+  "title": "Monitor Full Database Master Schema",
+  "description": "JSON Schema для валидации единого источника истины database_master.json",
+  "type": "object",
+  "required": [
+    "meta",
+    "catalog"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "project",
+        "models_count"
+      ],
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "models_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "brands_raw_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "brands_canonical_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "catalog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "brand",
+          "brand_canonical",
+          "model",
+          "year",
+          "diag",
+          "res",
+          "max_hz",
+          "ptype",
+          "rub",
+          "duty",
+          "hand"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "brand": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brand_canonical": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subbrand": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 2018,
+            "maximum": 2030
+          },
+          "diag": {
+            "type": "number",
+            "minimum": 3.0,
+            "maximum": 120.0
+          },
+          "max_hz": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 2000
+          },
+          "gtg80": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5000
+          },
+          "gtg100": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5000
+          },
+          "srgb": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 200
+          },
+          "dci": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 120
+          },
+          "rub": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duty": {
+            "type": "number",
+            "minimum": 0
+          },
+          "hand": {
+            "type": "number",
+            "minimum": 0
+          },
+          "usd": {
+            "type": "number",
+            "minimum": 0
+          },
+          "cny": {
+            "type": "number",
+            "minimum": 0
+          },
+          "price_retail_rf": {
+            "type": "number",
+            "minimum": 0
+          },
+          "price_mp_rf": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+name: Build & Verify monitor_full_database
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies & LibreOffice
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice-calc
+          pip install openpyxl jsonschema
+
+      - name: Validate database_master.json against JSON Schema
+        run: |
+          python3 -c "
+          import json, jsonschema
+          schema = json.load(open('schema/monitor.schema.json', encoding='utf-8'))
+          data = json.load(open('database_master.json', encoding='utf-8'))
+          jsonschema.validate(instance=data, schema=schema)
+          print('JSON Schema validation PASSED:', len(data['catalog']), 'models')
+          "
+
+      - name: Build, recalculate formulas & verify all outputs
+        run: |
+          python3 build_database.py \
+            --master database_master.json \
+            --template-xlsx monitor_full_database.xlsx \
+            --template-html monitor_full_database.html \
+            --outdir dist \
+            --recalc --verify
+
+      - name: Package release ZIP artifact
+        run: |
+          cp database_master.json build_database.py README.md manifest.webmanifest sw.js dist/
+          cp -r schema config dist/
+          cd dist && zip -r ../monitor_full_database_release.zip .
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor_full_database_release
+          path: monitor_full_database_release.zip

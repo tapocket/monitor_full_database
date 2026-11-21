@@ -1,0 +1,55 @@
+{
+  "description": "Библиотека эталонных настроек OSD и рекомендаций калибровки под конкретные матрицы [CELL]",
+  "target_standard": {
+    "white_point": "D65 (6500K)",
+    "gamma": "Pure Power 2.20",
+    "sdr_luminance_nits": 120
+  },
+  "profiles": [
+    {
+      "panel_cell": "AUO M270QAN07.S",
+      "panel_type": "27\" 4K 160Hz / FHD 320Hz Fast IPS Mini-LED (S-TW)",
+      "example_models": ["KTC M27P6S", "Innocn GA27V1M MAX", "Hisense G9 27G9K"],
+      "recommended_overdrive": "Standard / Level 2 (баланс без Overshoot)",
+      "osd_preset": "User / Custom + Local Dimming: High (HDR) / Low или Off (рабочий стол)",
+      "srgb_clamp_tip": "Использовать novideo_srgb (NVIDIA) или Windows 11 ACM для честной гаммы 2.20 с открытыми RGB-ползунками",
+      "win11_hdr_calib": { "min_nits": 0, "max_nits": 1400, "max_full_nits": 800 }
+    },
+    {
+      "panel_cell": "LG Display Primary RGB Tandem WOLED",
+      "panel_type": "26.5\"–31.5\" 4th-Gen Tandem WOLED (RGWB / RGB-Stripe)",
+      "example_models": ["ASUS ROG Swift OLED PG259QWS Ace", "ASUS ROG Swift OLED PG32UCWM", "LG UltraGear 45GX950A"],
+      "recommended_overdrive": "Не требуется (нативный отклик OLED 0.03–0.1 мс)",
+      "osd_preset": "HDR TrueBlack 400/500 (точная кривая PQ EOTF) + Uniform Brightness Вкл в SDR",
+      "srgb_clamp_tip": "В режиме sRGB Mode обычно доступна регулировка яркости; для точной гаммы 2.2 лучше профиль Racing/User + Windows ACM",
+      "win11_hdr_calib": { "min_nits": 0, "max_nits": 1300, "max_full_nits": 335 }
+    },
+    {
+      "panel_cell": "Samsung QD-OLED Gen 3 / Gen 4",
+      "panel_type": "26.5\"–31.5\" 4K 240Hz / QHD 360–500Hz QD-OLED",
+      "example_models": ["MSI MPG 321URX QD-OLED", "ASUS ROG Swift OLED PG32UCDM", "GIGABYTE AORUS FO32U2P", "Samsung Odyssey OLED G8 S32HG802S"],
+      "recommended_overdrive": "Не требуется (0.03 мс GtG)",
+      "osd_preset": "TrueBlack 400 (минимальный ABL в играх) или Peak 1000 (кино в темноте)",
+      "srgb_clamp_tip": "Встроенный sRGB режим точный (ΔE < 1.5); при работе с текстом включить ClearType / MacType",
+      "win11_hdr_calib": { "min_nits": 0, "max_nits": 1000, "max_full_nits": 250 }
+    },
+    {
+      "panel_cell": "BOE MV270QHM-NF2 / NF8",
+      "panel_type": "27\" QHD 180–240Hz Fast IPS",
+      "example_models": ["Xiaomi Redmi G27Q 2025/2026", "Xiaomi G Pro 27i (с Mini-LED)", "Samsung Odyssey G5 S27AG50 (EU)"],
+      "recommended_overdrive": "Fast / Normal (избегать Extreme из-за светлых корон)",
+      "osd_preset": "Standard / User, Color Temp: Warm / 6500K",
+      "srgb_clamp_tip": "Широкий охват P3 — зажать через novideo_srgb / AMD Adrenalin Color Temp Control Выкл",
+      "win11_hdr_calib": { "min_nits": 0, "max_nits": 1000, "max_full_nits": 600 }
+    },
+    {
+      "panel_cell": "CSOT SG2701G03-3 / SG3402H03-1",
+      "panel_type": "27\" QHD / 34\" UWQHD Fast HVA Mini-LED",
+      "example_models": ["TCL 27R83U", "TCL 34R83Q", "Titan Army P275MS+"],
+      "recommended_overdrive": "Medium / Fast (прогреть матрицу 15 мин для минимизации Black Smearing)",
+      "osd_preset": "Local Dimming: High (у HVA нативный контраст 4000:1 скрывает ореолы)",
+      "srgb_clamp_tip": "Проверить точку белого (часто уходит в холодный ~7000K) и снизить Blue Gain на 3–5 пунктов",
+      "win11_hdr_calib": { "min_nits": 0, "max_nits": 1600, "max_full_nits": 800 }
+    }
+  ]
+}

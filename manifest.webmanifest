@@ -1,0 +1,11 @@
+{
+  "name": "monitor_full_database — Инженерная база мониторов",
+  "short_name": "Monitor DB",
+  "description": "Автономный каталог 2 763 мониторов, калькуляторы, сравнение и офлайн Тест-Лаборатория для ПВЗ.",
+  "start_url": "./monitor_full_database.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "ru",
+  "orientation": "any"
+}

@@ -1,0 +1,33 @@
+name: "🔍 Новая ревизия матрицы / фото сервис-меню"
+description: "Сообщить о реальной матрице [CELL] в сервис-меню или смене партии монитора"
+title: "[Ревизия] "
+labels: ["panel-revision", "community-data"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: "Бренд и точная модель монитора"
+      placeholder: "Например: Xiaomi Redmi G27Q 2026 (P27QDB-RG)"
+    validations:
+      required: true
+  - type: input
+    id: panel_cell
+    attributes:
+      label: "Индекс матрицы из сервис-меню [CELL / LCM]"
+      placeholder: "Например: BOE MV270QHM-NF8 / CSOT SG2701G03-3"
+    validations:
+      required: true
+  - type: input
+    id: store_and_date
+    attributes:
+      label: "Магазин (DNS / Ситилинк / Ozon Global / WB) и дата покупки"
+      placeholder: "Например: Ozon Global (Yaya), ноябрь 2026"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Подробности, прошивка, отличия от предыдущей ревизии и ссылка на фото"
+      placeholder: "Прикрепите фото сервисного меню и укажите версию прошивки / дату производства с шильдика."
+    validations:
+      required: true

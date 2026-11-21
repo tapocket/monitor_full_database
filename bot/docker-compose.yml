@@ -1,0 +1,9 @@
+services:
+  monitor-db-bot:
+    build:
+      context: ..
+      dockerfile: bot/Dockerfile
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - MONITOR_DB_MASTER=/app/database_master.json

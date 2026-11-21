@@ -1,0 +1,11 @@
+{
+  "name": "monitor-full-database",
+  "private": true,
+  "description": "Сборка минифицированного Tailwind CSS без runtime CDN для monitor_full_database.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/tailwind.min.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

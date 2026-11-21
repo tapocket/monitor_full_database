@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-11-20",
+  "source": "CBR / Manual Config",
+  "currency_rates": {
+    "EUR_RUB": 105.0,
+    "USD_RUB": 95.0,
+    "CNY_RUB": 13.2
+  },
+  "russia_customs": {
+    "duty_free_threshold_eur": 200,
+    "duty_rate": 0.15,
+    "broker_fee_rub": 500,
+    "note": "Пошлина 15% взимается с суммы превышения порога 200 € для зарубежных заказов (Ozon Global / CN)."
+  }
+}
