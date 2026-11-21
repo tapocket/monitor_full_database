@@ -1,18 +1,4 @@
 @echo off
-chcp 65001 >nul
 cd /d "%~dp0.."
-
-if exist "bot\.env" (
-  for /f "usebackq tokens=1,* delims==" %%A in ("bot\.env") do (
-    if /i "%%A"=="TELEGRAM_BOT_TOKEN" set "TELEGRAM_BOT_TOKEN=%%B"
-  )
-)
-
-if "%TELEGRAM_BOT_TOKEN%"=="" (
-  echo [!] Токен не найден в bot\.env
-  set /p TELEGRAM_BOT_TOKEN=Вставьте токен бота от BotFather и нажмите Enter: 
-)
-
-echo Запуск Telegram-бота monitor_full_database...
-python bot/telegram_bot.py
+python -c "import os, runpy; p='bot/.env'; [os.environ.__setitem__(k.strip(), v.strip().strip('\"')) for l in open(p, encoding='utf-8-sig') if '=' in l and not l.lstrip().startswith('#') for k, v in [l.split('=', 1)]] if os.path.exists(p) else None; runpy.run_path('bot/telegram_bot.py', run_name='__main__')"
 pause
