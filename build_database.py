@@ -285,80 +285,353 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
 
 
 def generate_offline_tailwind_css(html_text: str) -> str:
-    """Generate a compact offline CSS fallback for Tailwind utility classes used in the HTML."""
-    # Core palette tokens matching Tailwind 3.4 defaults
-    colors = {
-        "white": "#ffffff", "black": "#000000", "transparent": "transparent",
-        "slate-50": "#f8fafc", "slate-100": "#f1f5f9", "slate-200": "#e2e8f0", "slate-300": "#cbd5e1",
-        "slate-400": "#94a3b8", "slate-500": "#64748b", "slate-600": "#475569", "slate-700": "#334155",
-        "slate-800": "#1e293b", "slate-900": "#0f172a", "slate-950": "#020617",
-        "gray-50": "#f9fafb", "gray-100": "#f3f4f6", "gray-200": "#e5e7eb", "gray-300": "#d1d5db",
-        "gray-500": "#6b7280", "gray-600": "#4b5563", "gray-700": "#374151", "gray-800": "#1f2937", "gray-900": "#111827",
-        "blue-50": "#eff6ff", "blue-100": "#dbeafe", "blue-200": "#bfdbfe", "blue-500": "#3b82f6",
-        "blue-600": "#2563eb", "blue-700": "#1d4ed8", "blue-800": "#1e40af", "blue-900": "#1e3a8a", "blue-950": "#172554",
-        "indigo-50": "#eef2ff", "indigo-100": "#e0e7ff", "indigo-200": "#c7d2fe", "indigo-500": "#6366f1",
-        "indigo-600": "#4f46e5", "indigo-700": "#4338ca", "indigo-800": "#3730a3", "indigo-900": "#312e81",
-        "emerald-50": "#ecfdf5", "emerald-100": "#d1fae5", "emerald-200": "#a7f3d0", "emerald-500": "#10b981",
-        "emerald-600": "#059669", "emerald-700": "#047857", "emerald-800": "#065f46", "emerald-900": "#064e3b",
-        "teal-50": "#f0fdfa", "teal-100": "#ccfbf1", "teal-600": "#0d9488", "teal-700": "#0f766e", "teal-800": "#115e59",
-        "amber-50": "#fffbeb", "amber-100": "#fef3c7", "amber-200": "#fde68a", "amber-500": "#f59e0b",
-        "amber-600": "#d97706", "amber-700": "#b45309", "amber-800": "#92400e",
-        "orange-50": "#fff7ed", "orange-100": "#ffedd5", "orange-500": "#f97316", "orange-600": "#ea580c", "orange-700": "#c2410c",
-        "red-50": "#fef2f2", "red-100": "#fee2e2", "red-500": "#ef4444", "red-600": "#dc2626", "red-700": "#b91c1c",
-        "rose-50": "#fff1f2", "rose-100": "#ffe4e6", "rose-600": "#e11d48", "rose-700": "#be123c",
-        "purple-50": "#faf5ff", "purple-100": "#f3e8ff", "purple-600": "#9333ea", "purple-700": "#7e22ce", "purple-800": "#6b21a8",
-        "violet-50": "#f5f3ff", "violet-100": "#ede9fe", "violet-600": "#7c3aed", "violet-700": "#6d28d9",
-        "sky-50": "#f0f9ff", "sky-100": "#e0f2fe", "sky-600": "#0284c7", "sky-700": "#0369a1",
-        "cyan-50": "#ecfeff", "cyan-100": "#cffafe", "cyan-600": "#0891b2", "cyan-700": "#0e7490",
-        "green-50": "#f0fdf4", "green-100": "#dcfce7", "green-600": "#16a34a", "green-700": "#15803d",
-        "yellow-50": "#fefce8", "yellow-100": "#fef9c3", "yellow-600": "#ca8a04", "yellow-700": "#a16207",
+    """Compile all Tailwind 3.4 utility classes actually used in HTML/JS into a single zero-CDN CSS block."""
+    # Full Tailwind 3.4 color palette
+    PALETTE = {
+        "white": "#ffffff", "black": "#000000", "transparent": "transparent", "current": "currentColor",
+        "slate-50": "#f8fafc", "slate-100": "#f1f5f9", "slate-200": "#e2e8f0", "slate-300": "#cbd5e1", "slate-400": "#94a3b8", "slate-500": "#64748b", "slate-600": "#475569", "slate-700": "#334155", "slate-800": "#1e293b", "slate-900": "#0f172a", "slate-950": "#020617",
+        "gray-50": "#f9fafb", "gray-100": "#f3f4f6", "gray-200": "#e5e7eb", "gray-300": "#d1d5db", "gray-400": "#9ca3af", "gray-500": "#6b7280", "gray-600": "#4b5563", "gray-700": "#374151", "gray-800": "#1f2937", "gray-900": "#111827", "gray-950": "#030712",
+        "zinc-50": "#fafafa", "zinc-100": "#f4f4f5", "zinc-200": "#e4e4e7", "zinc-300": "#d4d4d8", "zinc-400": "#a1a1aa", "zinc-500": "#71717a", "zinc-600": "#52525b", "zinc-700": "#3f3f46", "zinc-800": "#27272a", "zinc-900": "#18181b", "zinc-950": "#09090b",
+        "neutral-50": "#fafafa", "neutral-100": "#f5f5f5", "neutral-200": "#e5e5e5", "neutral-300": "#d4d4d4", "neutral-400": "#a3a3a3", "neutral-500": "#737373", "neutral-600": "#525252", "neutral-700": "#404040", "neutral-800": "#262626", "neutral-900": "#171717", "neutral-950": "#0a0a0a",
+        "red-50": "#fef2f2", "red-100": "#fee2e2", "red-200": "#fecaca", "red-300": "#fca5a5", "red-400": "#f87171", "red-500": "#ef4444", "red-600": "#dc2626", "red-700": "#b91c1c", "red-800": "#991b1b", "red-900": "#7f1d1d", "red-950": "#450a0a",
+        "orange-50": "#fff7ed", "orange-100": "#ffedd5", "orange-200": "#fed7aa", "orange-300": "#fdba74", "orange-400": "#fb923c", "orange-500": "#f97316", "orange-600": "#ea580c", "orange-700": "#c2410c", "orange-800": "#9a3412", "orange-900": "#7c2d12", "orange-950": "#431407",
+        "amber-50": "#fffbeb", "amber-100": "#fef3c7", "amber-200": "#fde68a", "amber-300": "#fcd34d", "amber-400": "#fbbf24", "amber-500": "#f59e0b", "amber-600": "#d97706", "amber-700": "#b45309", "amber-800": "#92400e", "amber-900": "#78350f", "amber-950": "#451a03",
+        "yellow-50": "#fefce8", "yellow-100": "#fef9c3", "yellow-200": "#fef08a", "yellow-300": "#fde047", "yellow-400": "#facc15", "yellow-500": "#eab308", "yellow-600": "#ca8a04", "yellow-700": "#a16207", "yellow-800": "#854d0e", "yellow-900": "#713f12", "yellow-950": "#422006",
+        "lime-50": "#f7fee7", "lime-100": "#ecfccb", "lime-200": "#d9f99d", "lime-300": "#bef264", "lime-400": "#a3e635", "lime-500": "#84cc16", "lime-600": "#65a30d", "lime-700": "#4d7c0f", "lime-800": "#3f6212", "lime-900": "#365314", "lime-950": "#1a2e05",
+        "green-50": "#f0fdf4", "green-100": "#dcfce7", "green-200": "#bbf7d0", "green-300": "#86efac", "green-400": "#4ade80", "green-500": "#22c55e", "green-600": "#16a34a", "green-700": "#15803d", "green-800": "#166534", "green-900": "#14532d", "green-950": "#052e16",
+        "emerald-50": "#ecfdf5", "emerald-100": "#d1fae5", "emerald-200": "#a7f3d0", "emerald-300": "#6ee7b7", "emerald-400": "#34d399", "emerald-500": "#10b981", "emerald-600": "#059669", "emerald-700": "#047857", "emerald-800": "#065f46", "emerald-900": "#064e3b", "emerald-950": "#022c22",
+        "teal-50": "#f0fdfa", "teal-100": "#ccfbf1", "teal-200": "#99f6e4", "teal-300": "#5eead4", "teal-400": "#2dd4bf", "teal-500": "#14b8a6", "teal-600": "#0d9488", "teal-700": "#0f766e", "teal-800": "#115e59", "teal-900": "#134e4a", "teal-950": "#042f2e",
+        "cyan-50": "#ecfeff", "cyan-100": "#cffafe", "cyan-200": "#a5f3fc", "cyan-300": "#67e8f9", "cyan-400": "#22d3ee", "cyan-500": "#06b6d4", "cyan-600": "#0891b2", "cyan-700": "#0e7490", "cyan-800": "#155e75", "cyan-900": "#164e63", "cyan-950": "#083344",
+        "sky-50": "#f0f9ff", "sky-100": "#e0f2fe", "sky-200": "#bae6fd", "sky-300": "#7dd3fc", "sky-400": "#38bdf8", "sky-500": "#0ea5e9", "sky-600": "#0284c7", "sky-700": "#0369a1", "sky-800": "#075985", "sky-900": "#0c4a6e", "sky-950": "#082f49",
+        "blue-50": "#eff6ff", "blue-100": "#dbeafe", "blue-200": "#bfdbfe", "blue-300": "#93c5fd", "blue-400": "#60a5fa", "blue-500": "#3b82f6", "blue-600": "#2563eb", "blue-700": "#1d4ed8", "blue-800": "#1e40af", "blue-900": "#1e3a8a", "blue-950": "#172554",
+        "indigo-50": "#eef2ff", "indigo-100": "#e0e7ff", "indigo-200": "#c7d2fe", "indigo-300": "#a5b4fc", "indigo-400": "#818cf8", "indigo-500": "#6366f1", "indigo-600": "#4f46e5", "indigo-700": "#4338ca", "indigo-800": "#3730a3", "indigo-900": "#312e81", "indigo-950": "#1e1b4b",
+        "violet-50": "#f5f3ff", "violet-100": "#ede9fe", "violet-200": "#ddd6fe", "violet-300": "#c4b5fd", "violet-400": "#a78bfa", "violet-500": "#8b5cf6", "violet-600": "#7c3aed", "violet-700": "#6d28d9", "violet-800": "#5b21b6", "violet-900": "#4c1d95", "violet-950": "#2e1065",
+        "purple-50": "#faf5ff", "purple-100": "#f3e8ff", "purple-200": "#e9d5ff", "purple-300": "#d8b4fe", "purple-400": "#c084fc", "purple-500": "#a855f7", "purple-600": "#9333ea", "purple-700": "#7e22ce", "purple-800": "#6b21a8", "purple-900": "#581c87", "purple-950": "#3b0764",
+        "fuchsia-50": "#fdf4ff", "fuchsia-100": "#fae8ff", "fuchsia-200": "#f5d0fe", "fuchsia-300": "#f0abfc", "fuchsia-400": "#e879f9", "fuchsia-500": "#d946ef", "fuchsia-600": "#c026d3", "fuchsia-700": "#a21caf", "fuchsia-800": "#86198f", "fuchsia-900": "#701a75", "fuchsia-950": "#4a044e",
+        "pink-50": "#fdf2f8", "pink-100": "#fce7f3", "pink-200": "#fbcfe8", "pink-300": "#f9a8d4", "pink-400": "#f472b6", "pink-500": "#ec4899", "pink-600": "#db2777", "pink-700": "#be185d", "pink-800": "#9d174d", "pink-900": "#831843", "pink-950": "#500724",
+        "rose-50": "#fff1f2", "rose-100": "#ffe4e6", "rose-200": "#fecdd3", "rose-300": "#fda4af", "rose-400": "#fb7185", "rose-500": "#f43f5e", "rose-600": "#e11d48", "rose-700": "#be123c", "rose-800": "#9f1239", "rose-900": "#881337", "rose-950": "#4c0519",
     }
-    rules = [
-        "/* Offline CSS Fallback (works even when cdn.tailwindcss.com is unreachable) */",
+
+    def hex_to_rgba(hx: str, alpha_str: str) -> str:
+        if hx in ("transparent", "currentColor"):
+            return hx
+        h = hx.lstrip("#")
+        if len(h) == 3:
+            h = "".join(c * 2 for c in h)
+        r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+        a = int(alpha_str) / 100.0
+        return f"rgba({r},{g},{b},{a:g})"
+
+    def resolve_color(tok: str) -> str | None:
+        if tok.startswith("[") and tok.endswith("]"):
+            return tok[1:-1]
+        if "/" in tok:
+            base, alpha = tok.rsplit("/", 1)
+            if base in PALETTE and alpha.isdigit():
+                return hex_to_rgba(PALETTE[base], alpha)
+        return PALETTE.get(tok)
+
+    def resolve_spacing(val: str) -> str | None:
+        if val == "px": return "1px"
+        if val == "auto": return "auto"
+        if val == "full": return "100%"
+        if val == "screen": return "100vw"
+        if val == "fit": return "fit-content"
+        if val == "max": return "max-content"
+        if val == "min": return "min-content"
+        if val.startswith("[") and val.endswith("]"):
+            return val[1:-1].replace("_", " ")
+        if "/" in val:
+            a, b = val.split("/", 1)
+            if a.isdigit() and b.isdigit() and int(b) > 0:
+                return f"{int(a)/int(b)*100:.6g}%"
+        try:
+            f = float(val)
+            return "0px" if f == 0 else f"{f * 0.25:g}rem"
+        except ValueError:
+            return None
+
+    STATIC = {
+        "block": "display:block", "inline-block": "display:inline-block", "inline": "display:inline",
+        "flex": "display:flex", "inline-flex": "display:inline-flex", "grid": "display:grid",
+        "inline-grid": "display:inline-grid", "table": "display:table", "hidden": "display:none",
+        "static": "position:static", "fixed": "position:fixed", "absolute": "position:absolute",
+        "relative": "position:relative", "sticky": "position:sticky",
+        "inset-0": "inset:0px", "inset-x-0": "left:0px;right:0px", "inset-y-0": "top:0px;bottom:0px",
+        "flex-row": "flex-direction:row", "flex-col": "flex-direction:column",
+        "flex-wrap": "flex-wrap:wrap", "flex-nowrap": "flex-wrap:nowrap",
+        "flex-1": "flex:1 1 0%", "flex-auto": "flex:1 1 auto", "flex-none": "flex:none",
+        "flex-shrink-0": "flex-shrink:0", "shrink-0": "flex-shrink:0", "grow": "flex-grow:1",
+        "items-start": "align-items:flex-start", "items-end": "align-items:flex-end",
+        "items-center": "align-items:center", "items-baseline": "align-items:baseline", "items-stretch": "align-items:stretch",
+        "justify-start": "justify-content:flex-start", "justify-end": "justify-content:flex-end",
+        "justify-center": "justify-content:center", "justify-between": "justify-content:space-between", "justify-around": "justify-content:space-around",
+        "self-start": "align-self:flex-start", "self-center": "align-self:center", "self-end": "align-self:flex-end",
+        "align-middle": "vertical-align:middle", "align-top": "vertical-align:top", "align-bottom": "vertical-align:bottom",
+        "text-left": "text-align:left", "text-center": "text-align:center", "text-right": "text-align:right",
+        "font-normal": "font-weight:400", "font-medium": "font-weight:500", "font-semibold": "font-weight:600",
+        "font-bold": "font-weight:700", "font-extrabold": "font-weight:800", "font-black": "font-weight:900",
+        "font-mono": "font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace",
+        "italic": "font-style:italic", "not-italic": "font-style:normal",
+        "uppercase": "text-transform:uppercase", "lowercase": "text-transform:lowercase", "capitalize": "text-transform:capitalize",
+        "underline": "text-decoration-line:underline", "line-through": "text-decoration-line:line-through", "no-underline": "text-decoration-line:none",
+        "whitespace-nowrap": "white-space:nowrap", "whitespace-pre-wrap": "white-space:pre-wrap", "whitespace-normal": "white-space:normal",
+        "break-words": "overflow-wrap:break-word", "break-all": "word-break:break-all",
+        "truncate": "overflow:hidden;text-overflow:ellipsis;white-space:nowrap",
+        "tabular-nums": "font-variant-numeric:tabular-nums",
+        "leading-none": "line-height:1", "leading-tight": "line-height:1.25", "leading-snug": "line-height:1.375",
+        "leading-normal": "line-height:1.5", "leading-relaxed": "line-height:1.625",
+        "tracking-tight": "letter-spacing:-0.025em", "tracking-wide": "letter-spacing:0.025em", "tracking-wider": "letter-spacing:0.05em",
+        "text-xs": "font-size:0.75rem;line-height:1rem", "text-sm": "font-size:0.875rem;line-height:1.25rem",
+        "text-base": "font-size:1rem;line-height:1.5rem", "text-lg": "font-size:1.125rem;line-height:1.75rem",
+        "text-xl": "font-size:1.25rem;line-height:1.75rem", "text-2xl": "font-size:1.5rem;line-height:2rem",
+        "text-3xl": "font-size:1.875rem;line-height:2.25rem",
+        "rounded-none": "border-radius:0px", "rounded-sm": "border-radius:0.125rem", "rounded": "border-radius:0.25rem",
+        "rounded-md": "border-radius:0.375rem", "rounded-lg": "border-radius:0.5rem", "rounded-xl": "border-radius:0.75rem",
+        "rounded-2xl": "border-radius:1rem", "rounded-3xl": "border-radius:1.5rem", "rounded-full": "border-radius:9999px",
+        "rounded-t": "border-top-left-radius:0.25rem;border-top-right-radius:0.25rem",
+        "rounded-t-lg": "border-top-left-radius:0.5rem;border-top-right-radius:0.5rem",
+        "rounded-t-xl": "border-top-left-radius:0.75rem;border-top-right-radius:0.75rem",
+        "rounded-b-lg": "border-bottom-left-radius:0.5rem;border-bottom-right-radius:0.5rem",
+        "rounded-b-xl": "border-bottom-left-radius:0.75rem;border-bottom-right-radius:0.75rem",
+        "border": "border-width:1px;border-style:solid", "border-0": "border-width:0px",
+        "border-2": "border-width:2px;border-style:solid", "border-4": "border-width:4px;border-style:solid",
+        "border-t": "border-top-width:1px;border-top-style:solid", "border-b": "border-bottom-width:1px;border-bottom-style:solid",
+        "border-l": "border-left-width:1px;border-left-style:solid", "border-r": "border-right-width:1px;border-right-style:solid",
+        "border-b-2": "border-bottom-width:2px;border-bottom-style:solid", "border-l-4": "border-left-width:4px;border-left-style:solid",
+        "border-dashed": "border-style:dashed", "border-dotted": "border-style:dotted", "border-collapse": "border-collapse:collapse",
+        "shadow-sm": "box-shadow:0 1px 2px 0 rgba(0,0,0,0.05)",
+        "shadow": "box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px -1px rgba(0,0,0,0.1)",
+        "shadow-md": "box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -2px rgba(0,0,0,0.1)",
+        "shadow-lg": "box-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1)",
+        "shadow-xl": "box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 8px 10px -6px rgba(0,0,0,0.1)",
+        "shadow-2xl": "box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)", "shadow-none": "box-shadow:none",
+        "overflow-hidden": "overflow:hidden", "overflow-auto": "overflow:auto", "overflow-x-auto": "overflow-x:auto",
+        "overflow-y-auto": "overflow-y:auto", "overflow-y-scroll": "overflow-y:scroll", "overflow-visible": "overflow:visible",
+        "cursor-pointer": "cursor:pointer", "cursor-default": "cursor:default", "cursor-not-allowed": "cursor:not-allowed",
+        "select-none": "user-select:none", "select-all": "user-select:all", "pointer-events-none": "pointer-events:none",
+        "transition": "transition-property:color,background-color,border-color,opacity,box-shadow,transform;transition-duration:150ms",
+        "transition-all": "transition-property:all;transition-duration:150ms",
+        "transition-colors": "transition-property:color,background-color,border-color;transition-duration:150ms",
+        "backdrop-blur-sm": "backdrop-filter:blur(4px)", "backdrop-blur": "backdrop-filter:blur(8px)",
+        "backdrop-blur-md": "backdrop-filter:blur(12px)", "backdrop-blur-lg": "backdrop-filter:blur(16px)",
+        "bg-gradient-to-r": "background-image:linear-gradient(to right,var(--tw-gradient-from,transparent),var(--tw-gradient-to,transparent))",
+        "bg-gradient-to-br": "background-image:linear-gradient(to bottom right,var(--tw-gradient-from,transparent),var(--tw-gradient-to,transparent))",
+        "bg-gradient-to-b": "background-image:linear-gradient(to bottom,var(--tw-gradient-from,transparent),var(--tw-gradient-to,transparent))",
+        "list-disc": "list-style-type:disc", "list-decimal": "list-style-type:decimal", "list-inside": "list-style-position:inside",
+        "outline-none": "outline:2px solid transparent;outline-offset:2px",
+        "ring-1": "box-shadow:0 0 0 1px var(--tw-ring-color,rgba(59,130,246,0.5))",
+        "ring-2": "box-shadow:0 0 0 2px var(--tw-ring-color,rgba(59,130,246,0.5))",
+        "object-contain": "object-fit:contain", "object-cover": "object-fit:cover",
+        "sr-only": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0",
+    }
+
+    MAX_W = {
+        "xs": "20rem", "sm": "24rem", "md": "28rem", "lg": "32rem", "xl": "36rem",
+        "2xl": "42rem", "3xl": "48rem", "4xl": "56rem", "5xl": "64rem", "6xl": "72rem",
+        "7xl": "80rem", "full": "100%", "none": "none", "screen-xl": "1280px", "screen-2xl": "1536px",
+    }
+
+    def compile_utility(util: str) -> tuple[str, str] | None:
+        """Returns (extra_selector_suffix, css_declarations) or None."""
+        if util in STATIC:
+            return ("", STATIC[util])
+        if util.startswith("space-y-"):
+            v = resolve_spacing(util[8:])
+            if v: return (" > :not([hidden]) ~ :not([hidden])", f"margin-top:{v}")
+        if util.startswith("space-x-"):
+            v = resolve_spacing(util[8:])
+            if v: return (" > :not([hidden]) ~ :not([hidden])", f"margin-left:{v}")
+        if util.startswith("divide-y"):
+            return (" > :not([hidden]) ~ :not([hidden])", "border-top-width:1px;border-top-style:solid")
+        if util.startswith("divide-"):
+            c = resolve_color(util[7:])
+            if c: return (" > :not([hidden]) ~ :not([hidden])", f"border-color:{c}")
+        if util.startswith("bg-"):
+            c = resolve_color(util[3:])
+            if c: return ("", f"background-color:{c}")
+        if util.startswith("text-"):
+            rest = util[5:]
+            if rest.startswith("[") and rest.endswith("]"):
+                val = rest[1:-1]
+                if val.startswith("#") or val.startswith("rgb"):
+                    return ("", f"color:{val}")
+                return ("", f"font-size:{val}")
+            c = resolve_color(rest)
+            if c: return ("", f"color:{c}")
+        if util.startswith("border-"):
+            c = resolve_color(util[7:])
+            if c: return ("", f"border-color:{c}")
+        if util.startswith("accent-"):
+            c = resolve_color(util[7:])
+            if c: return ("", f"accent-color:{c}")
+        if util.startswith("ring-"):
+            c = resolve_color(util[5:])
+            if c: return ("", f"--tw-ring-color:{c}")
+        if util.startswith("from-"):
+            c = resolve_color(util[5:])
+            if c: return ("", f"--tw-gradient-from:{c}")
+        if util.startswith("to-"):
+            c = resolve_color(util[3:])
+            if c: return ("", f"--tw-gradient-to:{c}")
+        if util.startswith("fill-"):
+            c = resolve_color(util[5:])
+            if c: return ("", f"fill:{c}")
+        if util.startswith("stroke-"):
+            c = resolve_color(util[7:])
+            if c: return ("", f"stroke:{c}")
+
+        # Spacing & sizing
+        for pref, props in [
+            ("px-", ["padding-left", "padding-right"]), ("py-", ["padding-top", "padding-bottom"]),
+            ("pt-", ["padding-top"]), ("pr-", ["padding-right"]), ("pb-", ["padding-bottom"]), ("pl-", ["padding-left"]), ("p-", ["padding"]),
+            ("mx-", ["margin-left", "margin-right"]), ("my-", ["margin-top", "margin-bottom"]),
+            ("mt-", ["margin-top"]), ("mr-", ["margin-right"]), ("mb-", ["margin-bottom"]), ("ml-", ["margin-left"]), ("m-", ["margin"]),
+            ("-mt-", ["margin-top"]), ("-mb-", ["margin-bottom"]), ("-ml-", ["margin-left"]), ("-mr-", ["margin-right"]),
+            ("gap-x-", ["column-gap"]), ("gap-y-", ["row-gap"]), ("gap-", ["gap"]),
+            ("top-", ["top"]), ("bottom-", ["bottom"]), ("left-", ["left"]), ("right-", ["right"]),
+            ("min-w-", ["min-width"]), ("min-h-", ["min-height"]), ("max-h-", ["max-height"]),
+            ("w-", ["width"]), ("h-", ["height"]),
+        ]:
+            if util.startswith(pref):
+                raw_v = util[len(pref):]
+                v = resolve_spacing(raw_v)
+                if v:
+                    if pref.startswith("-") and v != "0px":
+                        v = "-" + v
+                    if pref == "h-" and raw_v == "screen": v = "100vh"
+                    if pref == "min-h-" and raw_v == "screen": v = "100vh"
+                    if pref == "max-h-" and raw_v == "screen": v = "100vh"
+                    return ("", ";".join(f"{p}:{v}" for p in props))
+
+        if util.startswith("max-w-"):
+            rest = util[6:]
+            if rest in MAX_W: return ("", f"max-width:{MAX_W[rest]}")
+            v = resolve_spacing(rest)
+            if v: return ("", f"max-width:{v}")
+        if util.startswith("grid-cols-"):
+            n = util[10:]
+            if n.isdigit(): return ("", f"grid-template-columns:repeat({n},minmax(0,1fr))")
+        if util.startswith("col-span-"):
+            n = util[9:]
+            if n == "full": return ("", "grid-column:1 / -1")
+            if n.isdigit(): return ("", f"grid-column:span {n} / span {n}")
+        if util.startswith("z-"):
+            z = util[2:]
+            if z.isdigit() or (z.startswith("[") and z.endswith("]")):
+                return ("", f"z-index:{z.strip('[]')}")
+        if util.startswith("opacity-"):
+            o = util[8:]
+            if o.isdigit(): return ("", f"opacity:{int(o)/100:g}")
+        if util.startswith("line-clamp-"):
+            n = util[11:]
+            if n.isdigit(): return ("", f"overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:{n}")
+        return None
+
+    # Scan class tokens in HTML/JS (excluding compressed _P JSON)
+    scan_txt = re.sub(r'<style[^>]*>.*?</style>', '', html_text, flags=re.S)
+    p_idx = scan_txt.find("const _P = ")
+    if p_idx != -1:
+        p_end = scan_txt.find(";\n  const _K", p_idx)
+        if p_end != -1:
+            scan_txt = scan_txt[:p_idx] + scan_txt[p_end:]
+
+    tokens = set()
+    for m in re.finditer(r'class=["\']([^"\'${}]+)["\']', scan_txt):
+        for tok in m.group(1).split():
+            if tok and not tok.startswith(("${", "{")):
+                tokens.add(tok)
+
+    def esc_cls(c: str) -> str:
+        return re.sub(r'([^a-zA-Z0-9_-])', r'\\\1', c)
+
+    base_rules = [
         "*,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e2e8f0}",
-        "body{margin:0;line-height:1.5;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f8fafc;color:#0f172a}",
-        "button,input,select,textarea{font-family:inherit;font-size:100%;color:inherit}",
-        "button{cursor:pointer;background:transparent}",
-        "table{border-collapse:collapse;width:100%}",
-        "a{color:inherit;text-decoration:none}",
-        ".hidden{display:none!important}.block{display:block}.inline-block{display:inline-block}.inline-flex{display:inline-flex}.flex{display:flex}.grid{display:grid}",
-        ".flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}",
-        ".items-center{align-items:center}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.justify-end{justify-content:flex-end}",
-        ".relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0}.top-0{top:0}.right-0{right:0}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}",
-        ".z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}",
-        ".overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}",
-        ".w-full{width:100%}.h-full{height:100%}.min-h-screen{min-height:100vh}.mx-auto{margin-left:auto;margin-right:auto}",
-        ".max-w-7xl{max-width:80rem}.max-w-6xl{max-width:72rem}.max-w-5xl{max-width:64rem}.max-w-4xl{max-width:56rem}.max-w-3xl{max-width:48rem}.max-w-2xl{max-width:42rem}.max-w-\\[1600px\\]{max-width:1600px}",
-        ".rounded{border-radius:.25rem}.rounded-md{border-radius:.375rem}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}",
-        ".border{border-width:1px}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}",
-        ".shadow{box-shadow:0 1px 3px rgba(0,0,0,.1)}.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.05)}.shadow-md{box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}.shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1)}.shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}",
-        ".text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.whitespace-nowrap{white-space:nowrap}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}",
-        ".text-\\[10px\\]{font-size:10px}.text-\\[11px\\]{font-size:11px}.text-xs{font-size:.75rem;line-height:1rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}",
-        ".font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}",
-        ".cursor-pointer{cursor:pointer}.select-none{user-select:none}.transition,.transition-all,.transition-colors{transition:all .15s ease}",
-        ".grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}",
-        "@media(min-width:768px){.md\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.md\\:flex-row{flex-direction:row}}",
-        "@media(min-width:1024px){.lg\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}}",
+        "html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:'Segoe UI Variable','Segoe UI',system-ui,-apple-system,sans-serif}",
+        "body{margin:0;line-height:inherit}",
+        "button,input,select,textarea{font-family:inherit;font-size:100%;color:inherit;margin:0}",
+        "button{background-color:transparent;background-image:none;cursor:pointer}",
+        "table{text-indent:0;border-color:inherit;border-collapse:collapse}",
+        "a{color:inherit;text-decoration:inherit}",
     ]
-    # Spacing utilities
-    spacings = {"0": "0", "0.5": ".125rem", "1": ".25rem", "1.5": ".375rem", "2": ".5rem", "2.5": ".625rem", "3": ".75rem", "4": "1rem", "5": "1.25rem", "6": "1.5rem", "8": "2rem"}
-    for k, v in spacings.items():
-        ek = k.replace(".", "\\.")
-        rules.append(
-            f".p-{ek}{{padding:{v}}}.px-{ek}{{padding-left:{v};padding-right:{v}}}.py-{ek}{{padding-top:{v};padding-bottom:{v}}}"
-            f".pt-{ek}{{padding-top:{v}}}.pb-{ek}{{padding-bottom:{v}}}"
-            f".m-{ek}{{margin:{v}}}.mt-{ek}{{margin-top:{v}}}.mb-{ek}{{margin-bottom:{v}}}.ml-{ek}{{margin-left:{v}}}.mr-{ek}{{margin-right:{v}}}"
-            f".gap-{ek}{{gap:{v}}}.space-y-{ek}>:not([hidden])~:not([hidden]){{margin-top:{v}}}"
-        )
-    # Color utilities
-    for cname, chex in colors.items():
-        rules.append(f".bg-{cname}{{background-color:{chex}}}.text-{cname}{{color:{chex}}}.border-{cname}{{border-color:{chex}}}")
-    return "\n".join(rules)
+    dark_rules = []
+    media_rules = {"sm": [], "md": [], "lg": [], "xl": []}
+    BP = {"sm": "640px", "md": "768px", "lg": "1024px", "xl": "1280px"}
+
+    for tok in sorted(tokens):
+        parts = tok.split(":")
+        util = parts[-1]
+        variants = parts[:-1]
+        compiled = compile_utility(util)
+        if not compiled:
+            continue
+        extra_suf, decls = compiled
+        sel = "." + esc_cls(tok) + extra_suf
+        is_dark = "dark" in variants
+        is_hover = "hover" in variants
+        is_focus = "focus" in variants
+        bp = next((v for v in variants if v in BP), None)
+        if is_hover: sel += ":hover"
+        if is_focus: sel += ":focus"
+        if is_dark: sel = "html.dark " + sel
+        rule = f"{sel}{{{decls}}}"
+        if bp:
+            media_rules[bp].append(rule)
+        elif is_dark:
+            dark_rules.append(rule)
+        else:
+            base_rules.append(rule)
+
+    out = ["/* Local Compiled Tailwind 3.4 Utility CSS (Zero-CDN, Instant Render) */"]
+    out.extend(base_rules)
+    out.extend(dark_rules)
+    for bp_k in ("sm", "md", "lg", "xl"):
+        if media_rules[bp_k]:
+            out.append(f"@media(min-width:{BP[bp_k]}){{" + "".join(media_rules[bp_k]) + "}")
+    return "\n".join(out)
+
+
+
+def load_price_history_map(catalog: list, history_dir: str = "data/price_history") -> dict:
+    """Load real recorded price history snapshots from data/price_history/*.jsonl matched to catalog IDs."""
+    import glob as _glob
+    if not os.path.isdir(history_dir):
+        return {}
+    by_norm = {}
+    for m in catalog:
+        nm = str(m.get("model") or "").strip().lower()
+        if nm:
+            by_norm[nm] = m["id"]
+    out = {}
+    for fp in sorted(_glob.glob(os.path.join(history_dir, "*.jsonl"))):
+        try:
+            with open(fp, "r", encoding="utf-8") as fh:
+                for ln in fh:
+                    ln = ln.strip()
+                    if not ln: continue
+                    rec = json.loads(ln)
+                    mm = str(rec.get("model_match") or "").strip().lower()
+                    mid = rec.get("cat_id") or by_norm.get(mm)
+                    if not mid and mm:
+                        for k_nm, k_id in by_norm.items():
+                            if mm in k_nm or k_nm in mm:
+                                mid = k_id
+                                break
+                    if not mid: continue
+                    pt = {
+                        "d": str(rec.get("date") or ""),
+                        "r": int(rec.get("retail_rf_rub") or 0),
+                        "m": int(rec.get("mp_rf_rub") or 0),
+                        "s": str(rec.get("store") or "")[:40],
+                    }
+                    out.setdefault(str(mid), []).append(pt)
+        except Exception:
+            continue
+    return out
 
 
 def compress_db_for_html(master: dict) -> str:
-    """Dictionary-encode repeated strings in DB.catalog to shrink HTML by ~65-70% with lossless unpack."""
-    # Build DB object matching exact runtime schema expected by monitor_full_database.html
+    """Sparse column-defaults + deep string dictionary + compact store URL encoding (100% lossless sync unpack)."""
     db_obj = {
         "catalog": master["catalog"],
         "market_rf": master["market_rf"],
@@ -371,45 +644,111 @@ def compress_db_for_html(master: dict) -> str:
     if not catalog:
         return "const DB = " + json.dumps(db_obj, ensure_ascii=False, separators=(",", ":")) + ";"
 
-    # Extract ordered keys schema from catalog[0] (all items share the same keys)
     all_keys = list(catalog[0].keys())
     for row in catalog:
         for k in row.keys():
             if k not in all_keys:
                 all_keys.append(k)
 
-    # Count repeated strings >= 8 chars across catalog values (excluding stores list/dicts for simplicity, compress top-level strings)
-    str_freq = Counter()
-    for row in catalog:
-        for v in row.values():
-            if isinstance(v, str) and len(v) >= 8:
-                str_freq[v] += 1
+    # 1. Most frequent value per column becomes default (omitted from sparse rows)
+    col_defaults = []
+    for k in all_keys:
+        vals = Counter(json.dumps(row.get(k, "__U__"), ensure_ascii=False, separators=(",", ":")) for row in catalog)
+        top_val_json, _ = vals.most_common(1)[0]
+        col_defaults.append(json.loads(top_val_json))
 
-    # Keep strings that appear >= 2 times, ordered most frequent first for shortest integer indices
-    dict_strings = [s for s, c in str_freq.most_common() if c >= 2]
+    # 2. Compact URL prefix table for stores
+    url_prefixes = [
+        "https://www.dns-shop.ru/product/",
+        "https://www.dns-shop.ru/search/?q=",
+        "https://www.citilink.ru/product/",
+        "https://www.regard.ru/product/",
+        "https://www.regard.ru/catalog?search=",
+        "https://www.onlinetrade.ru/catalogue/",
+        "https://www.onlinetrade.ru/sitesearch.html?query=",
+        "https://www.ozon.ru/product/",
+        "https://www.ozon.ru/search/?text=",
+        "https://market.yandex.ru/card/",
+        "https://market.yandex.ru/search?text=",
+        "https://aliexpress.ru/item/",
+    ]
+
+    # 3. Count repeated strings (>=3 chars) across non-default values (including store names)
+    str_freq = Counter()
+    def count_strs(v):
+        if isinstance(v, str) and len(v) >= 3:
+            str_freq[v] += 1
+        elif isinstance(v, list):
+            for x in v:
+                count_strs(x)
+        elif isinstance(v, dict):
+            for x in v.values():
+                count_strs(x)
+
+    for row in catalog:
+        for ci, k in enumerate(all_keys):
+            v = row.get(k, "__U__")
+            if type(v) is not type(col_defaults[ci]) or v != col_defaults[ci]:
+                if k == "stores" and isinstance(v, list):
+                    for st in v:
+                        if isinstance(st, dict) and isinstance(st.get("name"), str):
+                            str_freq[st["name"]] += 1
+                else:
+                    count_strs(v)
+
+    dict_strings = [s for s, c in str_freq.most_common() if c >= 2 and (len(s) * c > len(s) + 4 * c + 4)]
     str_to_idx = {s: idx for idx, s in enumerate(dict_strings)}
 
-    # Encode each catalog row as a compact positional array; strings in dict become [idx] marker (1-element int array)
-    # Note: no string field in catalog is a 1-element int array, so checking Array.isArray(v) && v.length === 1 && typeof v[0] === 'number' is 100% unambiguous!
-    packed_rows = []
-    for row in catalog:
-        arr = []
-        for k in all_keys:
-            if k not in row:
-                arr.append("__U__")
+    def enc_val(v):
+        if isinstance(v, str) and v in str_to_idx:
+            return [str_to_idx[v]]
+        if isinstance(v, list):
+            return [enc_val(x) for x in v]
+        if isinstance(v, dict):
+            return {dk: enc_val(dv) for dk, dv in v.items()}
+        return v
+
+    def enc_stores(st_list):
+        out = []
+        for st in st_list:
+            if isinstance(st, dict) and set(st.keys()) <= {"name", "url"}:
+                nm = st.get("name", "")
+                nm_enc = str_to_idx[nm] if nm in str_to_idx else nm
+                u = st.get("url", "")
+                p_idx = -1
+                for pi, pref in enumerate(url_prefixes):
+                    if u.startswith(pref):
+                        p_idx = pi
+                        u = u[len(pref):]
+                        break
+                out.append([nm_enc, p_idx, u])
             else:
-                v = row[k]
-                if isinstance(v, str) and v in str_to_idx:
-                    arr.append([str_to_idx[v]])
+                out.append(st)
+        return out
+
+    stores_col = all_keys.index("stores") if "stores" in all_keys else -1
+    sparse_rows = []
+    for row in catalog:
+        sr = []
+        for ci, k in enumerate(all_keys):
+            v = row.get(k, "__U__")
+            if type(v) is not type(col_defaults[ci]) or v != col_defaults[ci]:
+                sr.append(ci)
+                if ci == stores_col and isinstance(v, list):
+                    sr.append(enc_stores(v))
                 else:
-                    arr.append(v)
-        packed_rows.append(arr)
+                    sr.append(enc_val(v))
+        sparse_rows.append(sr)
 
     rest_obj = {k: v for k, v in db_obj.items() if k != "catalog"}
+    rest_obj["price_history"] = load_price_history_map(catalog)
     payload = {
         "k": all_keys,
+        "df": col_defaults,
         "d": dict_strings,
-        "r": packed_rows,
+        "up": url_prefixes,
+        "sc": stores_col,
+        "r": sparse_rows,
         "o": rest_obj,
     }
     payload_json = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -417,13 +756,29 @@ def compress_db_for_html(master: dict) -> str:
     unpack_js = (
         "const DB = (() => {\n"
         f"  const _P = {payload_json};\n"
-        "  const _K = _P.k, _D = _P.d, _kl = _K.length;\n"
-        "  const _cat = _P.r.map(row => {\n"
+        "  const _K = _P.k, _DF = _P.df, _D = _P.d, _UP = _P.up, _SC = _P.sc, _kl = _K.length;\n"
+        "  const _dec = v => {\n"
+        "    if (Array.isArray(v)) {\n"
+        "      if (v.length === 1 && typeof v[0] === 'number') return _D[v[0]];\n"
+        "      return v.map(_dec);\n"
+        "    }\n"
+        "    if (v && typeof v === 'object') {\n"
+        "      const o = {}; for (const kk in v) o[kk] = _dec(v[kk]); return o;\n"
+        "    }\n"
+        "    return v;\n"
+        "  };\n"
+        "  const _decSt = arr => arr.map(s => Array.isArray(s) ? { name: typeof s[0] === 'number' ? _D[s[0]] : s[0], url: (s[1] >= 0 ? _UP[s[1]] : '') + s[2] } : s);\n"
+        "  const _cat = _P.r.map(sr => {\n"
         "    const obj = {};\n"
         "    for (let i = 0; i < _kl; i++) {\n"
-        "      const v = row[i];\n"
-        "      if (v === '__U__') continue;\n"
-        "      obj[_K[i]] = (Array.isArray(v) && v.length === 1 && typeof v[0] === 'number') ? _D[v[0]] : v;\n"
+        "      const dv = _DF[i];\n"
+        "      if (dv === '__U__') continue;\n"
+        "      obj[_K[i]] = Array.isArray(dv) ? dv.slice() : (dv && typeof dv === 'object' ? Object.assign({}, dv) : dv);\n"
+        "    }\n"
+        "    for (let j = 0; j < sr.length; j += 2) {\n"
+        "      const ci = sr[j], v = sr[j + 1];\n"
+        "      if (v === '__U__') { delete obj[_K[ci]]; continue; }\n"
+        "      obj[_K[ci]] = (ci === _SC && Array.isArray(v)) ? _decSt(v) : _dec(v);\n"
         "    }\n"
         "    return obj;\n"
         "  });\n"
@@ -453,16 +808,15 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
             raise RuntimeError("Could not locate `const DB = ...` in template HTML")
         html = html[:m.start()] + compressed_db_js + "\n" + html[m.end():]
 
-    # 2. Inject compact Offline CSS Fallback right BEFORE Tailwind script so Tailwind overrides it online,
-    #    and fallback takes over seamlessly offline!
-    if 'id="offline-tailwind-fallback"' not in html:
-        offline_css = generate_offline_tailwind_css(html)
-        fallback_tag = f'  <style id="offline-tailwind-fallback">\n{offline_css}\n  </style>\n'
-        tw_idx = html.find('<script src="https://cdn.tailwindcss.com')
-        if tw_idx != -1:
-            html = html[:tw_idx] + fallback_tag + html[tw_idx:]
-        else:
-            html = html.replace("</head>", fallback_tag + "</head>", 1)
+    # 2. Compile 100% local zero-CDN Tailwind utility CSS and remove external Tailwind CDN & Google Fonts
+    html = re.sub(r'\s*<script[^>]+cdn\.tailwindcss\.com[^>]*></script>\s*', '\n', html)
+    html = re.sub(r'\s*<link[^>]+fonts\.googleapis\.com[^>]*>\s*', '\n', html)
+    offline_css = generate_offline_tailwind_css(html)
+    fallback_tag = f'  <style id="offline-tailwind-fallback">\n{offline_css}\n  </style>\n'
+    if 'id="offline-tailwind-fallback"' in html:
+        html = re.sub(r'<style id="offline-tailwind-fallback">[\s\S]*?</style>', fallback_tag.strip(), html, count=1)
+    else:
+        html = html.replace("<head>", "<head>\n" + fallback_tag, 1)
 
     # 3. Restore missing UI controls whose JS handlers already exist:
     # 3a. #btnExportUserProfileJson right next to #inpImportUserProfileJson
@@ -501,6 +855,27 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
     with open(out_html, "w", encoding="utf-8") as fp:
         fp.write(html)
     print(f"[HTML] Built optimized offline-ready portal ({os.path.getsize(out_html):,} bytes) -> {out_html}")
+
+    # 5. Also emit fast split web build: index.html (~1.2 MB) + data/db_payload.js (independently cached)
+    out_dir = os.path.dirname(out_html) or "."
+    data_dir = os.path.join(out_dir, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    p_start = html.find("  const _P = ")
+    p_end = html.find(";\n  const _K = _P.k", p_start)
+    if p_start != -1 and p_end != -1:
+        payload_rhs = html[p_start + len("  const _P = "):p_end]
+        payload_js_path = os.path.join(data_dir, "db_payload.js")
+        with open(payload_js_path, "w", encoding="utf-8") as fp_js:
+            fp_js.write("window.__DB_PAYLOAD=" + payload_rhs + ";\n")
+        split_html = html[:p_start] + "  const _P = window.__DB_PAYLOAD;" + html[p_end:]
+        # Inject <script src="data/db_payload.js"></script> right before the last <script>
+        last_sc = split_html.rfind("<script", 0, p_start)
+        if last_sc != -1:
+            split_html = split_html[:last_sc] + '<script src="data/db_payload.js"></script>\n' + split_html[last_sc:]
+        index_html_path = os.path.join(out_dir, "index.html")
+        with open(index_html_path, "w", encoding="utf-8") as fp_idx:
+            fp_idx.write(split_html)
+        print(f"[WEB]  Built fast split web portal: {index_html_path} ({os.path.getsize(index_html_path):,} bytes) + {payload_js_path} ({os.path.getsize(payload_js_path):,} bytes)")
 
 
 def recalculate_xlsx_libreoffice(xlsx_path: str) -> None:

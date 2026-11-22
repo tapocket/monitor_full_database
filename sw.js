@@ -1,8 +1,8 @@
-const CACHE_NAME = "monitor-db-cache-2026-11-21c";
+const CACHE_NAME = "monitor-db-cache-2026-11-22j";
 const PRECACHE_URLS = [
   "./",
   "./index.html",
-  "./monitor_full_database.html",
+  "./data/db_payload.js",
   "./manifest.webmanifest"
 ];
 
@@ -22,7 +22,7 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Network-First: always load fresh portal when online, fallback to offline cache when offline
+// Network-First: fresh HTML & data/db_payload.js online, instant offline fallback from cache
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   event.respondWith(
@@ -34,6 +34,6 @@ self.addEventListener("fetch", (event) => {
         }
         return response;
       })
-      .catch(() => caches.match(event.request).then((c) => c || caches.match("./monitor_full_database.html")))
+      .catch(() => caches.match(event.request).then((c) => c || caches.match("./index.html") || caches.match("./monitor_full_database.html")))
   );
 });

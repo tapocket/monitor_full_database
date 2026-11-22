@@ -28,27 +28,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Compile minified Tailwind CSS (no runtime CDN)
-        run: |
-          npm install
-          npm run build:css
-      - name: Prepare static site, inline compiled CSS & JSON API
+      - name: Prepare dual-mode static site (fast split index.html + standalone offline HTML + JSON API)
         run: |
           mkdir -p _site/data/price_history _site/api/v1 _site/docs/screenshots
-          python3 -c "
-          html = open('monitor_full_database.html', encoding='utf-8').read()
-          css = open('dist/tailwind.min.css', encoding='utf-8').read()
-          cdn_tag = '<script src=\"https://cdn.tailwindcss.com/3.4.17\"></script>'
-          if cdn_tag in html:
-              html = html.replace(cdn_tag, '<style id=\"compiled-tailwind\">' + css + '</style>', 1)
-          open('_site/index.html', 'w', encoding='utf-8').write(html)
-          open('_site/monitor_full_database.html', 'w', encoding='utf-8').write(html)
-          "
-          cp manifest.webmanifest sw.js _site/
-          cp data/prices_rf_snapshot.json data/icc_profiles.json _site/data/
+          cp index.html monitor_full_database.html manifest.webmanifest sw.js _site/
+          cp data/db_payload.js data/prices_rf_snapshot.json data/icc_profiles.json _site/data/
           cp data/price_history/*.jsonl _site/data/price_history/ || true
           cp docs/screenshots/*.png _site/docs/screenshots/ || true
           python3 -c "

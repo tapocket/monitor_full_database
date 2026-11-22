@@ -4,3 +4,766 @@
 {"date": "2026-11-20", "model_match": "MSI MPG 321URX QD-OLED", "sku_rf": "9S6-3DD29A-055", "retail_rf_rub": 155000, "mp_rf_rub": 135000, "store": "DNS / Ситилинк / Я.Маркет"}
 {"date": "2026-11-20", "model_match": "Xiaomi G Pro 27i", "sku_rf": "ELA5585EU", "retail_rf_rub": 45440, "mp_rf_rub": 43626, "store": "Яндекс Маркет / Ozon"}
 {"date": "2026-11-20", "model_match": "TCL 27R83U", "sku_rf": "27R83U", "retail_rf_rub": 54000, "mp_rf_rub": 47939, "store": "Яндекс Маркет / Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 6, "model_match": "ASUS PG32UCWM", "retail_rf_rub": 101100, "mp_rf_rub": 101100, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 12, "model_match": "ASUS ROG Strix XG27AQNGV", "retail_rf_rub": 27600, "mp_rf_rub": 27600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 13, "model_match": "ASUS ROG Swift OLED PG34WCDN", "retail_rf_rub": 160400, "mp_rf_rub": 92300, "store": "Ozon / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 20, "model_match": "ASUS TUF Gaming VG27AQM5F", "retail_rf_rub": 29999, "mp_rf_rub": 29600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 21, "model_match": "ASUS TUF Gaming VG27AQML5F", "retail_rf_rub": 29870, "mp_rf_rub": 28400, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 22, "model_match": "ASUS VG259QMRL5A", "retail_rf_rub": 16200, "mp_rf_rub": 16200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 38, "model_match": "ASUS ROG Swift OLED PG32UCDM Gen 3", "retail_rf_rub": 102900, "mp_rf_rub": 102900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 39, "model_match": "ASUS ROG Swift OLED PG32UCWM", "retail_rf_rub": 96800, "mp_rf_rub": 96800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 47, "model_match": "ASUS TUF Gaming VG34WQL5A", "retail_rf_rub": 30790, "mp_rf_rub": 34700, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 49, "model_match": "ASUS TUF Gaming VG32WQ3B", "retail_rf_rub": 24299, "mp_rf_rub": 23000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 53, "model_match": "ASUS VG34VQL3A", "retail_rf_rub": 30499, "mp_rf_rub": 34400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 64, "model_match": "ASUS VA249QGSE", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 65, "model_match": "ASUS VA279QGSE", "retail_rf_rub": 10600, "mp_rf_rub": 10600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 67, "model_match": "ASUS TUF Gaming VG27UQEL5A", "retail_rf_rub": 24499, "mp_rf_rub": 25000, "store": "Регард / DNS"}
+{"date": "2026-11-22", "cat_id": 68, "model_match": "ASUS ROG Swift OLED PG27AQWP-W", "retail_rf_rub": 86600, "mp_rf_rub": 86600, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 71, "model_match": "ASUS ROG Swift Pro PG248QP", "retail_rf_rub": 115720, "mp_rf_rub": 65000, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 72, "model_match": "ASUS ROG Strix OLED XG27AQDPG", "retail_rf_rub": 86999, "mp_rf_rub": 85400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 73, "model_match": "ASUS ROG Strix OLED XG32UCWMG", "retail_rf_rub": 94520, "mp_rf_rub": 102800, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 74, "model_match": "ASUS ROG Strix XG279CNS", "retail_rf_rub": 52050, "mp_rf_rub": 52050, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 75, "model_match": "ASUS ROG Strix OLED XG27AQDNG", "retail_rf_rub": 60799, "mp_rf_rub": 69200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 77, "model_match": "ASUS ROG Strix XG27ACMS", "retail_rf_rub": 37290, "mp_rf_rub": 37290, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 78, "model_match": "ASUS TUF Gaming VG259QMR5A", "retail_rf_rub": 15600, "mp_rf_rub": 15600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 79, "model_match": "ASUS TUF Gaming VG259QMRL5A", "retail_rf_rub": 17400, "mp_rf_rub": 17400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 80, "model_match": "ASUS TUF Gaming VG27AQM5A", "retail_rf_rub": 35160, "mp_rf_rub": 28600, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 81, "model_match": "ASUS TUF Gaming VG27AQML5A", "retail_rf_rub": 28960, "mp_rf_rub": 28500, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 82, "model_match": "ASUS VG27AQML5A", "retail_rf_rub": 28960, "mp_rf_rub": 28500, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 84, "model_match": "ASUS ROG Strix OLED XG27AQWMG", "retail_rf_rub": 66299, "mp_rf_rub": 58000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 90, "model_match": "ASUS TUF Gaming VG32VQM5B", "retail_rf_rub": 25999, "mp_rf_rub": 16000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 93, "model_match": "ASUS PA32UCDMR-K", "retail_rf_rub": 194410, "mp_rf_rub": 95000, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 96, "model_match": "ASUS ROG Strix OLED XG27AQDMES", "retail_rf_rub": 43999, "mp_rf_rub": 52200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 98, "model_match": "ASUS ROG Strix OLED XG27UCDMG", "retail_rf_rub": 103000, "mp_rf_rub": 103000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 100, "model_match": "ASUS ROG Swift OLED PG27UCDM", "retail_rf_rub": 104999, "mp_rf_rub": 103000, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 102, "model_match": "ASUS TUF Gaming VG249Q5A", "retail_rf_rub": 14300, "mp_rf_rub": 15600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 104, "model_match": "ASUS TUF Gaming VG259QM5A", "retail_rf_rub": 14999, "mp_rf_rub": 16400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 106, "model_match": "ASUS TUF Gaming VG279QM5A", "retail_rf_rub": 19299, "mp_rf_rub": 17200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 107, "model_match": "ASUS TUF Gaming VG27AQ5A", "retail_rf_rub": 18999, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 108, "model_match": "ASUS TUF Gaming VG27AQL5A", "retail_rf_rub": 18400, "mp_rf_rub": 18400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 109, "model_match": "ASUS VG27AQL5A", "retail_rf_rub": 18300, "mp_rf_rub": 18300, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 112, "model_match": "ASUS TUF Gaming VG259Q5A", "retail_rf_rub": 12499, "mp_rf_rub": 12000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 113, "model_match": "ASUS TUF Gaming VG259QL5A", "retail_rf_rub": 13640, "mp_rf_rub": 14000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 114, "model_match": "ASUS TUF Gaming VG279Q5A", "retail_rf_rub": 13000, "mp_rf_rub": 13000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 116, "model_match": "ASUS TUF Gaming VG27AQ3AZ", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 119, "model_match": "ASUS PA27UCGE", "retail_rf_rub": 86310, "mp_rf_rub": 53800, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 120, "model_match": "ASUS ROG Strix XG32UCG", "retail_rf_rub": 53999, "mp_rf_rub": 40600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 122, "model_match": "ASUS TUF Gaming VG279QE5A", "retail_rf_rub": 14799, "mp_rf_rub": 11100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 123, "model_match": "ASUS PA278CGRV", "retail_rf_rub": 34999, "mp_rf_rub": 14900, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 129, "model_match": "ASUS PA278QGV", "retail_rf_rub": 26499, "mp_rf_rub": 15600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 130, "model_match": "ASUS VA249HG", "retail_rf_rub": 7399, "mp_rf_rub": 11400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 132, "model_match": "ASUS VA249QGS", "retail_rf_rub": 14050, "mp_rf_rub": 11999, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 133, "model_match": "ASUS VA279HG", "retail_rf_rub": 10999, "mp_rf_rub": 10400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 134, "model_match": "ASUS VA279QG", "retail_rf_rub": 11599, "mp_rf_rub": 9900, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 135, "model_match": "ASUS VA279QGS", "retail_rf_rub": 15600, "mp_rf_rub": 11100, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 136, "model_match": "ASUS VZ249HG", "retail_rf_rub": 10999, "mp_rf_rub": 9600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 137, "model_match": "ASUS VZ279HG", "retail_rf_rub": 11100, "mp_rf_rub": 11100, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 139, "model_match": "ASUS VP227HF", "retail_rf_rub": 7260, "mp_rf_rub": 9400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 144, "model_match": "ASUS VA27AQ", "retail_rf_rub": 14850, "mp_rf_rub": 17000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 146, "model_match": "ASUS PA32UCE", "retail_rf_rub": 133800, "mp_rf_rub": 75000, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 147, "model_match": "ASUS ProArt Display PA32KCX", "retail_rf_rub": 395000, "mp_rf_rub": 395000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 150, "model_match": "ASUS VG259QM", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 152, "model_match": "ASUS PG32UCDM", "retail_rf_rub": 96300, "mp_rf_rub": 96300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 153, "model_match": "ASUS ROG Strix OLED XG27AQDMG", "retail_rf_rub": 41999, "mp_rf_rub": 52000, "store": "DNS / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 154, "model_match": "ASUS ROG Swift OLED PG32UCDM", "retail_rf_rub": 96300, "mp_rf_rub": 96300, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 157, "model_match": "ASUS XG27ACS", "retail_rf_rub": 23999, "mp_rf_rub": 19999, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 165, "model_match": "ASUS XG27UCS", "retail_rf_rub": 42999, "mp_rf_rub": 34400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 167, "model_match": "ASUS VG249Q3A", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 168, "model_match": "ASUS VG27AQ3A", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 169, "model_match": "ASUS VG27AQ3A-L", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 173, "model_match": "ASUS VG249Q1A", "retail_rf_rub": 15799, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 174, "model_match": "ASUS VG259QR", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 175, "model_match": "ASUS VG28UQL1A", "retail_rf_rub": 41999, "mp_rf_rub": 34200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 177, "model_match": "ASUS VY249HGE", "retail_rf_rub": 8099, "mp_rf_rub": 10500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 182, "model_match": "MSI MPG 271KRAW16", "retail_rf_rub": 84800, "mp_rf_rub": 84800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 183, "model_match": "MSI MPG 341CQR QD-OLED X36", "retail_rf_rub": 102212, "mp_rf_rub": 92600, "store": "Ozon / Регард / DNS"}
+{"date": "2026-11-22", "cat_id": 187, "model_match": "MSI MAG 276QRM32", "retail_rf_rub": 0, "mp_rf_rub": 25020, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 189, "model_match": "MSI MAG 271KPD7", "retail_rf_rub": 51499, "mp_rf_rub": 35200, "store": "Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 190, "model_match": "MSI MAG 274QPF X30MV", "retail_rf_rub": 39192, "mp_rf_rub": 38000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 191, "model_match": "MSI MAG 341CQP QD-OLED X28", "retail_rf_rub": 83799, "mp_rf_rub": 94200, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 193, "model_match": "MSI MAG 272UP X24", "retail_rf_rub": 77999, "mp_rf_rub": 87320, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 194, "model_match": "MSI MAG 321UP QD-OLED X24", "retail_rf_rub": 98999, "mp_rf_rub": 94800, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 200, "model_match": "MSI MAG 272UP QD-OLED E16", "retail_rf_rub": 73499, "mp_rf_rub": 81110, "store": "Регард / Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 202, "model_match": "MSI G275L E14", "retail_rf_rub": 9999, "mp_rf_rub": 11200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 204, "model_match": "MSI PRO MAX 341QPXW14G", "retail_rf_rub": 88070, "mp_rf_rub": 99370, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 205, "model_match": "MSI PRO MP273W E14A", "retail_rf_rub": 9800, "mp_rf_rub": 9800, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 207, "model_match": "MSI Pro MP245PHG E14", "retail_rf_rub": 14699, "mp_rf_rub": 10000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 209, "model_match": "MSI Pro Max 241PHW E14", "retail_rf_rub": 17199, "mp_rf_rub": 11000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 210, "model_match": "MSI Pro Max 271PHW E14", "retail_rf_rub": 9600, "mp_rf_rub": 9600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 211, "model_match": "MSI Pro Max 271QPHW E14", "retail_rf_rub": 25299, "mp_rf_rub": 15600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 212, "model_match": "MSI Pro Max 271QPX14G", "retail_rf_rub": 48340, "mp_rf_rub": 51600, "store": "Wildberries / DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 213, "model_match": "MSI Pro Max 271UPX12G", "retail_rf_rub": 73999, "mp_rf_rub": 103600, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 214, "model_match": "MSI Pro Max 271UPXW12G", "retail_rf_rub": 75999, "mp_rf_rub": 104200, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 216, "model_match": "MSI MPG 242R X60N", "retail_rf_rub": 69490, "mp_rf_rub": 67200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 217, "model_match": "MSI MAG 272QP QD-OLED X50", "retail_rf_rub": 63999, "mp_rf_rub": 86300, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 218, "model_match": "MSI MPG 271QR QD-OLED X50", "retail_rf_rub": 100260, "mp_rf_rub": 86800, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 220, "model_match": "MSI MPG 272QRF X36", "retail_rf_rub": 59999, "mp_rf_rub": 29400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 221, "model_match": "MSI MAG 272URDF E16", "retail_rf_rub": 29999, "mp_rf_rub": 34800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 222, "model_match": "MSI MAG 274QPF X32", "retail_rf_rub": 27400, "mp_rf_rub": 27400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 223, "model_match": "MSI MAG 274QRFW X32", "retail_rf_rub": 22999, "mp_rf_rub": 28200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 224, "model_match": "MSI MAG 274UPDF E16M", "retail_rf_rub": 46999, "mp_rf_rub": 53600, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 225, "model_match": "MSI MAG 275QF X32", "retail_rf_rub": 19000, "mp_rf_rub": 19000, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 226, "model_match": "MSI MAG 275QF X36", "retail_rf_rub": 19000, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 227, "model_match": "MSI MPG 274UPDF E16M", "retail_rf_rub": 46999, "mp_rf_rub": 51800, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 228, "model_match": "MSI MPG 274URDFW E16M", "retail_rf_rub": 47999, "mp_rf_rub": 51600, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 230, "model_match": "MSI MAG 274QF E20", "retail_rf_rub": 19730, "mp_rf_rub": 27400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 232, "model_match": "MSI MAG 271QP QD-OLED X28", "retail_rf_rub": 56860, "mp_rf_rub": 58000, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 233, "model_match": "MSI MAG 272QPW QD-OLED X28", "retail_rf_rub": 49999, "mp_rf_rub": 58200, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 235, "model_match": "MSI MAG 245F X24", "retail_rf_rub": 12999, "mp_rf_rub": 16500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 237, "model_match": "MSI MAG 255F X24", "retail_rf_rub": 18000, "mp_rf_rub": 18000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 239, "model_match": "MSI MAG 272F X24", "retail_rf_rub": 15999, "mp_rf_rub": 16000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 241, "model_match": "MSI MAG 272QPW QD-OLED X24", "retail_rf_rub": 52400, "mp_rf_rub": 52400, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 242, "model_match": "MSI MAG 272UP QD-OLED X24", "retail_rf_rub": 77999, "mp_rf_rub": 87320, "store": "Регард / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 245, "model_match": "MSI MAG 274QF X24", "retail_rf_rub": 18999, "mp_rf_rub": 20950, "store": "DNS / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 246, "model_match": "MSI MAG 274QP QD-OLED X24", "retail_rf_rub": 47999, "mp_rf_rub": 52600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 248, "model_match": "MSI MAG 275QF X24", "retail_rf_rub": 19000, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 249, "model_match": "MSI MPG 272URX", "retail_rf_rub": 107530, "mp_rf_rub": 109580, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 250, "model_match": "MSI MPG 272URX QD-OLED", "retail_rf_rub": 107530, "mp_rf_rub": 109580, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 251, "model_match": "MSI MPG 322URX QD-OLED", "retail_rf_rub": 104600, "mp_rf_rub": 104600, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 252, "model_match": "MSI MPG 346CQRF X24", "retail_rf_rub": 38999, "mp_rf_rub": 32600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 253, "model_match": "MSI MAG 275QF E21", "retail_rf_rub": 19000, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 254, "model_match": "MSI MAG 242F", "retail_rf_rub": 9999, "mp_rf_rub": 12600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 255, "model_match": "MSI MAG 244F", "retail_rf_rub": 9700, "mp_rf_rub": 13400, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 256, "model_match": "MSI MAG 255F E20", "retail_rf_rub": 13000, "mp_rf_rub": 13000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 257, "model_match": "MSI MAG 256F E20", "retail_rf_rub": 12000, "mp_rf_rub": 12000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 258, "model_match": "MSI MAG 272F", "retail_rf_rub": 12000, "mp_rf_rub": 12000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 260, "model_match": "MSI MAG 274F", "retail_rf_rub": 12800, "mp_rf_rub": 12800, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 261, "model_match": "MSI MAG 274QPF E20", "retail_rf_rub": 18200, "mp_rf_rub": 18200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 262, "model_match": "MSI MAG 274QRFW E20", "retail_rf_rub": 21799, "mp_rf_rub": 28200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 263, "model_match": "MSI MAG 275QF E20", "retail_rf_rub": 13999, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 264, "model_match": "MSI MAG 342CQRF E20", "retail_rf_rub": 29999, "mp_rf_rub": 34200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 266, "model_match": "MSI MAG 242C", "retail_rf_rub": 11499, "mp_rf_rub": 12400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 268, "model_match": "MSI MAG 256F", "retail_rf_rub": 13100, "mp_rf_rub": 13100, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 269, "model_match": "MSI MAG 272QPF E20", "retail_rf_rub": 20000, "mp_rf_rub": 20000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 270, "model_match": "MSI MAG 274QF", "retail_rf_rub": 20950, "mp_rf_rub": 20950, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 271, "model_match": "MSI MAG 275CQF E18", "retail_rf_rub": 18150, "mp_rf_rub": 18200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 272, "model_match": "MSI MAG 321CQF E18", "retail_rf_rub": 19999, "mp_rf_rub": 21400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 273, "model_match": "MSI MAG 325CQPF E18", "retail_rf_rub": 23200, "mp_rf_rub": 23200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 274, "model_match": "MSI MAG 325CQRF QD E2", "retail_rf_rub": 22800, "mp_rf_rub": 22800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 275, "model_match": "MSI MAG 325QF E18V", "retail_rf_rub": 22999, "mp_rf_rub": 22200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 276, "model_match": "MSI MAG 342CQR E2", "retail_rf_rub": 33500, "mp_rf_rub": 33500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 277, "model_match": "MSI MAG 346CQ", "retail_rf_rub": 29590, "mp_rf_rub": 33200, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 278, "model_match": "MSI MAG 322UP QD-OLED E16", "retail_rf_rub": 78260, "mp_rf_rub": 96000, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 280, "model_match": "MSI MAG 322URDF E16", "retail_rf_rub": 54660, "mp_rf_rub": 40200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 281, "model_match": "MSI G242L E14", "retail_rf_rub": 9999, "mp_rf_rub": 9600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 282, "model_match": "MSI MAG 275UPD E14", "retail_rf_rub": 32999, "mp_rf_rub": 33600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 283, "model_match": "MSI MPG 491CQP", "retail_rf_rub": 89999, "mp_rf_rub": 168800, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 284, "model_match": "MSI Pro MP275W E2", "retail_rf_rub": 11999, "mp_rf_rub": 9300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 285, "model_match": "MSI Pro MP273QW E2", "retail_rf_rub": 16499, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 287, "model_match": "MSI Pro MP273Q E7", "retail_rf_rub": 13000, "mp_rf_rub": 16200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 288, "model_match": "MSI Modern MD272UPHG", "retail_rf_rub": 33780, "mp_rf_rub": 24600, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 289, "model_match": "MSI Modern MD272UPHW", "retail_rf_rub": 31150, "mp_rf_rub": 24200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 290, "model_match": "MSI Modern MD272UPSW", "retail_rf_rub": 29999, "mp_rf_rub": 25000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 291, "model_match": "MSI MAG 271QPX", "retail_rf_rub": 51600, "mp_rf_rub": 51600, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 292, "model_match": "MSI MPG 271QRX", "retail_rf_rub": 76930, "mp_rf_rub": 75520, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 293, "model_match": "MSI MPG 271QRX QD-OLED", "retail_rf_rub": 76930, "mp_rf_rub": 75520, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 295, "model_match": "MSI MAG 271QPX E2", "retail_rf_rub": 51600, "mp_rf_rub": 51600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 296, "model_match": "MSI MAG 321UPX", "retail_rf_rub": 98490, "mp_rf_rub": 95700, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 297, "model_match": "MSI MPG 321URX", "retail_rf_rub": 94043, "mp_rf_rub": 95400, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 298, "model_match": "MSI MPG 321URX QD-OLED", "retail_rf_rub": 94043, "mp_rf_rub": 135000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 299, "model_match": "MSI MPG 341CQPX", "retail_rf_rub": 89999, "mp_rf_rub": 94700, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 300, "model_match": "MSI G244F E2", "retail_rf_rub": 14000, "mp_rf_rub": 14000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 301, "model_match": "MSI G255F", "retail_rf_rub": 9499, "mp_rf_rub": 11800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 302, "model_match": "MSI G255PF E2", "retail_rf_rub": 14999, "mp_rf_rub": 12000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 303, "model_match": "MSI G272QPF E2", "retail_rf_rub": 19999, "mp_rf_rub": 18400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 304, "model_match": "MSI G274QPF E2", "retail_rf_rub": 18300, "mp_rf_rub": 18300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 305, "model_match": "MSI MAG 274QRF", "retail_rf_rub": 19500, "mp_rf_rub": 19500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 306, "model_match": "MSI MAG 274QRF-QD E2", "retail_rf_rub": 18900, "mp_rf_rub": 18900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 307, "model_match": "MSI MAG 274QRFW", "retail_rf_rub": 18900, "mp_rf_rub": 18900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 308, "model_match": "MSI MAG 275QF", "retail_rf_rub": 19000, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 311, "model_match": "MSI MPG 274URF QD", "retail_rf_rub": 33800, "mp_rf_rub": 33800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 312, "model_match": "MSI G274QPX", "retail_rf_rub": 23200, "mp_rf_rub": 23200, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 314, "model_match": "MSI G2412", "retail_rf_rub": 12000, "mp_rf_rub": 12000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 315, "model_match": "MSI G2422", "retail_rf_rub": 13200, "mp_rf_rub": 13200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 316, "model_match": "MSI G272QPF", "retail_rf_rub": 19600, "mp_rf_rub": 19600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 317, "model_match": "MSI G274QPF", "retail_rf_rub": 22999, "mp_rf_rub": 22999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 319, "model_match": "MSI G244F", "retail_rf_rub": 12000, "mp_rf_rub": 12000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 320, "model_match": "MSI G273QF", "retail_rf_rub": 20400, "mp_rf_rub": 20400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 321, "model_match": "MSI G321Q", "retail_rf_rub": 21500, "mp_rf_rub": 21500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 322, "model_match": "MSI MAG321QR", "retail_rf_rub": 21500, "mp_rf_rub": 21500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 324, "model_match": "MSI MAG 274UPF", "retail_rf_rub": 35600, "mp_rf_rub": 35600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 325, "model_match": "MSI MAG281URF", "retail_rf_rub": 35700, "mp_rf_rub": 35700, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 326, "model_match": "Samsung Odyssey OLED G80SH", "retail_rf_rub": 96890, "mp_rf_rub": 96880, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 328, "model_match": "Samsung S27HG802S", "retail_rf_rub": 105110, "mp_rf_rub": 102400, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 329, "model_match": "Samsung S32HG802S", "retail_rf_rub": 120010, "mp_rf_rub": 120010, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 330, "model_match": "Samsung G53F", "retail_rf_rub": 19999, "mp_rf_rub": 19999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 331, "model_match": "Samsung Odyssey G5 G53F S27FG532EI", "retail_rf_rub": 16999, "mp_rf_rub": 18200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 334, "model_match": "Samsung S32HG732S", "retail_rf_rub": 95660, "mp_rf_rub": 95400, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 343, "model_match": "Samsung S27FG602S", "retail_rf_rub": 84800, "mp_rf_rub": 84800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 346, "model_match": "Samsung S27FG606EC", "retail_rf_rub": 58600, "mp_rf_rub": 58600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 350, "model_match": "Samsung S27FG500S", "retail_rf_rub": 41530, "mp_rf_rub": 41530, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 351, "model_match": "Samsung S27FG502E", "retail_rf_rub": 20950, "mp_rf_rub": 20950, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 354, "model_match": "Samsung S32FG502E", "retail_rf_rub": 27999, "mp_rf_rub": 27999, "store": "ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 357, "model_match": "Samsung S27FG900X", "retail_rf_rub": 34800, "mp_rf_rub": 34800, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 371, "model_match": "Samsung G60SD", "retail_rf_rub": 60330, "mp_rf_rub": 60330, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 372, "model_match": "Samsung Odyssey OLED G6 G60SD", "retail_rf_rub": 63999, "mp_rf_rub": 60330, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 373, "model_match": "Samsung G80SD", "retail_rf_rub": 106080, "mp_rf_rub": 106080, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 374, "model_match": "Samsung Odyssey OLED G8 G80SD", "retail_rf_rub": 96890, "mp_rf_rub": 96880, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 379, "model_match": "Samsung Odyssey G4", "retail_rf_rub": 16199, "mp_rf_rub": 16800, "store": "Регард / DNS"}
+{"date": "2026-11-22", "cat_id": 387, "model_match": "LG 27GX790B", "retail_rf_rub": 86600, "mp_rf_rub": 86600, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 388, "model_match": "LG 32GX870B", "retail_rf_rub": 103000, "mp_rf_rub": 103000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 391, "model_match": "LG 25G550B", "retail_rf_rub": 16120, "mp_rf_rub": 15850, "store": "Регард / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 392, "model_match": "LG 27G550B", "retail_rf_rub": 21299, "mp_rf_rub": 16800, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 394, "model_match": "LG 52G930B", "retail_rf_rub": 134999, "mp_rf_rub": 73800, "store": "Ситилинк / DNS"}
+{"date": "2026-11-22", "cat_id": 396, "model_match": "LG 25G523B", "retail_rf_rub": 10599, "mp_rf_rub": 11800, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 399, "model_match": "LG 27G523B", "retail_rf_rub": 12560, "mp_rf_rub": 13200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 400, "model_match": "LG 32G620B", "retail_rf_rub": 27299, "mp_rf_rub": 21800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 403, "model_match": "LG 24U411B", "retail_rf_rub": 7950, "mp_rf_rub": 11000, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 404, "model_match": "LG 27U411B", "retail_rf_rub": 9399, "mp_rf_rub": 10600, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 405, "model_match": "LG 34U620B", "retail_rf_rub": 24499, "mp_rf_rub": 26200, "store": "Ситилинк / DNS"}
+{"date": "2026-11-22", "cat_id": 406, "model_match": "LG 34U640B", "retail_rf_rub": 20799, "mp_rf_rub": 25680, "store": "Регард / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 413, "model_match": "LG 34U601B", "retail_rf_rub": 22699, "mp_rf_rub": 25200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 415, "model_match": "LG 27U730B", "retail_rf_rub": 24000, "mp_rf_rub": 24000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 418, "model_match": "LG 32GX870A", "retail_rf_rub": 101400, "mp_rf_rub": 101400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 419, "model_match": "LG 27G810A", "retail_rf_rub": 33900, "mp_rf_rub": 33900, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 420, "model_match": "LG 45GX950A", "retail_rf_rub": 173999, "mp_rf_rub": 168800, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 422, "model_match": "LG 27G640A", "retail_rf_rub": 30999, "mp_rf_rub": 36900, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 424, "model_match": "LG 27GX700A", "retail_rf_rub": 54499, "mp_rf_rub": 57600, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 425, "model_match": "LG 27G440A", "retail_rf_rub": 17399, "mp_rf_rub": 15600, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 426, "model_match": "LG 27GX704A", "retail_rf_rub": 51660, "mp_rf_rub": 53000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 428, "model_match": "LG 34GX900A", "retail_rf_rub": 98930, "mp_rf_rub": 93800, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 429, "model_match": "LG 34GX90SA", "retail_rf_rub": 122999, "mp_rf_rub": 92800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 430, "model_match": "LG 39GX900A", "retail_rf_rub": 106499, "mp_rf_rub": 141000, "store": "Регард / DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 431, "model_match": "LG 39GX90SA", "retail_rf_rub": 120010, "mp_rf_rub": 142400, "store": "Ситилинк / Регард"}
+{"date": "2026-11-22", "cat_id": 432, "model_match": "LG 45GX900A", "retail_rf_rub": 135499, "mp_rf_rub": 167100, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 433, "model_match": "LG 45GX90SA", "retail_rf_rub": 133800, "mp_rf_rub": 168600, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 434, "model_match": "LG 27G610A", "retail_rf_rub": 16799, "mp_rf_rub": 19000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 435, "model_match": "LG 32G600A", "retail_rf_rub": 22799, "mp_rf_rub": 23000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 437, "model_match": "LG 32GS85Q", "retail_rf_rub": 37690, "mp_rf_rub": 19200, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 441, "model_match": "LG 24G411A", "retail_rf_rub": 7990, "mp_rf_rub": 7990, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 442, "model_match": "LG 27G411A", "retail_rf_rub": 10999, "mp_rf_rub": 9300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 446, "model_match": "LG 24U411A", "retail_rf_rub": 8999, "mp_rf_rub": 9400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 448, "model_match": "LG 27U411A", "retail_rf_rub": 10999, "mp_rf_rub": 10600, "store": "Ситилинк / DNS"}
+{"date": "2026-11-22", "cat_id": 451, "model_match": "LG 24U421A", "retail_rf_rub": 10499, "mp_rf_rub": 10600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 453, "model_match": "LG 27U421A", "retail_rf_rub": 9510, "mp_rf_rub": 10400, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 455, "model_match": "LG 27U631A", "retail_rf_rub": 11910, "mp_rf_rub": 16700, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 457, "model_match": "LG 29U531A", "retail_rf_rub": 14600, "mp_rf_rub": 14600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 461, "model_match": "LG 34U530A", "retail_rf_rub": 18400, "mp_rf_rub": 18400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 468, "model_match": "LG 32U720A", "retail_rf_rub": 27040, "mp_rf_rub": 23300, "store": "ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 472, "model_match": "LG 32U889SA", "retail_rf_rub": 84499, "mp_rf_rub": 53800, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 479, "model_match": "LG 27GS75Q", "retail_rf_rub": 17999, "mp_rf_rub": 21999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 480, "model_match": "LG 27GS85Q", "retail_rf_rub": 25150, "mp_rf_rub": 25140, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 481, "model_match": "LG 27GS86Q", "retail_rf_rub": 25140, "mp_rf_rub": 25140, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 482, "model_match": "LG 24GS60F-B", "retail_rf_rub": 11999, "mp_rf_rub": 12800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 484, "model_match": "LG 27GP850", "retail_rf_rub": 27999, "mp_rf_rub": 27999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 487, "model_match": "LG 27GR75Q", "retail_rf_rub": 22999, "mp_rf_rub": 22999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 489, "model_match": "LG 32GR93U-B", "retail_rf_rub": 56799, "mp_rf_rub": 41200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 492, "model_match": "LG UltraGear 27GP850-B", "retail_rf_rub": 27999, "mp_rf_rub": 27999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 493, "model_match": "LG 27GP95R-B", "retail_rf_rub": 64799, "mp_rf_rub": 33900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 498, "model_match": "LG 27GR93U", "retail_rf_rub": 33400, "mp_rf_rub": 33400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 499, "model_match": "TCL 32X3A", "retail_rf_rub": 84990, "mp_rf_rub": 89000, "store": "Ozon / DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 500, "model_match": "TCL 25P2A Pro", "retail_rf_rub": 24990, "mp_rf_rub": 24700, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 501, "model_match": "TCL 27C2A", "retail_rf_rub": 36990, "mp_rf_rub": 34000, "store": "Ozon / DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 502, "model_match": "TCL 27C2A Pro", "retail_rf_rub": 36800, "mp_rf_rub": 36800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 504, "model_match": "TCL 27P2A", "retail_rf_rub": 19990, "mp_rf_rub": 24000, "store": "Ozon / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 508, "model_match": "TCL 25P1AD", "retail_rf_rub": 11990, "mp_rf_rub": 9700, "store": "Яндекс Маркет / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 509, "model_match": "TCL 27P1AD", "retail_rf_rub": 14990, "mp_rf_rub": 12500, "store": "Яндекс Маркет / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 510, "model_match": "TCL 27P3A", "retail_rf_rub": 29999, "mp_rf_rub": 22900, "store": "Ozon / DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 515, "model_match": "TCL 25G64", "retail_rf_rub": 16990, "mp_rf_rub": 17999, "store": "DNS / Ситилинк / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 516, "model_match": "TCL 57R94", "retail_rf_rub": 199999, "mp_rf_rub": 198000, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 518, "model_match": "TCL 32G64", "retail_rf_rub": 31990, "mp_rf_rub": 19800, "store": "Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 519, "model_match": "TCL 34R83Q", "retail_rf_rub": 37400, "mp_rf_rub": 37400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 520, "model_match": "TCL 32R84", "retail_rf_rub": 63999, "mp_rf_rub": 52000, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 523, "model_match": "TCL 27R73Q", "retail_rf_rub": 22900, "mp_rf_rub": 22900, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 524, "model_match": "TCL 27R83U", "retail_rf_rub": 54000, "mp_rf_rub": 47939, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 543, "model_match": "iFFALCON R25Q51 Mini LED", "retail_rf_rub": 8999, "mp_rf_rub": 20100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 544, "model_match": "iFFALCON R24Q51 Mini LED", "retail_rf_rub": 6999, "mp_rf_rub": 18300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 551, "model_match": "HKC UG25EF", "retail_rf_rub": 0, "mp_rf_rub": 31350, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 553, "model_match": "HKC G25H5", "retail_rf_rub": 0, "mp_rf_rub": 18100, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 556, "model_match": "HKC M9 Pro", "retail_rf_rub": 0, "mp_rf_rub": 70220, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 557, "model_match": "HKC G27M5 Pro", "retail_rf_rub": 0, "mp_rf_rub": 25020, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 570, "model_match": "HKC G27M7 Pro", "retail_rf_rub": 0, "mp_rf_rub": 31350, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 572, "model_match": "HKC XG27L3", "retail_rf_rub": 0, "mp_rf_rub": 34800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 576, "model_match": "HKC G32M12Max", "retail_rf_rub": 0, "mp_rf_rub": 52400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 580, "model_match": "HKC G27M2 Pro", "retail_rf_rub": 0, "mp_rf_rub": 23180, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 586, "model_match": "HKC G25H3", "retail_rf_rub": 0, "mp_rf_rub": 11000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 623, "model_match": "KTC M27P6S", "retail_rf_rub": 0, "mp_rf_rub": 46880, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 636, "model_match": "KTC M27P6", "retail_rf_rub": 0, "mp_rf_rub": 35720, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 667, "model_match": "Titan Army X256K", "retail_rf_rub": 0, "mp_rf_rub": 18610, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 668, "model_match": "Titan Army X276T", "retail_rf_rub": 0, "mp_rf_rub": 32341, "store": "AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 669, "model_match": "Titan Army P245MS Pro+", "retail_rf_rub": 49187, "mp_rf_rub": 49187, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 670, "model_match": "Titan Army P245MS Pro", "retail_rf_rub": 25500, "mp_rf_rub": 25500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 671, "model_match": "Titan Army U255T", "retail_rf_rub": 0, "mp_rf_rub": 16817, "store": "Ozon / AliExpress"}
+{"date": "2026-11-22", "cat_id": 672, "model_match": "Titan Army P275MS Pro", "retail_rf_rub": 0, "mp_rf_rub": 25600, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 674, "model_match": "Titan Army P2510H Pro+", "retail_rf_rub": 11500, "mp_rf_rub": 11500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 676, "model_match": "Titan Army P326MV Plus", "retail_rf_rub": 34100, "mp_rf_rub": 43241, "store": "Ozon / AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 679, "model_match": "Titan Army G27W9S", "retail_rf_rub": 39000, "mp_rf_rub": 39000, "store": "Ozon / AliExpress"}
+{"date": "2026-11-22", "cat_id": 680, "model_match": "Titan Army P2712R2+", "retail_rf_rub": 0, "mp_rf_rub": 12280, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 682, "model_match": "Titan Army P2710H Plus", "retail_rf_rub": 10479, "mp_rf_rub": 15262, "store": "AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 686, "model_match": "Titan Army P2718R2+", "retail_rf_rub": 10700, "mp_rf_rub": 10700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 687, "model_match": "Titan Army M34E7R+", "retail_rf_rub": 23400, "mp_rf_rub": 23400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 688, "model_match": "Titan Army KG277R", "retail_rf_rub": 12600, "mp_rf_rub": 12045, "store": "AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 689, "model_match": "Titan Army G2785V", "retail_rf_rub": 0, "mp_rf_rub": 61250, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 691, "model_match": "Titan Army P275MV MAX", "retail_rf_rub": 0, "mp_rf_rub": 33300, "store": "DNS / Ozon / AliExpress"}
+{"date": "2026-11-22", "cat_id": 692, "model_match": "Titan Army P276MS+", "retail_rf_rub": 24100, "mp_rf_rub": 24100, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 695, "model_match": "Titan Army P275MS+", "retail_rf_rub": 0, "mp_rf_rub": 24174, "store": "Ozon / AliExpress"}
+{"date": "2026-11-22", "cat_id": 696, "model_match": "Titan Army P275MS+", "retail_rf_rub": 0, "mp_rf_rub": 24174, "store": "Ozon / AliExpress"}
+{"date": "2026-11-22", "cat_id": 697, "model_match": "Titan Army P275MV Plus", "retail_rf_rub": 0, "mp_rf_rub": 27900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 698, "model_match": "Titan Army P276MV", "retail_rf_rub": 28400, "mp_rf_rub": 29797, "store": "AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 699, "model_match": "Titan Army P326MV MAX", "retail_rf_rub": 0, "mp_rf_rub": 47450, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 700, "model_match": "Titan Army P2510H", "retail_rf_rub": 10199, "mp_rf_rub": 11500, "store": "Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 702, "model_match": "Titan Army P275MV-A", "retail_rf_rub": 33200, "mp_rf_rub": 33200, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 703, "model_match": "Titan Army P245MS+", "retail_rf_rub": 0, "mp_rf_rub": 16817, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 704, "model_match": "Titan Army P2710S", "retail_rf_rub": 19999, "mp_rf_rub": 19999, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 705, "model_match": "Titan Army P276MS", "retail_rf_rub": 18300, "mp_rf_rub": 18300, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 706, "model_match": "Titan Army P2510H Plus", "retail_rf_rub": 11800, "mp_rf_rub": 13809, "store": "Ozon / AliExpress (TITAN ARMY Official)"}
+{"date": "2026-11-22", "cat_id": 708, "model_match": "Titan Army G2785S", "retail_rf_rub": 39999, "mp_rf_rub": 33300, "store": "Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 709, "model_match": "Titan Army G27W8S", "retail_rf_rub": 33800, "mp_rf_rub": 33800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 710, "model_match": "Titan Army G34E9S", "retail_rf_rub": 0, "mp_rf_rub": 80800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 712, "model_match": "Titan Army P2512S", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 715, "model_match": "Titan Army C30SK Pro", "retail_rf_rub": 18000, "mp_rf_rub": 18000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 716, "model_match": "Titan Army P2510G2", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 718, "model_match": "Titan Army P2712R", "retail_rf_rub": 11600, "mp_rf_rub": 11600, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 719, "model_match": "Titan Army P275MR+", "retail_rf_rub": 22700, "mp_rf_rub": 22700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 720, "model_match": "Titan Army C27A1R", "retail_rf_rub": 11600, "mp_rf_rub": 11600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 721, "model_match": "Titan Army C32A1R", "retail_rf_rub": 19799, "mp_rf_rub": 13900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 722, "model_match": "Titan Army C34A1R", "retail_rf_rub": 24000, "mp_rf_rub": 24000, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 723, "model_match": "Titan Army P2410G", "retail_rf_rub": 10799, "mp_rf_rub": 7000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 724, "model_match": "Titan Army P2410R", "retail_rf_rub": 10700, "mp_rf_rub": 10700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 725, "model_match": "Titan Army P2710R", "retail_rf_rub": 18199, "mp_rf_rub": 11900, "store": "Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 727, "model_match": "Titan Army M27E6V-Pro", "retail_rf_rub": 48600, "mp_rf_rub": 48600, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 729, "model_match": "Titan Army P2710V MAX", "retail_rf_rub": 21800, "mp_rf_rub": 21800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 730, "model_match": "Titan Army P32A6V Pro", "retail_rf_rub": 36700, "mp_rf_rub": 36700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 731, "model_match": "Titan Army P40UG", "retail_rf_rub": 35299, "mp_rf_rub": 33300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 732, "model_match": "Titan Army P2510S", "retail_rf_rub": 15299, "mp_rf_rub": 15700, "store": "Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 733, "model_match": "Titan Army P25M2S", "retail_rf_rub": 21600, "mp_rf_rub": 21600, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 734, "model_match": "Titan Army P2710S", "retail_rf_rub": 19999, "mp_rf_rub": 19999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 735, "model_match": "Titan Army P27A6SV", "retail_rf_rub": 24500, "mp_rf_rub": 24500, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 740, "model_match": "Titan Army P2718R", "retail_rf_rub": 10700, "mp_rf_rub": 10700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 742, "model_match": "Titan Army P27A2R", "retail_rf_rub": 15799, "mp_rf_rub": 11900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 743, "model_match": "Titan Army M34E7R", "retail_rf_rub": 41800, "mp_rf_rub": 41800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 746, "model_match": "Titan Army P27A2R", "retail_rf_rub": 15799, "mp_rf_rub": 11900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 748, "model_match": "Titan Army P2710V", "retail_rf_rub": 21500, "mp_rf_rub": 21500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 749, "model_match": "Titan Army P275MV", "retail_rf_rub": 33300, "mp_rf_rub": 33300, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 755, "model_match": "Titan Army P25A2K", "retail_rf_rub": 20100, "mp_rf_rub": 20100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 756, "model_match": "Titan Army P27A6S", "retail_rf_rub": 24500, "mp_rf_rub": 24500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 757, "model_match": "Titan Army P32A2S", "retail_rf_rub": 17100, "mp_rf_rub": 17100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 758, "model_match": "Titan Army P23H2M", "retail_rf_rub": 11299, "mp_rf_rub": 11600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 760, "model_match": "Titan Army 27A6MR", "retail_rf_rub": 18500, "mp_rf_rub": 18500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 762, "model_match": "Titan Army P27A2V", "retail_rf_rub": 35999, "mp_rf_rub": 21500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 763, "model_match": "Titan Army P27A6V", "retail_rf_rub": 39799, "mp_rf_rub": 32300, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 764, "model_match": "Titan Army P32A6V", "retail_rf_rub": 33900, "mp_rf_rub": 33900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 766, "model_match": "Innocn GA27V1M MAX", "retail_rf_rub": 0, "mp_rf_rub": 46300, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 767, "model_match": "Innocn GA32V1M MAX", "retail_rf_rub": 0, "mp_rf_rub": 58950, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 768, "model_match": "Innocn 2780S", "retail_rf_rub": 0, "mp_rf_rub": 37100, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 769, "model_match": "Innocn GA27S1Q", "retail_rf_rub": 0, "mp_rf_rub": 41010, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 773, "model_match": "Innocn 32M2V", "retail_rf_rub": 0, "mp_rf_rub": 35140, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 774, "model_match": "Innocn E49M1G", "retail_rf_rub": 0, "mp_rf_rub": 37330, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 777, "model_match": "Innocn GA27T1M", "retail_rf_rub": 0, "mp_rf_rub": 26400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 778, "model_match": "Innocn 27G2T", "retail_rf_rub": 0, "mp_rf_rub": 14585, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 779, "model_match": "Innocn GA27V1M", "retail_rf_rub": 0, "mp_rf_rub": 40200, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 780, "model_match": "Innocn GA32V1M", "retail_rf_rub": 0, "mp_rf_rub": 38360, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 781, "model_match": "Innocn 27D1V", "retail_rf_rub": 0, "mp_rf_rub": 21000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 784, "model_match": "Innocn 25G2S", "retail_rf_rub": 0, "mp_rf_rub": 15000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 785, "model_match": "Innocn 25G2S Plus", "retail_rf_rub": 0, "mp_rf_rub": 16000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 789, "model_match": "Innocn 2750R", "retail_rf_rub": 0, "mp_rf_rub": 18900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 790, "model_match": "Innocn 32M2V Pro", "retail_rf_rub": 0, "mp_rf_rub": 68150, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 791, "model_match": "Innocn 2710U PLUS", "retail_rf_rub": 0, "mp_rf_rub": 19500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 793, "model_match": "Innocn 25G1G Plus", "retail_rf_rub": 0, "mp_rf_rub": 9100, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 795, "model_match": "Innocn 27G1S Plus", "retail_rf_rub": 0, "mp_rf_rub": 14500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 797, "model_match": "Innocn 27M2V", "retail_rf_rub": 0, "mp_rf_rub": 34000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 799, "model_match": "Innocn 32M2V", "retail_rf_rub": 0, "mp_rf_rub": 33420, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 803, "model_match": "SANC OM74", "retail_rf_rub": 0, "mp_rf_rub": 31350, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 809, "model_match": "SANC D75", "retail_rf_rub": 0, "mp_rf_rub": 17500, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 818, "model_match": "SANC G73 Pro", "retail_rf_rub": 0, "mp_rf_rub": 13680, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 859, "model_match": "SANC G7c II", "retail_rf_rub": 0, "mp_rf_rub": 12800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 867, "model_match": "Xiaomi Redmi G27Q 2026 320Hz", "retail_rf_rub": 0, "mp_rf_rub": 17200, "store": "Ozon / Wildberries / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 868, "model_match": "Xiaomi Redmi G27Q 2026 320Hz", "retail_rf_rub": 0, "mp_rf_rub": 15900, "store": "Wildberries / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 869, "model_match": "Xiaomi Redmi G27Q 2026 320Hz", "retail_rf_rub": 0, "mp_rf_rub": 15800, "store": "Wildberries / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 872, "model_match": "Xiaomi Redmi G25", "retail_rf_rub": 9500, "mp_rf_rub": 9500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 873, "model_match": "Xiaomi Redmi G27Q 2026 200Hz", "retail_rf_rub": 0, "mp_rf_rub": 17999, "store": "DNS / Ozon / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 876, "model_match": "Xiaomi Redmi G34WQ 2026", "retail_rf_rub": 0, "mp_rf_rub": 25990, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 881, "model_match": "Xiaomi Redmi G24 240Hz", "retail_rf_rub": 9500, "mp_rf_rub": 9500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 882, "model_match": "Xiaomi Redmi G27Q 240", "retail_rf_rub": 16000, "mp_rf_rub": 16000, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 883, "model_match": "Xiaomi G24i", "retail_rf_rub": 11600, "mp_rf_rub": 11600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 884, "model_match": "Xiaomi G27Qi", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS / ОнлайнТрейд / Регард"}
+{"date": "2026-11-22", "cat_id": 885, "model_match": "Xiaomi G27i", "retail_rf_rub": 12999, "mp_rf_rub": 12999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 887, "model_match": "Xiaomi G Pro 27Qi", "retail_rf_rub": 29199, "mp_rf_rub": 27960, "store": "DNS / Регард / Wildberries"}
+{"date": "2026-11-22", "cat_id": 888, "model_match": "Xiaomi G Pro 27i", "retail_rf_rub": 32490, "mp_rf_rub": 43626, "store": "DNS / ОнлайнТрейд / Регард"}
+{"date": "2026-11-22", "cat_id": 889, "model_match": "Xiaomi G34WQi", "retail_rf_rub": 27199, "mp_rf_rub": 25990, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 890, "model_match": "Xiaomi G34WQi", "retail_rf_rub": 27199, "mp_rf_rub": 25990, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 891, "model_match": "Xiaomi Redmi G Pro 27Q", "retail_rf_rub": 0, "mp_rf_rub": 27960, "store": "DNS / Регард / Wildberries"}
+{"date": "2026-11-22", "cat_id": 892, "model_match": "Xiaomi Redmi G27Q 2025", "retail_rf_rub": 0, "mp_rf_rub": 13480, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 894, "model_match": "Xiaomi Redmi G34WQ", "retail_rf_rub": 0, "mp_rf_rub": 23600, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 895, "model_match": "Xiaomi Redmi Monitor G Pro 27Q", "retail_rf_rub": 0, "mp_rf_rub": 27960, "store": "Регард / DNS / Wildberries"}
+{"date": "2026-11-22", "cat_id": 898, "model_match": "Xiaomi Monitor A24i", "retail_rf_rub": 8799, "mp_rf_rub": 7999, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 899, "model_match": "Xiaomi Monitor A27i", "retail_rf_rub": 11499, "mp_rf_rub": 7400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 900, "model_match": "Xiaomi A27Qi", "retail_rf_rub": 13399, "mp_rf_rub": 13990, "store": "DNS / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 901, "model_match": "Xiaomi A27Qi", "retail_rf_rub": 13399, "mp_rf_rub": 13990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 902, "model_match": "Xiaomi Monitor A27Ui", "retail_rf_rub": 25699, "mp_rf_rub": 24342, "store": "DNS / Яндекс Маркет / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 904, "model_match": "Xiaomi G27Qi", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS / ОнлайнТрейд / Регард"}
+{"date": "2026-11-22", "cat_id": 905, "model_match": "Xiaomi Redmi G24", "retail_rf_rub": 10900, "mp_rf_rub": 10900, "store": "DNS / Wildberries"}
+{"date": "2026-11-22", "cat_id": 909, "model_match": "Xiaomi Redmi G Pro 27", "retail_rf_rub": 0, "mp_rf_rub": 27500, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 912, "model_match": "Xiaomi Mi Display", "retail_rf_rub": 7499, "mp_rf_rub": 7499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 913, "model_match": "Huawei MateView GT 27 HRR", "retail_rf_rub": 19500, "mp_rf_rub": 19500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 914, "model_match": "Huawei MateView GT 27 HRR", "retail_rf_rub": 19500, "mp_rf_rub": 19500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 920, "model_match": "Huawei MateView GT 27 Smooth Sound Edition", "retail_rf_rub": 19500, "mp_rf_rub": 19500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 921, "model_match": "Huawei MateView GT 34", "retail_rf_rub": 29900, "mp_rf_rub": 29900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 922, "model_match": "Huawei MateView GT 34", "retail_rf_rub": 29900, "mp_rf_rub": 29900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 926, "model_match": "Huawei MateView GT 27", "retail_rf_rub": 16300, "mp_rf_rub": 16300, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 927, "model_match": "Huawei MateView GT 34", "retail_rf_rub": 29900, "mp_rf_rub": 29900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 928, "model_match": "Huawei MateView GT 34 Sound Edition", "retail_rf_rub": 29900, "mp_rf_rub": 29900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 929, "model_match": "Machenike MKCF25F300M", "retail_rf_rub": 16999, "mp_rf_rub": 20000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 930, "model_match": "Machenike MJF24F200", "retail_rf_rub": 7999, "mp_rf_rub": 8200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 932, "model_match": "Machenike MKQ27F240L", "retail_rf_rub": 19999, "mp_rf_rub": 15800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 935, "model_match": "Machenike MK-ZQ27F210L", "retail_rf_rub": 13999, "mp_rf_rub": 12200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 936, "model_match": "Machenike MKQ27F185L", "retail_rf_rub": 12500, "mp_rf_rub": 12500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 941, "model_match": "Machenike MKQ27F240", "retail_rf_rub": 14800, "mp_rf_rub": 14800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 945, "model_match": "Dell Alienware AW3926QW", "retail_rf_rub": 168600, "mp_rf_rub": 168600, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 965, "model_match": "Dell P2426HE", "retail_rf_rub": 25199, "mp_rf_rub": 10600, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 969, "model_match": "Dell P2726HE", "retail_rf_rub": 28499, "mp_rf_rub": 9200, "store": "DNS / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 970, "model_match": "Dell S2725QC", "retail_rf_rub": 54350, "mp_rf_rub": 25700, "store": "ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 985, "model_match": "Dell Alienware AW2525HM", "retail_rf_rub": 34900, "mp_rf_rub": 17600, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 986, "model_match": "Dell Alienware AW2725D", "retail_rf_rub": 60220, "mp_rf_rub": 58400, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 987, "model_match": "Dell Alienware AW2725Q", "retail_rf_rub": 107150, "mp_rf_rub": 103500, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 991, "model_match": "Dell Alienware AW2725DM", "retail_rf_rub": 37600, "mp_rf_rub": 41120, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 994, "model_match": "Dell S2425HSM", "retail_rf_rub": 17399, "mp_rf_rub": 11200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 995, "model_match": "Dell S2725DSM", "retail_rf_rub": 28990, "mp_rf_rub": 16400, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 998, "model_match": "Dell S3225QC", "retail_rf_rub": 98620, "mp_rf_rub": 94800, "store": "ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 999, "model_match": "Dell S3225QS", "retail_rf_rub": 47999, "mp_rf_rub": 24000, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1000, "model_match": "Dell S3425DW", "retail_rf_rub": 50999, "mp_rf_rub": 26000, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1001, "model_match": "Dell U2725QE", "retail_rf_rub": 79990, "mp_rf_rub": 53000, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1002, "model_match": "Dell U3225QE", "retail_rf_rub": 100290, "mp_rf_rub": 75100, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1003, "model_match": "Dell E2225HM", "retail_rf_rub": 11200, "mp_rf_rub": 11200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1005, "model_match": "Dell E2425HM", "retail_rf_rub": 11100, "mp_rf_rub": 11100, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1006, "model_match": "Dell E2425HSM", "retail_rf_rub": 11400, "mp_rf_rub": 11400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1007, "model_match": "Dell E2725HM", "retail_rf_rub": 9600, "mp_rf_rub": 9600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1008, "model_match": "Dell P2425D", "retail_rf_rub": 29980, "mp_rf_rub": 16600, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1009, "model_match": "Dell P2425DE", "retail_rf_rub": 38600, "mp_rf_rub": 15800, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1010, "model_match": "Dell P2725D", "retail_rf_rub": 29470, "mp_rf_rub": 15000, "store": "ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1011, "model_match": "Dell P2725DE", "retail_rf_rub": 34200, "mp_rf_rub": 16800, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1012, "model_match": "Dell P2725QE", "retail_rf_rub": 51999, "mp_rf_rub": 24000, "store": "DNS / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1013, "model_match": "Dell P3225DE", "retail_rf_rub": 52999, "mp_rf_rub": 20200, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1014, "model_match": "Dell P3225QE", "retail_rf_rub": 66490, "mp_rf_rub": 24200, "store": "ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1015, "model_match": "Dell P3425WE", "retail_rf_rub": 72350, "mp_rf_rub": 24800, "store": "ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1016, "model_match": "Dell SE2425HM", "retail_rf_rub": 9000, "mp_rf_rub": 9000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1018, "model_match": "Dell Alienware AW2725DF", "retail_rf_rub": 86299, "mp_rf_rub": 67700, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1019, "model_match": "Dell Alienware AW3225QF", "retail_rf_rub": 131999, "mp_rf_rub": 96400, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 1022, "model_match": "Dell Alienware AW3423DWF", "retail_rf_rub": 103999, "mp_rf_rub": 83800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1028, "model_match": "BenQ GW2490P", "retail_rf_rub": 10999, "mp_rf_rub": 10999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1054, "model_match": "BenQ GW2490C", "retail_rf_rub": 10999, "mp_rf_rub": 10999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1055, "model_match": "BenQ GW2490TC", "retail_rf_rub": 10999, "mp_rf_rub": 10999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1062, "model_match": "BenQ ZOWIE XL2546X", "retail_rf_rub": 39999, "mp_rf_rub": 39999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1066, "model_match": "GIGABYTE MO34WQC36", "retail_rf_rub": 94999, "mp_rf_rub": 99510, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1067, "model_match": "GIGABYTE G27Q3", "retail_rf_rub": 22999, "mp_rf_rub": 22000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1070, "model_match": "GIGABYTE MO27Q28GR", "retail_rf_rub": 54299, "mp_rf_rub": 49990, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 1073, "model_match": "GIGABYTE AORUS Elite FO32U24G", "retail_rf_rub": 110080, "mp_rf_rub": 77400, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1074, "model_match": "GIGABYTE GO27Q24A", "retail_rf_rub": 42240, "mp_rf_rub": 41169, "store": "Wildberries / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1075, "model_match": "GIGABYTE GO27Q24G", "retail_rf_rub": 41999, "mp_rf_rub": 47000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1076, "model_match": "GIGABYTE MO27U", "retail_rf_rub": 56000, "mp_rf_rub": 56000, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 1077, "model_match": "GIGABYTE MO32U24", "retail_rf_rub": 94050, "mp_rf_rub": 80000, "store": "DNS / Wildberries / Регард"}
+{"date": "2026-11-22", "cat_id": 1080, "model_match": "GIGABYTE MO27Q3", "retail_rf_rub": 55690, "mp_rf_rub": 55950, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1081, "model_match": "GIGABYTE M27Q3", "retail_rf_rub": 29600, "mp_rf_rub": 28400, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1082, "model_match": "GIGABYTE M27UP", "retail_rf_rub": 35970, "mp_rf_rub": 28200, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1083, "model_match": "GIGABYTE M27UP ICE", "retail_rf_rub": 35970, "mp_rf_rub": 28200, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1084, "model_match": "GIGABYTE MO27Q28G", "retail_rf_rub": 54150, "mp_rf_rub": 49990, "store": "DNS / Ozon / Регард"}
+{"date": "2026-11-22", "cat_id": 1085, "model_match": "GIGABYTE MO27Q2A", "retail_rf_rub": 51440, "mp_rf_rub": 50670, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1086, "model_match": "GIGABYTE G25F2A", "retail_rf_rub": 12600, "mp_rf_rub": 12600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1087, "model_match": "GIGABYTE GO27Q24", "retail_rf_rub": 44310, "mp_rf_rub": 43230, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1088, "model_match": "GIGABYTE GS25F2A", "retail_rf_rub": 10499, "mp_rf_rub": 14200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1090, "model_match": "GIGABYTE GS27FC2", "retail_rf_rub": 12499, "mp_rf_rub": 12800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1091, "model_match": "GIGABYTE MO27U2", "retail_rf_rub": 73130, "mp_rf_rub": 56000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1092, "model_match": "GIGABYTE MO32U2", "retail_rf_rub": 77200, "mp_rf_rub": 77200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1093, "model_match": "GIGABYTE G27Q2", "retail_rf_rub": 19300, "mp_rf_rub": 24750, "store": "ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1094, "model_match": "GIGABYTE G27Q20", "retail_rf_rub": 16300, "mp_rf_rub": 16300, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1095, "model_match": "GIGABYTE M27Q2 QD", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1097, "model_match": "GIGABYTE G34WQC2", "retail_rf_rub": 27999, "mp_rf_rub": 33000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1100, "model_match": "GIGABYTE M27Q2", "retail_rf_rub": 23999, "mp_rf_rub": 14200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1101, "model_match": "GIGABYTE GS32QA", "retail_rf_rub": 24899, "mp_rf_rub": 17800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1102, "model_match": "GIGABYTE M27QS", "retail_rf_rub": 37900, "mp_rf_rub": 41070, "store": "Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1104, "model_match": "GIGABYTE G27U", "retail_rf_rub": 30280, "mp_rf_rub": 27200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1106, "model_match": "GIGABYTE GS27U", "retail_rf_rub": 27000, "mp_rf_rub": 27000, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1108, "model_match": "GIGABYTE GS25F14", "retail_rf_rub": 10400, "mp_rf_rub": 10400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1112, "model_match": "GIGABYTE M27Q X rev 2.0", "retail_rf_rub": 34999, "mp_rf_rub": 34999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1115, "model_match": "GIGABYTE G24F 2", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1116, "model_match": "GIGABYTE G27Q", "retail_rf_rub": 21990, "mp_rf_rub": 21990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1119, "model_match": "Philips 27M2N5500XD", "retail_rf_rub": 21900, "mp_rf_rub": 21900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1131, "model_match": "Philips 27M2N3500FW", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1135, "model_match": "Philips 27M2N3500FL", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1146, "model_match": "Philips 27M2N3500NF", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1156, "model_match": "Philips 27B2U4601H", "retail_rf_rub": 30770, "mp_rf_rub": 16100, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1159, "model_match": "Philips 34B2U5900C", "retail_rf_rub": 54050, "mp_rf_rub": 56200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1169, "model_match": "Philips 27M2N3800A", "retail_rf_rub": 32470, "mp_rf_rub": 28600, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1174, "model_match": "Philips 27M2N3500UK", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1175, "model_match": "Philips 27M2N5500MY", "retail_rf_rub": 21900, "mp_rf_rub": 21900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1176, "model_match": "Philips 27M2N5500Y", "retail_rf_rub": 21900, "mp_rf_rub": 21900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1177, "model_match": "Philips 27M2N3500PA", "retail_rf_rub": 15400, "mp_rf_rub": 15400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1178, "model_match": "Philips 27M2N3500PF", "retail_rf_rub": 15399, "mp_rf_rub": 15400, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1181, "model_match": "Philips 27M2N6501L", "retail_rf_rub": 48430, "mp_rf_rub": 45200, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1182, "model_match": "Philips 27M2N8800", "retail_rf_rub": 74999, "mp_rf_rub": 86050, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1186, "model_match": "Philips 27M2N5901A", "retail_rf_rub": 35760, "mp_rf_rub": 27400, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1190, "model_match": "Philips 27M2N3200NF", "retail_rf_rub": 13999, "mp_rf_rub": 10500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1191, "model_match": "Philips 24B2N2200", "retail_rf_rub": 9200, "mp_rf_rub": 9200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1197, "model_match": "Philips 24E1N1200A", "retail_rf_rub": 9300, "mp_rf_rub": 9800, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1198, "model_match": "Philips 27B2N3500J", "retail_rf_rub": 16200, "mp_rf_rub": 16200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1203, "model_match": "Philips 27E1N1200A", "retail_rf_rub": 9200, "mp_rf_rub": 9200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1204, "model_match": "Philips 27E2N1110", "retail_rf_rub": 9000, "mp_rf_rub": 9000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1205, "model_match": "Philips 27E2N2500", "retail_rf_rub": 13000, "mp_rf_rub": 15600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1206, "model_match": "Philips 34B2U3600C", "retail_rf_rub": 37030, "mp_rf_rub": 24900, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1207, "model_match": "Philips 34B2U3600CH", "retail_rf_rub": 41880, "mp_rf_rub": 26100, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1214, "model_match": "Philips 32B2N3500", "retail_rf_rub": 29100, "mp_rf_rub": 20000, "store": "ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1215, "model_match": "Philips 32B2U3601", "retail_rf_rub": 32130, "mp_rf_rub": 18100, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1217, "model_match": "Philips 27E2N1500L", "retail_rf_rub": 12030, "mp_rf_rub": 14800, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1219, "model_match": "Philips 27E3U7903", "retail_rf_rub": 104230, "mp_rf_rub": 55100, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1236, "model_match": "Philips 24M1N3200ZS EVNIA 3000", "retail_rf_rub": 10899, "mp_rf_rub": 10000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1256, "model_match": "Acer Predator X32Xbmiipphuzx", "retail_rf_rub": 98499, "mp_rf_rub": 88000, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1263, "model_match": "Acer Nitro XV273X Vbmiiprx", "retail_rf_rub": 24999, "mp_rf_rub": 24999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1285, "model_match": "Acer SA243Y P1bi", "retail_rf_rub": 7960, "mp_rf_rub": 9900, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1288, "model_match": "Acer CB272 Gbmiprux", "retail_rf_rub": 9600, "mp_rf_rub": 9600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1315, "model_match": "Acer Nitro XV275K P5biipruzx", "retail_rf_rub": 39999, "mp_rf_rub": 42700, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1324, "model_match": "Acer XV270U Z1bmiiprx", "retail_rf_rub": 16490, "mp_rf_rub": 16490, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1349, "model_match": "Acer Nitro XV270 X1biipr", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1352, "model_match": "Acer XV270U X1bmiiprx", "retail_rf_rub": 16490, "mp_rf_rub": 16490, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1360, "model_match": "Acer Nitro XV270 M3bmiiprx", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1368, "model_match": "Acer Nitro VG270K V4bmiipx", "retail_rf_rub": 27800, "mp_rf_rub": 27800, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1380, "model_match": "Acer EK271 P6bi", "retail_rf_rub": 10400, "mp_rf_rub": 10400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1381, "model_match": "Acer EK271 P6bmix", "retail_rf_rub": 10520, "mp_rf_rub": 11000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1393, "model_match": "Acer CB272U Gbmiiprx", "retail_rf_rub": 15200, "mp_rf_rub": 15200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1396, "model_match": "Acer EK271 Gbmix", "retail_rf_rub": 8890, "mp_rf_rub": 9600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1406, "model_match": "Acer V247Y Gbmipx", "retail_rf_rub": 8300, "mp_rf_rub": 11200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1407, "model_match": "Acer V247Y Gbmix", "retail_rf_rub": 8300, "mp_rf_rub": 10000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1417, "model_match": "Acer SB272K bmiipx", "retail_rf_rub": 19400, "mp_rf_rub": 19400, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1422, "model_match": "Acer Nitro VG270K L1bmiipx", "retail_rf_rub": 16990, "mp_rf_rub": 20600, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1508, "model_match": "AOC Q27G42ZE", "retail_rf_rub": 20200, "mp_rf_rub": 20200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1509, "model_match": "AOC Q27G4Z", "retail_rf_rub": 20950, "mp_rf_rub": 20950, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1521, "model_match": "AOC Q27G40HE", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1523, "model_match": "AOC Q27G41HE", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1524, "model_match": "AOC CU34G4H", "retail_rf_rub": 23999, "mp_rf_rub": 33400, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1544, "model_match": "AOC 24B36XE", "retail_rf_rub": 8190, "mp_rf_rub": 10800, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1549, "model_match": "AOC 27B36XE", "retail_rf_rub": 9990, "mp_rf_rub": 11000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1580, "model_match": "AOC AGON Pro AG246FK6", "retail_rf_rub": 64830, "mp_rf_rub": 66800, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 1581, "model_match": "AOC CS24A", "retail_rf_rub": 61999, "mp_rf_rub": 67200, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1582, "model_match": "AOC AGON Pro AG276QKD2", "retail_rf_rub": 76400, "mp_rf_rub": 71000, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 1591, "model_match": "AOC Q27G4ZDR", "retail_rf_rub": 46210, "mp_rf_rub": 56700, "store": "Ситилинк / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1604, "model_match": "AOC Q27G4SRU", "retail_rf_rub": 34770, "mp_rf_rub": 22400, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1605, "model_match": "AOC U27G4", "retail_rf_rub": 29870, "mp_rf_rub": 28100, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1609, "model_match": "AOC U27G4R", "retail_rf_rub": 36080, "mp_rf_rub": 28700, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1612, "model_match": "AOC 25G4S", "retail_rf_rub": 18299, "mp_rf_rub": 14000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1615, "model_match": "AOC CS25G", "retail_rf_rub": 18999, "mp_rf_rub": 14100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1620, "model_match": "AOC Q25G4SR", "retail_rf_rub": 24999, "mp_rf_rub": 22800, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1627, "model_match": "AOC Q27G4ZD", "retail_rf_rub": 44760, "mp_rf_rub": 51500, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1636, "model_match": "AOC Q27G4ZR", "retail_rf_rub": 21499, "mp_rf_rub": 19400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1639, "model_match": "AOC 24G11ZE", "retail_rf_rub": 11499, "mp_rf_rub": 13500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1641, "model_match": "AOC 27G11ZE2", "retail_rf_rub": 11999, "mp_rf_rub": 14400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1644, "model_match": "AOC AGON Pro AG276UZD", "retail_rf_rub": 76500, "mp_rf_rub": 67790, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1647, "model_match": "AOC CU34G4Z", "retail_rf_rub": 44999, "mp_rf_rub": 32400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1649, "model_match": "AOC Q27G40E", "retail_rf_rub": 14499, "mp_rf_rub": 17120, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 1650, "model_match": "AOC Q27G40ZDF", "retail_rf_rub": 46720, "mp_rf_rub": 44630, "store": "Регард / Ситилинк / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1651, "model_match": "AOC Q27G41ZDF", "retail_rf_rub": 46190, "mp_rf_rub": 44600, "store": "Ситилинк / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1653, "model_match": "AOC Q27G4ZMN", "retail_rf_rub": 36060, "mp_rf_rub": 27500, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1658, "model_match": "AOC 24G42HE", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1659, "model_match": "AOC 24G4H", "retail_rf_rub": 10200, "mp_rf_rub": 10200, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1660, "model_match": "AOC 24G4HA", "retail_rf_rub": 10800, "mp_rf_rub": 10800, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1663, "model_match": "AOC 27G4H", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1670, "model_match": "AOC 24G40E", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1671, "model_match": "AOC 27G41E", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1676, "model_match": "AOC CU34G4", "retail_rf_rub": 22999, "mp_rf_rub": 26160, "store": "Регард / DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1681, "model_match": "AOC Q27G42XE", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 1683, "model_match": "AOC Q27G4XY", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1693, "model_match": "AOC 24B36X", "retail_rf_rub": 8999, "mp_rf_rub": 9200, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1700, "model_match": "AOC 27B36X", "retail_rf_rub": 9499, "mp_rf_rub": 9300, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1732, "model_match": "AOC Q27B30S3", "retail_rf_rub": 11599, "mp_rf_rub": 16100, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1734, "model_match": "AOC Q27E4U", "retail_rf_rub": 16100, "mp_rf_rub": 16100, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1752, "model_match": "AOC U27E4CV", "retail_rf_rub": 29040, "mp_rf_rub": 20400, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1764, "model_match": "AOC Q27G4X", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1771, "model_match": "AOC 24G2ZE/BK", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1772, "model_match": "AOC 24G2ZU/BK", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 1775, "model_match": "AOC 24G4", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1776, "model_match": "AOC 24G4X", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1777, "model_match": "AOC 24G4XE", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1778, "model_match": "AOC Q27G2S/D", "retail_rf_rub": 21999, "mp_rf_rub": 21999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1781, "model_match": "AOC 24G2SP", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1782, "model_match": "AOC 24G2SPAE", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1783, "model_match": "AOC 24G2SPU", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1784, "model_match": "AOC CU34G2XP", "retail_rf_rub": 36760, "mp_rf_rub": 31840, "store": "Регард / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 1785, "model_match": "AOC Q27G2S/EU", "retail_rf_rub": 21999, "mp_rf_rub": 21999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 1797, "model_match": "ViewSonic VX24G26J-4K", "retail_rf_rub": 0, "mp_rf_rub": 34800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 1841, "model_match": "ViewSonic VA3420C-2", "retail_rf_rub": 30610, "mp_rf_rub": 25600, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2050, "model_match": "Apple Studio Display XDR", "retail_rf_rub": 385999, "mp_rf_rub": 310000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2052, "model_match": "Ardor Gaming AQ32H1UE", "retail_rf_rub": 22999, "mp_rf_rub": 22999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2053, "model_match": "Ardor Gaming AU27H1UE", "retail_rf_rub": 31999, "mp_rf_rub": 31999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2054, "model_match": "Ardor Gaming AQW49H3", "retail_rf_rub": 64999, "mp_rf_rub": 64999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2055, "model_match": "Ardor Gaming Andromeda AQW49H3", "retail_rf_rub": 64999, "mp_rf_rub": 64999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2056, "model_match": "Ardor Gaming OLED AQ27H1O", "retail_rf_rub": 42799, "mp_rf_rub": 54999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2057, "model_match": "Ardor Gaming AQW34H3 белый", "retail_rf_rub": 26999, "mp_rf_rub": 26999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2058, "model_match": "Ardor Gaming AQW34H3 обновлённый", "retail_rf_rub": 26999, "mp_rf_rub": 25999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2059, "model_match": "Ardor Gaming Infinity Pro AQ27H1 Pro", "retail_rf_rub": 16599, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2060, "model_match": "Ardor Gaming Portal AF24H1", "retail_rf_rub": 11699, "mp_rf_rub": 7200, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2061, "model_match": "Ardor Gaming Quasar AQW34H3 Pro", "retail_rf_rub": 27999, "mp_rf_rub": 27999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2062, "model_match": "Ardor Gaming Sidewinder AQ27H1U", "retail_rf_rub": 20999, "mp_rf_rub": 19999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2063, "model_match": "Ardor Gaming Supernova Pro AQ32H1UE", "retail_rf_rub": 25199, "mp_rf_rub": 22999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2064, "model_match": "Ardor Gaming Vega AF25H1U", "retail_rf_rub": 12999, "mp_rf_rub": 12999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2065, "model_match": "Ardor Gaming AQ25H1U", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2066, "model_match": "Ardor Gaming Vega Pro AQ25H1U", "retail_rf_rub": 15999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2067, "model_match": "Ardor Gaming Mini-LED AQ27H1M", "retail_rf_rub": 34999, "mp_rf_rub": 34999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2068, "model_match": "Ardor Gaming Nova Ultra AU27H1UE", "retail_rf_rub": 30499, "mp_rf_rub": 31999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2069, "model_match": "Ardor Gaming AQW34H3 pro", "retail_rf_rub": 27999, "mp_rf_rub": 27999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2070, "model_match": "Ardor Gaming Darkstar AF24N1", "retail_rf_rub": 9699, "mp_rf_rub": 10999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2071, "model_match": "Ardor Gaming AQ27H1M", "retail_rf_rub": 20700, "mp_rf_rub": 20700, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2072, "model_match": "Ardor Gaming AQ32H3", "retail_rf_rub": 21999, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2073, "model_match": "Ardor Gaming AQW34H3", "retail_rf_rub": 26999, "mp_rf_rub": 25999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2074, "model_match": "Ardor Gaming AF24H1UE", "retail_rf_rub": 10999, "mp_rf_rub": 10999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2075, "model_match": "Ardor Gaming AQ27H1", "retail_rf_rub": 11000, "mp_rf_rub": 11000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2076, "model_match": "Ardor Gaming AQ27H1UE", "retail_rf_rub": 19999, "mp_rf_rub": 19999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2077, "model_match": "Ardor Gaming AQ27H3", "retail_rf_rub": 16499, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2078, "model_match": "Ardor Gaming Infinity AF27H1", "retail_rf_rub": 14299, "mp_rf_rub": 8800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2079, "model_match": "Ardor Gaming Portal AF24H1", "retail_rf_rub": 11699, "mp_rf_rub": 12999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2085, "model_match": "Hisense G9", "retail_rf_rub": 46000, "mp_rf_rub": 46000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2086, "model_match": "Hisense 27G6K-PRO", "retail_rf_rub": 18999, "mp_rf_rub": 21990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2092, "model_match": "Hisense 34G6H", "retail_rf_rub": 24990, "mp_rf_rub": 24990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2133, "model_match": "Lenovo 27QS", "retail_rf_rub": 0, "mp_rf_rub": 14994, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2134, "model_match": "Lenovo Lecoo Bellator N27QS", "retail_rf_rub": 0, "mp_rf_rub": 14994, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2164, "model_match": "Skyworth F25G67Q", "retail_rf_rub": 0, "mp_rf_rub": 13472, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2184, "model_match": "RedMagic GM001S", "retail_rf_rub": 0, "mp_rf_rub": 63550, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2196, "model_match": "ASRock PG27FFX1B", "retail_rf_rub": 36900, "mp_rf_rub": 32900, "store": "ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2197, "model_match": "ASRock PG27FFX2A", "retail_rf_rub": 64299, "mp_rf_rub": 34900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2235, "model_match": "Digma Pro Vision L", "retail_rf_rub": 79990, "mp_rf_rub": 89990, "store": "Ситилинк / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2241, "model_match": "Digma Pro Art L", "retail_rf_rub": 18990, "mp_rf_rub": 18990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2244, "model_match": "Digma Pro Action M", "retail_rf_rub": 39990, "mp_rf_rub": 42990, "store": "Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2247, "model_match": "DIGMA PRO Art L", "retail_rf_rub": 18990, "mp_rf_rub": 18990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2253, "model_match": "Tuvio Razz RM27SUQOFS", "retail_rf_rub": 39000, "mp_rf_rub": 39000, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 2254, "model_match": "Tuvio Razz RM27SGQIFB", "retail_rf_rub": 10500, "mp_rf_rub": 10500, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 2260, "model_match": "NPC Smart MU2715-R", "retail_rf_rub": 15050, "mp_rf_rub": 15050, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2261, "model_match": "NPC Smart MU2715-R Smart", "retail_rf_rub": 15050, "mp_rf_rub": 15050, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2267, "model_match": "DEXP Aceline CF24N1S", "retail_rf_rub": 7999, "mp_rf_rub": 7499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2268, "model_match": "DEXP Aceline CF24N4", "retail_rf_rub": 7499, "mp_rf_rub": 7999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2269, "model_match": "DEXP GS DF24N1S2", "retail_rf_rub": 7999, "mp_rf_rub": 8000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2270, "model_match": "DEXP GS DQ27N1S2", "retail_rf_rub": 11899, "mp_rf_rub": 11800, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2271, "model_match": "DEXP Aceline GS CF24N4", "retail_rf_rub": 7499, "mp_rf_rub": 7999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2272, "model_match": "DEXP Aceline GS CF27N4", "retail_rf_rub": 11899, "mp_rf_rub": 11400, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2273, "model_match": "DEXP GS DF24N1", "retail_rf_rub": 6999, "mp_rf_rub": 8000, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2274, "model_match": "DEXP KEYRON KQ27H1", "retail_rf_rub": 13499, "mp_rf_rub": 13499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2275, "model_match": "DEXP KEYRON KQ27N1", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2276, "model_match": "Hartens HTMF270U320", "retail_rf_rub": 21050, "mp_rf_rub": 21050, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2277, "model_match": "Hartens HTMF270Q320", "retail_rf_rub": 16660, "mp_rf_rub": 16660, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2278, "model_match": "Hartens HTM34G180-ML", "retail_rf_rub": 34000, "mp_rf_rub": 34000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2279, "model_match": "Carrera CRL325", "retail_rf_rub": 46000, "mp_rf_rub": 46000, "store": "Ozon / М.Видео"}
+{"date": "2026-11-22", "cat_id": 2280, "model_match": "Carrera CRL499", "retail_rf_rub": 62000, "mp_rf_rub": 62000, "store": "М.Видео"}
+{"date": "2026-11-22", "cat_id": 2281, "model_match": "Carrera CRL279", "retail_rf_rub": 34800, "mp_rf_rub": 34800, "store": "М.Видео"}
+{"date": "2026-11-22", "cat_id": 2282, "model_match": "Dahua DHI-LM25-E241B", "retail_rf_rub": 11000, "mp_rf_rub": 11000, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2294, "model_match": "IC X279KR", "retail_rf_rub": 0, "mp_rf_rub": 35950, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2297, "model_match": "IC HISPIDA GI27Q28HE", "retail_rf_rub": 0, "mp_rf_rub": 45350, "store": "Wildberries / Регард"}
+{"date": "2026-11-22", "cat_id": 2298, "model_match": "IC AK 32", "retail_rf_rub": 0, "mp_rf_rub": 21000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2299, "model_match": "IC GX259XTX", "retail_rf_rub": 0, "mp_rf_rub": 32500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2306, "model_match": "IC Tiansu TT-YC241k260TT", "retail_rf_rub": 0, "mp_rf_rub": 6800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2310, "model_match": "IC Tiansu 241K390", "retail_rf_rub": 0, "mp_rf_rub": 19200, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2337, "model_match": "IC Qiseguo JY24XHDB", "retail_rf_rub": 0, "mp_rf_rub": 9400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2349, "model_match": "SunWind Chigo Display F24-Q180B2", "retail_rf_rub": 10700, "mp_rf_rub": 10700, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2351, "model_match": "SunWind ExeGate EG3207A", "retail_rf_rub": 15200, "mp_rf_rub": 15200, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2373, "model_match": "Kuycon P27S", "retail_rf_rub": 60000, "mp_rf_rub": 60000, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2374, "model_match": "TCL 34C2A", "retail_rf_rub": 49990, "mp_rf_rub": 44990, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2376, "model_match": "Xiaomi Mini LED Gaming Monitor G Pro 27Qi 2026", "retail_rf_rub": 27910, "mp_rf_rub": 27960, "store": "DNS / Регард / Wildberries"}
+{"date": "2026-11-22", "cat_id": 2377, "model_match": "ASUS ROG Swift OLED PG27AQDP", "retail_rf_rub": 94990, "mp_rf_rub": 94990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2378, "model_match": "ASUS ROG Swift OLED PG32UCDP", "retail_rf_rub": 119990, "mp_rf_rub": 119990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2379, "model_match": "ASUS ROG Swift OLED PG34WCDM", "retail_rf_rub": 104990, "mp_rf_rub": 104990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2380, "model_match": "ASUS ProArt Display PA32UCXR", "retail_rf_rub": 259990, "mp_rf_rub": 259990, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2388, "model_match": "MSI MPG 341CQR X36", "retail_rf_rub": 102212, "mp_rf_rub": 115840, "store": "Регард / Ozon / DNS"}
+{"date": "2026-11-22", "cat_id": 2430, "model_match": "GIGABYTE MO27Q2A ICE", "retail_rf_rub": 51440, "mp_rf_rub": 54110, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2449, "model_match": "MSI MAG 346CQDF E20", "retail_rf_rub": 28780, "mp_rf_rub": 31735, "store": "Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2459, "model_match": "Xiaomi Gaming Monitor G25i 2026", "retail_rf_rub": 11999, "mp_rf_rub": 11500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2460, "model_match": "Xiaomi Monitor A27i 2026", "retail_rf_rub": 9999, "mp_rf_rub": 9999, "store": "ОнлайнТрейд / Ситилинк / DNS"}
+{"date": "2026-11-22", "cat_id": 2512, "model_match": "Xiaomi 2K Monitor A27Qi 2026", "retail_rf_rub": 13990, "mp_rf_rub": 13990, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2528, "model_match": "Philips Evnia 27M2N5500X", "retail_rf_rub": 0, "mp_rf_rub": 21900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2540, "model_match": "MSI MAG 272QP QD-OLED X24", "retail_rf_rub": 44490, "mp_rf_rub": 52400, "store": "DNS / Регард / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2542, "model_match": "Xiaomi Gaming Monitor G27i 2026", "retail_rf_rub": 13499, "mp_rf_rub": 12999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2543, "model_match": "Xiaomi Gaming Monitor G24i 2026", "retail_rf_rub": 9999, "mp_rf_rub": 11600, "store": "DNS / ОнлайнТрейд / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2560, "model_match": "Xiaomi Monitor A24i 2026", "retail_rf_rub": 8199, "mp_rf_rub": 7999, "store": "DNS / Ozon"}
+{"date": "2026-11-22", "cat_id": 2561, "model_match": "Xiaomi Curved Gaming Monitor G34WQi 2026", "retail_rf_rub": 27199, "mp_rf_rub": 25990, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2585, "model_match": "HP Series 7 Pro 727pm", "retail_rf_rub": 117760, "mp_rf_rub": 69980, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2586, "model_match": "HP Series 7 Pro 727pu", "retail_rf_rub": 75280, "mp_rf_rub": 55040, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2589, "model_match": "HP Series 5 Pro 534pm", "retail_rf_rub": 85960, "mp_rf_rub": 65380, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2590, "model_match": "HP Series 5 Pro 527pm", "retail_rf_rub": 57770, "mp_rf_rub": 49280, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2591, "model_match": "HP Series 5 Pro 527pu", "retail_rf_rub": 43860, "mp_rf_rub": 37780, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2592, "model_match": "HP Series 5 Pro 527pq", "retail_rf_rub": 33800, "mp_rf_rub": 26280, "store": "Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2593, "model_match": "HP Series 5 Pro 524pm", "retail_rf_rub": 43860, "mp_rf_rub": 34340, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2623, "model_match": "Titan Army N27SH2", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2631, "model_match": "Samsung Odyssey OLED G61SH", "retail_rf_rub": 53420, "mp_rf_rub": 53420, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2634, "model_match": "LG UltraGear 24GS65F-B", "retail_rf_rub": 17999, "mp_rf_rub": 13500, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2635, "model_match": "Ardor Gaming Darkhaven AF27N1", "retail_rf_rub": 12199, "mp_rf_rub": 15999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2636, "model_match": "Thunderobot Light Saber 24F240", "retail_rf_rub": 10999, "mp_rf_rub": 13499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2637, "model_match": "Thunderobot Skyline 32QC180L", "retail_rf_rub": 22999, "mp_rf_rub": 25999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2638, "model_match": "Thunderobot Black Warrior 27F300L", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2639, "model_match": "Thunderobot Zero 25F400LM", "retail_rf_rub": 24999, "mp_rf_rub": 27999, "store": "DNS / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2640, "model_match": "Philips Evnia 27M4N6500U", "retail_rf_rub": 0, "mp_rf_rub": 45900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2641, "model_match": "Acer Predator X34F1bmiipphuzx", "retail_rf_rub": 97999, "mp_rf_rub": 99570, "store": "Регард / DNS / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2642, "model_match": "TCL 27P2A Pro", "retail_rf_rub": 27990, "mp_rf_rub": 17900, "store": "Яндекс Маркет / DNS / Регард"}
+{"date": "2026-11-22", "cat_id": 2643, "model_match": "Xiaomi Redmi G25 2026 300Hz", "retail_rf_rub": 0, "mp_rf_rub": 11900, "store": "Wildberries"}
+{"date": "2026-11-22", "cat_id": 2644, "model_match": "AOC AGON PRO AG276FK", "retail_rf_rub": 44900, "mp_rf_rub": 44900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2645, "model_match": "HKC KOORUI S3241XO", "retail_rf_rub": 0, "mp_rf_rub": 74900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2646, "model_match": "Dahua DHI-LM27-EM341A", "retail_rf_rub": 0, "mp_rf_rub": 26900, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2647, "model_match": "Hisense 27G3Q", "retail_rf_rub": 0, "mp_rf_rub": 13900, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2648, "model_match": "Hisense 27N3Q", "retail_rf_rub": 9999, "mp_rf_rub": 10860, "store": "Яндекс Маркет / DNS"}
+{"date": "2026-11-22", "cat_id": 2649, "model_match": "Thunderobot ZQ26F540E", "retail_rf_rub": 0, "mp_rf_rub": 60000, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2650, "model_match": "Thunderobot ZQ27F540E", "retail_rf_rub": 0, "mp_rf_rub": 60000, "store": "Ozon / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2651, "model_match": "MSI MAG 276QRDY54", "retail_rf_rub": 0, "mp_rf_rub": 81800, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2652, "model_match": "Acer Nitro XV242Fbmiiprx", "retail_rf_rub": 54070, "mp_rf_rub": 49900, "store": "DNS / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2653, "model_match": "LG 27UP850K-W", "retail_rf_rub": 31999, "mp_rf_rub": 32000, "store": "DNS / Ситилинк / Регард"}
+{"date": "2026-11-22", "cat_id": 2654, "model_match": "ViewSonic XC27G66", "retail_rf_rub": 0, "mp_rf_rub": 24900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2655, "model_match": "Xiaomi G27Qi 2026", "retail_rf_rub": 14999, "mp_rf_rub": 17999, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2656, "model_match": "Digma Pro Motion S", "retail_rf_rub": 16990, "mp_rf_rub": 16990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2657, "model_match": "Pantec A27B Pro", "retail_rf_rub": 12850, "mp_rf_rub": 12850, "store": "Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2658, "model_match": "Dell UltraSharp U4025QW", "retail_rf_rub": 243550, "mp_rf_rub": 169000, "store": "Ozon / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2659, "model_match": "Dell UltraSharp U3425WE", "retail_rf_rub": 101290, "mp_rf_rub": 94900, "store": "Ozon / Регард / ОнлайнТрейд"}
+{"date": "2026-11-22", "cat_id": 2660, "model_match": "LG UltraFine 40WT95UF", "retail_rf_rub": 0, "mp_rf_rub": 159000, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2661, "model_match": "Lenovo L27-4e", "retail_rf_rub": 10500, "mp_rf_rub": 10500, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2662, "model_match": "MSI MAG 276QR42", "retail_rf_rub": 0, "mp_rf_rub": 31000, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2663, "model_match": "MSI MAG 276QE34", "retail_rf_rub": 0, "mp_rf_rub": 26900, "store": "Регард"}
+{"date": "2026-11-22", "cat_id": 2664, "model_match": "Thunderobot Light Saber 27Q320L", "retail_rf_rub": 24999, "mp_rf_rub": 22999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2665, "model_match": "Thunderobot Light Saber 27Q210L", "retail_rf_rub": 15999, "mp_rf_rub": 18499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2666, "model_match": "Bloody MN340W", "retail_rf_rub": 24990, "mp_rf_rub": 24990, "store": "Ситилинк / Яндекс Маркет"}
+{"date": "2026-11-22", "cat_id": 2667, "model_match": "MSI MAG 325CQPD27", "retail_rf_rub": 0, "mp_rf_rub": 46900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2668, "model_match": "Ardor Gaming Infinity Ultra AQ27H1", "retail_rf_rub": 19199, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2669, "model_match": "Samsung Odyssey G5 C34G55TWWI", "retail_rf_rub": 23999, "mp_rf_rub": 28990, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2671, "model_match": "Digma Overdrive 34A712Q", "retail_rf_rub": 25990, "mp_rf_rub": 25990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2672, "model_match": "CBR MQ-3202", "retail_rf_rub": 17990, "mp_rf_rub": 17990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2673, "model_match": "DEXP DF24N1S", "retail_rf_rub": 6999, "mp_rf_rub": 7999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2674, "model_match": "Dahua DHI-LM27-E331AY", "retail_rf_rub": 16990, "mp_rf_rub": 16990, "store": "Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2675, "model_match": "Titan Army G2783S", "retail_rf_rub": 0, "mp_rf_rub": 24440, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2678, "model_match": "Teclast V16Q", "retail_rf_rub": 12990, "mp_rf_rub": 12990, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 2679, "model_match": "Titan Army KG277V PLUS", "retail_rf_rub": 0, "mp_rf_rub": 27450, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2680, "model_match": "Kuycon P32U Pro", "retail_rf_rub": 0, "mp_rf_rub": 108400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2681, "model_match": "UPERFECT UColor 19 Apex", "retail_rf_rub": 0, "mp_rf_rub": 33300, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 2685, "model_match": "Samsung Odyssey OLED G5 (G50SF / LS27FG500S)", "retail_rf_rub": 42900, "mp_rf_rub": 42900, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2686, "model_match": "Titan Army P2510H Ultra", "retail_rf_rub": 0, "mp_rf_rub": 9990, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2688, "model_match": "Acer PD163QT (Dual 15.6″ Touch Folding)", "retail_rf_rub": 0, "mp_rf_rub": 39700, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2689, "model_match": "Titan Army KF271R", "retail_rf_rub": 0, "mp_rf_rub": 13990, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2690, "model_match": "Onyx Boox Mira Pro Color (25.3″ 3.2K E-Ink Kaleido 3)", "retail_rf_rub": 0, "mp_rf_rub": 197500, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2691, "model_match": "Dasung Paperlike 13K Color (37Hz Touch)", "retail_rf_rub": 0, "mp_rf_rub": 77100, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 2692, "model_match": "Dasung Paperlike 103 (60Hz E-Ink Touch)", "retail_rf_rub": 0, "mp_rf_rub": 34800, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 2699, "model_match": "Xiaomi Redmi Monitor A27 2026 (27″ FHD 144Hz 1500:1 ΔE<1)", "retail_rf_rub": 0, "mp_rf_rub": 8900, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2707, "model_match": "Xiaomi Smart Home Screen Max 27 (27″ FHD HyperOS Rolling Touch + 9700mAh)", "retail_rf_rub": 0, "mp_rf_rub": 56400, "store": "Ozon"}
+{"date": "2026-11-22", "cat_id": 2713, "model_match": "UPERFECT USetup E5 (18″ FHD 120Hz Portable Gaming IPS + VESA)", "retail_rf_rub": 14900, "mp_rf_rub": 14900, "store": "AliExpress"}
+{"date": "2026-11-22", "cat_id": 2720, "model_match": "Ardor Gaming Darkmoon AQ27N1 белый", "retail_rf_rub": 15299, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2721, "model_match": "Machenike MK-ZF24F200 (23.8″ FHD 200Hz Fast IPS ΔE<2)", "retail_rf_rub": 7999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2722, "model_match": "Samsung Odyssey G5 G55C S27CG550EI (LS27CG550EIXCI)", "retail_rf_rub": 16490, "mp_rf_rub": 19280, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2723, "model_match": "Samsung Odyssey G5 G55C S32CG550EI (LS32CG550EIXCI)", "retail_rf_rub": 23880, "mp_rf_rub": 23999, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2724, "model_match": "Samsung Odyssey G4 G40B S25BG400EI (LS25BG400EIXCI)", "retail_rf_rub": 16020, "mp_rf_rub": 19999, "store": "DNS / Ситилинк"}
+{"date": "2026-11-22", "cat_id": 2725, "model_match": "Samsung Odyssey G3 G30H S27HG300EI", "retail_rf_rub": 17599, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2726, "model_match": "GIGABYTE M27Q P (9DM27QP-00-1ABEK)", "retail_rf_rub": 28999, "mp_rf_rub": 28999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2727, "model_match": "GIGABYTE G27Q (27″ QHD 144Hz IPS USB-Hub)", "retail_rf_rub": 23499, "mp_rf_rub": 23499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2728, "model_match": "BenQ MOBIUZ EX2710Q (27″ QHD 165Hz IPS + 2.1 treVolo Audio)", "retail_rf_rub": 29999, "mp_rf_rub": 29999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2729, "model_match": "AOC 24G2SP (24G2SPU/BK 23.8″ FHD 165Hz IPS HAS)", "retail_rf_rub": 13999, "mp_rf_rub": 13999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2730, "model_match": "GIGABYTE M27Q (27″ QHD 170Hz SuperSpeed IPS + KVM)", "retail_rf_rub": 26999, "mp_rf_rub": 26999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2731, "model_match": "GIGABYTE G27FC-EK (27″ FHD 165Hz Curved 1500R VA)", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2732, "model_match": "AOC 24G2/BK (24G2U/BK 23.8″ FHD 144Hz Wide-Gamut IPS HAS)", "retail_rf_rub": 14999, "mp_rf_rub": 14999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2733, "model_match": "AOC 27G2/BK (27G2U/BK 27″ FHD 144Hz IPS HAS + Pivot)", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2734, "model_match": "AOC CU34G3S/BK (34″ UWQHD 165Hz Curved 1000R VA + USB-Hub)", "retail_rf_rub": 31999, "mp_rf_rub": 31999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2735, "model_match": "MSI Optix G27CQ4 (9S6-3CB01T-008 27″ QHD 165Hz Curved VA)", "retail_rf_rub": 21999, "mp_rf_rub": 21999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2736, "model_match": "MSI Optix MAG301CR2 (29.5″ WFHD 2560×1080 200Hz 21:9 Curved VA)", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2737, "model_match": "ASUS TUF Gaming VG249Q (90LM05E0-B03170 23.8″ FHD 144Hz IPS HAS)", "retail_rf_rub": 15999, "mp_rf_rub": 15999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2738, "model_match": "ASUS VG248QG (90LMGG901Q022E1C 24″ FHD 165Hz 0.5ms Esports TN)", "retail_rf_rub": 16499, "mp_rf_rub": 16499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2739, "model_match": "LG UltraGear 27GL850-B (27″ QHD 144Hz Nano IPS G-Sync + USB-Hub)", "retail_rf_rub": 26999, "mp_rf_rub": 26999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2740, "model_match": "Acer Nitro VG271UPbmiipx (27″ QHD 144Hz IPS 95% DCI-P3 HDR400)", "retail_rf_rub": 19999, "mp_rf_rub": 19999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2741, "model_match": "Samsung Odyssey G5 G55T C27G55TQWI (LC27G55TWWIXCI)", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2742, "model_match": "DEXP DF24H1S (23.8″ FHD 100Hz Frameless Home & Office)", "retail_rf_rub": 7699, "mp_rf_rub": 7999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2743, "model_match": "AOC 27G4X (27″ FHD 180Hz Fast IPS HAS + Pivot)", "retail_rf_rub": 17999, "mp_rf_rub": 17999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2744, "model_match": "AOC Q27G42HE (27″ QHD 180Hz Fast IPS VESA)", "retail_rf_rub": 18999, "mp_rf_rub": 18999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2745, "model_match": "AOC 24G42E (24G42E/01 23.8″ FHD 180Hz Fast IPS)", "retail_rf_rub": 11999, "mp_rf_rub": 11999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2746, "model_match": "LG UltraGear 32G403B-B (31.5″ QHD 180Hz Fast IPS)", "retail_rf_rub": 21499, "mp_rf_rub": 26999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2747, "model_match": "LG UltraGear 27GN600-B (27GN600-B.ADRZ 27″ FHD 144Hz IPS G-Sync)", "retail_rf_rub": 16999, "mp_rf_rub": 16999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2748, "model_match": "GIGABYTE G34WQC-EK (34″ UWQHD 144Hz Curved 1500R VA HDR400)", "retail_rf_rub": 29999, "mp_rf_rub": 29999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2749, "model_match": "Samsung Odyssey G7 C27G75TQSI (LC27G75TQSIXCI 27″ QHD 240Hz QLED VA)", "retail_rf_rub": 39999, "mp_rf_rub": 39999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2750, "model_match": "Samsung Odyssey G3 S27AG302NI (LS27AG302NIXCI 27″ FHD 144Hz VA HAS)", "retail_rf_rub": 14499, "mp_rf_rub": 14499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2751, "model_match": "MSI PRO MP273A (27″ FHD 100Hz IPS Eye-Ergo + Speakers)", "retail_rf_rub": 9999, "mp_rf_rub": 11499, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2752, "model_match": "MSI Optix G272 (9S6-3CB51T-034 27″ FHD 144Hz Wide-Gamut IPS)", "retail_rf_rub": 15999, "mp_rf_rub": 15999, "store": "DNS"}
+{"date": "2026-11-22", "cat_id": 2753, "model_match": "Acer Nitro XV272UPbmiiprzx (27″ QHD 144Hz IPS HDR400 + 4× USB 3.0 HAS)", "retail_rf_rub": 23999, "mp_rf_rub": 23999, "store": "DNS"}

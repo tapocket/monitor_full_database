@@ -159,6 +159,38 @@ def search_models(query_tokens: list[str], limit: int = 5) -> list[dict]:
     return deduped
 
 
+def compute_vesa_cts12_label(m: dict) -> str:
+    """Estimate VESA DisplayHDR CTS 1.2 tier from panel type, HDR peak brightness, and local dimming zones."""
+    ptype = str(m.get("ptype") or "").upper()
+    hdr = 0
+    try:
+        import re as _re
+        nums = [int(x) for x in _re.findall(r"\d{3,4}", str(m.get("hdr") or ""))]
+        hdr = max(nums) if nums else 0
+    except Exception:
+        hdr = 0
+    zones = 0
+    try:
+        import re as _re
+        znums = [int(x) for x in _re.findall(r"\d+", str(m.get("zones") or ""))]
+        zones = max(znums) if znums else 0
+    except Exception:
+        zones = 0
+
+    if "OLED" in ptype:
+        if hdr >= 1400: return "VESA DisplayHDR True Black 1400 (CTS 1.2, 2026)"
+        if hdr >= 1000: return "VESA DisplayHDR True Black 1000 (CTS 1.2)"
+        if hdr >= 600:  return "VESA DisplayHDR True Black 600 (CTS 1.2)"
+        if hdr >= 500:  return "VESA DisplayHDR True Black 500 (CTS 1.2)"
+        return "VESA DisplayHDR True Black 400 (CTS 1.2)"
+    if zones >= 384 and hdr >= 1400: return "VESA DisplayHDR 1400 (CTS 1.2, 2D FALD)"
+    if zones >= 384 and hdr >= 1000: return "VESA DisplayHDR 1000 (CTS 1.2, 2D FALD)"
+    if hdr >= 600: return "VESA DisplayHDR 600 (CTS 1.2)"
+    if hdr >= 500: return "VESA DisplayHDR 500 (CTS 1.2)"
+    if hdr >= 400: return "VESA DisplayHDR 400 (CTS 1.2, 8b+2b FRC)"
+    return "SDR / Базовый HDR (<400 нит)"
+
+
 def format_model_card(m: dict) -> str:
     mp = int(m.get("price_mp_rf") or m.get("hand") or m.get("rub") or 0)
     retail = int(m.get("price_retail_rf") or 0)
@@ -169,13 +201,19 @@ def format_model_card(m: dict) -> str:
         sign = "+" if diff > 0 else ""
         diff_line = f"\n• ⚖️ Разница розницы РФ vs МП: *{sign}{fmt_rub(diff)} ₽ ({sign}{pct}%)*"
     retail_line = f" | Розница РФ: *{fmt_rub(retail)} ₽*" if retail > 0 else ""
+    vesa_label = compute_vesa_cts12_label(m)
+    stores = [s for s in (m.get("stores") or []) if isinstance(s, dict) and s.get("url")]
+    rf_count = sum(1 for s in stores if any(k in str(s.get("name", "")).lower() for k in ("dns", "ситилинк", "регард", "онлайнтрейд")))
+    pvz_note = f"Розница РФ ({rf_count} маг., локальная гарантия)" if rf_count > 0 else "Маркетплейс / зарубеж (проверьте матрицу в ПВЗ)"
     return (
         f"🖥 *{m['model']}*\n"
         f"• Бренд: {m.get('brand_canonical', m.get('brand'))} | Год: {m.get('year')} | Тир: `{str(m.get('tier',''))[:1]}`\n"
         f"• Экран: {m.get('diag')}″ {m.get('res')} • {m.get('max_hz')} Гц\n"
         f"• Матрица: `{str(m.get('pmodel',''))[:90]}`\n"
         f"• Отклик GtG 80%: {m.get('gtg80')} мс | Контраст: {m.get('cr')}:1 | HDR: {m.get('hdr')} нит\n"
+        f"• 🏅 VESA CTS 1.2: `{vesa_label}`\n"
         f"• Цена «на руки» (МП/Ozon): *{fmt_rub(mp)} ₽*{retail_line}{diff_line}\n"
+        f"• 🛡️ ПВЗ и гарантия: {pvz_note}\n"
         f"• Обзор: {m.get('rev_url') or 'Нет прямой ссылки'}"
     )
 
@@ -186,17 +224,32 @@ def model_card_keyboard(m: dict) -> InlineKeyboardMarkup:
     target_10 = max(5000, int(round(mp * 0.9 / 500) * 500)) if mp > 0 else 30000
     enc_model = urllib.parse.quote(str(m.get("model", "")))
     issue_url = f"{REPO_URL}/issues/new?template=price-update-rf.yml&title=%5B%D0%A6%D0%B5%D0%BD%D0%B0+%D0%A0%D0%A4%5D+{enc_model}"
-    return InlineKeyboardMarkup([
+    model_deep_url = f"{PORTAL_URL.rstrip('/')}/#model={mid}"
+    pvz_test_url = f"{PORTAL_URL.rstrip('/')}/#test=guided"
+
+    rows = [
         [
-            InlineKeyboardButton("🌐 Открыть портал", url=PORTAL_URL),
+            InlineKeyboardButton("🌐 Карточка на портале", url=model_deep_url),
             InlineKeyboardButton(f"🔔 Алерт ≤ {fmt_rub(target_10)} ₽", callback_data=f"al:{mid}:{target_10}"),
         ],
-        [
-            InlineKeyboardButton("📋 Чек-лист ПВЗ", callback_data="menu:pvz"),
-            InlineKeyboardButton("💰 Сообщить цену РФ", url=issue_url),
-        ],
-        [InlineKeyboardButton("🎯 Новый подбор", callback_data="menu:pick")],
+    ]
+
+    # Add up to 4 direct store buttons (preferring direct /product/, /card/, /item/ links)
+    stores = [s for s in (m.get("stores") or []) if isinstance(s, dict) and s.get("url")]
+    stores.sort(key=lambda s: (0 if any(p in s["url"] for p in ("/product/", "/card/", "/item/", "/catalogue/")) else 1))
+    store_btns = [InlineKeyboardButton(str(s.get("name", "Магазин"))[:22], url=s["url"]) for s in stores[:4]]
+    for i in range(0, len(store_btns), 2):
+        rows.append(store_btns[i:i+2])
+
+    rows.append([
+        InlineKeyboardButton("🧪 14-шаговый тест ПВЗ", url=pvz_test_url),
+        InlineKeyboardButton("📋 Чек-лист ПВЗ", callback_data="menu:pvz"),
     ])
+    rows.append([
+        InlineKeyboardButton("💰 Сообщить цену РФ", url=issue_url),
+        InlineKeyboardButton("🎯 Новый подбор", callback_data="menu:pick"),
+    ])
+    return InlineKeyboardMarkup(rows)
 
 
 def main_menu_keyboard() -> InlineKeyboardMarkup:

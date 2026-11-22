@@ -1,29 +1,52 @@
-name: Daily CBR Rates & Link Health Check
+name: Weekly CBR Rates, Rebuild & Link Health Check
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-rates:
+  update-rates-and-rebuild:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Update CBR EUR/USD/CNY rates
-        run: python3 scripts/update_cbr_rates.py --config config/rates.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install build dependencies
+        run: pip install --quiet openpyxl
+      - name: Update CBR EUR/USD/CNY rates & sync database_master.json
+        run: python3 scripts/update_cbr_rates.py --config config/rates.json --master database_master.json
+      - name: Record RF price history snapshot
+        run: python3 scripts/record_price_history.py --snapshot data/prices_rf_snapshot.json --history-dir data/price_history
       - name: Run sample link health check
         run: python3 scripts/check_links.py --master database_master.json --out data/link_health_report.json --sample 100
+      - name: Rebuild portal & CSV/XLSX and verify parity
+        run: |
+          python3 build_database.py --master database_master.json --template-xlsx monitor_full_database.xlsx --template-html monitor_full_database.html --outdir . --verify
+          if [ -f index.html ]; then cp monitor_full_database.html index.html; fi
+      - name: Bump Service Worker cache key if portal changed
+        run: |
+          if ! git diff --quiet monitor_full_database.html database_master.json; then
+            python3 -c '
+          import datetime, re
+          with open("sw.js", "r", encoding="utf-8") as f: sw = f.read()
+          tag = "monitor-db-cache-" + datetime.date.today().isoformat()
+          sw = re.sub(r"monitor-db-cache-[0-9a-zA-Z_-]+", tag, sw)
+          with open("sw.js", "w", encoding="utf-8") as f: f.write(sw)
+          '
+          fi
       - name: Commit updates if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add config/rates.json data/link_health_report.json
-          git diff --staged --quiet || git commit -m "chore: daily CBR rates & link health check"
+          git add config/rates.json database_master.json monitor_full_database.html monitor_full_database.csv sw.js data/link_health_report.json data/price_history/
+          if [ -f index.html ]; then git add index.html; fi
+          git diff --staged --quiet || git commit -m "chore: weekly CBR rates update & portal rebuild"
           git push

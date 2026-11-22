@@ -30,6 +30,9 @@ jobs:
           sudo apt-get install -y libreoffice-calc
           pip install openpyxl jsonschema
 
+      - name: Check Python scripts & Telegram bot syntax
+        run: python3 -m py_compile build_database.py bot/telegram_bot.py scripts/*.py
+
       - name: Validate database_master.json against JSON Schema
         run: |
           python3 -c "
@@ -48,6 +51,11 @@ jobs:
             --template-html monitor_full_database.html \
             --outdir dist \
             --recalc --verify
+
+      - name: Run automated Node DOM smoke test on built portal
+        run: |
+          node scripts/smoke_test_portal.js dist/monitor_full_database.html
+          node scripts/smoke_test_portal.js dist/index.html
 
       - name: Package release ZIP artifact
         run: |
