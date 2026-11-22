@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-20",
-  "source": "CBR / Manual Config",
+  "updated_at": "2026-11-22",
+  "source": "CBR XML API (cbr.ru)",
   "currency_rates": {
-    "EUR_RUB": 105.0,
-    "USD_RUB": 95.0,
-    "CNY_RUB": 13.2
+    "USD_RUB": 82.19,
+    "EUR_RUB": 90.34,
+    "CNY_RUB": 12.28
   },
   "russia_customs": {
     "duty_free_threshold_eur": 200,

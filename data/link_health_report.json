@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-21T17:31:26.048894Z",
-  "total_checked": 150,
-  "ok": 131,
-  "restricted": 18,
+  "checked_at": "2026-11-22T13:46:00.098719Z",
+  "total_checked": 100,
+  "ok": 74,
+  "restricted": 26,
   "dead": 0,
-  "error": 1,
+  "error": 0,
   "dead_urls": []
 }
