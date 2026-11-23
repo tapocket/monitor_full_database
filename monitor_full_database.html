@@ -27010,6 +27010,26 @@ html.dark .duty-calc-row input, html.dark .duty-calc-row select {
 
 
 (function() {
+  function hasVerifiedDirectStoreUrl(m) {
+    const sts = Array.isArray(m && m.stores) ? m.stores : [];
+    return sts.some(s => {
+      const u = String((s && s.url) || "").toLowerCase();
+      if (!u.startsWith("http")) return false;
+      if (u.includes("/search") || u.includes("/catalog/17a8943716404e77/")) return false;
+      return (
+        u.includes("dns-shop.ru/product/") ||
+        u.includes("citilink.ru/product/") ||
+        u.includes("regard.ru/product/") ||
+        u.includes("onlinetrade.ru/catalogue/") ||
+        u.includes("ozon.ru/product/") ||
+        u.includes("ozon.ru/t/") ||
+        u.includes("market.yandex.ru/card/") ||
+        u.includes("market.yandex.ru/product") ||
+        u.includes("wildberries.ru/catalog/")
+      );
+    });
+  }
+
   function getTopRfDrops(limit = 5) {
     if (typeof DB === "undefined" || !DB.price_history || !Array.isArray(DB.catalog)) return [];
     const byId = new Map(DB.catalog.map(m => [String(m.id), m]));
@@ -27017,7 +27037,7 @@ html.dark .duty-calc-row input, html.dark .duty-calc-row select {
     Object.entries(DB.price_history).forEach(([mid, pts]) => {
       if (!Array.isArray(pts) || !pts.length) return;
       const m = byId.get(String(mid));
-      if (!m) return;
+      if (!m || !hasVerifiedDirectStoreUrl(m)) return;
       const last = pts[pts.length - 1];
       const first = pts[0];
       const ret = Number(last.r || 0);
@@ -27034,10 +27054,23 @@ html.dark .duty-calc-row input, html.dark .duty-calc-row select {
       const diff = base - cur;
       const pct = Math.round((diff / base) * 1000) / 10;
       if (diff < 2000 || pct < 8) return;
-      list.push({ id: m.id, model: m.model, diag: m.diag, max_hz: m.max_hz, cur, base, diff, pct, kind, store: last.s || "РФ" });
+      list.push({
+        id: m.id, brand: String(m.brand || "").trim().toLowerCase(),
+        model: m.model, diag: m.diag, max_hz: m.max_hz,
+        cur, base, diff, pct, kind, store: last.s || "РФ"
+      });
     });
     list.sort((a, b) => (b.pct - a.pct) || (b.diff - a.diff));
-    return list.slice(0, limit);
+    // Diversify: max 1 model per brand so Top-5 never looks like an ad for one brand
+    const diversified = [];
+    const usedBrands = new Set();
+    for (const item of list) {
+      if (usedBrands.has(item.brand)) continue;
+      usedBrands.add(item.brand);
+      diversified.push(item);
+      if (diversified.length >= limit) break;
+    }
+    return diversified;
   }
   window.getTopRfDrops = getTopRfDrops;
 

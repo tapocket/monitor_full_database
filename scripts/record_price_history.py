@@ -21,11 +21,26 @@ def main():
     month_file = os.path.join(args.history_dir, f"{today.strftime('%Y-%m')}.jsonl")
     os.makedirs(args.history_dir, exist_ok=True)
 
-    # Append today's records
-    with open(month_file, "a", encoding="utf-8") as fp:
+    # Deduplicate same-day records cleanly so re-runs never bloat monthly JSONL
+    existing_lines = []
+    today_iso = today.isoformat()
+    if os.path.exists(month_file):
+        with open(month_file, "r", encoding="utf-8") as fp:
+            for ln in fp:
+                ln = ln.strip()
+                if not ln:
+                    continue
+                try:
+                    if json.loads(ln).get("date") != today_iso:
+                        existing_lines.append(ln)
+                except Exception:
+                    continue
+    with open(month_file, "w", encoding="utf-8") as fp:
+        for ln in existing_lines:
+            fp.write(ln + "\n")
         for it in snap.get("items", []):
             rec = {
-                "date": today.isoformat(),
+                "date": today_iso,
                 "model_match": it.get("model_match", ""),
                 "sku_rf": it.get("sku_rf", ""),
                 "retail_rf_rub": it.get("retail_rf_rub", 0),

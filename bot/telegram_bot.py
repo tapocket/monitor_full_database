@@ -177,9 +177,26 @@ def load_price_drops(limit: int = 8) -> list[dict]:
         if not m_obj:
             ql = name.lower()
             m_obj = next((c for c in CATALOG if ql in str(c.get("model") or "").lower()), None)
+        if not m_obj:
+            continue
+        # Only include models with a verified direct product link in RF stores
+        has_direct = any(
+            isinstance(st, dict)
+            and str(st.get("url", "")).startswith("http")
+            and "/search" not in str(st.get("url", "")).lower()
+            and any(dom in str(st.get("url", "")).lower() for dom in (
+                "dns-shop.ru/product/", "citilink.ru/product/", "regard.ru/product/",
+                "onlinetrade.ru/catalogue/", "ozon.ru/product/", "ozon.ru/t/",
+                "market.yandex.ru/card/", "market.yandex.ru/product", "wildberries.ru/catalog/"
+            ))
+            for st in (m_obj.get("stores") or [])
+        )
+        if not has_direct:
+            continue
         drops.append({
-            "model": m_obj["model"] if m_obj else name,
-            "id": m_obj["id"] if m_obj else None,
+            "model": m_obj["model"],
+            "brand": str(m_obj.get("brand") or "").strip().lower(),
+            "id": m_obj["id"],
             "base": base_price,
             "cur": cur_price,
             "diff": diff,
@@ -189,7 +206,15 @@ def load_price_drops(limit: int = 8) -> list[dict]:
             "date": latest.get("date") or "",
         })
     drops.sort(key=lambda x: (1 if x["kind"] == "history" else 0, x["pct"], x["diff"]), reverse=True)
-    return drops[:limit]
+    diversified, seen_brands = [], set()
+    for d in drops:
+        if d["brand"] in seen_brands:
+            continue
+        seen_brands.add(d["brand"])
+        diversified.append(d)
+        if len(diversified) >= limit:
+            break
+    return diversified
 
 
 def fmt_rub(val) -> str:

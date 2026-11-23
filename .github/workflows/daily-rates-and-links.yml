@@ -26,6 +26,8 @@ jobs:
           pip install --quiet openpyxl jsonschema
       - name: Update CBR EUR/USD/CNY rates & sync database_master.json
         run: python3 scripts/update_cbr_rates.py --config config/rates.json --master database_master.json
+      - name: Refresh live RF store prices sample (best-effort)
+        run: python3 scripts/collect_rf_prices.py --master database_master.json --snapshot data/prices_rf_snapshot.json --limit 40 || true
       - name: Record RF price history snapshot
         run: python3 scripts/record_price_history.py --snapshot data/prices_rf_snapshot.json --history-dir data/price_history
       - name: Generate daily maintenance checklist
@@ -52,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add config/rates.json database_master.json monitor_full_database.xlsx monitor_full_database.html index.html data/db_payload.js monitor_full_database.csv sw.js data/link_health_report.json data/LINK_AUDIT_REPORT.md data/DAILY_UPDATE_CHECKLIST.md data/new_reviews_radar.json data/price_history/ api/v1/
+          git add config/rates.json database_master.json monitor_full_database.xlsx monitor_full_database.html index.html data/db_payload.js monitor_full_database.csv sw.js data/link_health_report.json data/LINK_AUDIT_REPORT.md data/DAILY_UPDATE_CHECKLIST.md data/new_reviews_radar.json data/prices_rf_snapshot.json data/price_history/ api/v1/
           git diff --staged --quiet || git commit -m "chore: daily CBR rates, checklist & portal rebuild"
           git push
       - name: Notify admin in Telegram if new reviews or dead links found

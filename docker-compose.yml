@@ -1,0 +1,11 @@
+services:
+  monitor-fdb-bot:
+    build: .
+    container_name: monitor-fdb-bot
+    restart: unless-stopped
+    env_file:
+      - bot/.env
+    environment:
+      - ALERTS_DB_PATH=/app/bot_data/alerts.db
+    volumes:
+      - ./bot_data:/app/bot_data
