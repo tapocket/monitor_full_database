@@ -29,25 +29,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Prepare dual-mode static site (fast split index.html + standalone offline HTML + JSON API)
-        run: |
-          mkdir -p _site/data/price_history _site/api/v1 _site/docs/screenshots
-          for f in index.html monitor_full_database.html manifest.webmanifest sw.js favicon.svg og-cover.png; do
-            [ -f "$f" ] && cp "$f" _site/
-          done
-          for f in data/db_payload.js data/prices_rf_snapshot.json data/icc_profiles.json; do
-            [ -f "$f" ] && cp "$f" _site/data/
-          done
-          cp data/price_history/*.jsonl _site/data/price_history/ 2>/dev/null || true
-          cp docs/screenshots/*.png _site/docs/screenshots/ 2>/dev/null || true
-          cp api/v1/*.json _site/api/v1/ 2>/dev/null || true
-          python3 - <<'PYEOF'
-          import json
-          m = json.load(open('database_master.json', encoding='utf-8'))
-          json.dump(m['catalog'], open('_site/api/v1/monitors.json', 'w', encoding='utf-8'), ensure_ascii=False)
-          brands = sorted(set(x.get('brand_canonical', x.get('brand', '')) for x in m['catalog']))
-          json.dump({'count': len(brands), 'brands': brands}, open('_site/api/v1/brands.json', 'w', encoding='utf-8'), ensure_ascii=False)
-          print('Prepared _site/api/v1/monitors.json & brands.json:', len(m['catalog']), 'models')
-          PYEOF
+        run: python3 scripts/prepare_pages_site.py --out _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

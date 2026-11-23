@@ -1,4 +1,4 @@
-const CACHE_NAME = "monitor-db-cache-2026-11-23m";
+const CACHE_NAME = "monitor-db-cache-2026-11-23n";
 const PRECACHE_URLS = [
   "./",
   "./index.html",
