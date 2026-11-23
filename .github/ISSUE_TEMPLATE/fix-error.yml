@@ -1,0 +1,31 @@
+name: "⚠️ Сообщить об ошибке / ревизии / битой ссылке"
+description: "Исправить характеристики, добавить новую ревизию матрицы или заменить нерабочую ссылку"
+title: "[Правка] "
+labels: ["data-fix"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: "Модель и ID на портале"
+      placeholder: "Например: GIGABYTE MO32U24 (#1077)"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Тип правки"
+      options:
+        - "Ошибка характеристик (разрешение / Гц / матрица / покрытие)"
+        - "Новая ревизия матрицы (лотерея панелей)"
+        - "Нерабочая или неверная ссылка магазина / обзора"
+        - "Актуализация цены РФ"
+        - "Баг интерфейса портала"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Что именно нужно исправить и ссылка на источник"
+      placeholder: "Опишите корректные данные и приложите ссылку на обзор, фото шильдика/сервисного меню или карточку магазина."
+    validations:
+      required: true

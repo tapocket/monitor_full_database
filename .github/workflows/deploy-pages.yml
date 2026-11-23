@@ -31,10 +31,11 @@ jobs:
       - name: Prepare dual-mode static site (fast split index.html + standalone offline HTML + JSON API)
         run: |
           mkdir -p _site/data/price_history _site/api/v1 _site/docs/screenshots
-          cp index.html monitor_full_database.html manifest.webmanifest sw.js _site/
+          cp index.html monitor_full_database.html manifest.webmanifest sw.js favicon.svg og-cover.png _site/
           cp data/db_payload.js data/prices_rf_snapshot.json data/icc_profiles.json _site/data/
           cp data/price_history/*.jsonl _site/data/price_history/ || true
           cp docs/screenshots/*.png _site/docs/screenshots/ || true
+          cp api/v1/*.json _site/api/v1/ || true
           python3 -c "
           import json
           m = json.load(open('database_master.json', encoding='utf-8'))

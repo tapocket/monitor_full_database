@@ -1,0 +1,32 @@
+name: "➕ Предложить новый монитор"
+description: "Добавить новую модель монитора в базу monitor_full_database"
+title: "[Новая модель] "
+labels: ["new-monitor"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: "Бренд и точное название модели"
+      placeholder: "Например: ASUS ROG Swift OLED PG27AQWP"
+    validations:
+      required: true
+  - type: input
+    id: specs
+    attributes:
+      label: "Основные характеристики (диагональ, разрешение, Гц, матрица)"
+      placeholder: "27″ QHD 240 Гц, Tandem WOLED Gen 4, глянец"
+    validations:
+      required: true
+  - type: input
+    id: links
+    attributes:
+      label: "Ссылки на обзор (Джун / TFTCentral / RTINGS) или магазин РФ"
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Дополнительные детали (цена, ревизия матрицы, плюсы/минусы)"
+    validations:
+      required: false

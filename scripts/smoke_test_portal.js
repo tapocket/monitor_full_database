@@ -121,11 +121,11 @@ if (js.includes('window.__DB_PAYLOAD')) {
   vm.runInContext(fs.readFileSync(payloadPath, 'utf8'), ctx);
 }
 vm.runInContext(
-  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode };',
+  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode, normalizeSmartSearchTokens: window.normalizeSmartSearchTokens, buildSelectionCsv: window.buildSelectionCsv, findSimilarAlternatives: window.findSimilarAlternatives, buildCompareVerdictHtml: window.buildCompareVerdictHtml, getTopRfDrops: window.getTopRfDrops, applyCustomDutyScenario: window.applyCustomDutyScenario, resetCustomDutyScenario: window.resetCustomDutyScenario, savePersonalWatch: window.savePersonalWatch, getPersonalWatch: window.getPersonalWatch, collectUnifiedBackup: window.collectUnifiedBackup, applyUnifiedBackup: window.applyUnifiedBackup, buildModelShareMarkdown: window.buildModelShareMarkdown };',
   ctx
 );
 
-const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode } = ctx.__EXPORTS;
+const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode, normalizeSmartSearchTokens, buildSelectionCsv, findSimilarAlternatives, buildCompareVerdictHtml, getTopRfDrops, applyCustomDutyScenario, resetCustomDutyScenario, savePersonalWatch, getPersonalWatch, collectUnifiedBackup, applyUnifiedBackup, buildModelShareMarkdown } = ctx.__EXPORTS;
 if (!DB || !Array.isArray(DB.catalog) || DB.catalog.length < 2700) {
   console.error('FAIL: Invalid DB.catalog length:', DB && DB.catalog && DB.catalog.length);
   process.exit(1);
@@ -155,6 +155,112 @@ if (typeof openPvzExpressMode === 'function') {
 }
 
 const phCount = DB.price_history ? Object.keys(DB.price_history).length : 0;
+// 5. Verify Wave 12 Smart Finder presets (all 6 scenarios must return > 0 models)
+let presetsOk = true;
+if (typeof applyFinderPreset === 'function') {
+  for (const pk of ['esports', 'oled4k', 'code4k5k', 'miniled30k', 'uw34', 'qhd27']) {
+    applyFinderPreset(pk);
+    const pCnt = parseInt(doc.getElementById('lblFinderCnt').textContent || '0', 10);
+    if (!(pCnt > 0)) {
+      console.error(`CI_SMOKE_FAIL: preset ${pk} returned 0 models`);
+      process.exit(1);
+    }
+  }
+}
+// 6. Verify Wave 13 Smart Cyrillic Search, Compat Matrix & Selection CSV Export
+if (typeof normalizeSmartSearchTokens === 'function') {
+  const t1 = normalizeSmartSearchTokens('асус олед 32').join(' ');
+  const t2 = normalizeSmartSearchTokens('фыгы щдув').join(' ');
+  if (t1 !== 'asus oled 32' || t2 !== 'asus oled') {
+    console.error(`CI_SMOKE_FAIL: smart search mismatch (${t1} | ${t2})`);
+    process.exit(1);
+  }
+}
+if (!doc.getElementById('divCompatMatrixCard')) {
+  console.error('CI_SMOKE_FAIL: #divCompatMatrixCard missing in modal');
+  process.exit(1);
+}
+if (typeof buildSelectionCsv === 'function') {
+  const csvOut = buildSelectionCsv(DB.catalog.slice(0, 3));
+  if (!csvOut.startsWith('\uFEFF') || csvOut.split('\r\n').length !== 4) {
+    console.error('CI_SMOKE_FAIL: buildSelectionCsv invalid output');
+    process.exit(1);
+  }
+}
+// 7. Verify Wave 14 Similar Alternatives & Compare Verdict
+if (typeof findSimilarAlternatives === 'function') {
+  const alts = findSimilarAlternatives(DB.catalog[0], 4);
+  if (!Array.isArray(alts)) {
+    console.error('CI_SMOKE_FAIL: findSimilarAlternatives did not return array');
+    process.exit(1);
+  }
+}
+if (typeof buildCompareVerdictHtml === 'function') {
+  const vHtml = buildCompareVerdictHtml([DB.catalog[0], DB.catalog[10]]);
+  if (!vHtml.includes('divCompareVerdict')) {
+    console.error('CI_SMOKE_FAIL: buildCompareVerdictHtml missing #divCompareVerdict');
+    process.exit(1);
+  }
+}
+// 8. Verify Wave 15 Top RF Drops & Offline Custom Duty Calculator
+if (typeof getTopRfDrops === 'function') {
+  const dr = getTopRfDrops(5);
+  if (!Array.isArray(dr) || dr.length === 0) {
+    console.error('CI_SMOKE_FAIL: getTopRfDrops returned empty');
+    process.exit(1);
+  }
+}
+if (typeof applyCustomDutyScenario === 'function') {
+  const upd = applyCustomDutyScenario(105, 100, 15);
+  if (!(upd > 0)) {
+    console.error('CI_SMOKE_FAIL: applyCustomDutyScenario updated 0 models');
+    process.exit(1);
+  }
+  resetCustomDutyScenario();
+}
+// 9. Verify Wave 16 Personal Watchlist & OpenGraph/Favicon metadata
+if (!html.includes('property="og:title"') || !html.includes('favicon.svg') || !html.includes('og-cover.png')) {
+  console.error('CI_SMOKE_FAIL: missing OpenGraph or favicon.svg in <head>');
+  process.exit(1);
+}
+if (typeof savePersonalWatch === 'function') {
+  savePersonalWatch(84, 55000, 'Проверить ПВЗ');
+  const got = getPersonalWatch(84);
+  if (!got || got.target !== 55000) {
+    console.error('CI_SMOKE_FAIL: savePersonalWatch/getPersonalWatch failed');
+    process.exit(1);
+  }
+}
+// 10. Verify Wave 18 Unified Backup includes personal_watch & restores cleanly
+if (typeof collectUnifiedBackup === 'function' && typeof applyUnifiedBackup === 'function') {
+  const bk = collectUnifiedBackup();
+  if (!bk || !bk.local_storage || !bk.local_storage['monitor_db_personal_watch_v1']) {
+    console.error('CI_SMOKE_FAIL: collectUnifiedBackup missing monitor_db_personal_watch_v1');
+    process.exit(1);
+  }
+  if (!applyUnifiedBackup(bk)) {
+    console.error('CI_SMOKE_FAIL: applyUnifiedBackup returned false');
+    process.exit(1);
+  }
+}
+// 11. Verify Wave 19 quick checkboxes (2026 & Reviewed)
+if (!doc.getElementById('chkCatOnly2026') || !doc.getElementById('chkCatOnlyReviewed')) {
+  console.error('CI_SMOKE_FAIL: missing #chkCatOnly2026 or #chkCatOnlyReviewed');
+  process.exit(1);
+}
+// 12. Verify Wave 20 Chat/Forum Markdown Card Share
+if (typeof buildModelShareMarkdown === 'function') {
+  const md = buildModelShareMarkdown(DB.catalog[0]);
+  if (!md.includes('#model=') || !md.includes(DB.catalog[0].model)) {
+    console.error('CI_SMOKE_FAIL: buildModelShareMarkdown invalid output');
+    process.exit(1);
+  }
+}
+// 13. Verify Wave 21 GitHub Issues feedback footer & modal report link
+if (!html.includes('id="ftrCommunityFeedback"') || !html.includes('template=fix-error.yml')) {
+  console.error('CI_SMOKE_FAIL: missing GitHub Issues feedback links');
+  process.exit(1);
+}
 console.log(
   `CI_SMOKE_PASS! EXIT: 0 | zeroCDN=true | catalog=${DB.catalog.length} | openModal_ms=${t1 - t0} | finderCnt=${finderCnt} | compareSize=${compareIds.size} | priceHistoryModels=${phCount} | pvzMode=${pvzOk}`
 );

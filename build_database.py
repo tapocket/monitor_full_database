@@ -263,6 +263,61 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
         ws.freeze_panes = "C5"
 
     # Update Sheet 0 & Sheet 1 A1 column counts (65 cols)
+    # APPEND_NEW_MODELS_TO_WS1: sync newly added catalog models into Sheet 1 ("1. Общая база мониторов")
+    ws1_sync = wb["1. Общая база мониторов"]
+    existing_count = max(0, ws1_sync.max_row - 4)
+    template_r = ws1_sync.max_row
+    for item in master["catalog"][existing_count:]:
+        m_name = str(item.get("model") or "").strip()
+        new_r = ws1_sync.max_row + 1
+        col_vals = {
+            1: item.get("brand", ""),
+            2: m_name,
+            3: item.get("reg", "Глобал"),
+            4: item.get("oem", "—"),
+            5: item.get("year", 2026),
+            7: item.get("tier", ""),
+            8: item.get("use", ""),
+            9: item.get("diag", 27),
+            10: item.get("res", ""),
+            11: item.get("cat", ""),
+            12: item.get("hz", ""),
+            13: item.get("gtg80", ""),
+            18: item.get("ptype", ""),
+            19: item.get("pmodel", ""),
+            20: item.get("subp", ""),
+            21: item.get("coat", ""),
+            22: item.get("zones", ""),
+            24: item.get("cr", ""),
+            26: item.get("sdr_max", ""),
+            27: item.get("hdr", ""),
+            30: item.get("srgb", ""),
+            31: item.get("argb", ""),
+            32: item.get("dci", ""),
+            36: item.get("ports", ""),
+            52: item.get("rub", 0),
+            53: item.get("duty", 0),
+            54: item.get("hand", 0),
+            59: item.get("rev_url", ""),
+            62: item.get("notes", ""),
+            63: item.get("max_hz", 0),
+            64: normalize_brand(item.get("brand", ""))[0],
+            65: normalize_brand(item.get("brand", ""))[1],
+        }
+        for c_i in range(1, 66):
+            copy_cell_style(ws1_sync.cell(template_r, c_i), ws1_sync.cell(new_r, c_i))
+            if c_i in col_vals:
+                ws1_sync.cell(new_r, c_i).value = col_vals[c_i]
+
+    # Update all Sheet 13 count/sum formulas to cover new LAST_S1
+    ws13_sync = wb["13. Сводная по брендам"]
+    new_last_s1 = ws1_sync.max_row
+    for r_i in range(5, ws13_sync.max_row + 1):
+        for c_i in range(1, ws13_sync.max_column + 1):
+            v = ws13_sync.cell(r_i, c_i).value
+            if isinstance(v, str) and v.startswith("="):
+                ws13_sync.cell(r_i, c_i).value = re.sub(r"(\$[A-Z]+\$5:\$[A-Z]+\$)\d+", rf"\g<1>{new_last_s1}", v)
+
     ws0 = wb["0. ИНФА и Гайд по таблице"]
     ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 69 СТОЛБЦОВ • 18 ВКЛАДОК)"'
 
@@ -742,6 +797,9 @@ def compress_db_for_html(master: dict) -> str:
 
     rest_obj = {k: v for k, v in db_obj.items() if k != "catalog"}
     rest_obj["price_history"] = load_price_history_map(catalog)
+    if os.path.exists("data/icc_profiles.json"):
+        with open("data/icc_profiles.json", "r", encoding="utf-8") as _f_icc:
+            rest_obj["icc_profiles"] = json.load(_f_icc)
     payload = {
         "k": all_keys,
         "df": col_defaults,
@@ -953,6 +1011,78 @@ def verify_outputs(master: dict, out_csv: str, out_xlsx: str, out_html: str) -> 
     print(f"[VERIFY] HTML OK: node --check=0, {ut.stdout.strip()}")
 
 
+
+
+def build_static_api(master: dict, outdir: str) -> None:
+    """Generate lightweight static JSON API slices under api/v1/ for external integrations."""
+    api_dir = os.path.join(outdir, "api", "v1")
+    os.makedirs(api_dir, exist_ok=True)
+    cat = master.get("catalog", [])
+
+    def compact(m: dict) -> dict:
+        return {
+            "id": m.get("id"),
+            "brand": m.get("brand"),
+            "model": m.get("model"),
+            "tier": m.get("tier"),
+            "year": m.get("year"),
+            "diag": m.get("diag"),
+            "res": m.get("res"),
+            "hz": m.get("hz"),
+            "max_hz": m.get("max_hz"),
+            "ptype": m.get("ptype"),
+            "panel_gen": m.get("panel_gen"),
+            "coat": m.get("coat"),
+            "zones": m.get("zones"),
+            "hdr": m.get("hdr"),
+            "hand": m.get("hand"),
+            "price_retail_rf": m.get("price_retail_rf"),
+            "is_ru": bool(m.get("is_ru")),
+            "rev_url": m.get("rev_url") or "",
+            "stores": m.get("stores") or [],
+        }
+
+    oled_rows = [compact(m) for m in cat if "oled" in (str(m.get("ptype", "")) + " " + str(m.get("model", ""))).lower()]
+    miniled_rows = [compact(m) for m in cat if "mini-led" in str(m.get("ptype", "")).lower() or "miniled" in str(m.get("ptype", "")).lower()]
+    brands = sorted({m.get("brand_canonical") or m.get("brand") or "" for m in cat if m.get("brand")})
+
+    summary = {
+        "name": "monitor_full_database",
+        "updated": master.get("meta", {}).get("updated", ""),
+        "total_models": len(cat),
+        "total_brands": len(brands),
+        "counts": {
+            "oled": len(oled_rows),
+            "miniled": len(miniled_rows),
+            "lcd": len(cat) - len(oled_rows) - len(miniled_rows),
+            "market_rf": len(master.get("market_rf", [])),
+            "flagships": len(master.get("flagships", [])),
+        },
+        "rates": master.get("meta", {}).get("rates", {}),
+        "endpoints": {
+            "summary": "api/v1/summary.json",
+            "oled": "api/v1/oled.json",
+            "miniled": "api/v1/miniled.json",
+            "market_rf": "api/v1/market_rf.json",
+            "flagships": "api/v1/flagships.json",
+            "brands": "api/v1/brands.json",
+            "monitors": "api/v1/monitors.json",
+        },
+    }
+
+    def dump_j(fn: str, obj) -> None:
+        with open(os.path.join(api_dir, fn), "w", encoding="utf-8") as fp:
+            json.dump(obj, fp, ensure_ascii=False, separators=(",", ":"))
+
+    dump_j("summary.json", summary)
+    dump_j("oled.json", oled_rows)
+    dump_j("miniled.json", miniled_rows)
+    dump_j("market_rf.json", master.get("market_rf", []))
+    dump_j("flagships.json", master.get("flagships", []))
+    dump_j("brands.json", {"count": len(brands), "brands": brands})
+    print(f"[API]  Built static JSON API in {api_dir} (summary, oled={len(oled_rows)}, miniled={len(miniled_rows)}, market_rf, flagships, brands)")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build monitor_full_database from Single Source of Truth")
     parser.add_argument("--master", default="database_master.json", help="Path to database_master.json")
@@ -974,6 +1104,7 @@ def main():
     build_csv(master, out_csv)
     upgrade_xlsx(master, args.template_xlsx, out_xlsx)
     build_html(master, args.template_html, out_html)
+    build_static_api(master, args.outdir)
 
     if args.recalc:
         recalculate_xlsx_libreoffice(out_xlsx)

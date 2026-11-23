@@ -1,8 +1,8 @@
-name: Weekly CBR Rates, Rebuild & Link Health Check
+name: Daily CBR Rates, Price History, Checklist & Portal Rebuild
 
 on:
   schedule:
-    - cron: "0 6 * * 1"
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,11 +26,14 @@ jobs:
       - name: Record RF price history snapshot
         run: python3 scripts/record_price_history.py --snapshot data/prices_rf_snapshot.json --history-dir data/price_history
       - name: Run sample link health check
-        run: python3 scripts/check_links.py --master database_master.json --out data/link_health_report.json --sample 100
+        run: python3 scripts/update_checklist.py
+      - name: Run daily RSS/Telegram review radar
+        run: python3 scripts/check_new_reviews.py
+      - name: Run sample link health check
+        run: python3 scripts/check_links.py --master database_master.json --out data/link_health_report.json --md-out data/LINK_AUDIT_REPORT.md data/DAILY_UPDATE_CHECKLIST.md data/new_reviews_radar.json --sample 120
       - name: Rebuild portal & CSV/XLSX and verify parity
         run: |
           python3 build_database.py --master database_master.json --template-xlsx monitor_full_database.xlsx --template-html monitor_full_database.html --outdir . --verify
-          if [ -f index.html ]; then cp monitor_full_database.html index.html; fi
       - name: Bump Service Worker cache key if portal changed
         run: |
           if ! git diff --quiet monitor_full_database.html database_master.json; then
@@ -46,7 +49,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add config/rates.json database_master.json monitor_full_database.html monitor_full_database.csv sw.js data/link_health_report.json data/price_history/
-          if [ -f index.html ]; then git add index.html; fi
-          git diff --staged --quiet || git commit -m "chore: weekly CBR rates update & portal rebuild"
+          git add config/rates.json database_master.json monitor_full_database.html index.html data/db_payload.js monitor_full_database.csv sw.js data/link_health_report.json data/LINK_AUDIT_REPORT.md data/DAILY_UPDATE_CHECKLIST.md data/new_reviews_radar.json data/price_history/ api/v1/
+          git diff --staged --quiet || git commit -m "chore: daily CBR rates, checklist & portal rebuild"
           git push
+      - name: Notify admin in Telegram if new reviews or dead links found
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+        run: python3 scripts/notify_ci_telegram.py

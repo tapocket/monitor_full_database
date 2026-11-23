@@ -1,0 +1,11 @@
+.git
+.github
+__pycache__
+*.pyc
+bot/.env
+bot/.env.txt
+.env
+monitor_full_database.xlsx
+monitor_full_database.html
+index.html
+docs/

@@ -4,6 +4,19 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>monitor_full_database — Инженерная база мониторов</title>
+ <meta name="description" content="Инженерная база 2 710 мониторов (85 брендов): замеры OLED/Mini-LED/IPS, реальные матрицы, цены РФ с пошлиной, тест ПВЗ и сравнение в лоб." />
+ <meta name="theme-color" content="#005fb8" />
+ <meta property="og:type" content="website" />
+ <meta property="og:title" content="monitor_full_database — Инженерная база 2 710 мониторов" />
+ <meta property="og:description" content="Zero-CDN WinUI 3 портал: 361 OLED, 235 Mini-LED, подбор по 6 сценариям, совместимость PS5/Mac/GPU, история цен РФ и 14-шаговый тест ПВЗ." />
+ <meta property="og:url" content="https://tapocket.github.io/monitor_full_database/" />
+ <meta property="og:image" content="https://tapocket.github.io/monitor_full_database/og-cover.png" />
+ <meta property="og:image:width" content="1200" />
+ <meta property="og:image:height" content="630" />
+ <meta name="twitter:image" content="https://tapocket.github.io/monitor_full_database/og-cover.png" />
+ <meta name="twitter:card" content="summary_large_image" />
+ <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+ <link rel="alternate icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23005fb8'/%3E%3Crect x='10' y='13' width='44' height='29' rx='4' fill='%230f172a' stroke='%23e0f2fe' stroke-width='2.5'/%3E%3Crect x='14' y='17' width='16' height='21' rx='2' fill='%2338bdf8'/%3E%3Crect x='33' y='17' width='17' height='9' rx='2' fill='%2334d399'/%3E%3Crect x='33' y='29' width='17' height='9' rx='2' fill='%23f59e0b'/%3E%3Crect x='20' y='49' width='24' height='3.5' rx='1.75' fill='%23ffffff'/%3E%3C/svg%3E" />
  <style id="offline-tailwind-fallback">
 /* Local Compiled Tailwind 3.4 Utility CSS (Zero-CDN, Instant Render) */
 *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e2e8f0}
@@ -267,6 +280,7 @@ a{color:inherit;text-decoration:inherit}
 .break-words{overflow-wrap:break-word}
 .col-span-2{grid-column:span 2 / span 2}
 .col-span-3{grid-column:span 3 / span 3}
+.col-span-full{grid-column:1 / -1}
 .cursor-pointer{cursor:pointer}
 .divide-slate-200 > :not([hidden]) ~ :not([hidden]){border-color:#e2e8f0}
 .divide-y > :not([hidden]) ~ :not([hidden]){border-top-width:1px;border-top-style:solid}
@@ -343,6 +357,7 @@ a{color:inherit;text-decoration:inherit}
 .hover\:bg-amber-400:hover{background-color:#fbbf24}
 .hover\:bg-amber-500:hover{background-color:#f59e0b}
 .hover\:bg-amber-600:hover{background-color:#d97706}
+.hover\:bg-amber-700:hover{background-color:#b45309}
 .hover\:bg-blue-100:hover{background-color:#dbeafe}
 .hover\:bg-blue-500:hover{background-color:#3b82f6}
 .hover\:bg-blue-700:hover{background-color:#1d4ed8}
@@ -416,6 +431,7 @@ a{color:inherit;text-decoration:inherit}
 .inline-block{display:inline-block}
 .inline-flex{display:inline-flex}
 .inset-0{inset:0px}
+.items-baseline{align-items:baseline}
 .items-center{align-items:center}
 .items-end{align-items:flex-end}
 .items-start{align-items:flex-start}
@@ -425,6 +441,7 @@ a{color:inherit;text-decoration:inherit}
 .leading-relaxed{line-height:1.625}
 .leading-tight{line-height:1.25}
 .left-0{left:0px}
+.line-through{text-decoration-line:line-through}
 .list-decimal{list-style-type:decimal}
 .list-disc{list-style-type:disc}
 .list-inside{list-style-position:inside}
@@ -449,6 +466,7 @@ a{color:inherit;text-decoration:inherit}
 .mb-3{margin-bottom:0.75rem}
 .mb-4{margin-bottom:1rem}
 .min-h-screen{min-height:100vh}
+.min-w-\[200px\]{min-width:200px}
 .min-w-\[900px\]{min-width:900px}
 .ml-0\.5{margin-left:0.125rem}
 .ml-1{margin-left:0.25rem}
@@ -456,16 +474,20 @@ a{color:inherit;text-decoration:inherit}
 .ml-2{margin-left:0.5rem}
 .ml-auto{margin-left:auto}
 .mr-1{margin-right:0.25rem}
+.mr-2{margin-right:0.5rem}
 .mr-3{margin-right:0.75rem}
+.mr-auto{margin-right:auto}
 .mt-0\.5{margin-top:0.125rem}
 .mt-1{margin-top:0.25rem}
 .mt-1\.5{margin-top:0.375rem}
 .mt-2{margin-top:0.5rem}
 .mt-3{margin-top:0.75rem}
 .mt-4{margin-top:1rem}
+.mt-6{margin-top:1.5rem}
 .mx-auto{margin-left:auto;margin-right:auto}
 .my-2{margin-top:0.5rem;margin-bottom:0.5rem}
 .my-2\.5{margin-top:0.625rem;margin-bottom:0.625rem}
+.opacity-60{opacity:0.6}
 .opacity-70{opacity:0.7}
 .opacity-75{opacity:0.75}
 .opacity-80{opacity:0.8}
@@ -475,6 +497,7 @@ a{color:inherit;text-decoration:inherit}
 .overflow-visible{overflow:visible}
 .overflow-x-auto{overflow-x:auto}
 .overflow-y-auto{overflow-y:auto}
+.p-1\.5{padding:0.375rem}
 .p-2{padding:0.5rem}
 .p-2\.5{padding:0.625rem}
 .p-3{padding:0.75rem}
@@ -509,6 +532,7 @@ a{color:inherit;text-decoration:inherit}
 .py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}
 .py-3{padding-top:0.75rem;padding-bottom:0.75rem}
 .py-4{padding-top:1rem;padding-bottom:1rem}
+.py-5{padding-top:1.25rem;padding-bottom:1.25rem}
 .py-6{padding-top:1.5rem;padding-bottom:1.5rem}
 .relative{position:relative}
 .right-0{right:0px}
@@ -540,6 +564,7 @@ a{color:inherit;text-decoration:inherit}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){margin-top:1rem}
 .space-y-6 > :not([hidden]) ~ :not([hidden]){margin-top:1.5rem}
 .sticky{position:sticky}
+.text-\[10\.5px\]{font-size:10.5px}
 .text-\[10px\]{font-size:10px}
 .text-\[11px\]{font-size:11px}
 .text-\[12px\]{font-size:12px}
@@ -610,6 +635,7 @@ a{color:inherit;text-decoration:inherit}
 .text-rose-950{color:#4c0519}
 .text-sky-300{color:#7dd3fc}
 .text-sky-600{color:#0284c7}
+.text-sky-700{color:#0369a1}
 .text-sky-900{color:#0c4a6e}
 .text-sky-950{color:#082f49}
 .text-slate-100{color:#f1f5f9}
@@ -663,8 +689,10 @@ a{color:inherit;text-decoration:inherit}
 .w-12{width:3rem}
 .w-14{width:3.5rem}
 .w-16{width:4rem}
+.w-20{width:5rem}
 .w-3{width:0.75rem}
 .w-3\.5{width:0.875rem}
+.w-36{width:9rem}
 .w-4{width:1rem}
 .w-44{width:11rem}
 .w-48{width:12rem}
@@ -680,7 +708,10 @@ a{color:inherit;text-decoration:inherit}
 .z-50{z-index:50}
 .z-\[9998\]{z-index:9998}
 .z-\[9999\]{z-index:9999}
+html.dark .dark\:bg-amber-950\/40{background-color:rgba(69,26,3,0.4)}
+html.dark .dark\:bg-blue-950\/40{background-color:rgba(23,37,84,0.4)}
 html.dark .dark\:bg-emerald-900\/60{background-color:rgba(6,78,59,0.6)}
+html.dark .dark\:bg-indigo-900\/40{background-color:rgba(49,46,129,0.4)}
 html.dark .dark\:bg-slate-800{background-color:#1e293b}
 html.dark .dark\:bg-slate-800\/70{background-color:rgba(30,41,59,0.7)}
 html.dark .dark\:bg-slate-800\/80{background-color:rgba(30,41,59,0.8)}
@@ -690,6 +721,8 @@ html.dark .dark\:bg-slate-900\/90{background-color:rgba(15,23,42,0.9)}
 html.dark .dark\:bg-slate-900\/95{background-color:rgba(15,23,42,0.95)}
 html.dark .dark\:border-amber-500{border-color:#f59e0b}
 html.dark .dark\:border-amber-600{border-color:#d97706}
+html.dark .dark\:border-amber-800{border-color:#92400e}
+html.dark .dark\:border-blue-800{border-color:#1e40af}
 html.dark .dark\:border-cyan-600{border-color:#0891b2}
 html.dark .dark\:border-emerald-600{border-color:#059669}
 html.dark .dark\:border-emerald-700{border-color:#047857}
@@ -703,6 +736,7 @@ html.dark .dark\:from-slate-900{--tw-gradient-from:#0f172a}
 html.dark .dark\:hover\:bg-rose-950\/60:hover{background-color:rgba(76,5,25,0.6)}
 html.dark .dark\:hover\:bg-slate-700:hover{background-color:#334155}
 html.dark .dark\:hover\:bg-slate-800\/60:hover{background-color:rgba(30,41,59,0.6)}
+html.dark .dark\:text-amber-100{color:#fef3c7}
 html.dark .dark\:text-amber-200{color:#fde68a}
 html.dark .dark\:text-amber-300{color:#fcd34d}
 html.dark .dark\:text-amber-400{color:#fbbf24}
@@ -724,6 +758,7 @@ html.dark .dark\:text-rose-200{color:#fecdd3}
 html.dark .dark\:text-rose-300{color:#fda4af}
 html.dark .dark\:text-rose-400{color:#fb7185}
 html.dark .dark\:text-sky-300{color:#7dd3fc}
+html.dark .dark\:text-sky-400{color:#38bdf8}
 html.dark .dark\:text-slate-100{color:#f1f5f9}
 html.dark .dark\:text-slate-200{color:#e2e8f0}
 html.dark .dark\:text-slate-300{color:#cbd5e1}
@@ -3106,6 +3141,7 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
  <button type="button" id="btnQuickFilterDnsOnly" class="bg-orange-50 hover:bg-orange-100 text-orange-950 border border-orange-300 px-2 py-0.5 rounded-lg font-bold transition" title="Показать в таблице только модели с проверенной прямой карточкой товара в каталоге ДНС (dns-shop.ru/product/...) и актуальной рублёвой ценой без таможенной пошлины">🟠 Карточки ДНС (<span id="lblDnsDirectModelsCnt">314</span>)</button>
  <button type="button" id="btnFilterMin90d" class="text-amber-600 hover:underline font-extrabold" title="Показать модели с актуальными снимками цен РФ (DNS/Ситилинк/Ozon)">🔥 Снимки цен РФ</button>
             <button type="button" id="btnShareUrl" class="text-indigo-600 hover:underline font-bold" title="Скопировать ссылку на текущую выборку и фильтры">🔗 Ссылка на выборку</button>
+            <button type="button" id="btnExportCatalogCsv" class="text-emerald-700 dark:text-emerald-400 hover:underline font-bold" title="Скачать текущую отфильтрованную выборку в Excel (CSV UTF-8)">📥 Скачать CSV</button>
  <button id="btnResetFilters" class="text-blue-600 hover:underline font-extrabold">Сбросить всё</button>
  </div>
  </div>
@@ -3629,6 +3665,57 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
 
  <!-- DYNAMIC FILTERED COHORT SUMMARY BAR (#divFilteredCohortSummaryBar) -->
  <div id="divFilteredCohortSummaryBar" class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-xl px-3.5 py-2.5 mb-3 shadow-sm border border-indigo-500/40 flex flex-wrap items-center justify-between gap-2 text-xs"></div>
+ 
+ <div class="space-y-2 mb-3" id="divWave15CatalogWidgets">
+  <details id="dtlTopDropsBanner" class="w15-panel" open>
+   <summary>
+    <span>📉 Топ-5 выгодных цен и скидок в РФ (по базе истории цен)</span>
+    <span class="text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">Свернуть / раскрыть ▾</span>
+   </summary>
+   <div id="divTopDropsList" class="drops-grid"></div>
+  </details>
+  <details id="dtlMyWatchlistPanel" class="w15-panel">
+   <summary>
+    <span>⭐ Мои заметки и цели (<span id="lblMyWatchCnt">0</span>)</span>
+    <span class="text-[11px] font-semibold text-amber-700 dark:text-amber-300">Показать список ▾</span>
+   </summary>
+   <div class="mt-2 space-y-2">
+    <div class="flex flex-wrap items-center justify-between gap-2 text-[11px]">
+     <span class="opacity-75">Модели, для которых вы задали целевую цену или личную заметку в карточке.</span>
+     <div class="flex flex-wrap items-center gap-2.5">
+      <label class="inline-flex items-center gap-1.5 font-bold cursor-pointer">
+       <input type="checkbox" id="chkWatchOnlyInBudget" class="accent-emerald-600" />
+       🎯 Только в бюджете
+      </label>
+      <button type="button" id="btnWatchExportBackup" class="text-sky-700 dark:text-sky-400 hover:underline font-bold" title="Экспортировать цели, заметки, избранное и чек-лист ПВЗ в JSON">💾 Бэкап (.json)</button>
+      <button type="button" id="btnWatchImportBackup" class="text-sky-700 dark:text-sky-400 hover:underline font-bold" title="Восстановить цели, заметки и избранное из JSON-файла">📂 Импорт</button>
+     </div>
+    </div>
+    <div id="divMyWatchlistItems" class="drops-grid"></div>
+   </div>
+  </details>
+  <details id="dtlCustomDutyCalc" class="w15-panel">
+   <summary>
+    <span>🧮 Калькулятор пошлины и курса EUR для заказов из-за рубежа <span id="lblCustomDutyBadge" class="ml-1.5 text-[11px] font-semibold text-sky-700 dark:text-sky-400">(штатный: порог 200 €, 15%)</span></span>
+    <span class="text-[11px] opacity-70">Настроить ▾</span>
+   </summary>
+   <div class="duty-calc-row">
+    <label class="flex items-center gap-1.5">Курс EUR (₽): <input type="number" id="inpCustomEur" value="100" min="50" max="250" step="1" class="w-20" /></label>
+    <label class="flex items-center gap-1.5">Беспошлинный порог:
+     <select id="selCustomThreshold">
+      <option value="200" selected>200 € (текущий)</option>
+      <option value="100">100 € (сценарий снижения)</option>
+      <option value="50">50 € (жёсткий)</option>
+      <option value="0">0 € (пошлина со всей суммы)</option>
+     </select>
+    </label>
+    <label class="flex items-center gap-1.5">Ставка (%): <input type="number" id="inpCustomRate" value="15" min="0" max="50" step="1" class="w-16" /></label>
+    <button type="button" id="btnApplyCustomDuty" class="px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs">Пересчитать таблицу</button>
+    <button type="button" id="btnResetCustomDuty" class="px-3 py-1 rounded-lg border border-slate-300 dark:border-slate-600 font-bold text-xs">Сбросить</button>
+   </div>
+  </details>
+ </div>
+
  <div id="divCatalogGridContainer" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3"></div>
  <div id="divCatalogTableWrap" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto custom-scroll">
  <table id="tblCatalogMain" class="w-full text-left border-collapse text-xs">
@@ -3710,12 +3797,27 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
  </div>
  </div>
 
+ 
+ <div class="space-y-2" id="fndPresetsWrap">
+ <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">⚡ Быстрые сценарии в 1 клик:</div>
+ <div class="fnd-presets-bar" id="fndPresetsBar">
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="esports">🎯 Киберспорт 24–25″ 360+ Гц</button>
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="oled4k">🎮 4K OLED (ПК / PS5 / Xbox)</button>
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="code4k5k">💻 Текст и код 4K / 5K</button>
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="miniled30k">⚡ Mini-LED до 35к</button>
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="uw34">🖥 Ультраширик 34″</button>
+ <button type="button" class="fnd-preset-btn" data-fnd-preset="qhd27">🏆 27″ QHD 240+ Гц до 50к</button>
+ </div>
+ <div id="fndPresetExplain" class="fnd-preset-explain"></div>
+ </div>
+
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs" id="divFinderCheckboxes"></div>
 
  <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 pt-1">
  <div>Подходит моделей по выбранным галочкам: <strong id="lblFinderCnt" class="text-slate-900">0</strong> (отсортированы по оценке S→A→B и частоте)</div>
  <div class="flex items-center gap-1.5">
  <label class="font-bold text-slate-700">Показать карточек:</label>
+ <button type="button" id="btnExportFinderCsv" class="text-emerald-700 dark:text-emerald-400 hover:underline font-bold mr-2" title="Скачать текущую подборку Подборщика в Excel (CSV UTF-8)">📥 Скачать CSV</button>
  <select id="fndLimitSel" class="border border-slate-300 rounded-lg px-2 py-1 bg-white font-semibold">
  <option value="18" selected>Топ-18 лучших</option>
  <option value="50">Топ-50 моделей</option>
@@ -5254,6 +5356,15 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
  <div id="divTestTools" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
  </section>
  </main>
+
+ <footer id="ftrCommunityFeedback" class="max-w-7xl mx-auto px-4 py-5 mt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600 dark:text-slate-400">
+  <div><strong>monitor_full_database</strong> • Открытая инженерная база мониторов (Zero-CDN WinUI 3 PWA)</div>
+  <div class="flex flex-wrap items-center gap-2.5">
+   <a href="https://github.com/tapocket/monitor_full_database/issues/new?template=new-monitor.yml" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-sky-300 font-bold hover:underline">➕ Предложить монитор</a>
+   <a href="https://github.com/tapocket/monitor_full_database/issues/new?template=fix-error.yml" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-300 font-bold hover:underline">⚠️ Сообщить об ошибке / ревизии</a>
+  </div>
+ </footer>
+
 
  <!-- MODAL FOR EXPORTING & IMPORTING PERSONAL SELECTION (FAVORITES, COMPARE, GPU, NOTES) -->
  <div id="mdlShareSelection" class="fixed inset-0 bg-slate-900/60 z-50 hidden items-center justify-center p-4">
@@ -17194,6 +17305,8 @@ function computeSignalBandwidthAndCableAudit(r) {
  const q = document.getElementById("fltSearch").value.trim().toLowerCase();
  const maxHand = Number(document.getElementById("fltCatMaxHand").value || 500000);
  const onlyRu = document.getElementById("chkCatOnlyRu").checked;
+ const only2026 = (document.getElementById("chkCatOnly2026") || {}).checked || false;
+ const onlyReviewed = (document.getElementById("chkCatOnlyReviewed") || {}).checked || false;
  const noTierE = document.getElementById("chkCatNoTierE").checked;
  const onlyFav = (document.getElementById("chkCatOnlyFav") || {}).checked || false;
  const onlyEyeSafe = (document.getElementById("chkCatEyeSafe") || {}).checked || false;
@@ -17352,6 +17465,8 @@ function computeSignalBandwidthAndCableAudit(r) {
  if (activeTechTileKey && classifyMonitorTechBucket(r) !== activeTechTileKey) return false;
  if (r.hand > maxHand) return false;
  if (onlyRu && !r.is_ru) return false;
+ if (only2026 && String(r.year || "") !== "2026") return false;
+ if (onlyReviewed && !String(r.rev_url || "").trim().startsWith("http")) return false;
  if (noTierE && r.tier.startsWith("E")) return false;
  if (!checkMultiSet(r, "brand", catalogMultiState.brand)) return false;
  if (!checkMultiSet(r, "res", catalogMultiState.res)) return false;
@@ -17366,13 +17481,14 @@ function computeSignalBandwidthAndCableAudit(r) {
  const genAlias = r.panel_gen === "qd_oled_gen5" ? "5 поколение 5го поколения 5-е поколение gen 5 5th gen qd-oled qd oled rgb-stripe v-stripe" :
  (r.panel_gen === "qd_oled_gen4" ? "4 поколение 4го поколения 4-е поколение gen 4 4th gen qd-oled qd oled" :
  (r.panel_gen === "woled_gen4" ? "4 поколение 4го поколения 4-е поколение gen 4 4th gen woled tandem" : ""));
- const hay = (r.brand + " " + (r.brand.toLowerCase() === "thunderobot" ? "thunderbot " : "") + r.model + " " + r.ptype + " " + r.pmodel + " " + genBadge + " " + genAlias + " " + r.subp + " " + r.res + " " + r.hz + " " + r.oem + " " + r.comm + " " + r.ports + " " + r.reg).toLowerCase();
- const tokens = q.split(/\s+/).filter(Boolean);
+ const hay = (r.brand + " " + (r.brand.toLowerCase() === "thunderobot" ? "thunderbot " : "") + r.model + " " + r.ptype + " " + r.pmodel + " " + genBadge + " " + genAlias + " " + r.subp + " " + r.coat + " " + r.res + " " + r.hz + " " + r.diag + " " + r.oem + " " + r.comm + " " + r.ports + " " + r.reg).toLowerCase();
+ const tokens = typeof normalizeSmartSearchTokens === "function" ? normalizeSmartSearchTokens(q) : q.split(/\s+/).filter(Boolean);
  if (!tokens.every(tok => hay.includes(tok))) return false;
  }
  return true;
  });
 
+ window.__lastCatalogFiltered = filtered;
  // Apply sorting if selected
  if (activeHeaderCol) {
  const dir = activeHeaderAsc ? 1 : -1;
@@ -19243,6 +19359,7 @@ function computeSignalBandwidthAndCableAudit(r) {
  });
 
  document.getElementById("lblFinderCnt").textContent = pool.length;
+ window.__lastFinderFiltered = pool;
 
  pool.sort((a, b) => {
  if (prefStores) {
@@ -19666,7 +19783,8 @@ function computeSignalBandwidthAndCableAudit(r) {
  </div>
  </div>`;
  const eightDiscHtml = cmpExportToolbarHtml + buildEightDisciplineScoreboardHtml(items);
- box.innerHTML = eightDiscHtml + (isLiteMode ? sizeSimHtml : (battleScoreboardHtml + compareAdvisorHtml + multiRadarHtml + sizeSimHtml + multiMonSetupHtml)) + `<table class="w-full border-collapse text-xs">
+ const verdictHtml = (items.length >= 2 && typeof buildCompareVerdictHtml === "function") ? buildCompareVerdictHtml(items) : "";
+ box.innerHTML = verdictHtml + eightDiscHtml + (isLiteMode ? sizeSimHtml : (battleScoreboardHtml + compareAdvisorHtml + multiRadarHtml + sizeSimHtml + multiMonSetupHtml)) + `<table class="w-full border-collapse text-xs">
  <thead>
  <tr class="bg-slate-800 text-white">
  <th class="p-2.5 w-48">Параметр</th>
@@ -20211,8 +20329,79 @@ function computeSignalBandwidthAndCableAudit(r) {
  document.getElementById("fndOnlyRu").checked = false;
  document.getElementById("fndNoTierE").checked = false;
  document.getElementById("fndOnlyStores").checked = false;
+ document.querySelectorAll("[data-fnd-preset]").forEach(b => b.classList.remove("is-active"));
+ const exEl = document.getElementById("fndPresetExplain"); if (exEl) { exEl.classList.remove("is-visible"); exEl.innerHTML = ""; }
  renderFinder();
  });
+
+ const FINDER_PRESETS = {
+ esports: {
+ label: "🎯 Киберспорт 24–25″ 360+ Гц",
+ why: "Минимальный инпут-лаг, 300–720+ Гц и компактная диагональ 24–25″ (вся мини-карта в поле зрения без поворота головы).",
+ res: [], panel: [], diag: ["D24", "D25"], hz: ["HZ360", "HZ400"], tier: ["S", "A"],
+ budget: "500000", gen: "all", onlyRu: false, noTierE: true, onlyStores: false,
+ },
+ oled4k: {
+ label: "🎮 4K OLED (ПК / PS5 / Xbox)",
+ why: "Бесконечный контраст, мгновенный отклик 0.03 мс GtG и высокая плотность 4K (140–166 PPI) для игр и консолей.",
+ res: ["4K", "DUAL"], panel: ["QDOLED", "WOLED"], diag: ["D27", "D32"], hz: ["HZ165", "HZ240", "HZ360", "HZDUAL"], tier: ["S", "A"],
+ budget: "500000", gen: "all", onlyRu: false, noTierE: false, onlyStores: false,
+ },
+ code4k5k: {
+ label: "💻 Текст и код 4K / 5K",
+ why: "Классическая RGB-полоса IPS (140–218 PPI) без цветной каймы шрифтов в Windows и macOS, идеально для текста и IDE.",
+ res: ["4K", "5K8K"], panel: ["IPS", "IPS_BLACK", "MINIIPS"], diag: ["D27", "D32"], hz: [], tier: ["S", "A", "B"],
+ budget: "500000", gen: "all", onlyRu: false, noTierE: false, onlyStores: false,
+ },
+ miniled30k: {
+ label: "⚡ Mini-LED до 35к",
+ why: "Честный HDR с локальным затемнением FALD и высокой яркостью без риска выгорания и переплаты за OLED.",
+ res: [], panel: ["MINIIPS", "MINIVA"], diag: [], hz: [], tier: ["S", "A", "B"],
+ budget: "35000", gen: "all", onlyRu: false, noTierE: false, onlyStores: false,
+ },
+ uw34: {
+ label: "🖥 Ультраширик 34″",
+ why: "Формат 21:9 (3440×1440) заменяет два монитора в таблицах/монтаже и расширяет обзор в играх.",
+ res: ["UW"], panel: [], diag: ["D34"], hz: ["HZ165", "HZ200", "HZ240", "HZ360"], tier: ["S", "A", "B"],
+ budget: "500000", gen: "all", onlyRu: false, noTierE: false, onlyStores: false,
+ },
+ qhd27: {
+ label: "🏆 27″ QHD 240+ Гц до 50к",
+ why: "Оптимальный баланс чёткости 1440p и высокой герцовки 240+ Гц до 50 000 ₽ на руки для игр и повседневных задач.",
+ res: ["2K"], panel: [], diag: ["D27"], hz: ["HZ240", "HZ360", "HZ400"], tier: ["S", "A"],
+ budget: "50000", gen: "all", onlyRu: false, noTierE: true, onlyStores: false,
+ },
+ };
+
+ function applyFinderPreset(presetKey) {
+ const p = FINDER_PRESETS[presetKey];
+ if (!p) return;
+ ["res", "panel", "diag", "hz", "tier"].forEach(k => {
+ finderState[k].clear();
+ (p[k] || []).forEach(v => finderState[k].add(v));
+ });
+ document.querySelectorAll(".fnd-chk").forEach(c => {
+ c.checked = finderState[c.dataset.fndKey]?.has(c.value) || false;
+ });
+ const bEl = document.getElementById("fndMaxBudget"); if (bEl) bEl.value = p.budget || "500000";
+ const gEl = document.getElementById("fndPanelGen"); if (gEl) gEl.value = p.gen || "all";
+ const ruEl = document.getElementById("fndOnlyRu"); if (ruEl) ruEl.checked = !!p.onlyRu;
+ const eEl = document.getElementById("fndNoTierE"); if (eEl) eEl.checked = !!p.noTierE;
+ const sEl = document.getElementById("fndOnlyStores"); if (sEl) sEl.checked = !!p.onlyStores;
+ document.querySelectorAll("[data-fnd-preset]").forEach(b => b.classList.toggle("is-active", b.dataset.fndPreset === presetKey));
+ const exEl = document.getElementById("fndPresetExplain");
+ if (exEl) {
+ exEl.innerHTML = `<span><strong>${p.label}:</strong> ${p.why}</span>`;
+ exEl.classList.add("is-visible");
+ }
+ renderFinder();
+ }
+ window.applyFinderPreset = applyFinderPreset;
+
+ document.querySelectorAll("[data-fnd-preset]").forEach(btn => {
+ btn.addEventListener("click", () => applyFinderPreset(btn.dataset.fndPreset));
+ });
+
 
  document.getElementById("btnExportJson").addEventListener("click", () => {
  const blob = new Blob([JSON.stringify(DB, null, 2)], {type: "application/json"});
@@ -23343,408 +23532,6 @@ function computeSignalBandwidthAndCableAudit(r) {
             const w = window.open("", "_blank");
             if (!w) return;
             w.document.write(`<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Акт осмотра ПВЗ — ${mTxt}</title><style>body{font-family:Arial,sans-serif;padding:28px;color:#111;line-height:1.5;}h1{font-size:18px;margin-bottom:4px;}ul{list-style:none;padding:0;}li{margin:6px 0;}</style>
-<style id="winui3Tabs23MobileStyle">
-/* === WINUI3_TABS23_AND_MOBILE_PVZ_V1 === */
-
-/* --- Tab 2 (#secFinder) & Tab 3 (#secCompare): Restrained WinUI 3 --- */
-#secFinder > div,
-#secCompare > div {
-  background: var(--w3-surface, #ffffff) !important;
-  border: 1px solid var(--w3-border, rgba(0, 0, 0, 0.08)) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
-}
-html.dark #secFinder > div,
-html.dark #secCompare > div {
-  background: #2b2b2b !important;
-  border-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28) !important;
-}
-
-/* Muted WinUI 3 labels & selects inside Finder */
-#secFinder label {
-  color: #323130 !important;
-}
-html.dark #secFinder label {
-  color: #e5e5e5 !important;
-}
-#secFinder select,
-#secCompare select {
-  background: rgba(255, 255, 255, 0.85) !important;
-  color: #1b1b1b !important;
-  border: 1px solid rgba(0, 0, 0, 0.14) !important;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.35) !important;
-  border-radius: 4px !important;
-  padding: 5px 10px !important;
-  font-weight: 500 !important;
-}
-html.dark #secFinder select,
-html.dark #secCompare select {
-  background: #323232 !important;
-  color: #f3f3f3 !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.42) !important;
-}
-#secFinder select:focus,
-#secCompare select:focus {
-  border-bottom-color: #005fb8 !important;
-  outline: none !important;
-}
-html.dark #secFinder select:focus,
-html.dark #secCompare select:focus {
-  border-bottom-color: #60cdff !important;
-}
-
-/* Finder 5-parameter chip groups: calm neutral by default, bright accent only when checked/active */
-#secFinder .fnd-chip,
-#secFinder button[data-fnd],
-#secFinder label.inline-flex {
-  border-radius: 6px !important;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
-}
-
-/* Compare toolbar: replace rainbow buttons with calm WinUI 3 neutral buttons, keep "Diff Only" & primary CTA accented */
-#secCompare #btnCopyCompareMarkdown,
-#secCompare #btnCopyCompareTsv,
-#secCompare #btnExportCompareReportHtml,
-#secCompare #btnExportCompareSummaryTxt,
-#secCompare #btnExportCompareCard {
-  background: rgba(0, 0, 0, 0.04) !important;
-  color: #1b1b1b !important;
-  border: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-radius: 5px !important;
-  font-weight: 600 !important;
-  box-shadow: none !important;
-}
-#secCompare #btnCopyCompareMarkdown:hover,
-#secCompare #btnCopyCompareTsv:hover,
-#secCompare #btnExportCompareReportHtml:hover,
-#secCompare #btnExportCompareSummaryTxt:hover,
-#secCompare #btnExportCompareCard:hover {
-  background: rgba(0, 0, 0, 0.08) !important;
-}
-html.dark #secCompare #btnCopyCompareMarkdown,
-html.dark #secCompare #btnCopyCompareTsv,
-html.dark #secCompare #btnExportCompareReportHtml,
-html.dark #secCompare #btnExportCompareSummaryTxt,
-html.dark #secCompare #btnExportCompareCard {
-  background: rgba(255, 255, 255, 0.06) !important;
-  color: #f3f3f3 !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-html.dark #secCompare #btnCopyCompareMarkdown:hover,
-html.dark #secCompare #btnCopyCompareTsv:hover,
-html.dark #secCompare #btnExportCompareReportHtml:hover,
-html.dark #secCompare #btnExportCompareSummaryTxt:hover,
-html.dark #secCompare #btnExportCompareCard:hover {
-  background: rgba(255, 255, 255, 0.11) !important;
-}
-
-/* Diff-only toggle pill in Compare: subtle accent focus */
-#secCompare label:has(#chkCompareDiffOnly) {
-  background: rgba(0, 95, 184, 0.08) !important;
-  border: 1px solid rgba(0, 95, 184, 0.35) !important;
-  color: #005fb8 !important;
-  border-radius: 6px !important;
-  font-weight: 600 !important;
-}
-html.dark #secCompare label:has(#chkCompareDiffOnly) {
-  background: rgba(96, 205, 255, 0.12) !important;
-  border: 1px solid rgba(96, 205, 255, 0.35) !important;
-  color: #60cdff !important;
-}
-
-/* Sticky header & sticky parameter column inside #divCompareContent */
-#divCompareContent {
-  max-height: 76vh;
-  overflow: auto !important;
-  position: relative;
-}
-#divCompareContent table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  width: 100%;
-}
-#divCompareContent table thead th {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 20 !important;
-  background: rgba(248, 249, 250, 0.96) !important;
-  backdrop-filter: blur(10px) !important;
-  border-bottom: 2px solid rgba(0, 95, 184, 0.35) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-}
-html.dark #divCompareContent table thead th {
-  background: rgba(38, 38, 38, 0.96) !important;
-  border-bottom: 2px solid rgba(96, 205, 255, 0.35) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-}
-#divCompareContent table tbody td:first-child,
-#divCompareContent table thead th:first-child {
-  position: sticky !important;
-  left: 0 !important;
-  z-index: 15 !important;
-  background: #fafafa !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.08) !important;
-  min-width: 150px;
-}
-#divCompareContent table thead th:first-child {
-  z-index: 25 !important;
-}
-html.dark #divCompareContent table tbody td:first-child,
-html.dark #divCompareContent table thead th:first-child {
-  background: #272727 !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Subtle row highlight for differing rows when comparing */
-#divCompareContent tr.cmp-diff-row td {
-  background-color: rgba(0, 95, 184, 0.04);
-}
-html.dark #divCompareContent tr.cmp-diff-row td {
-  background-color: rgba(96, 205, 255, 0.05);
-}
-
-/* --- Mobile & PVZ Responsiveness (Phones & Tablets <= 768px) --- */
-@media (max-width: 768px) {
-  body {
-    font-size: 13px !important;
-    padding-bottom: 24px !important;
-  }
-  header, .header-bar, nav {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  /* Touch-friendly controls in header & tabs */
-  header button, header select,
-  [data-tab], .tab-btn {
-    min-height: 36px !important;
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-    font-size: 12px !important;
-  }
-  /* Horizontal scroll tab bar with clean snap */
-  .tabs-bar, nav[role="tablist"], #tabNav {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-    flex-wrap: nowrap !important;
-    scrollbar-width: none !important;
-  }
-  /* Catalog & tables: smooth horizontal scroll + compact padding */
-  .overflow-x-auto, #divCompareContent {
-    -webkit-overflow-scrolling: touch !important;
-  }
-  table th, table td {
-    padding: 6px 8px !important;
-    font-size: 11.5px !important;
-  }
-  #divCompareContent table tbody td:first-child,
-  #divCompareContent table thead th:first-child {
-    min-width: 115px !important;
-    max-width: 135px !important;
-    font-size: 11px !important;
-  }
-  /* Modal card (#mdlDetail): full-screen sheet on phones */
-  #mdlDetail > div,
-  #mdlDetail .modal-content,
-  #mdlDetail [class*="max-w-"] {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    max-height: 100dvh !important;
-    padding: 12px !important;
-  }
-  #mdlDetail .grid {
-    grid-template-columns: 1fr !important;
-  }
-  /* 14-Step Guided Test Suite (#mdlFullGuidedSuite): compact PVZ HUD */
-  #mdlFullGuidedSuite .fgs-hud,
-  #mdlFullGuidedSuite [id*="Hud"],
-  #mdlFullGuidedSuite [id*="Controls"] {
-    padding: 8px 10px !important;
-    gap: 6px !important;
-    flex-wrap: wrap !important;
-  }
-  #mdlFullGuidedSuite button {
-    min-height: 36px !important;
-    padding: 6px 10px !important;
-    font-size: 12px !important;
-  }
-  /* Hide verbose desktop hints on tiny screens */
-  #mdlFullGuidedSuite .fgs-kbd-hint {
-    display: none !important;
-  }
-  /* Stack Finder controls cleanly */
-  #secFinder .flex.flex-wrap {
-    gap: 8px !important;
-  }
-  #secFinder select,
-  #secCompare button {
-    width: auto !important;
-    max-width: 100% !important;
-  }
-}
-
-@media (max-width: 480px) {
-  #secCompare .flex.flex-wrap.items-center.gap-3 {
-    gap: 6px !important;
-  }
-  #secCompare button,
-  #secCompare label:has(#chkCompareDiffOnly) {
-    font-size: 11px !important;
-    padding: 6px 8px !important;
-  }
-}
-</style>
-
-
-<style id="winui3RefTabsAndPvzStyle">
-/* === SPARKLINE_PVZ_MODE_AND_REF_TABS_WINUI3_V1 === */
-
-/* Restrained WinUI 3 for #secPanelsOem & #secRevisions */
-#secPanelsOem > div,
-#secRevisions > div {
-  background: var(--w3-surface, #ffffff) !important;
-  border: 1px solid var(--w3-border, rgba(0, 0, 0, 0.08)) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
-}
-html.dark #secPanelsOem > div,
-html.dark #secRevisions > div {
-  background: #2b2b2b !important;
-  border-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28) !important;
-}
-#secPanelsOem .overflow-x-auto,
-#secRevisions .overflow-x-auto {
-  max-height: 72vh;
-  overflow: auto !important;
-}
-#secPanelsOem table thead th,
-#secRevisions table thead th {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 15 !important;
-  background: rgba(248, 249, 250, 0.96) !important;
-  backdrop-filter: blur(10px) !important;
-  border-bottom: 2px solid rgba(0, 95, 184, 0.3) !important;
-}
-html.dark #secPanelsOem table thead th,
-html.dark #secRevisions table thead th {
-  background: rgba(38, 38, 38, 0.96) !important;
-  border-bottom: 2px solid rgba(96, 205, 255, 0.3) !important;
-}
-
-/* PVZ Express Modal (#mdlPvzExpress) */
-#mdlPvzExpress {
-  position: fixed;
-  inset: 0;
-  z-index: 90;
-  background: rgba(0, 0, 0, 0.62);
-  backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-}
-#mdlPvzExpress.hidden { display: none !important; }
-#mdlPvzExpress .pvz-sheet {
-  width: 100%;
-  max-width: 680px;
-  max-height: 92dvh;
-  overflow-y: auto;
-  background: #ffffff;
-  color: #1b1b1b;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-}
-html.dark #mdlPvzExpress .pvz-sheet {
-  background: #242424;
-  color: #f3f3f3;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-#mdlPvzExpress .pvz-check-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(128, 128, 128, 0.2);
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-#mdlPvzExpress .pvz-check-row:hover {
-  background: rgba(0, 95, 184, 0.06);
-}
-html.dark #mdlPvzExpress .pvz-check-row:hover {
-  background: rgba(96, 205, 255, 0.08);
-}
-@media (max-width: 768px) {
-  #mdlPvzExpress { padding: 0; }
-  #mdlPvzExpress .pvz-sheet {
-    max-width: 100vw;
-    max-height: 100dvh;
-    height: 100dvh;
-    border-radius: 0;
-    padding: 14px;
-  }
-}
-</style>
-
-
-<style id="winui3AllRemainingTabsStyle">
-/* === ALL_TABS_WINUI3_AND_PVZ_PRINT_SHEET_V1 === */
-#secMarket > div,
-#secFlagships > div,
-#secBrandsSrv > div,
-#secEncyclopedia > div {
-  background: var(--w3-surface, #ffffff) !important;
-  border: 1px solid var(--w3-border, rgba(0, 0, 0, 0.08)) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
-}
-html.dark #secMarket > div,
-html.dark #secFlagships > div,
-html.dark #secBrandsSrv > div,
-html.dark #secEncyclopedia > div {
-  background: #2b2b2b !important;
-  border-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28) !important;
-}
-#secMarket .overflow-x-auto,
-#secFlagships .overflow-x-auto,
-#secBrandsSrv .overflow-x-auto {
-  max-height: 74vh;
-  overflow: auto !important;
-}
-#secMarket table thead th,
-#secFlagships table thead th,
-#secBrandsSrv table thead th {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 15 !important;
-  background: rgba(248, 249, 250, 0.96) !important;
-  backdrop-filter: blur(10px) !important;
-  border-bottom: 2px solid rgba(0, 95, 184, 0.3) !important;
-}
-html.dark #secMarket table thead th,
-html.dark #secFlagships table thead th,
-html.dark #secBrandsSrv table thead th {
-  background: rgba(38, 38, 38, 0.96) !important;
-  border-bottom: 2px solid rgba(96, 205, 255, 0.3) !important;
-}
-/* Calm Encyclopedia article cards */
-#secEncyclopedia article,
-#secEncyclopedia .enc-card,
-#secEncyclopedia .rounded-xl {
-  background: rgba(128, 128, 128, 0.04) !important;
-  border-color: rgba(128, 128, 128, 0.2) !important;
-}
-</style>
-
 </head><body><h1>Акт экспресс-осмотра монитора в ПВЗ</h1><div><b>Модель:</b> ${mTxt} | <b>Дата:</b> ${new Date().toLocaleString("ru-RU")} | <b>Замер браузера:</b> ~${measuredHz} Гц</div><hr/><ul>${checks}</ul><p style="font-size:12px;color:#444;margin-top:16px;">Сформировано в автономной Тест-Лаборатории monitor_full_database (ст. 26.1 / ст. 18 ЗоЗПП).</p></body></html>`);
             w.document.close();
             setTimeout(() => { w.focus(); w.print(); }, 150);
@@ -25844,59 +25631,365 @@ html.dark #secBrandsSrv table thead th {
   .foot { margin-top: 10px; font-size: 10px; color: #666; border-top: 1px solid #e5e7eb; padding-top: 6px; display: flex; justify-content: space-between; }
   @media print { .noprint { display: none; } }
 </style>
-<style id="winui3DarkContrastPolishStyle">
-/* === DARK_MODE_CONTRAST_AND_SHORTCUTS_POLISH_V1 === */
-html.dark #btnHeaderPvzMode,
-html.dark #btnCopyCompareLink,
-html.dark #btnCopyModelDeepLink,
-html.dark #btnCopyGuidedTestLink,
-html.dark #btnPvzCopyLink {
-  color: #60cdff !important;
-  background: rgba(96, 205, 255, 0.12) !important;
-  border-color: rgba(96, 205, 255, 0.38) !important;
+
+<style id="winui3UnifiedSystemStyle">
+/* === UNIFIED WINUI 3 DESIGN SYSTEM (ALL 11 TABS • LIGHT/DARK • DESKTOP/MOBILE • LITE/FULL) === */
+:root {
+  --u-bg: #f3f3f3;
+  --u-surface: #ffffff;
+  --u-surface-alt: #f8f9fa;
+  --u-border: rgba(0, 0, 0, 0.09);
+  --u-text: #1b1b1b;
+  --u-muted: #5c5c5c;
+  --u-accent: #005fb8;
+  --u-accent-soft: rgba(0, 95, 184, 0.10);
+  --u-accent-border: rgba(0, 95, 184, 0.35);
+  --u-th-bg: rgba(248, 249, 250, 0.96);
 }
-html.dark #btnHeaderPvzMode:hover,
-html.dark #btnCopyCompareLink:hover,
-html.dark #btnCopyModelDeepLink:hover,
-html.dark #btnCopyGuidedTestLink:hover,
-html.dark #btnPvzCopyLink:hover {
-  background: rgba(96, 205, 255, 0.2) !important;
+html.dark {
+  --u-bg: #202020;
+  --u-surface: #2b2b2b;
+  --u-surface-alt: #252525;
+  --u-border: rgba(255, 255, 255, 0.09);
+  --u-text: #f3f3f3;
+  --u-muted: #b8b8b8;
+  --u-accent: #60cdff;
+  --u-accent-soft: rgba(96, 205, 255, 0.12);
+  --u-accent-border: rgba(96, 205, 255, 0.38);
+  --u-th-bg: rgba(38, 38, 38, 0.96);
 }
-html.dark #btnPrintPvzSheet {
-  color: #f3f3f3 !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.18) !important;
+
+/* 1. Uniform calm card surfaces across ALL 11 sections */
+section[id^="sec"] > div {
+  background: var(--u-surface) !important;
+  border: 1px solid var(--u-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
 }
-html.dark #btnPrintPvzSheet:hover {
-  background: rgba(255, 255, 255, 0.14) !important;
+html.dark section[id^="sec"] > div {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28) !important;
 }
-html.dark #divPvzPriceRiskCard [style*="#005fb8"],
-html.dark #divComparePvzSummary [style*="#005fb8"] {
-  color: #60cdff !important;
+
+/* Eliminate jarring white / bright pastel boxes in Dark Mode across all 11 tabs */
+html.dark section[id^="sec"] .bg-white,
+html.dark section[id^="sec"] .bg-slate-50,
+html.dark section[id^="sec"] .bg-slate-100,
+html.dark section[id^="sec"] [class*="bg-indigo-50"],
+html.dark section[id^="sec"] [class*="bg-blue-50"],
+html.dark section[id^="sec"] [class*="bg-emerald-50"],
+html.dark section[id^="sec"] [class*="bg-amber-50"],
+html.dark section[id^="sec"] [class*="bg-rose-50"],
+html.dark section[id^="sec"] [class*="bg-purple-50"],
+html.dark section[id^="sec"] [class*="bg-teal-50"],
+html.dark section[id^="sec"] [class*="bg-cyan-50"] {
+  background-color: #2f2f2f !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f0f0f0 !important;
 }
-html.dark #divPvzPriceRiskCard [style*="#0f7b0f"] {
-  color: #6ccb5f !important;
-  border-color: rgba(108, 203, 95, 0.4) !important;
-  background: rgba(108, 203, 95, 0.12) !important;
+html.dark section[id^="sec"] .text-slate-900,
+html.dark section[id^="sec"] .text-slate-800,
+html.dark section[id^="sec"] .text-slate-700,
+html.dark section[id^="sec"] .text-indigo-950,
+html.dark section[id^="sec"] .text-indigo-900,
+html.dark section[id^="sec"] .text-blue-900,
+html.dark section[id^="sec"] .text-emerald-900 {
+  color: #efefef !important;
 }
-html.dark #divPvzPriceRiskCard [style*="#9d5d00"] {
-  color: #fce100 !important;
-  border-color: rgba(252, 225, 0, 0.38) !important;
-  background: rgba(252, 225, 0, 0.1) !important;
+html.dark section[id^="sec"] .text-slate-600,
+html.dark section[id^="sec"] .text-slate-500 {
+  color: #b8b8b8 !important;
 }
-html.dark #divPvzPriceRiskCard [style*="#c42b1c"] {
-  color: #ff99a4 !important;
-  border-color: rgba(255, 153, 164, 0.4) !important;
-  background: rgba(255, 153, 164, 0.12) !important;
+
+/* 2. Unified WinUI 3 Inputs & Selects */
+section[id^="sec"] select,
+section[id^="sec"] input[type="text"],
+section[id^="sec"] input[type="search"],
+#mdlPvzExpress select {
+  background: var(--u-surface) !important;
+  color: var(--u-text) !important;
+  border: 1px solid var(--u-border) !important;
+  border-bottom: 1.5px solid rgba(128, 128, 128, 0.45) !important;
+  border-radius: 4px !important;
 }
-html.dark #btnPvzLaunch14Steps {
-  background: #60cdff !important;
-  color: #111111 !important;
-}
-html.dark #selPvzServiceBrand {
+html.dark section[id^="sec"] select,
+html.dark section[id^="sec"] input[type="text"],
+html.dark section[id^="sec"] input[type="search"],
+html.dark #mdlPvzExpress select {
   background: #323232 !important;
-  color: #f3f3f3 !important;
-  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+section[id^="sec"] select:focus,
+section[id^="sec"] input:focus {
+  border-bottom-color: var(--u-accent) !important;
+  outline: none !important;
+}
+
+/* 3. Unified Sticky Table Headers across Catalog, Compare, Market, Flagships, Panels, Revisions, Brands */
+#secMarket .overflow-x-auto,
+#secFlagships .overflow-x-auto,
+#secPanelsOem .overflow-x-auto,
+#secRevisions .overflow-x-auto,
+#secBrandsSrv .overflow-x-auto,
+#divCompareContent {
+  max-height: 75vh;
+  overflow: auto !important;
+  position: relative;
+}
+#secMarket table thead th,
+#secFlagships table thead th,
+#secPanelsOem table thead th,
+#secRevisions table thead th,
+#secBrandsSrv table thead th,
+#divCompareContent table thead th {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 20 !important;
+  background: var(--u-th-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 2px solid var(--u-accent-border) !important;
+}
+
+/* Compare sticky left parameter column + diff highlight */
+#divCompareContent table { border-collapse: separate !important; border-spacing: 0 !important; width: 100%; }
+#divCompareContent table tbody td:first-child,
+#divCompareContent table thead th:first-child {
+  position: sticky !important;
+  left: 0 !important;
+  z-index: 15 !important;
+  background: var(--u-surface-alt) !important;
+  border-right: 1px solid var(--u-border) !important;
+  min-width: 150px;
+}
+#divCompareContent table thead th:first-child { z-index: 25 !important; }
+#divCompareContent tr.cmp-diff-row td { background-color: var(--u-accent-soft); }
+
+/* 4. Restrained Neutral Toolbar Buttons in Compare + Unified Accent Buttons (Light & Dark) */
+#secCompare #btnCopyCompareMarkdown,
+#secCompare #btnCopyCompareTsv,
+#secCompare #btnExportCompareReportHtml,
+#secCompare #btnExportCompareSummaryTxt,
+#secCompare #btnExportCompareCard {
+  background: rgba(128, 128, 128, 0.08) !important;
+  color: var(--u-text) !important;
+  border: 1px solid var(--u-border) !important;
+  border-radius: 5px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+#secCompare #btnCopyCompareMarkdown:hover,
+#secCompare #btnCopyCompareTsv:hover,
+#secCompare #btnExportCompareReportHtml:hover,
+#secCompare #btnExportCompareSummaryTxt:hover,
+#secCompare #btnExportCompareCard:hover {
+  background: rgba(128, 128, 128, 0.15) !important;
+}
+
+#btnHeaderPvzMode,
+#btnCopyCompareLink,
+#btnCopyModelDeepLink,
+#btnCopyGuidedTestLink,
+#btnPvzCopyLink,
+#secCompare label:has(#chkCompareDiffOnly) {
+  color: var(--u-accent) !important;
+  background: var(--u-accent-soft) !important;
+  border: 1px solid var(--u-accent-border) !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+}
+#btnPrintPvzSheet {
+  color: var(--u-text) !important;
+  background: rgba(128, 128, 128, 0.1) !important;
+  border: 1px solid var(--u-border) !important;
+}
+
+/* Status badge contrast in Dark Mode */
+html.dark #divPvzPriceRiskCard [style*="#005fb8"],
+html.dark #divComparePvzSummary [style*="#005fb8"],
+html.dark #divCableBwCard [style*="#005fb8"] { color: #60cdff !important; }
+html.dark #divPvzPriceRiskCard [style*="#0f7b0f"],
+html.dark #divEyeDistanceWidget [style*="#0f7b0f"],
+html.dark #divCableBwCard [style*="#0f7b0f"] { color: #6ccb5f !important; border-color: rgba(108,203,95,0.4) !important; background: rgba(108,203,95,0.12) !important; }
+html.dark #divPvzPriceRiskCard [style*="#9d5d00"],
+html.dark #divEyeDistanceWidget [style*="#9d5d00"],
+html.dark #divCableBwCard [style*="#9d5d00"] { color: #fce100 !important; border-color: rgba(252,225,0,0.38) !important; background: rgba(252,225,0,0.10) !important; }
+html.dark #divPvzPriceRiskCard [style*="#c42b1c"],
+html.dark #divEyeDistanceWidget [style*="#c42b1c"] { color: #ff99a4 !important; border-color: rgba(255,153,164,0.4) !important; background: rgba(255,153,164,0.12) !important; }
+html.dark #btnPvzLaunch14Steps { background: #60cdff !important; color: #111111 !important; }
+
+/* 5. Modal Engineering Tools Accordion (#dtlModalToolsGroup) */
+#dtlModalToolsGroup {
+  margin: 8px 0;
+  border: 1px solid var(--u-border);
+  border-radius: 8px;
+  background: rgba(128, 128, 128, 0.03);
+  padding: 6px 10px;
+}
+#dtlModalToolsGroup > summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--u-accent);
+  padding: 4px 2px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#dtlModalToolsGroup > summary::-webkit-details-marker { display: none; }
+
+/* 6. Clean Lite Mode (Упрощённый режим): hide pro export noise & keep every tab uncluttered */
+body.lite-mode #btnCopyCompareMarkdown,
+body.lite-mode #btnCopyCompareTsv,
+body.lite-mode #btnExportCompareSummaryTxt,
+body.lite-mode #btnExportCompareCard,
+html.lite-mode #btnCopyCompareMarkdown,
+html.lite-mode #btnCopyCompareTsv,
+html.lite-mode #btnExportCompareSummaryTxt,
+html.lite-mode #btnExportCompareCard {
+  display: none !important;
+}
+
+/* 7. PVZ Express Modal (#mdlPvzExpress) */
+#mdlPvzExpress {
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(0, 0, 0, 0.62); backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center; padding: 12px;
+}
+#mdlPvzExpress.hidden { display: none !important; }
+#mdlPvzExpress .pvz-sheet {
+  width: 100%; max-width: 680px; max-height: 92dvh; overflow-y: auto;
+  background: var(--u-surface); color: var(--u-text);
+  border: 1px solid var(--u-border); border-radius: 10px; padding: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+#mdlPvzExpress .pvz-check-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 12px; border-radius: 6px;
+  border: 1px solid var(--u-border); cursor: pointer;
+  transition: background 0.15s ease;
+}
+#mdlPvzExpress .pvz-check-row:hover { background: var(--u-accent-soft); }
+
+/* 8. Unified Mobile & PVZ Responsiveness (<= 768px & <= 480px) across ALL 11 tabs */
+@media (max-width: 768px) {
+  body { font-size: 13px !important; padding-bottom: 24px !important; }
+  header, .header-bar, nav { padding-left: 10px !important; padding-right: 10px !important; }
+  header button, header select, [data-tab], .tab-btn {
+    min-height: 36px !important; padding-top: 6px !important; padding-bottom: 6px !important; font-size: 12px !important;
+  }
+  .tabs-bar, nav[role="tablist"], #tabNav {
+    overflow-x: auto !important; -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important; scrollbar-width: none !important;
+  }
+  .overflow-x-auto, #divCompareContent { -webkit-overflow-scrolling: touch !important; }
+  table th, table td { padding: 6px 8px !important; font-size: 11.5px !important; }
+  #divCompareContent table tbody td:first-child,
+  #divCompareContent table thead th:first-child { min-width: 115px !important; max-width: 135px !important; font-size: 11px !important; }
+  #mdlDetail > div, #mdlDetail .modal-content, #mdlDetail [class*="max-w-"] {
+    width: 100vw !important; max-width: 100vw !important; margin: 0 !important;
+    border-radius: 0 !important; max-height: 100dvh !important; padding: 12px !important;
+  }
+  #mdlDetail .grid { grid-template-columns: 1fr !important; }
+  #mdlPvzExpress { padding: 0; }
+  #mdlPvzExpress .pvz-sheet { max-width: 100vw; max-height: 100dvh; height: 100dvh; border-radius: 0; padding: 14px; }
+  #mdlFullGuidedSuite button { min-height: 36px !important; padding: 6px 10px !important; font-size: 12px !important; }
+  #mdlFullGuidedSuite .fgs-kbd-hint { display: none !important; }
+  section[id^="sec"] .grid-cols-2,
+  section[id^="sec"] .grid-cols-3,
+  section[id^="sec"] .grid-cols-4 { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 480px) {
+  #secCompare button, #secCompare label:has(#chkCompareDiffOnly) { font-size: 11px !important; padding: 6px 8px !important; }
+}
+
+/* === Wave 12: Smart Finder 1-Click Presets (WinUI 3 Light/Dark/Mobile/Lite) === */
+.fnd-presets-bar { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 4px; }
+.fnd-preset-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  border: 1px solid #cbd5e1; background: #f8fafc; color: #0f172a;
+  cursor: pointer; transition: background .15s, border-color .15s, color .15s, transform .1s;
+}
+.fnd-preset-btn:hover { background: #e0f2fe; border-color: #005fb8; color: #005fb8; }
+.fnd-preset-btn.is-active { background: #005fb8; border-color: #005fb8; color: #ffffff; box-shadow: 0 2px 6px rgba(0,95,184,.25); }
+.fnd-preset-explain {
+  display: none; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 8px 12px; border-radius: 10px; font-size: 12px;
+  background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a;
+}
+.fnd-preset-explain.is-visible { display: flex; flex-wrap: wrap; }
+html.dark .fnd-preset-btn { background: #1e293b; border-color: #334155; color: #e2e8f0; }
+html.dark .fnd-preset-btn:hover { background: #0f172a; border-color: #60cdff; color: #60cdff; }
+html.dark .fnd-preset-btn.is-active { background: #005fb8; border-color: #60cdff; color: #ffffff; }
+html.dark .fnd-preset-explain { background: rgba(0,95,184,.18); border-color: rgba(96,205,255,.35); color: #dbeafe; }
+@media (max-width: 640px) {
+  .fnd-presets-bar { gap: 6px; }
+  .fnd-preset-btn { font-size: 11px; padding: 5px 10px; }
+}
+
+/* === Wave 13: Device Compatibility Matrix Card (WinUI 3 Light/Dark) === */
+.compat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 6px; }
+.compat-item {
+  border: 1px solid var(--u-border, #e2e8f0); border-radius: 8px; padding: 8px 10px;
+  background: rgba(128,128,128,.04); font-size: 11.5px; line-height: 1.35;
+}
+.compat-item-title { font-weight: 700; display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 3px; }
+.compat-pill { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
+.compat-pill.ok { background: rgba(16,185,129,.16); color: #047857; }
+.compat-pill.warn { background: rgba(245,158,11,.18); color: #b45309; }
+.compat-pill.no { background: rgba(148,163,184,.2); color: #475569; }
+html.dark .compat-pill.ok { background: rgba(16,185,129,.22); color: #6ee7b7; }
+html.dark .compat-pill.warn { background: rgba(245,158,11,.22); color: #fcd34d; }
+html.dark .compat-pill.no { background: rgba(148,163,184,.22); color: #cbd5e1; }
+@media (max-width: 640px) { .compat-grid { grid-template-columns: 1fr; } }
+
+/* === Wave 14: Similar Alternatives Card & Compare Verdict Panel (WinUI 3) === */
+.sim-alt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 6px; }
+.sim-alt-card {
+  border: 1px solid var(--u-border, #e2e8f0); border-radius: 8px; padding: 8px 10px;
+  background: rgba(128,128,128,.04); display: flex; flex-direction: column; justify-content: space-between; gap: 6px;
+}
+.sim-alt-card:hover { border-color: var(--u-accent, #005fb8); }
+.sim-alt-actions { display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-wrap: wrap; }
+.cmp-verdict-box {
+  margin-bottom: 12px; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid #bfdbfe; background: #eff6ff; color: #0f172a;
+}
+html.dark .cmp-verdict-box { border-color: rgba(96,205,255,.35); background: rgba(0,95,184,.16); color: #f1f5f9; }
+.cmp-verdict-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.cmp-verdict-chip {
+  font-size: 11.5px; padding: 4px 9px; border-radius: 999px;
+  background: rgba(255,255,255,.85); border: 1px solid #cbd5e1; color: #0f172a;
+}
+html.dark .cmp-verdict-chip { background: rgba(15,23,42,.75); border-color: #334155; color: #e2e8f0; }
+@media (max-width: 640px) { .sim-alt-grid { grid-template-columns: 1fr; } }
+
+/* === Wave 15: Top RF Drops Banner & Offline Duty Calculator (WinUI 3 Light/Dark) === */
+.w15-panel {
+  margin-bottom: 10px; border: 1px solid var(--u-border, #e2e8f0); border-radius: 12px;
+  background: var(--u-surface, #ffffff); padding: 8px 12px; font-size: 12px;
+}
+html.dark .w15-panel { background: rgba(30,41,59,.72); border-color: #334155; color: #e2e8f0; }
+.w15-panel > summary {
+  cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;
+  gap: 8px; list-style: none;
+}
+.w15-panel > summary::-webkit-details-marker { display: none; }
+.drops-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+@media (max-width: 1100px) { .drops-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .drops-grid { grid-template-columns: 1fr; } }
+.drop-chip {
+  border: 1px solid var(--u-border, #e2e8f0); border-radius: 9px; padding: 8px 10px;
+  background: rgba(16,185,129,.06); cursor: pointer; text-align: left;
+  transition: border-color .15s, transform .1s;
+}
+.drop-chip:hover { border-color: #10b981; transform: translateY(-1px); }
+.duty-calc-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 8px; }
+.duty-calc-row input, .duty-calc-row select {
+  border: 1px solid #cbd5e1; border-radius: 7px; padding: 4px 8px; font-size: 12px; font-weight: 600;
+  background: #ffffff; color: #0f172a;
+}
+html.dark .duty-calc-row input, html.dark .duty-calc-row select {
+  background: #0f172a; border-color: #475569; color: #f8fafc;
 }
 </style>
 
@@ -26012,6 +26105,1190 @@ html.dark #selPvzServiceBrand {
   });
 })();
 
+
+
+/* === ICC_CALIBRATION_AND_UNIFIED_BACKUP_V1 === */
+(function() {
+  // A. Match panel calibration profile from DB.icc_profiles
+  function findIccProfile(m) {
+    if (typeof DB === "undefined" || !DB.icc_profiles || !Array.isArray(DB.icc_profiles.profiles)) return null;
+    const pmodel = String(m.pmodel || "").toLowerCase();
+    const model = String(m.model || "").toLowerCase();
+    const ptype = String(m.ptype || "").toLowerCase();
+    const profs = DB.icc_profiles.profiles;
+    // 1. Exact panel_cell or example_models match
+    for (const p of profs) {
+      const cell = String(p.panel_cell || "").toLowerCase();
+      if (cell && pmodel && (pmodel.includes(cell) || cell.split(/\s+/).some(t => t.length >= 7 && pmodel.includes(t)))) {
+        return p;
+      }
+      if (Array.isArray(p.example_models) && p.example_models.some(ex => model.includes(String(ex).toLowerCase()))) {
+        return p;
+      }
+    }
+    // 2. Broad architecture match (Tandem WOLED / QD-OLED / Mini-LED IPS)
+    if (ptype.includes("woled") && (pmodel.includes("tandem") || model.includes("wmg") || model.includes("ucwm"))) {
+      return profs.find(p => String(p.panel_cell || "").toLowerCase().includes("tandem woled")) || null;
+    }
+    if (ptype.includes("qd-oled")) {
+      return profs.find(p => String(p.panel_cell || "").toLowerCase().includes("qd-oled")) || null;
+    }
+    return null;
+  }
+
+  function buildIccCalibrationCardHtml(m) {
+    const p = findIccProfile(m);
+    if (!p) return "";
+    const hdr = p.win11_hdr_calib || {};
+    const hdrLine = (hdr.max_nits != null)
+      ? `Win 11 HDR Calibration: Min <strong>${hdr.min_nits ?? 0}</strong> • Max <strong>${hdr.max_nits}</strong> • Full-Frame <strong>${hdr.max_full_nits ?? hdr.max_nits} нит</strong>`
+      : "";
+    return `<div id="divIccCalibCard" class="my-2 p-2.5 rounded-lg border text-xs space-y-1" style="border-color:rgba(128,128,128,0.22);background:rgba(128,128,128,0.03);">
+      <div class="font-bold">🎨 Калибровка OSD / ICC / Windows 11 HDR (${p.panel_cell})</div>
+      <div><strong>Overdrive:</strong> ${p.recommended_overdrive || "—"}</div>
+      <div><strong>Пресет OSD:</strong> ${p.osd_preset || "—"}</div>
+      <div><strong>sRGB / ACM:</strong> ${p.srgb_clamp_tip || "—"}</div>
+      ${hdrLine ? `<div><strong>${hdrLine}</strong></div>` : ""}
+    </div>`;
+  }
+
+  if (typeof openModelModal === "function" && !window.__iccCardHooked) {
+    window.__iccCardHooked = true;
+    const _origOpen = openModelModal;
+    openModelModal = function(id) {
+      _origOpen.apply(this, arguments);
+      try {
+        const m = (typeof DB !== "undefined" && DB.catalog) ? DB.catalog.find(x => x.id === id) : null;
+        const body = document.getElementById("mdlDetailBody") || document.getElementById("divModalBody");
+        if (!m || !body || body.querySelector("#divIccCalibCard")) return;
+        const iccHtml = buildIccCalibrationCardHtml(m);
+        if (!iccHtml) return;
+        const wrap = document.createElement("div");
+        wrap.innerHTML = iccHtml;
+        const el = wrap.firstElementChild;
+        if (!el) return;
+        const anchor = body.querySelector("#divPriceHistorySparkline") || body.querySelector("#divPvzPriceRiskCard");
+        if (anchor && anchor.nextSibling) body.insertBefore(el, anchor.nextSibling);
+        else if (body.firstChild) body.insertBefore(el, body.firstChild);
+        else body.appendChild(el);
+      } catch (_) {}
+    };
+  }
+
+  // B. Unified JSON Backup (Favorites + Notes + Compare + PVZ Checklist)
+  function collectUnifiedBackup() {
+    const dump = {};
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && (k.includes("monitor") || k.includes("fav") || k.includes("note") || k.includes("pvz") || k.includes("cmp") || k.includes("preset"))) {
+          dump[k] = localStorage.getItem(k);
+        }
+      }
+      ["monitor_db_favs", "monitor_db_personal_watch_v1", "monitor_db_pvz_checklist_v1"].forEach(k => {
+        const v = localStorage.getItem(k);
+        if (v !== null && v !== undefined) dump[k] = v;
+      });
+    } catch (_) {}
+    return {
+      app: "monitor_full_database",
+      exported_at: new Date().toISOString(),
+      compare_ids: (typeof compareIds !== "undefined") ? Array.from(compareIds) : [],
+      local_storage: dump
+    };
+  }
+
+  function applyUnifiedBackup(data) {
+    if (!data || typeof data !== "object") return false;
+    if (data.local_storage && typeof data.local_storage === "object") {
+      Object.entries(data.local_storage).forEach(([k, v]) => {
+        try { if (typeof v === "string") localStorage.setItem(k, v); } catch (_) {}
+      });
+    }
+    if (Array.isArray(data.compare_ids) && typeof compareIds !== "undefined") {
+      compareIds.clear();
+      data.compare_ids.slice(0, 4).forEach(id => compareIds.add(Number(id)));
+      if (typeof updateCompareBadge === "function") { try { updateCompareBadge(); } catch (_) {} }
+    }
+    if (typeof favoriteIds !== "undefined") {
+      try {
+        const restoredFavs = JSON.parse(localStorage.getItem("monitor_db_favs") || "[]");
+        favoriteIds.clear();
+        restoredFavs.forEach(id => favoriteIds.add(Number(id)));
+        const lblF = document.getElementById("lblFavCount");
+        if (lblF) lblF.textContent = String(favoriteIds.size);
+      } catch (_) {}
+    }
+    if (typeof window.renderMyWatchlistPanel === "function") { try { window.renderMyWatchlistPanel(); } catch (_) {} }
+    return true;
+  }
+
+  window.collectUnifiedBackup = collectUnifiedBackup;
+  window.applyUnifiedBackup = applyUnifiedBackup;
+  const btnExp = document.getElementById("btnExportUnifiedBackup");
+  if (btnExp) {
+    btnExp.addEventListener("click", () => {
+      const payload = JSON.stringify(collectUnifiedBackup(), null, 2);
+      const blob = new Blob([payload], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "monitor_db_backup_" + new Date().toISOString().slice(0, 10) + ".json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      btnExp.textContent = "✓ Бэкап сохранён";
+      setTimeout(() => { btnExp.textContent = "💾 Экспорт бэкапа (.json)"; }, 1800);
+    });
+  }
+
+  const inpImp = document.getElementById("inpImportUnifiedBackup");
+  if (inpImp) {
+    inpImp.addEventListener("change", (ev) => {
+      const file = ev.target && ev.target.files && ev.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(String(reader.result || "{}"));
+          if (applyUnifiedBackup(parsed)) {
+            if (typeof window.openPvzExpressMode === "function") window.openPvzExpressMode();
+            alert("Бэкап успешно импортирован (Избранное, заметки, сравнение и чек-лист ПВЗ восстановлены).");
+          }
+        } catch (err) {
+          alert("Ошибка чтения JSON-файла бэкапа.");
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+})();
+
+
+
+/* === VIEWING_DISTANCE_PPI_PPD_WIDGET_V1 === */
+(function() {
+  const DIST_KEY = "monitor_db_desk_dist_cm_v1";
+
+  function parseResWh(resStr) {
+    const m = String(resStr || "").match(/(\d{3,4})\s*[xх×]\s*(\d{3,4})/i);
+    if (m) return [Number(m[1]), Number(m[2])];
+    const s = String(resStr || "").toUpperCase();
+    if (s.includes("5K") && s.includes("2K")) return [5120, 2160];
+    if (s.includes("5K")) return [5120, 2880];
+    if (s.includes("4K") || s.includes("UHD")) return [3840, 2160];
+    if (s.includes("UWQHD") || s.includes("3440")) return [3440, 1440];
+    if (s.includes("QHD") || s.includes("2K") || s.includes("1440")) return [2560, 1440];
+    if (s.includes("FHD") || s.includes("1080")) return [1920, 1080];
+    return [2560, 1440];
+  }
+
+  function calcEyeMetrics(diagIn, resStr, distCm) {
+    const d = Number(diagIn) || 27;
+    const [w, h] = parseResWh(resStr);
+    const ppi = Math.sqrt(w * w + h * h) / d;
+    const distIn = distCm / 2.54;
+    // Pixels per degree (PPD) at center of screen: 2 * distIn * tan(0.5 deg) * ppi
+    const ppd = 2 * distIn * Math.tan((0.5 * Math.PI) / 180) * ppi;
+    const retinaCm = Math.round((60 / (2 * Math.tan((0.5 * Math.PI) / 180) * ppi)) * 2.54);
+
+    let winScale = "100%";
+    if (ppi >= 180) winScale = "175–200%";
+    else if (ppi >= 140) winScale = "150%";
+    else if (ppi >= 118) winScale = "125%";
+    else if (ppi >= 96) winScale = "100% (или 125%)";
+
+    let verdict = "Отличная чёткость (уровень Retina)";
+    let badgeStyle = "color:#0f7b0f;border-color:rgba(15,123,15,0.35);background:rgba(15,123,15,0.08);";
+    if (ppd < 46) {
+      verdict = "Заметна пиксельная сетка — лучше отодвинуться";
+      badgeStyle = "color:#c42b1c;border-color:rgba(196,43,28,0.35);background:rgba(196,43,28,0.08);";
+    } else if (ppd < 57) {
+      verdict = "Комфортно для игр и работы (ниже порога Retina)";
+      badgeStyle = "color:#9d5d00;border-color:rgba(157,93,0,0.35);background:rgba(157,93,0,0.08);";
+    }
+
+    return {
+      ppi: ppi.toFixed(1),
+      ppd: ppd.toFixed(1),
+      retinaCm,
+      winScale,
+      verdict,
+      badgeStyle,
+      wh: `${w}×${h}`
+    };
+  }
+
+  function buildDistanceWidgetHtml(m, distCm) {
+    const mt = calcEyeMetrics(m.diag, m.res, distCm);
+    return `<div id="divEyeDistanceWidget" class="my-2 p-2.5 rounded-lg border text-xs space-y-2" style="border-color:rgba(128,128,128,0.22);background:rgba(128,128,128,0.03);">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <span class="font-bold">📏 Расстояние до глаз, PPI и масштаб Windows</span>
+        <span id="lblEyeVerdict" class="px-2 py-0.5 rounded font-semibold border" style="${mt.badgeStyle}">${mt.verdict}</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <label class="font-medium whitespace-nowrap">До глаз: <strong id="lblEyeDistCm">${distCm} см</strong></label>
+        <input type="range" id="rngEyeDistCm" min="45" max="100" step="5" value="${distCm}" class="flex-1" style="accent-color:#005fb8;min-width:140px;" />
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div class="p-1.5 rounded border" style="border-color:rgba(128,128,128,0.16);"><div class="opacity-70 text-[11px]">Плотность</div><div class="font-bold">${mt.ppi} PPI</div></div>
+        <div class="p-1.5 rounded border" style="border-color:rgba(128,128,128,0.16);"><div class="opacity-70 text-[11px]">Угловая (Retina ≥60)</div><div class="font-bold" id="lblEyePpd">${mt.ppd} PPD</div></div>
+        <div class="p-1.5 rounded border" style="border-color:rgba(128,128,128,0.16);"><div class="opacity-70 text-[11px]">Порог Retina</div><div class="font-bold">от ${mt.retinaCm} см</div></div>
+        <div class="p-1.5 rounded border" style="border-color:rgba(128,128,128,0.16);"><div class="opacity-70 text-[11px]">Масштаб Windows</div><div class="font-bold">${mt.winScale}</div></div>
+      </div>
+    </div>`;
+  }
+
+  if (typeof openModelModal === "function" && !window.__eyeDistHooked) {
+    window.__eyeDistHooked = true;
+    const _origOpen = openModelModal;
+    openModelModal = function(id) {
+      _origOpen.apply(this, arguments);
+      try {
+        const m = (typeof DB !== "undefined" && DB.catalog) ? DB.catalog.find(x => x.id === id) : null;
+        const body = document.getElementById("mdlDetailBody") || document.getElementById("divModalBody");
+        if (!m || !body || body.querySelector("#divEyeDistanceWidget")) return;
+        let distCm = 65;
+        try {
+          const saved = Number(localStorage.getItem(DIST_KEY));
+          if (saved >= 45 && saved <= 100) distCm = saved;
+        } catch (_) {}
+        const wrap = document.createElement("div");
+        wrap.innerHTML = buildDistanceWidgetHtml(m, distCm);
+        const el = wrap.firstElementChild;
+        if (!el) return;
+        const anchor = body.querySelector("#divIccCalibCard") || body.querySelector("#divPriceHistorySparkline") || body.querySelector("#divPvzPriceRiskCard");
+        if (anchor && anchor.nextSibling) body.insertBefore(el, anchor.nextSibling);
+        else if (body.firstChild) body.insertBefore(el, body.firstChild);
+        else body.appendChild(el);
+
+        const rng = el.querySelector("#rngEyeDistCm");
+        if (rng) {
+          rng.addEventListener("input", () => {
+            const val = Number(rng.value) || 65;
+            try { localStorage.setItem(DIST_KEY, String(val)); } catch (_) {}
+            const upd = calcEyeMetrics(m.diag, m.res, val);
+            const lDist = el.querySelector("#lblEyeDistCm");
+            const lPpd = el.querySelector("#lblEyePpd");
+            const lVerd = el.querySelector("#lblEyeVerdict");
+            if (lDist) lDist.textContent = val + " см";
+            if (lPpd) lPpd.textContent = upd.ppd + " PPD";
+            if (lVerd) {
+              lVerd.textContent = upd.verdict;
+              lVerd.setAttribute("style", upd.badgeStyle);
+            }
+          });
+        }
+      } catch (_) {}
+    };
+  }
+})();
+
+
+
+/* === CABLE_BANDWIDTH_DSC_AND_PRICEDROP_FILTER_V1 === */
+(function() {
+  // Exact effective payload capacities (Gbps, after 8b/10b or 128b/132b & FRL overhead)
+  const INTERFACES = [
+    { name: "DP 1.4 (HBR3)", cap: 25.92, cable: "DP 1.4 VESA Certified" },
+    { name: "DP 2.1 UHBR10", cap: 38.69, cable: "DP40 VESA Certified" },
+    { name: "HDMI 2.1 (48G)", cap: 42.67, cable: "Ultra High Speed HDMI" },
+    { name: "DP 2.1 UHBR13.5", cap: 52.22, cable: "DP54 VESA Certified" },
+    { name: "DP 2.1 UHBR20", cap: 77.37, cable: "DP80 VESA Certified (до 1–1.2 м)" }
+  ];
+
+  function parseResWhBw(resStr) {
+    const m = String(resStr || "").match(/(\d{3,4})\s*[xх×]\s*(\d{3,4})/i);
+    if (m) return [Number(m[1]), Number(m[2])];
+    const s = String(resStr || "").toUpperCase();
+    if (s.includes("5K") && s.includes("2K")) return [5120, 2160];
+    if (s.includes("5K")) return [5120, 2880];
+    if (s.includes("4K") || s.includes("UHD")) return [3840, 2160];
+    if (s.includes("UWQHD") || s.includes("3440")) return [3440, 1440];
+    if (s.includes("QHD") || s.includes("2K") || s.includes("1440")) return [2560, 1440];
+    if (s.includes("FHD") || s.includes("1080")) return [1920, 1080];
+    return [2560, 1440];
+  }
+
+  function calcRequiredGbps(resStr, hz, bpc) {
+    const [w, h] = parseResWhBw(resStr);
+    const rHz = Number(hz) || 144;
+    // CVT-RB v2 (~5% blanking overhead) for uncompressed RGB 4:4:4
+    const gbps = (w * h * rHz * (bpc * 3) * 1.05) / 1e9;
+    return { w, h, hz: rHz, gbps };
+  }
+
+  function renderBwContent(m, bpc) {
+    const req = calcRequiredGbps(m.res, m.max_hz, bpc);
+    const minNoDsc = INTERFACES.find(i => i.cap >= req.gbps);
+    const verdict = minNoDsc
+      ? `Без сжатия (без DSC): от ${minNoDsc.name} • Кабель: ${minNoDsc.cable}`
+      : `Требуется DSC 1.2a даже на DP 2.1 UHBR20 (>77.4 Гбит/с)`;
+    const chips = INTERFACES.map(ifc => {
+      const ok = ifc.cap >= req.gbps;
+      const st = ok
+        ? "color:#0f7b0f;border-color:rgba(15,123,15,0.35);background:rgba(15,123,15,0.08);"
+        : "color:#9d5d00;border-color:rgba(157,93,0,0.3);background:rgba(157,93,0,0.06);";
+      return `<span class="px-2 py-0.5 rounded border text-[11px] font-medium" style="${st}">${ifc.name}: ${ok ? "Без DSC" : "Нужен DSC"}</span>`;
+    }).join("");
+    return `<div class="opacity-85">Сигнал <strong>${req.w}×${req.h} @ ${req.hz} Гц (${bpc}-бит RGB 4:4:4)</strong> → требуется <strong>${req.gbps.toFixed(2)} Гбит/с</strong></div>
+      <div class="font-semibold">${verdict}</div>
+      <div class="flex flex-wrap gap-1.5 pt-0.5">${chips}</div>`;
+  }
+
+  if (typeof openModelModal === "function" && !window.__bwCalcHooked) {
+    window.__bwCalcHooked = true;
+    const _origOpen = openModelModal;
+    openModelModal = function(id) {
+      _origOpen.apply(this, arguments);
+      try {
+        const m = (typeof DB !== "undefined" && DB.catalog) ? DB.catalog.find(x => x.id === id) : null;
+        const body = document.getElementById("mdlDetailBody") || document.getElementById("divModalBody");
+        if (!m || !body || body.querySelector("#divCableBwCard")) return;
+        const wrap = document.createElement("div");
+        wrap.innerHTML = `<div id="divCableBwCard" class="my-2 p-2.5 rounded-lg border text-xs space-y-1.5" style="border-color:rgba(128,128,128,0.22);background:rgba(128,128,128,0.03);">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-bold">🔌 Пропускная способность кабеля (DP / HDMI / DSC)</span>
+            <div class="inline-flex rounded border overflow-hidden text-[11px]" style="border-color:rgba(128,128,128,0.3);">
+              <button type="button" data-bw-bpc="8" class="px-2 py-0.5 font-semibold">8-бит</button>
+              <button type="button" data-bw-bpc="10" class="px-2 py-0.5 font-semibold" style="background:rgba(0,95,184,0.16);color:#005fb8;">10-бит (HDR)</button>
+            </div>
+          </div>
+          <div id="divCableBwBody" class="space-y-1">${renderBwContent(m, 10)}</div>
+        </div>`;
+        const el = wrap.firstElementChild;
+        if (!el) return;
+        const anchor = body.querySelector("#divEyeDistanceWidget") || body.querySelector("#divIccCalibCard") || body.querySelector("#divPvzPriceRiskCard");
+        if (anchor && anchor.nextSibling) body.insertBefore(el, anchor.nextSibling);
+        else if (body.firstChild) body.insertBefore(el, body.firstChild);
+        else body.appendChild(el);
+
+        el.querySelectorAll("button[data-bw-bpc]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const bpc = Number(btn.dataset.bwBpc) || 10;
+            el.querySelectorAll("button[data-bw-bpc]").forEach(b => { b.style.background = ""; b.style.color = ""; });
+            btn.style.background = "rgba(0,95,184,0.16)";
+            btn.style.color = "#005fb8";
+            const bBody = el.querySelector("#divCableBwBody");
+            if (bBody) bBody.innerHTML = renderBwContent(m, bpc);
+          });
+        });
+      } catch (_) {}
+    };
+  }
+
+  // B. Quick Catalog Filter: "📉 С историей цен / Скидки"
+  function hasPriceDropOrHistory(m, onlyDrops) {
+    if (typeof DB === "undefined" || !DB.price_history) return false;
+    const pts = DB.price_history[String(m.id)];
+    if (!Array.isArray(pts) || !pts.length) return false;
+    if (!onlyDrops) return true;
+    const vals = pts.map(p => Number(p.r || p.m || 0)).filter(v => v > 0);
+    const cur = Number(m.price_retail_rf || m.hand || m.rub || 0);
+    if (!vals.length || cur <= 0) return false;
+    return cur < Math.max(...vals);
+  }
+
+  function injectPriceDropFilterPill() {
+    if (document.getElementById("chkCatPriceHistory")) return;
+    const onlyRuChk = document.getElementById("chkCatOnlyRu");
+    const host = onlyRuChk && onlyRuChk.closest("label") && onlyRuChk.closest("label").parentNode;
+    if (!host) return;
+    const dropCount = (typeof DB !== "undefined" && DB.catalog)
+      ? DB.catalog.filter(m => hasPriceDropOrHistory(m, true)).length
+      : 0;
+    const histCount = (typeof DB !== "undefined" && DB.price_history)
+      ? Object.keys(DB.price_history).length
+      : 0;
+    const lbl = document.createElement("label");
+    lbl.className = "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-semibold cursor-pointer";
+    lbl.style.cssText = "border-color:rgba(128,128,128,0.28);background:rgba(128,128,128,0.06);";
+    lbl.title = dropCount > 0
+      ? "Показать модели, которые подешевели относительно прошлых снимков истории цен"
+      : "Показать модели с отслеживаемой историей цен РФ (по мере накопления снимков покажет скидки)";
+    lbl.innerHTML = `<input type="checkbox" id="chkCatPriceHistory" class="w-3.5 h-3.5" style="accent-color:#005fb8;" />` +
+      `<span>📉 ${dropCount > 0 ? `Снижение цены (${dropCount})` : `История цен РФ (${histCount})`}</span>`;
+    host.appendChild(lbl);
+
+    const chk = lbl.querySelector("#chkCatPriceHistory");
+    if (chk && typeof renderCatalog === "function") {
+      chk.addEventListener("change", () => { try { renderCatalog(); } catch (_) {} });
+    }
+  }
+
+  // Hook renderCatalog to apply #chkCatPriceHistory cleanly when checked
+  if (typeof renderCatalog === "function" && !window.__priceHistFilterHooked) {
+    window.__priceHistFilterHooked = true;
+    const _origRenderCat = renderCatalog;
+    renderCatalog = function() {
+      _origRenderCat.apply(this, arguments);
+      try {
+        const chk = document.getElementById("chkCatPriceHistory");
+        if (!chk || !chk.checked) return;
+        const tbody = document.getElementById("tblCatalogBody");
+        if (!tbody || !tbody.children) return;
+        const dropCount = DB.catalog.filter(m => hasPriceDropOrHistory(m, true)).length;
+        const onlyDrops = dropCount > 0;
+        const allowedIds = new Set(DB.catalog.filter(m => hasPriceDropOrHistory(m, onlyDrops)).map(m => String(m.id)));
+        Array.from(tbody.children).forEach(tr => {
+          if (tr.id === "trCatalogVirtualSentinel") return;
+          const mid = tr.getAttribute && (tr.getAttribute("data-id") || tr.dataset && tr.dataset.id);
+          if (mid && !allowedIds.has(String(mid))) {
+            tr.style.display = "none";
+          }
+        });
+      } catch (_) {}
+    };
+  }
+
+  setTimeout(injectPriceDropFilterPill, 40);
+})();
+
+
+
+/* === MODAL_TOOLS_GROUP_AND_LITE_ORCHESTRATOR_V1 === */
+(function() {
+  if (typeof openModelModal === "function" && !window.__modalToolsGrouped) {
+    window.__modalToolsGrouped = true;
+    const _origOpen = openModelModal;
+    openModelModal = function(id) {
+      _origOpen.apply(this, arguments);
+      try {
+        const body = document.getElementById("mdlDetailBody") || document.getElementById("divModalBody");
+        if (!body) return;
+        // Wave 13: Build Device Compatibility Card (PS5 / Xbox / MacBook / PC GPU)
+        try {
+          const curItem = (typeof DB !== "undefined" && DB.catalog) ? DB.catalog.find(x => x.id === id) : null;
+          if (curItem && typeof buildCompatMatrixCard === "function") {
+            const oldC = body.querySelector("#divCompatMatrixCard");
+            if (oldC) oldC.remove();
+            const cEl = buildCompatMatrixCard(curItem);
+            if (cEl) body.appendChild(cEl);
+          }
+        } catch (_) {}
+
+        const toolIds = ["divCompatMatrixCard", "divPriceHistorySparkline", "divIccCalibCard", "divEyeDistanceWidget", "divCableBwCard"];
+        const found = toolIds.map(tid => body.querySelector("#" + tid)).filter(Boolean);
+        if (!found.length) return;
+
+        let group = body.querySelector("#dtlModalToolsGroup");
+        if (!group) {
+          group = document.createElement("details");
+          group.id = "dtlModalToolsGroup";
+          const lite = (typeof isLiteMode !== "undefined" && isLiteMode) || document.body.classList.contains("lite-mode");
+          group.open = false;
+          const sum = document.createElement("summary");
+          sum.innerHTML = `<span>🛠️ Инженерные инструменты (${found.length}): совместимость PS5/Mac/GPU, история цен, ICC/HDR, PPI и кабель</span><span class="opacity-70 text-[11px]">${lite ? "Упрощённый режим — нажмите, чтобы раскрыть ▾" : "Раскрыть ▾"}</span>`;
+          group.appendChild(sum);
+          const riskCard = body.querySelector("#divPvzPriceRiskCard");
+          if (riskCard && riskCard.nextSibling) body.insertBefore(group, riskCard.nextSibling);
+          else if (body.firstChild) body.insertBefore(group, body.firstChild);
+          else body.appendChild(group);
+        }
+        found.forEach(el => group.appendChild(el));
+        // Wave 14: Similar Alternatives Card (cheaper / RU retail)
+        try {
+          const curItem2 = (typeof DB !== "undefined" && DB.catalog) ? DB.catalog.find(x => x.id === id) : null;
+          const oldSim = body.querySelector("#divSimilarModelsCard");
+          if (oldSim) oldSim.remove();
+          const oldWatch = body.querySelector("#divPersonalWatchBox");
+          if (oldWatch) oldWatch.remove();
+          if (curItem2 && typeof attachForumShareBtn === "function") attachForumShareBtn(body, curItem2);
+          if (curItem2 && typeof buildPersonalWatchBox === "function") {
+            const wEl = buildPersonalWatchBox(curItem2);
+            if (wEl) {
+              if (group && group.nextSibling) body.insertBefore(wEl, group.nextSibling);
+              else body.appendChild(wEl);
+            }
+          }
+          if (curItem2 && typeof buildSimilarModelsCard === "function") {
+            const simEl = buildSimilarModelsCard(curItem2);
+            if (simEl) {
+              if (group && group.nextSibling) body.insertBefore(simEl, group.nextSibling);
+              else body.appendChild(simEl);
+            }
+          }
+        } catch (_) {}
+      } catch (_) {}
+    };
+  }
+})();
+
+
+(function() {
+  const RU_EN_LAYOUT = {
+    "й":"q","ц":"w","у":"e","к":"r","е":"t","н":"y","г":"u","ш":"i","щ":"o","з":"p",
+    "ф":"a","ы":"s","в":"d","а":"f","п":"g","р":"h","о":"j","л":"k","д":"l",
+    "я":"z","ч":"x","с":"c","м":"v","и":"b","т":"n","ь":"m"
+  };
+  const SEARCH_ALIASES = {
+    "асус": "asus", "асус": "asus", "рог": "rog", "таф": "tuf",
+    "мси": "msi", "мсиай": "msi",
+    "ксиаоми": "xiaomi", "сяоми": "xiaomi", "редми": "redmi",
+    "гигабайт": "gigabyte", "гига": "gigabyte", "аорус": "aorus",
+    "самсунг": "samsung", "самс": "samsung", "одиссей": "odyssey",
+    "лджи": "lg", "лыжа": "lg", "ультрагир": "ultragear",
+    "аос": "aoc", "аок": "aoc", "агон": "agon",
+    "филипс": "philips", "эвния": "evnia",
+    "делл": "dell", "алиенвар": "alienware", "алиен": "alienware",
+    "бенк": "benq", "бенкью": "benq", "зови": "zowie",
+    "асер": "acer", "эйсер": "acer", "предатор": "predator", "нитро": "nitro",
+    "леново": "lenovo", "легион": "legion",
+    "титан": "titan", "арми": "army",
+    "ифалкон": "iffalcon", "иннокн": "innocn", "тсл": "tcl", "тцл": "tcl",
+    "хисенс": "hisense", "хайсенс": "hisense", "ардор": "ardor", "кооруи": "koorui", "санс": "sanc",
+    "олед": "oled", "волед": "woled", "кдолед": "qd-oled", "тандем": "tandem",
+    "минилед": "mini-led", "мини-лед": "mini-led", "фалд": "fald",
+    "ипс": "ips", "ва": "va", "тн": "tn",
+    "ультраширик": "3440", "ультравайд": "3440", "ширик": "3440",
+    "2к": "2560x1440", "4к": "3840x2160", "5к": "5120x2880", "фхд": "1920x1080", "фуллхд": "1920x1080",
+    "глянец": "глянц", "глянцевый": "глянц", "матовый": "матов", "мат": "матов",
+    "дуал": "dual-mode", "дуалмод": "dual-mode"
+  };
+
+  function convertRuLayout(word) {
+    return word.split("").map(ch => RU_EN_LAYOUT[ch] || ch).join("");
+  }
+
+  function normalizeSmartSearchTokens(raw) {
+    const clean = String(raw || "").trim().toLowerCase().replace(/ё/g, "е");
+    if (!clean) return [];
+    const rawTokens = clean.split(/\s+/).filter(Boolean);
+    return rawTokens.map(tok => {
+      if (SEARCH_ALIASES[tok]) return SEARCH_ALIASES[tok];
+      // If token is pure Cyrillic and looks like a mistyped English layout word (e.g. "фыгы" -> "asus", "щдув" -> "oled")
+      if (/^[а-я]+$/.test(tok)) {
+        const conv = convertRuLayout(tok);
+        if (/^(asus|msi|lg|aoc|dell|benq|acer|tcl|hkc|ktc|sanc|oled|woled|qdoled|ips|miniled|fhd|qhd|uhd|uwqhd|hdr|kvm|usb|dp|hdmi|rog|tuf|mpg|mag|pg|xg|mo|fo|aw|gs|gp|gx)$/.test(conv) || /^[a-z]{2,}\d+/.test(conv)) {
+          return conv;
+        }
+      }
+      return tok;
+    });
+  }
+  window.normalizeSmartSearchTokens = normalizeSmartSearchTokens;
+
+  function buildCompatMatrixCard(m) {
+    const ports = String(m.ports || "");
+    const pl = ports.toLowerCase();
+    const res = String(m.res || "").toLowerCase();
+    const hz = Number(m.max_hz || 0);
+    const consoleTxt = String(m.console || "").toLowerCase();
+    const kvmTxt = String(m.kvm || "").toLowerCase();
+
+    // 1. PS5 / Xbox Series X
+    const hasHdmi21 = /hdmi\s*2\.1/i.test(ports) || consoleTxt.includes("hdmi 2.1") || consoleTxt.includes("4k 120");
+    let consPill = "no", consBadge = "60 Гц", consDesc = "Только 60 Гц на консолях (нет 120 Гц / HDMI 2.1).";
+    if (hasHdmi21 && hz >= 120) {
+      consPill = "ok"; consBadge = "4K 120 Гц + VRR";
+      consDesc = "Полноценная поддержка PS5 и Xbox Series X в 120 Гц с VRR по HDMI 2.1.";
+    } else if (hz >= 120) {
+      consPill = "warn"; consBadge = "1080p/1440p 120 Гц";
+      consDesc = "Потянет 120 Гц в FHD/QHD, но без полного 4K 120 Гц VRR (ограничение HDMI 2.0).";
+    }
+
+    // 2. MacBook / Laptop USB-C PD
+    const pdMatch = (ports + " " + kvmTxt).match(/(?:pd|power delivery|зарядк[а-я]*)\s*[:~]?\s*(\d{2,3})\s*(?:w|вт)/i) || ports.match(/(\d{2,3})\s*(?:w|вт)\s*(?:pd|usb-c)/i);
+    const hasUsbC = /usb[\s-]*c|type[\s-]*c|thunderbolt/i.test(ports + " " + kvmTxt);
+    let macPill = "no", macBadge = "Без USB-C", macDesc = "Подключение к ноутбуку через кабель USB-C → DisplayPort + штатная зарядка.";
+    if (pdMatch) {
+      const watts = Number(pdMatch[1]);
+      if (watts >= 65) {
+        macPill = "ok"; macBadge = `1 кабель (PD ${watts} Вт)`;
+        macDesc = `Заряжает MacBook Air/Pro и передаёт картинку по одному USB-C кабелю (${watts} Вт).`;
+      } else {
+        macPill = "warn"; macBadge = `USB-C (PD ${watts} Вт)`;
+        macDesc = `Передаёт видео по USB-C, но ${watts} Вт хватит лишь для подзарядки телефона/лёгкого ультрабука.`;
+      }
+    } else if (hasUsbC) {
+      macPill = "warn"; macBadge = "USB-C DP Alt";
+      macDesc = "Есть видеовход USB-C (DP Alt Mode), но мощность зарядки PD не заявлена или минимальна.";
+    }
+
+    // 3. PC GPU (RTX 40/50 & RX 7000/9000)
+    const hasDp21 = /dp\s*2\.1|displayport\s*2\.1/i.test(ports);
+    const hasUhbr20 = /uhbr\s*20|80\s*gbps|80\s*гбит/i.test(ports);
+    const highBw = (res.includes("3840") || res.includes("4k") || res.includes("5120") || res.includes("5k")) && hz >= 160;
+    let gpuPill = "ok", gpuBadge = "RTX / RX Ready", gpuDesc = "Штатно работает на RTX 30/40/50 и RX 6000–9000 по DisplayPort 1.4.";
+    if (hasUhbr20) {
+      gpuPill = "ok"; gpuBadge = "DP 2.1 UHBR20 (Без DSC)";
+      gpuDesc = "Максимальная полоса 80 Гбит/с: без сжатия DSC на RTX 50-й серии и Radeon Pro.";
+    } else if (hasDp21) {
+      gpuPill = "ok"; gpuBadge = "DP 2.1 (RTX 50 / RX 7000+)";
+      gpuDesc = "Поддержка современного DisplayPort 2.1 (полная совместимость с RTX 40/50 и RX 7000/9000).";
+    } else if (highBw) {
+      gpuPill = "warn"; gpuBadge = "DP 1.4 + DSC";
+      gpuDesc = "Для полной частоты на 4K/5K требуется сжатие DSC (поддерживается всеми RTX 20–50 и RX 6000–9000).";
+    }
+
+    // 4. KVM / Peripherals
+    const hasKvm = !!m.has_kvm || kvmTxt.includes("kvm");
+    const kvmPill = hasKvm ? "ok" : "no";
+    const kvmBadge = hasKvm ? "Аппаратный KVM" : "Без KVM";
+    const kvmDesc = hasKvm ? "Удобное переключение мыши/клавиатуры между рабочим ноутбуком и игровым ПК одной кнопкой." : "Переключение периферии между двумя ПК потребует отдельного USB-свитча.";
+
+    const wrap = document.createElement("div");
+    wrap.id = "divCompatMatrixCard";
+    wrap.className = "rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/60 p-3 mt-2";
+    wrap.innerHTML = `
+      <div class="text-xs font-bold text-slate-900 dark:text-slate-100">🎮 Совместимость с консолями, ноутбуком и видеокартами</div>
+      <div class="compat-grid">
+        <div class="compat-item">
+          <div class="compat-item-title"><span>🎮 PS5 / Xbox Series X</span><span class="compat-pill ${consPill}">${consBadge}</span></div>
+          <div class="text-slate-600 dark:text-slate-300">${consDesc}</div>
+        </div>
+        <div class="compat-item">
+          <div class="compat-item-title"><span>💻 MacBook / Ноутбук</span><span class="compat-pill ${macPill}">${macBadge}</span></div>
+          <div class="text-slate-600 dark:text-slate-300">${macDesc}</div>
+        </div>
+        <div class="compat-item">
+          <div class="compat-item-title"><span>🖥️ Видеокарта ПК (GPU)</span><span class="compat-pill ${gpuPill}">${gpuBadge}</span></div>
+          <div class="text-slate-600 dark:text-slate-300">${gpuDesc}</div>
+        </div>
+        <div class="compat-item">
+          <div class="compat-item-title"><span>⌨️ 2 ПК / KVM-переключатель</span><span class="compat-pill ${kvmPill}">${kvmBadge}</span></div>
+          <div class="text-slate-600 dark:text-slate-300">${kvmDesc}</div>
+        </div>
+      </div>
+    `;
+    return wrap;
+  }
+  window.buildCompatMatrixCard = buildCompatMatrixCard;
+
+  function buildSelectionCsv(rows) {
+    const headers = [
+      "ID", "Бренд", "Модель", "Тир", "Диагональ", "Разрешение", "Частота (Гц)",
+      "Матрица", "Покрытие", "Зоны FALD", "Контраст", "HDR (нит)",
+      "Цена на руки (₽)", "Розница РФ (₽)", "Порты", "Обзор", "Ссылка магазина"
+    ];
+    const esc = (v) => {
+      const s = String(v == null ? "" : v).replace(/\r?\n/g, " ").replace(/"/g, '""');
+      return `"${s}"`;
+    };
+    const lines = [headers.map(esc).join(";")];
+    (rows || []).forEach(r => {
+      const firstStore = (Array.isArray(r.stores) && r.stores[0] && r.stores[0].url) ? r.stores[0].url : "";
+      lines.push([
+        r.id, r.brand, r.model, r.tier, r.diag, r.res, r.hz || r.max_hz,
+        r.ptype, r.coat, r.zones, r.cr, r.hdr,
+        r.hand || "", r.price_retail_rf || "", r.ports || "", r.rev_url || "", firstStore
+      ].map(esc).join(";"));
+    });
+    return "\uFEFF" + lines.join("\r\n");
+  }
+  window.buildSelectionCsv = buildSelectionCsv;
+
+  function downloadCsvFile(rows, filename) {
+    if (!rows || !rows.length) {
+      if (typeof showToast === "function") showToast("Нет моделей для выгрузки в CSV");
+      return;
+    }
+    const csv = buildSelectionCsv(rows);
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    if (typeof showToast === "function") showToast(`Скачан CSV (${rows.length} моделей) — открывается в Excel без кракозябр`);
+  }
+
+  document.getElementById("btnExportCatalogCsv")?.addEventListener("click", () => {
+    downloadCsvFile(window.__lastCatalogFiltered || (typeof DB !== "undefined" ? DB.catalog : []), "monitor_catalog_selection.csv");
+  });
+  document.getElementById("btnExportFinderCsv")?.addEventListener("click", () => {
+    downloadCsvFile(window.__lastFinderFiltered || [], "monitor_finder_selection.csv");
+  });
+})();
+
+
+(function() {
+  function resClassOf(m) {
+    const r = String(m.res || "").toLowerCase();
+    if (r.includes("5120") || r.includes("5k")) return "5k";
+    if (r.includes("3440") || r.includes("uwqhd") || r.includes("3840x1600")) return "uw";
+    if (r.includes("3840") || r.includes("4k")) return "4k";
+    if (r.includes("2560") || r.includes("qhd") || r.includes("2k")) return "2k";
+    return "fhd";
+  }
+  function panelClassOf(m) {
+    const p = String(m.ptype || "").toLowerCase();
+    if (p.includes("oled")) return "oled";
+    if (p.includes("mini-led") || p.includes("miniled")) return "miniled";
+    if (p.includes("va") || p.includes("hva")) return "va";
+    if (p.includes("tn")) return "tn";
+    return "ips";
+  }
+  function parseNumFirst(val) {
+    const m = String(val || "").replace(/\s+/g, "").match(/\d+(?:\.\d+)?/);
+    return m ? parseFloat(m[0]) : 0;
+  }
+
+  function findSimilarAlternatives(m, limit = 4) {
+    if (!m || typeof DB === "undefined" || !Array.isArray(DB.catalog)) return [];
+    const rc = resClassOf(m);
+    const pc = panelClassOf(m);
+    const d0 = Number(m.diag || 27);
+    const p0 = Number(m.hand || 0);
+    const hz0 = Number(m.max_hz || 0);
+
+    const candidates = DB.catalog.filter(x => {
+      if (x.id === m.id) return false;
+      if (resClassOf(x) !== rc) return false;
+      if (panelClassOf(x) !== pc) return false;
+      if (Math.abs(Number(x.diag || 27) - d0) > 1.6) return false;
+      const t = String(x.tier || "").charAt(0).toUpperCase();
+      if (t === "F" || t === "D") return false;
+      return true;
+    });
+
+    candidates.sort((a, b) => {
+      const aCheaper = p0 > 0 && a.hand > 0 && a.hand < p0 ? 1 : 0;
+      const bCheaper = p0 > 0 && b.hand > 0 && b.hand < p0 ? 1 : 0;
+      if (aCheaper !== bCheaper) return bCheaper - aCheaper;
+      const aRu = a.is_ru ? 1 : 0;
+      const bRu = b.is_ru ? 1 : 0;
+      if (aRu !== bRu) return bRu - aRu;
+      const aHzDiff = Math.abs(Number(a.max_hz || 0) - hz0);
+      const bHzDiff = Math.abs(Number(b.max_hz || 0) - hz0);
+      if (aHzDiff !== bHzDiff) return aHzDiff - bHzDiff;
+      return (a.hand || 999999) - (b.hand || 999999);
+    });
+    return candidates.slice(0, limit);
+  }
+  window.findSimilarAlternatives = findSimilarAlternatives;
+
+  function buildSimilarModelsCard(m) {
+    const alts = findSimilarAlternatives(m, 4);
+    if (!alts.length) return null;
+    const p0 = Number(m.hand || 0);
+    const wrap = document.createElement("div");
+    wrap.id = "divSimilarModelsCard";
+    wrap.className = "rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/60 p-3 my-2";
+    wrap.innerHTML = `
+      <div class="text-xs font-bold text-slate-900 dark:text-slate-100">💡 Похожие аналоги (дешевле или с гарантией РФ)</div>
+      <div class="sim-alt-grid">
+        ${alts.map(a => {
+          const save = (p0 > 0 && a.hand > 0 && a.hand < p0) ? (p0 - a.hand) : 0;
+          const badge = save >= 1000
+            ? `<span class="compat-pill ok">−${save.toLocaleString("ru-RU")} ₽</span>`
+            : (a.is_ru ? `<span class="compat-pill ok">🏠 Розница РФ</span>` : `<span class="compat-pill no">Тир ${String(a.tier||"").slice(0,1)}</span>`);
+          const priceStr = a.hand > 0 ? `${Number(a.hand).toLocaleString("ru-RU")} ₽` : "цена уточн.";
+          return `
+            <div class="sim-alt-card">
+              <div>
+                <div class="flex items-center justify-between gap-1.5">
+                  <button type="button" class="text-left text-xs font-bold text-blue-700 dark:text-sky-400 hover:underline sim-open-btn" data-sim-id="${a.id}">${a.model}</button>
+                  ${badge}
+                </div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-300 mt-0.5">${a.diag}″ • ${a.max_hz || a.hz} Гц • Тир ${String(a.tier||"").slice(0,1)}</div>
+              </div>
+              <div class="sim-alt-actions">
+                <span class="text-xs font-extrabold text-slate-900 dark:text-white">${priceStr}</span>
+                <button type="button" class="text-[11px] font-bold px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 sim-cmp-btn" data-sim-cmp="${a.id}" title="Сравнить с текущей моделью">⚖️ Сравнить</button>
+              </div>
+            </div>`;
+        }).join("")}
+      </div>
+    `;
+    wrap.querySelectorAll(".sim-open-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tid = Number(btn.dataset.simId);
+        if (typeof openModelModal === "function") openModelModal(tid);
+      });
+    });
+    wrap.querySelectorAll(".sim-cmp-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tid = Number(btn.dataset.simCmp);
+        if (typeof compareIds !== "undefined") {
+          compareIds.clear();
+          compareIds.add(m.id);
+          compareIds.add(tid);
+          if (typeof updateCompareBadge === "function") updateCompareBadge();
+          if (typeof closeModelModal === "function") closeModelModal();
+          const tabBtn = document.querySelector('[data-tab="secCompare"]');
+          if (tabBtn) tabBtn.click();
+          else if (typeof renderCompare === "function") renderCompare();
+        }
+      });
+    });
+    return wrap;
+  }
+  window.buildSimilarModelsCard = buildSimilarModelsCard;
+
+  function buildCompareVerdictHtml(items) {
+    if (!Array.isArray(items) || items.length < 2) return "";
+    const scores = new Map(items.map(x => [x.id, 0]));
+    const winners = [];
+
+    const priced = items.filter(x => Number(x.hand || 0) > 0);
+    if (priced.length >= 2) {
+      const bestP = priced.reduce((a, b) => (a.hand <= b.hand ? a : b));
+      const worstP = priced.reduce((a, b) => (a.hand >= b.hand ? a : b));
+      if (bestP.hand < worstP.hand) {
+        scores.set(bestP.id, scores.get(bestP.id) + 1);
+        winners.push(`💰 <strong>Цена:</strong> ${bestP.model} (${Number(bestP.hand).toLocaleString("ru-RU")} ₽)`);
+      }
+    }
+    const bestHz = items.reduce((a, b) => (Number(a.max_hz||0) >= Number(b.max_hz||0) ? a : b));
+    const minHz = Math.min(...items.map(x => Number(x.max_hz||0)));
+    if (Number(bestHz.max_hz||0) > minHz) {
+      scores.set(bestHz.id, scores.get(bestHz.id) + 1);
+      winners.push(`⚡ <strong>Частота:</strong> ${bestHz.model} (${bestHz.max_hz} Гц)`);
+    }
+    const gtgs = items.map(x => ({ x, v: parseNumFirst(x.gtg80) })).filter(o => o.v > 0);
+    if (gtgs.length >= 2) {
+      const bestG = gtgs.reduce((a, b) => (a.v <= b.v ? a : b));
+      const worstG = gtgs.reduce((a, b) => (a.v >= b.v ? a : b));
+      if (bestG.v < worstG.v) {
+        scores.set(bestG.x.id, scores.get(bestG.x.id) + 1);
+        winners.push(`🎯 <strong>Отклик GtG:</strong> ${bestG.x.model} (${bestG.v} мс)`);
+      }
+    }
+    const crs = items.map(x => {
+      const isO = String(x.ptype||"").toLowerCase().includes("oled");
+      return { x, v: isO ? 1000000 : parseNumFirst(x.cr), isO };
+    }).filter(o => o.v > 0);
+    if (crs.length >= 2) {
+      const bestC = crs.reduce((a, b) => (a.v >= b.v ? a : b));
+      const worstC = crs.reduce((a, b) => (a.v <= b.v ? a : b));
+      if (bestC.v > worstC.v) {
+        scores.set(bestC.x.id, scores.get(bestC.x.id) + 1);
+        winners.push(`🌗 <strong>Контраст:</strong> ${bestC.x.model} (${bestC.isO ? "∞:1 OLED" : bestC.v + ":1"})`);
+      }
+    }
+    const hdrs = items.map(x => ({ x, v: parseNumFirst(x.hdr) })).filter(o => o.v >= 200);
+    if (hdrs.length >= 2) {
+      const bestH = hdrs.reduce((a, b) => (a.v >= b.v ? a : b));
+      const worstH = hdrs.reduce((a, b) => (a.v <= b.v ? a : b));
+      if (bestH.v > worstH.v) {
+        scores.set(bestH.x.id, scores.get(bestH.x.id) + 1);
+        winners.push(`☀️ <strong>Пик HDR:</strong> ${bestH.x.model} (${bestH.v} нит)`);
+      }
+    }
+
+    if (!winners.length) return "";
+    const sortedLeaders = [...items].sort((a, b) => (scores.get(b.id) || 0) - (scores.get(a.id) || 0));
+    const topScore = scores.get(sortedLeaders[0].id) || 0;
+    const leaders = sortedLeaders.filter(x => (scores.get(x.id) || 0) === topScore).map(x => x.model).join(" / ");
+    return `
+      <div id="divCompareVerdict" class="cmp-verdict-box text-xs">
+        <div class="font-bold">🏆 Инженерный вердикт сравнения — лидер по метрикам: <span class="underline">${leaders}</span> (${topScore} из ${winners.length})</div>
+        <div class="cmp-verdict-chips">${winners.map(w => `<span class="cmp-verdict-chip">${w}</span>`).join("")}</div>
+      </div>
+    `;
+  }
+  window.buildCompareVerdictHtml = buildCompareVerdictHtml;
+})();
+
+
+(function() {
+  function getTopRfDrops(limit = 5) {
+    if (typeof DB === "undefined" || !DB.price_history || !Array.isArray(DB.catalog)) return [];
+    const byId = new Map(DB.catalog.map(m => [String(m.id), m]));
+    const list = [];
+    Object.entries(DB.price_history).forEach(([mid, pts]) => {
+      if (!Array.isArray(pts) || !pts.length) return;
+      const m = byId.get(String(mid));
+      if (!m) return;
+      const last = pts[pts.length - 1];
+      const first = pts[0];
+      const ret = Number(last.r || 0);
+      const mp = Number(last.m || 0);
+      const firstMp = Number(first.m || first.r || 0);
+      let base = 0, cur = 0, kind = "";
+      if (pts.length > 1 && firstMp > mp && mp > 0) {
+        base = firstMp; cur = mp; kind = "снижение";
+      } else if (ret > mp && mp > 0) {
+        base = ret; cur = mp; kind = "ниже розницы";
+      } else {
+        return;
+      }
+      const diff = base - cur;
+      const pct = Math.round((diff / base) * 1000) / 10;
+      if (diff < 2000 || pct < 8) return;
+      list.push({ id: m.id, model: m.model, diag: m.diag, max_hz: m.max_hz, cur, base, diff, pct, kind, store: last.s || "РФ" });
+    });
+    list.sort((a, b) => (b.pct - a.pct) || (b.diff - a.diff));
+    return list.slice(0, limit);
+  }
+  window.getTopRfDrops = getTopRfDrops;
+
+  function renderTopDropsBanner() {
+    const box = document.getElementById("divTopDropsList");
+    if (!box) return;
+    const drops = getTopRfDrops(5);
+    if (!drops.length) {
+      const wrap = document.getElementById("dtlTopDropsBanner");
+      if (wrap) wrap.style.display = "none";
+      return;
+    }
+    box.innerHTML = drops.map(d => `
+      <button type="button" class="drop-chip" data-drop-id="${d.id}">
+        <div class="flex items-center justify-between gap-1">
+          <span class="font-bold text-slate-900 dark:text-white truncate">${d.model}</span>
+          <span class="compat-pill ok">−${d.pct}%</span>
+        </div>
+        <div class="text-[11px] text-slate-600 dark:text-slate-300 mt-0.5">${d.diag}″ • ${d.max_hz} Гц • ${d.store}</div>
+        <div class="mt-1 flex items-baseline gap-1.5">
+          <span class="font-extrabold text-emerald-700 dark:text-emerald-400">${d.cur.toLocaleString("ru-RU")} ₽</span>
+          <span class="text-[10px] line-through opacity-60">${d.base.toLocaleString("ru-RU")} ₽</span>
+        </div>
+      </button>
+    `).join("");
+    box.querySelectorAll("[data-drop-id]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (typeof openModelModal === "function") openModelModal(Number(btn.dataset.dropId));
+      });
+    });
+  }
+
+  function applyCustomDutyScenario(eurRate, thresholdEur, dutyPct) {
+    if (typeof DB === "undefined" || !Array.isArray(DB.catalog)) return 0;
+    const limRub = Math.max(0, Number(eurRate) * Number(thresholdEur));
+    const rate = Math.max(0, Number(dutyPct)) / 100;
+    let updated = 0;
+    DB.catalog.forEach(m => {
+      if (m.__origDuty === undefined) { m.__origDuty = m.duty; m.__origHand = m.hand; }
+      if (!m.is_ru && Number(m.rub || 0) > 0) {
+        const excess = Math.max(0, Number(m.rub) - limRub);
+        const newDuty = Math.round(excess * rate);
+        m.duty = newDuty;
+        m.hand = Number(m.rub) + newDuty;
+        updated++;
+      }
+    });
+    const badge = document.getElementById("lblCustomDutyBadge");
+    if (badge) badge.textContent = `(активно: EUR=${eurRate} ₽, порог ${thresholdEur} €, ставка ${dutyPct}%)`;
+    if (typeof renderCatalog === "function") renderCatalog();
+    if (typeof renderFinder === "function") renderFinder();
+    return updated;
+  }
+  window.applyCustomDutyScenario = applyCustomDutyScenario;
+
+  function resetCustomDutyScenario() {
+    if (typeof DB === "undefined" || !Array.isArray(DB.catalog)) return;
+    DB.catalog.forEach(m => {
+      if (m.__origDuty !== undefined) { m.duty = m.__origDuty; m.hand = m.__origHand; }
+    });
+    const badge = document.getElementById("lblCustomDutyBadge");
+    if (badge) badge.textContent = "(штатный: порог 200 €, 15%)";
+    if (typeof renderCatalog === "function") renderCatalog();
+    if (typeof renderFinder === "function") renderFinder();
+  }
+  window.resetCustomDutyScenario = resetCustomDutyScenario;
+
+  document.getElementById("btnApplyCustomDuty")?.addEventListener("click", () => {
+    const eur = Number(document.getElementById("inpCustomEur")?.value || 100);
+    const thr = Number(document.getElementById("selCustomThreshold")?.value || 200);
+    const pct = Number(document.getElementById("inpCustomRate")?.value || 15);
+    const cnt = applyCustomDutyScenario(eur, thr, pct);
+    if (typeof showToast === "function") showToast(`Пересчитана пошлина для ${cnt} зарубежных моделей (порог ${thr} €, EUR=${eur} ₽)`);
+  });
+  document.getElementById("btnResetCustomDuty")?.addEventListener("click", () => {
+    resetCustomDutyScenario();
+    if (typeof showToast === "function") showToast("Возвращён штатный расчёт пошлины (200 €, 15%)");
+  });
+
+  renderTopDropsBanner();
+})();
+
+
+(function() {
+  const WATCH_LS_KEY = "monitor_db_personal_watch_v1";
+
+  function loadPersonalWatchMap() {
+    try { return JSON.parse(localStorage.getItem(WATCH_LS_KEY) || "{}"); } catch (_) { return {}; }
+  }
+  function getPersonalWatch(id) {
+    const map = loadPersonalWatchMap();
+    return map[String(id)] || null;
+  }
+  function savePersonalWatch(id, targetRub, noteText) {
+    const map = loadPersonalWatchMap();
+    const t = Number(targetRub || 0);
+    const n = String(noteText || "").trim();
+    if (t > 0 || n) {
+      map[String(id)] = { target: t > 0 ? t : 0, note: n, updated: new Date().toISOString().slice(0, 10) };
+      if (typeof favoriteIds !== "undefined") {
+        favoriteIds.add(Number(id));
+        if (typeof saveFavorites === "function") saveFavorites();
+      }
+    } else {
+      delete map[String(id)];
+    }
+    try { localStorage.setItem(WATCH_LS_KEY, JSON.stringify(map)); } catch (_) {}
+    return map[String(id)] || null;
+  }
+  window.getPersonalWatch = getPersonalWatch;
+  window.savePersonalWatch = savePersonalWatch;
+
+  function buildPersonalWatchBox(m) {
+    const cur = getPersonalWatch(m.id) || { target: 0, note: "" };
+    const hand = Number(m.hand || 0);
+    const inBudget = cur.target > 0 && hand > 0 && hand <= cur.target;
+    const wrap = document.createElement("div");
+    wrap.id = "divPersonalWatchBox";
+    wrap.className = "rounded-xl border border-amber-200 dark:border-amber-700/50 bg-amber-50/70 dark:bg-amber-950/25 p-3 my-2 text-xs";
+    wrap.innerHTML = `
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+        <span class="font-bold text-slate-900 dark:text-amber-100">⭐ Личный список покупок (целевая цена и заметка)</span>
+        <span id="lblWatchBudgetStatus" class="compat-pill ${inBudget ? "ok" : "no"}">${inBudget ? "🎯 В вашем бюджете!" : (cur.target > 0 ? "⏳ Ждём снижения" : "Не задано")}</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <input type="number" id="inpWatchTarget" value="${cur.target || ""}" placeholder="Желаемая цена ₽" min="0" step="500" class="border border-slate-300 dark:border-slate-600 rounded-lg px-2.5 py-1 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-36 font-semibold" />
+        <input type="text" id="inpWatchNote" value="${String(cur.note || "").replace(/"/g, "&quot;")}" placeholder="Короткая заметка (например: проверить ревизию BOE в ПВЗ)" class="border border-slate-300 dark:border-slate-600 rounded-lg px-2.5 py-1 bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex-1 min-w-[200px]" />
+        <button type="button" id="btnSavePersonalWatch" class="px-3 py-1 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold">Сохранить</button>
+      </div>
+    `;
+    wrap.querySelector("#btnSavePersonalWatch")?.addEventListener("click", () => {
+      const tVal = Number(wrap.querySelector("#inpWatchTarget")?.value || 0);
+      const nVal = String(wrap.querySelector("#inpWatchNote")?.value || "");
+      const saved = savePersonalWatch(m.id, tVal, nVal);
+      const stEl = wrap.querySelector("#lblWatchBudgetStatus");
+      if (stEl) {
+        const hit = saved && saved.target > 0 && hand > 0 && hand <= saved.target;
+        stEl.className = "compat-pill " + (hit ? "ok" : "no");
+        stEl.textContent = hit ? "🎯 В вашем бюджете!" : (saved && saved.target > 0 ? "⏳ Ждём снижения" : "Сохранено");
+      }
+      if (typeof showToast === "function") showToast(saved ? "Сохранено в личном списке покупок (Избранное)" : "Заметка очищена");
+    });
+    return wrap;
+  }
+  window.buildPersonalWatchBox = buildPersonalWatchBox;
+})();
+
+
+(function() {
+  function renderMyWatchlistPanel() {
+    const cntEl = document.getElementById("lblMyWatchCnt");
+    const box = document.getElementById("divMyWatchlistItems");
+    if (!box) return;
+    let map = {};
+    try { map = JSON.parse(localStorage.getItem("monitor_db_personal_watch_v1") || "{}"); } catch (_) {}
+    const onlyHit = !!(document.getElementById("chkWatchOnlyInBudget") && document.getElementById("chkWatchOnlyInBudget").checked);
+    const byId = (typeof DB !== "undefined" && Array.isArray(DB.catalog)) ? new Map(DB.catalog.map(m => [String(m.id), m])) : new Map();
+    const entries = Object.entries(map).map(([mid, info]) => {
+      const m = byId.get(String(mid));
+      if (!m) return null;
+      const target = Number(info.target || 0);
+      const hand = Number(m.hand || 0);
+      const inBudget = target > 0 && hand > 0 && hand <= target;
+      return { m, target, note: info.note || "", inBudget };
+    }).filter(Boolean);
+
+    if (cntEl) cntEl.textContent = String(entries.length);
+    const visible = onlyHit ? entries.filter(e => e.inBudget) : entries;
+    if (!visible.length) {
+      box.innerHTML = `<div class="col-span-full text-[11px] opacity-75 py-1">${entries.length ? "Пока ни одна из сохранённых моделей не опустилась до заданной целевой цены." : "Список пока пуст — откройте любую модель и укажите целевую цену или заметку в блоке «⭐ Личный список покупок»."}</div>`;
+      return;
+    }
+    box.innerHTML = visible.map(e => `
+      <button type="button" class="drop-chip" data-wl-id="${e.m.id}">
+        <div class="flex items-center justify-between gap-1">
+          <span class="font-bold text-slate-900 dark:text-white truncate">${e.m.model}</span>
+          <span class="compat-pill ${e.inBudget ? "ok" : "no"}">${e.inBudget ? "🎯 В бюджете" : (e.target > 0 ? "⏳ Ждём" : "📝 Заметка")}</span>
+        </div>
+        <div class="text-[11px] text-slate-600 dark:text-slate-300 mt-0.5">Сейчас: <strong>${e.m.hand > 0 ? Number(e.m.hand).toLocaleString("ru-RU") + " ₽" : "—"}</strong>${e.target > 0 ? " • Цель: " + e.target.toLocaleString("ru-RU") + " ₽" : ""}</div>
+        ${e.note ? `<div class="text-[10.5px] opacity-80 truncate mt-0.5">📝 ${e.note}</div>` : ""}
+      </button>
+    `).join("");
+    box.querySelectorAll("[data-wl-id]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (typeof openModelModal === "function") openModelModal(Number(btn.dataset.wlId));
+      });
+    });
+  }
+  window.renderMyWatchlistPanel = renderMyWatchlistPanel;
+
+  document.getElementById("chkWatchOnlyInBudget")?.addEventListener("change", renderMyWatchlistPanel);
+  document.getElementById("btnWatchExportBackup")?.addEventListener("click", () => document.getElementById("btnExportUnifiedBackup")?.click());
+  document.getElementById("btnWatchImportBackup")?.addEventListener("click", () => document.getElementById("inpImportUnifiedBackup")?.click());
+  const origSave = window.savePersonalWatch;
+  if (typeof origSave === "function") {
+    window.savePersonalWatch = function(id, targetRub, noteText) {
+      const res = origSave(id, targetRub, noteText);
+      renderMyWatchlistPanel();
+      return res;
+    };
+  }
+  renderMyWatchlistPanel();
+})();
+
+
+(function() {
+  ["chkCatOnly2026", "chkCatOnlyReviewed"].forEach(id => {
+    document.getElementById(id)?.addEventListener("change", () => {
+      if (typeof renderCatalog === "function") renderCatalog();
+    });
+  });
+  document.getElementById("btnResetFilters")?.addEventListener("click", () => {
+    ["chkCatOnly2026", "chkCatOnlyReviewed"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.checked = false;
+    });
+  });
+})();
+
+
+(function() {
+  function buildModelShareMarkdown(m) {
+    if (!m) return "";
+    const price = Number(m.hand || 0) > 0 ? `${Number(m.hand).toLocaleString("ru-RU")} ₽ (на руки)` : "цена уточняется";
+    const url = `https://tapocket.github.io/monitor_full_database/#model=${m.id}`;
+    const lines = [
+      `🖥️ **${m.model}** (Тир ${String(m.tier || "").slice(0, 1)})`,
+      `• Экран: ${m.diag}″ ${m.res} • ${m.hz || m.max_hz} Гц`,
+      `• Матрица: ${m.ptype}${m.coat ? " | Покрытие: " + m.coat : ""}`,
+      `• Контраст / HDR: ${m.cr || "—"} | ${m.hdr || "—"}`,
+      `• Цена: ${price}`,
+      `🔗 Карточка в базе: ${url}`
+    ];
+    if (m.rev_url) lines.push(`🎬 Обзор: ${m.rev_url}`);
+    return lines.join("\n");
+  }
+  window.buildModelShareMarkdown = buildModelShareMarkdown;
+
+  function attachForumShareBtn(modalBody, m) {
+    if (!modalBody || !m) return;
+    const oldBtn = modalBody.querySelector("#btnCopyModelForumCard");
+    if (oldBtn) oldBtn.remove();
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.id = "btnCopyModelForumCard";
+    btn.className = "px-2.5 py-1 rounded-lg border border-indigo-300 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-200 font-bold text-xs hover:bg-indigo-100 transition";
+    btn.textContent = "📋 Для чата / форума";
+    btn.title = "Скопировать готовую мини-карточку монитора для Telegram, Discord, 4PDA или форума";
+    btn.addEventListener("click", () => {
+      const txt = buildModelShareMarkdown(m);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).catch(() => {});
+      }
+      if (typeof showToast === "function") showToast("Мини-карточка скопирована (готова для Telegram / форума)");
+    });
+    const printBtn = modalBody.querySelector("#btnPrintPvzSheet") || modalBody.querySelector("#btnCopyModelLink");
+    const oldRep = modalBody.querySelector("#btnReportModelIssue");
+    if (oldRep) oldRep.remove();
+    const repA = document.createElement("a");
+    repA.id = "btnReportModelIssue";
+    repA.target = "_blank";
+    repA.rel = "noopener";
+    const issueTitle = encodeURIComponent(`[Правка] ${m.model} (#${m.id})`);
+    const issueModel = encodeURIComponent(`${m.model} (#${m.id})`);
+    repA.href = `https://github.com/tapocket/monitor_full_database/issues/new?template=fix-error.yml&title=${issueTitle}&model=${issueModel}`;
+    repA.className = "px-2.5 py-1 rounded-lg border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 font-bold text-xs hover:bg-amber-100 transition inline-flex items-center";
+    repA.textContent = "⚠️ Сообщить об ошибке";
+    repA.title = "Открыть предзаполненную форму GitHub Issue для этой модели";
+    if (printBtn && printBtn.parentNode) {
+      printBtn.parentNode.appendChild(btn);
+      printBtn.parentNode.appendChild(repA);
+    } else if (modalBody.firstChild) {
+      modalBody.insertBefore(btn, modalBody.firstChild);
+    }
+  }
+  window.attachForumShareBtn = attachForumShareBtn;
+})();
+
 </script>
 
  <div id="divToast" class="hidden fixed bottom-5 right-5 z-[9999] bg-slate-900 text-white text-sm font-medium px-4 py-2.5 rounded-xl shadow-xl border border-slate-700 transition-all"></div>
@@ -26082,11 +27359,14 @@ html.dark #selPvzServiceBrand {
       <div id="divPvzServiceOut" class="leading-relaxed opacity-90">Выберите бренд монитора, чтобы увидеть комбинацию входа и безопасного выхода.</div>
     </div>
 
-    <div class="flex justify-end">
+    <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t" style="border-color:rgba(128,128,128,0.2);">
+      <div class="flex flex-wrap items-center gap-2 mr-auto"><button type="button" id="btnExportUnifiedBackup" class="px-2.5 py-1.5 rounded text-xs font-semibold border" style="border-color:rgba(128,128,128,0.3);">💾 Экспорт бэкапа (.json)</button><label class="px-2.5 py-1.5 rounded text-xs font-semibold border cursor-pointer" style="border-color:rgba(128,128,128,0.3);">📂 Импорт бэкапа (.json)<input type="file" id="inpImportUnifiedBackup" accept=".json" class="hidden" /></label></div>
       <button type="button" id="btnPvzResetCheck" class="text-xs opacity-75 hover:underline">Сбросить отметки чек-листа</button>
     </div>
   </div>
 </div>
+
+
 
 </body>
 </html>

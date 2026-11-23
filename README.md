@@ -1,34 +1,74 @@
 # 🖥️ monitor_full_database — Инженерная база мониторов
 
-![Модели](https://img.shields.io/badge/Моделей-2%20753-005fb8?style=for-the-badge)
+![Модели](https://img.shields.io/badge/Моделей-2%20710-005fb8?style=for-the-badge)
 ![Бренды](https://img.shields.io/badge/Брендов-85-0f7b0f?style=for-the-badge)
 ![Excel](https://img.shields.io/badge/Excel-18%20вкладок%20%7C%200%20ошибок-1d4ed8?style=for-the-badge)
 ![HTML Portal](https://img.shields.io/badge/HTML%20Портал-Zero--CDN%20WinUI%203%20PWA-334155?style=for-the-badge)
+![Static API](https://img.shields.io/badge/JSON%20API-api%2Fv1%2F-7c3aed?style=for-the-badge)
 ![CI](https://img.shields.io/badge/CI%20%2B%20Smoke%20Test-Passing-16a34a?style=for-the-badge)
 
-Открытая инженерная база мониторов (**2 753 модели**, **85 брендов**) с единым источником истины (`database_master.json`), книгой Excel на **18 вкладок** (0 ошибок формул), плоской выгрузкой CSV (**30 столбцов**), полностью автономным веб-порталом в стиле **WinUI 3 / Fluent Design 2** (`monitor_full_database.html`, Zero-CDN), **Тест-Лабораторией и 14-шаговым тест-прогоном**, **Режимом ПВЗ**, автоматическим CI/CD на GitHub Actions и Telegram-ботом подбора.
+Открытая инженерная база мониторов (**2 710 моделей**, **85 брендов**, 361 OLED, 235 Mini-LED) с единым источником истины (`database_master.json`), книгой Excel на **18 вкладок** (0 ошибок формул), плоской выгрузкой CSV (**30 столбцов**), полностью автономным веб-порталом в стиле **WinUI 3 / Fluent Design 2** (Zero-CDN), статическим **JSON API (`api/v1/`)**, **Тест-Лабораторией и Режимом ПВЗ**, CI/CD на GitHub Actions и **Telegram-ботом** подбора.
 
 🌐 **Живой портал (GitHub Pages):** https://tapocket.github.io/monitor_full_database/
 
-## ✨ Главные возможности
+## ✨ Главные возможности портала
 
-* **Единый сдержанный дизайн WinUI 3 (Dark / Light Mica) без внешних CDN:** все используемые утилитарные классы Tailwind 3.4 компилируются локально прямо в HTML во время сборки, шрифты системные (`Segoe UI Variable` / `system-ui`), страница стартует мгновенно и выглядит идентично онлайн и офлайн.
-* **Быстрый каталог и карточка монитора:**
-  * Словарно-разреженное сжатие встроенного JSON + прогрессивный виртуализированный рендер длинных таблиц (`IntersectionObserver` + `requestAnimationFrame`).
-  * Облегчённый режим (12 ключевых параметров) и Полный режим (4 основных блока + ленивый аккордеон 8 инженерных модулей).
-  * Встроенный расчёт **«Итоговая цена «на руки» + пошлина (>200 €) + риски ПВЗ и гарантии»**, **SVG-спарклайн истории цен** и кнопка **«🖨️ Шпаргалка ПВЗ (Печать / PDF)»** на 1 страницу с ожидаемой матрицей, «красными флагами» и сервисным меню бренда.
-* **5 магазинов РФ + прямые карточки:** 632+ связанных моделей по DNS (352 прямые карточки `/product/`), Ситилинк, Регард, ОнлайнТрейд, Ozon, Яндекс Маркет и AliExpress (TITAN ARMY Official).
-* **Актуальные стандарты 2025–2026:** проверенный гайд OLED vs Mini-LED (QD-OLED Gen 4/5 Penta-Tandem, WOLED Gen 4 Tandem RGB-Stripe, RGB Mini-LED) и официальная спецификация **VESA DisplayHDR CTS 1.2 + True Black 1400**.
-* **Тест-Лаборатория и Режим ПВЗ:**
-  * **14-шаговый полный тест-прогон** с 3× HiDPI суперсэмплингом, живым осциллографом Frame-Time, Multi-Hz сравнением, тестом FALD/OLED и копируемым отчётом.
-  * **📱 Режим ПВЗ (`#test=pvz`):** автономный мобильный экран с 7-пунктовым чек-листом, базой сервисных меню для 47 брендов и запуском 14-шагового теста в 1 клик.
-* **Умный URL-роутинг:** делитесь прямыми ссылками на конкретную модель (`#model=84`), сравнение (`#compare=84,501`), вкладку (`#tab=guide`), 14-шаговый тест (`#test=guided`) или Режим ПВЗ (`#test=pvz`).
-* **Telegram-бот (`bot/telegram_bot.py`):** поиск, подбор, ценовые алерты, статус VESA CTS 1.2, прямые ссылки `#model=ID`, до 4 прямых кнопок магазинов и запуск 14-шагового теста ПВЗ.
+* **Zero-CDN WinUI 3 (Dark / Light Mica) + Dual-Mode сборка:**
+  * Быстрая веб-версия (`index.html` + `data/db_payload.js`) и единый автономный офлайн-файл (`monitor_full_database.html`) без внешних CDN и шрифтов.
+  * Переключатель **Упрощённый / Полный режим**, полная адаптация под ПК и смартфон, кэширование PWA (`sw.js`).
+* **Умный каталог, поиск и выгрузка:**
+  * Поиск с пониманием кириллических синонимов (`асус`, `ксиаоми`, `олед`, `минилед`, `ультраширик`, `2к`, `4к`) и автокоррекцией раскладки (`фыгы щдув` → `asus oled`).
+  * Виджет **«📉 Топ скидок и выгодных цен РФ»** (по `data/price_history/`), встроенный **калькулятор пошлины и курса EUR** (пересчёт порога 200 € / 100 € / 50 € / 0 € в реальном времени по всей таблице) и экспорт текущей отфильтрованной подборки в **Excel-совместимый CSV (UTF-8 BOM)**.
+* **Подборщик и Сравнение в лоб:**
+  * **6 быстрых 1-кликовых сценариев** (Киберспорт 24–25″ 360+ Гц, 4K OLED для ПК/PS5/Xbox, Текст и код 4K/5K, Mini-LED до 35к, Ультраширик 34″, Универсальный 27″ QHD 240+ Гц).
+  * Вкладка «Сравнение» с фильтром **«Только различающиеся параметры»**, визуальным симулятором диагоналей в сантиметрах и **автоматическим инженерным вердиктом** по 5 метрикам (цена, Гц, GtG, контраст, HDR).
+* **Карточка монитора:**
+  * Расчёт итоговой цены «на руки» + пошлины + рисков ПВЗ, кнопка **«🖨️ Шпаргалка ПВЗ (Печать / PDF)»** на 1 лист A4.
+  * Инженерный аккордеон (5 инструментов): **Совместимость PS5 / Xbox / MacBook / RTX & RX**, SVG-график истории цен, калибровка ICC/OSD/Win11 HDR, расчёт расстояния/PPI/Retina и калькулятор кабеля DP 1.4/2.1/HDMI 2.1 + DSC.
+  * Автоподбор **похожих аналогов** (дешевле или с гарантией РФ) с переходом в сравнение в 1 клик.
+* **Тест-Лаборатория и Режим ПВЗ (`#test=pvz`, `#test=guided`):**
+  * 14-шаговый тест экрана (битые пиксели, 5% Grey OLED, FALD, 3× HiDPI, осциллограф Frame-Time), мобильный чек-лист приёмки и база сервисных меню для 47 брендов.
+  * Прямые карточки магазинов РФ: **381 прямая карточка DNS** (`/product/`), Ситилинк, Регард, ОнлайнТрейд, Ozon, Яндекс Маркет и AliExpress.
+
+## 📡 Публичный статический JSON API (`api/v1/`)
+
+После каждого обновления на GitHub Pages доступны лёгкие статические JSON-срезы (без авторизации и лимитов):
+
+| Эндпоинт | Назначение |
+| :--- | :--- |
+| `api/v1/summary.json` | Сводка: дата обновления, число моделей/брендов, счётчики OLED/Mini-LED/LCD, список эндпоинтов |
+| `api/v1/oled.json` | Компактный каталог всех **361 OLED**-моделей |
+| `api/v1/miniled.json` | Компактный каталог всех **235 Mini-LED**-моделей |
+| `api/v1/market_rf.json` | Витрина **«Рынок РФ»** (53 модели) |
+| `api/v1/flagships.json` | Витрина **«Флагманы»** (41 модель) |
+| `api/v1/brands.json` | Список всех **85 брендов** |
+| `api/v1/monitors.json` | Полный каталог всех 2 710 моделей |
+
+**Пример в JavaScript / Discord-боте:**
+```js
+const res = await fetch("https://tapocket.github.io/monitor_full_database/api/v1/summary.json");
+const stats = await res.json();
+console.log(stats.total_models, stats.counts.oled);
+```
+
+**Пример в Python:**
+```python
+import urllib.request, json
+url = "https://tapocket.github.io/monitor_full_database/api/v1/oled.json"
+oleds = json.loads(urllib.request.urlopen(url).read().decode("utf-8"))
+print(f"OLED в базе: {len(oleds)}")
+```
+
+## 🤖 Telegram-бот (`bot/telegram_bot.py`)
+
+* Пошаговый кнопочный подбор и команды: `/find`, `/oled [бюджет]`, `/miniled [бюджет]`, `/drops` (скидки РФ по истории цен), `/digest` (еженедельный дайджест новинок и скидок), `/model`, `/compare A vs B`, `/pvz <бренд>` (сервисные меню 47 брендов), `/alert`, `/myalerts`, `/delalert`.
+* **Inline-режим** (`@имя_бота <модель>`): отправка карточек мониторов в любые чаты Telegram с кнопками портала, ПВЗ и магазинов.
+* Автоматическая загрузка токена из локального `bot/.env` (`TELEGRAM_BOT_TOKEN=...`, файл исключён из Git).
 
 ## 🛠️ Сборка и проверка
 
 ```bash
-# Полная пересборка CSV, XLSX (с пересчётом формул в LibreOffice) и Zero-CDN HTML
+# Полная пересборка CSV, XLSX (с пересчётом формул LibreOffice), HTML (standalone + split) и api/v1/
 python3 build_database.py \
   --master database_master.json \
   --template-xlsx monitor_full_database.xlsx \
@@ -36,12 +76,12 @@ python3 build_database.py \
   --outdir . \
   --recalc --verify
 
-# Автоматический Node DOM smoke-тест портала (Zero-CDN, распаковка 2753 моделей, роутинг, карточка, ПВЗ)
-node scripts/smoke_test_portal.js monitor_full_database.html
+# Полная преддеплойная проверка (py_compile, схема stores, Node DOM smoke-тесты обоих режимов)
+python3 scripts/pre_deploy_check.py
 ```
 
-## 🤖 Автоматизация (GitHub Actions)
+## ⚙️ Автоматизация (GitHub Actions)
 
-* `.github/workflows/build-and-verify.yml` — проверка JSON Schema, `py_compile`, сборка `--recalc --verify` и прогон `node scripts/smoke_test_portal.js` на каждом push/PR.
-* `.github/workflows/daily-rates-and-links.yml` — еженедельное обновление курсов ЦБ РФ (`scripts/update_cbr_rates.py`), запись истории цен (`scripts/record_price_history.py`), проверка ссылок, пересборка портала и автообновление кэша `sw.js`.
-* `.github/workflows/deploy-pages.yml` — автоматический деплой на GitHub Pages.
+* `.github/workflows/build-and-verify.yml` — проверка схемы, `py_compile`, сборка `--recalc --verify` и прогон `scripts/smoke_test_portal.js` на каждом push/PR.
+* `.github/workflows/daily-rates-and-links.yml` — **ежедневное** (раз в сутки) обновление курсов ЦБ РФ, запись истории цен, аудит 120 ссылок магазинов и обзоров (`data/LINK_AUDIT_REPORT.md`), генерация чеклиста `data/DAILY_UPDATE_CHECKLIST.md`, пересборка портала + `api/v1/` и обновление кэша `sw.js`.
+* `.github/workflows/deploy-pages.yml` — автоматический деплой портала и `api/v1/` на GitHub Pages.
