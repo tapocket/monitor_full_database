@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>monitor_full_database — Инженерная база мониторов</title>
+ <title>monitor_full_database</title>
  <meta name="description" content="Инженерная база 2 710 мониторов (85 брендов): замеры OLED/Mini-LED/IPS, реальные матрицы, цены РФ с пошлиной, тест ПВЗ и сравнение в лоб." />
  <meta name="theme-color" content="#005fb8" />
  <meta property="og:type" content="website" />
- <meta property="og:title" content="monitor_full_database — Инженерная база 2 710 мониторов" />
+ <meta property="og:title" content="monitor_full_database — 2 710 мониторов, 85 брендов" />
  <meta property="og:description" content="Zero-CDN WinUI 3 портал: 361 OLED, 235 Mini-LED, подбор по 6 сценариям, совместимость PS5/Mac/GPU, история цен РФ и 14-шаговый тест ПВЗ." />
  <meta property="og:url" content="https://tapocket.github.io/monitor_full_database/" />
  <meta property="og:image" content="https://tapocket.github.io/monitor_full_database/og-cover.png" />
@@ -2799,13 +2799,20 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
  <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40 shadow-md">
  <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
  <div>
- <h1 class="text-lg md:text-xl font-bold tracking-tight">monitor_full_database — Инженерная база мониторов</h1>
+ <h1 class="text-lg md:text-xl font-bold tracking-tight">monitor_full_database</h1>
  <p class="text-xs text-slate-300 mt-0.5"><span id="hdrBrandCount">0</span> брендов (<span id="hdrSubBrandCount">0</span> суббрендов) • <span id="hdrTotalCount">0</span> моделей • <span id="hdrParamCount">62</span> параметра</p>
  </div>
  <div class="flex flex-wrap items-center gap-1.5">
- <button id="btnToggleLiteMode" class="bg-amber-400 hover:bg-amber-300 text-slate-950 border border-amber-300 text-xs font-extrabold px-3 py-1.5 rounded-lg shadow transition flex items-center gap-1.5" title="Переключить режим сайта: Облегчённая версия (только базовая информация на всех вкладках) ↔ Полная инженерная версия (все 62 параметра и графики)">
- <span id="lblLiteModeIcon">⚡</span> <span id="lblLiteModeText">Облегчённая версия</span>
- </button>
+ <button id="btnOpenCmdPalette" class="bg-amber-500 hover:bg-amber-400 text-slate-950 border border-amber-300 text-xs font-extrabold px-2.5 py-1.5 rounded transition shadow-sm" title="Глобальная командная палитра (Ctrl+K / ⌘K): мгновенный поиск по моделям, индексам матриц CELL, OEM-заводам и быстрым командам">⌨ Команды (Ctrl+K)</button>
+ <button id="btnGoCompare" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold px-2.5 py-1.5 rounded transition">⚖️ Сравнение (<span id="lblCompareCnt">0</span>/4)</button>
+ <button id="btnHeaderOpenTestLab" class="bg-rose-600 hover:bg-rose-500 text-white border border-rose-400 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Единая интерактивная лаборатория проверки монитора в ПВЗ и дома (12 полноэкранных заливок на битые пиксели и 5% Grey + 10 интерактивных стендов)">🧪 Тест экрана</button>
+ <button id="btnOpenGpuCalc" class="bg-purple-700 hover:bg-purple-600 text-white border border-purple-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Калькулятор совместимости с видеокартой и кабелем DP 1.4 / DP 2.1 / HDMI 2.1">🎮 GPU и Кабель</button>
+ <button id="btnOpenMultiMonCalc" class="bg-cyan-700 hover:bg-cyan-600 text-white border border-cyan-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Интерактивный планировщик конфигурации из 2–3 мониторов (ширина стола в см, совпадение высоты в портретном Pivot и PPI)">🖥 2–3 экрана</button>
+ <button id="btnToggleCalc" class="bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-600 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Калькулятор таможенной пошлины РФ и курсов валют">💱 Пошлина и Курс</button>
+ <button id="btnSyncLivePrices" class="bg-emerald-700 hover:bg-emerald-600 text-white border border-emerald-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Центр онлайн-цен, автоподхват prices_live.json и CRON-скрипт">🔄 Онлайн-цены</button>
+ <button id="btnOpenShareSelectionModal" class="bg-teal-600 hover:bg-teal-500 text-white border border-teal-400 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Сохранить, восстановить из файла .json или передать другу вашу подборку (Избранное, Сравнение, видеокарту и заметки)">📤 Поделиться / Бэкап</button>
+ <button id="btnOpenManageDb" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-2.5 py-1.5 rounded transition" title="Добавить или удалить модель/бренд и выгрузить полную базу в CSV / JSON">➕ Управление базой</button>
+ <button id="btnOpenPwaModal" class="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-600 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Установить портал как офлайн PWA-приложение на смартфон или ПК">📲 PWA</button>
  <select id="selCurrencyDisplay" class="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-600 text-xs font-bold px-2 py-1.5 rounded transition cursor-pointer" title="Валюта отображения цен во всей базе (автоматический пересчёт)">
  <option value="RUB" selected>₽ RUB (РФ)</option>
  <option value="USD">$ USD</option>
@@ -2813,19 +2820,12 @@ html.dark .dark\:to-slate-900{--tw-gradient-to:#0f172a}
  <option value="KZT">₸ KZT (Тенге)</option>
  <option value="BYN">Br BYN (Бел. руб)</option>
  </select>
+ <button id="btnToggleLiteMode" class="bg-amber-400 hover:bg-amber-300 text-slate-950 border border-amber-300 text-xs font-extrabold px-3 py-1.5 rounded-lg shadow transition flex items-center gap-1.5" title="Переключить режим сайта: Облегчённая версия (только базовая информация на всех вкладках) ↔ Полная инженерная версия (все 62 параметра и графики)">
+ <span id="lblLiteModeIcon">⚡</span> <span id="lblLiteModeText">Облегчённая версия</span>
+ </button>
  <button id="btnToggleTheme" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-600 text-xs font-bold px-2.5 py-1.5 rounded transition flex items-center gap-1" title="Переключить светлую / тёмную тему">
  <span id="lblThemeIcon">🌙</span> <span id="lblThemeText">Тёмная тема</span>
  </button>
- <button id="btnToggleCalc" class="bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-600 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Калькулятор таможенной пошлины РФ и курсов валют">💱 Пошлина и Курс</button>
- <button id="btnSyncLivePrices" class="bg-emerald-700 hover:bg-emerald-600 text-white border border-emerald-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Центр онлайн-цен, автоподхват prices_live.json и CRON-скрипт">🔄 Онлайн-цены</button>
- <button id="btnOpenGpuCalc" class="bg-purple-700 hover:bg-purple-600 text-white border border-purple-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Калькулятор совместимости с видеокартой и кабелем DP 1.4 / DP 2.1 / HDMI 2.1">🎮 GPU и Кабель</button>
- <button id="btnOpenMultiMonCalc" class="bg-cyan-700 hover:bg-cyan-600 text-white border border-cyan-500 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Интерактивный планировщик конфигурации из 2–3 мониторов (ширина стола в см, совпадение высоты в портретном Pivot и PPI)">🖥 2–3 экрана</button>
- <button id="btnHeaderOpenTestLab" class="bg-rose-600 hover:bg-rose-500 text-white border border-rose-400 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Единая интерактивная лаборатория проверки монитора в ПВЗ и дома (12 полноэкранных заливок на битые пиксели и 5% Grey + 10 интерактивных стендов)">🧪 Тест экрана</button>
- <button id="btnOpenShareSelectionModal" class="bg-teal-600 hover:bg-teal-500 text-white border border-teal-400 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Сохранить, восстановить из файла .json или передать другу вашу подборку (Избранное, Сравнение, видеокарту и заметки)">📤 Поделиться / Бэкап</button>
- <button id="btnOpenCmdPalette" class="bg-amber-500 hover:bg-amber-400 text-slate-950 border border-amber-300 text-xs font-extrabold px-2.5 py-1.5 rounded transition shadow-sm" title="Глобальная командная палитра (Ctrl+K / ⌘K): мгновенный поиск по моделям, индексам матриц CELL, OEM-заводам и быстрым командам">⌨ Команды (Ctrl+K)</button>
- <button id="btnOpenPwaModal" class="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-600 text-xs font-bold px-2.5 py-1.5 rounded transition" title="Установить портал как офлайн PWA-приложение на смартфон или ПК">📲 PWA</button>
- <button id="btnOpenManageDb" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-2.5 py-1.5 rounded transition" title="Добавить или удалить модель/бренд и выгрузить полную базу в CSV / JSON">➕ Управление базой</button>
- <button id="btnGoCompare" class="bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold px-2.5 py-1.5 rounded transition">⚖️ Сравнение (<span id="lblCompareCnt">0</span>/4)</button>
  </div>
  </div>
  <nav class="max-w-7xl mx-auto px-4 flex overflow-x-auto gap-1 border-t border-slate-800 pt-2 pb-1 text-xs font-semibold custom-scroll">

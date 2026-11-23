@@ -88396,9 +88396,14 @@
       "hand": 18300,
       "usd": 194,
       "cny": 1399,
-      "stores": [],
-      "rev_url": "",
-      "rev_auth": "Нет обзора (Ожидается тест)",
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/1f66488c74ecd582/27-monitor-gigabyte-g27q26-cernyj/"
+        }
+      ],
+      "rev_url": "https://club.dns-shop.ru/review/t-71-igrovyie-monitoryi/189795-obzor-monitora-gigabyte-g27q26-universalnyii-qhd-soldat/",
+      "rev_auth": "Клуб DNS (Ноябрь 2026)",
       "is_rev_pair": false,
       "rel_date": "Август 2026",
       "aspect": "16:9",
@@ -196389,7 +196394,12 @@
       "hand": 52435,
       "usd": 506,
       "cny": 3620,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/titan-army-26-5-monitor-g27w9s-ultra-4th-gen-qd-oled-penta-tandem-2k-320-gts-0-03-ms-true-black-5986131228/"
+        }
+      ],
       "rev_auth": "DisplaySpecifications (Titan Army G27T8S / G27W9S Ultra 320Hz QD-OLED)",
       "rev_url": "https://youtu.be/_s-YQV2EQoY",
       "is_rev_pair": false,
@@ -197046,7 +197056,16 @@
       "hand": 37485,
       "usd": 369,
       "cny": 2650,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/xiaomi-27-monitor-redmi-g-pro-27u-4k-320hz-mini-led-100-srgb-1600nits-ofisnye-monitory-freesync-2069095599/"
+        },
+        {
+          "name": "🛒 Яндекс Маркет",
+          "url": "https://market.yandex.ru/card/monitor-xiaomi-redmi-g-pro-27u-4k-27-p27uda-rgp-3840x2160-144hz-ips-hdr-s-nizkoy-zaderzhkoy/5072775196"
+        }
+      ],
       "rev_auth": "DisplaySpecifications (Redmi G Pro 27U 2026 4K 160/320Hz Mini-LED HyperOS 3.0)",
       "rev_url": "https://www.displayspecifications.com/en/news/b26b10d1",
       "is_rev_pair": false,
@@ -201992,7 +202011,12 @@
       "hand": 10500,
       "usd": 111,
       "cny": 799,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Wildberries",
+          "url": "https://www.wildberries.ru/catalog/1179882586/detail.aspx"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/Xiaomi-launches-affordable-300Hz-gaming-monitor-with-AMD-FreeSync-Premium.1433430.0.html",
       "is_rev_pair": false,
@@ -204634,7 +204658,16 @@
       "hand": 91535,
       "usd": 866,
       "cny": 6200,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/91df3302061dd9cb/27-monitor-aoc-ag276uzd-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/product/monitor-aoc-27-ag276uzd-qd-oled-4k-cher-0-03ms-hdmi-dp-usb-m-m-has-piv-2122187/"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/157a106e",
       "is_rev_pair": false,
@@ -208920,7 +208953,16 @@
       "hand": 115685,
       "usd": 1099,
       "cny": 7899,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/product/monitor-asus-32-pg32ucdm3-qd-oled-4k-cher-1ms-hdmi-dp-usb-m-m-has-piv-2169220/"
+        },
+        {
+          "name": "🛒 ОнлайнТрейд",
+          "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/asus/monitor_asus_32_rog_swift_pg32ucdm3_chernyy_qd_oled_led_1ms_16_9_hdmi_m_m_matovaya_has_piv_1000_1_100_90lm0cl0_b01971-5303648.html"
+        }
+      ],
       "rev_auth": "Сайт: RTINGS",
       "rev_url": "https://www.rtings.com/monitor/reviews/asus/rog-swift-oled-pg32ucdm-gen3",
       "is_rev_pair": false,
@@ -209443,7 +209485,12 @@
       "hand": 19900,
       "usd": 212,
       "cny": 1699,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/xiaomi-27-monitor-redmi-g-pro-27u-4k-320hz-mini-led-100-srgb-1600nits-ofisnye-monitory-freesync-2767973832/"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/Xiaomi-intros-new-4K-monitor-with-90W-USB-C-charging-and-up-to-240Hz-refresh-rate.1391804.0.html",
       "is_rev_pair": false,
@@ -210593,7 +210640,12 @@
       "hand": 43540,
       "usd": 419,
       "cny": 2899,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/fa54b2adec5544d0/265-monitor-lenovo-legion-pro-27q-10-belyj/"
+        }
+      ],
       "has_direct": false,
       "rev_auth": "Lenovo PSREF / B&H Lab",
       "rev_url": "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo_Monitors/Lenovo_Legion_27Q_10_OLED/Lenovo_Legion_27Q_10_OLED_Spec.pdf",
@@ -214356,7 +214408,12 @@
       "hand": 16900,
       "usd": 179,
       "cny": 1299,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/viewsonic-27-monitor-igrovoy-monitor-viewsonic-vx2781-2k-pro-6-2k-240hz-hdr400-black-viewsonic-1919946993/"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/model/b7e93bc2",
       "rev_full": "Сайт: DisplaySpecifications: https://www.displayspecifications.com/en/model/b7e93bc2",
@@ -227362,7 +227419,12 @@
       "hand": 43000,
       "usd": 0,
       "cny": 0,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/titan-army-26-5-monitor-g27p9-ultra-4th-gen-qd-oled-penta-tandem-2k-320-gts-0-03-ms-true-black-5617359905/"
+        }
+      ],
       "rev_url": "https://youtu.be/_s-YQV2EQoY",
       "rev_auth": "—",
       "is_rev_pair": false,
@@ -227952,7 +228014,12 @@
       "duty": 0,
       "hand": 10500,
       "comm": "Горячая премьера 25 октября 2026 года (заменяет переоцененный HKC G25H5 за 18 100 ₽): честные 300 Гц, повышенная яркость 400 нит (DisplayHDR 400), 4 порта (2xDP 1.4 + 2xHDMI 2.0) и полноценная регулируемая подставка без пошлины",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Wildberries",
+          "url": "https://www.wildberries.ru/catalog/1179882586/detail.aspx"
+        }
+      ],
       "min_rub": 9500,
       "idx": 6,
       "cat_id": 2454
@@ -228049,7 +228116,16 @@
       "duty": 0,
       "hand": 10800,
       "comm": "Лучший полноразмерный 27″ 2K QHD монитор до 11 000 ₽ в 2026 году (заменяет дублирующий 24.5″ Titan Army P2712R2+ за 12 280 ₽): 200/210 Гц, яркость 400 нит (HDR400), 96% DCI-P3, 4 цифровых порта (2xDP 1.4 + 2xHDMI 2.1) и полноценная регулируемая по высоте подставка без пошлины!",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+Lecoo+N2757Q"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+Lecoo+N2757Q"
+        }
+      ],
       "min_rub": 9800,
       "idx": 10,
       "cat_id": 2489
@@ -228070,7 +228146,16 @@
       "duty": 0,
       "hand": 10900,
       "comm": "Абсолютный ценовой рекордсмен лета-осени 2026 (¥888, заменяет переоцененную СТМ-переклейку Hartens HTMF270Q320 за 16 660 ₽): компактный 24.5″ 2K QHD (120 PPI) 275 Гц монитор от Lenovo Lecoo с яркостью 400 нит и 4 видеовходами (2xDP 1.4 + 2xHDMI 2.1) без пошлины!",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+Lecoo+N2521SQ"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+Lecoo+N2521SQ"
+        }
+      ],
       "min_rub": 9900,
       "idx": 11,
       "cat_id": 2488
@@ -228298,7 +228383,12 @@
       "duty": 0,
       "hand": 18300,
       "comm": "Свежий хит августа 2026 года от А-бренда без таможенной пошлины: честные 275 Гц в 2K QHD, яркость 400–500 нит, умный адаптивный разгон Smart OD, 2x HDMI 2.1 и полная эргономика (ход 130 мм)",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/1f66488c74ecd582/27-monitor-gigabyte-g27q26-cernyj/"
+        }
+      ],
       "min_rub": 17200,
       "idx": 20,
       "cat_id": 1071
@@ -228319,7 +228409,16 @@
       "duty": 0,
       "hand": 18500,
       "comm": "Новинка октября 2026: фирменная эргономика Lenovo Legion (ход 135 мм), 27″ 2K QHD 240 Гц, аппаратная защита глаз без желтизны и динамики 2×3 Вт без таможенной пошлины",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+Legion+27Q-20"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+Legion+27Q-20"
+        }
+      ],
       "min_rub": 16900,
       "idx": 21,
       "cat_id": 2406
@@ -228340,7 +228439,16 @@
       "duty": 0,
       "hand": 18900,
       "comm": "Новинка октября 2026: компактный 23.8″ 2K QHD (123 PPI) 320 Гц с честными 420–600 нит (DisplayHDR 600), стробингом BFI 2.0 и полной эргономикой без пошлины",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Hisense+24G5+Pro"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Hisense+24G5+Pro"
+        }
+      ],
       "min_rub": 17200,
       "idx": 22,
       "cat_id": 2400
@@ -228387,7 +228495,16 @@
       "duty": 0,
       "hand": 19900,
       "comm": "Надежная 31.5-дюймовая новинка 2026 года от А-бренда без таможенной пошлины (заменяет ноунейм ExeGate EG3207A): честный контраст 3500:1 для кино и работы, аппаратная защита глаз SoftBlue и встроенные динамики 2×3 Вт",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Philips+32E3C2500"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Philips+32E3C2500"
+        }
+      ],
       "min_rub": 18400,
       "idx": 24,
       "cat_id": 2399
@@ -228406,7 +228523,12 @@
       "duty": 0,
       "hand": 16900,
       "comm": "Топ 27″ 2K 240 Гц от A-бренда без пошлины: 0 сек Alt+Tab без DSC, 96% P3 и ножка 130 мм (27″ QHD 240Hz Fast IPS Black).",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/viewsonic-27-monitor-igrovoy-monitor-viewsonic-vx2781-2k-pro-6-2k-240hz-hdr400-black-viewsonic-1919946993/"
+        }
+      ],
       "min_rub": 15700,
       "cat_id": 2602
     },
@@ -228529,7 +228651,16 @@
       "duty": 585,
       "hand": 25485,
       "comm": "Лучший 34″ 21:9 UWQHD (3440×1440) 240 Гц ультраширик 2026 года от А-бренда (заменяет 5-й дубль на матрице AUO M270DAN13.A Titan Army P275MS Plus+ за 25 600 ₽): глубокий контраст 4000:1, яркость 410 нит, аппаратная защита глаз Eyesafe 2.0, режим True Split и 2 полноскоростных порта HDMI 2.1 FRL [Цена витрины: 24 900 ₽ | Пошлина РФ: +585 ₽ | ИТОГО «НА РУКИ»: 25 485 ₽]",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+Legion+34W-2c"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+Legion+34W-2c"
+        }
+      ],
       "min_rub": 22900,
       "idx": 30,
       "cat_id": 2530
@@ -228625,7 +228756,12 @@
       "duty": 3640,
       "hand": 43540,
       "comm": "Самый доступный 26.5″ QHD 240Гц QD-OLED монитор от глобального А-бренда: 2x HDMI 2.1 (48 Гбит/с — 240 Гц 10-бит без DSC!), 99% DCI-P3, полная эргономика (26.5″ QHD 240Hz QD-OLED).",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/fa54b2adec5544d0/265-monitor-lenovo-legion-pro-27q-10-belyj/"
+        }
+      ],
       "min_rub": 39900,
       "cat_id": 2558
     },
@@ -228672,7 +228808,16 @@
       "duty": 0,
       "hand": 15900,
       "comm": "Самый доступный 4K 160 Гц игровой и рабочий монитор на рынке РФ без таможенной пошлины (заменяет СТМ-переклейку Hartens HTMF270U320 за 21 050 ₽): редкая матрица BOE 23.8″ 4K со сверхплотностью 185 PPI (вдвое дешевле аналога ViewSonic!), калибровка ΔE < 2, встроенные динамики и полная эргономика",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Thunderobot+JU24F160L"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Thunderobot+JU24F160L"
+        }
+      ],
       "min_rub": 14500,
       "idx": 36,
       "cat_id": 2508
@@ -228693,7 +228838,12 @@
       "duty": 0,
       "hand": 19900,
       "comm": "Лучший в 2026 году рабочий и Mac-совместимый 27″ 4K UHD (3840×2160, 163 PPI) монитор до 20 000 ₽ без таможенной пошлины (вытесняет переоцененный 24.5″ Titan Army P245MS Pro+ за 27 210 ₽): оснащен однокабельной зарядкой ноутбука USB-C 90W PD, яркостью 400 нит, охватом 98% DCI-P3 с калибровкой ΔE < 1.5 и 2x HDMI 2.1! (75Hz Edition).",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/xiaomi-27-monitor-redmi-g-pro-27u-4k-320hz-mini-led-100-srgb-1600nits-ofisnye-monitory-freesync-2767973832/"
+        }
+      ],
       "min_rub": 18200,
       "idx": 37,
       "cat_id": 2544
@@ -228737,7 +228887,16 @@
       "duty": 1535,
       "hand": 29435,
       "comm": "Лучший белоснежный 27″ 4K 160 Гц / FHD 320 Гц Dual-Mode Mini-LED 2026 года (заменяет беззонный 23.8″ ViewSonic VX24G26J-4K за 33 000 ₽): 1 152 зоны локального затемнения, честные 1 000 нит (DisplayHDR 1000) и полностью белое исполнение корпуса и подставки [Цена витрины: 27 900 ₽ | Пошлина РФ: +1 535 ₽ | ИТОГО «НА РУКИ»: 29 435 ₽]",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Pixio+PX27UM"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Pixio+PX27UM"
+        }
+      ],
       "min_rub": 25900,
       "idx": 39,
       "cat_id": 2490
@@ -228758,7 +228917,16 @@
       "duty": 1685,
       "hand": 30585,
       "comm": "Октябрьская новинка 2026 от крупного А-бренда: 27″ 4K 180 Гц + Full HD 360 Гц Dual-Mode, софт Lenovo Artery, подставка 135 мм и динамики [Цена витрины: 28 900 ₽ | Пошлина РФ: +1 685 ₽ | ИТОГО «НА РУКИ»: 30 585 ₽]",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+Legion+27U-20"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+Legion+27U-20"
+        }
+      ],
       "min_rub": 26500,
       "idx": 40,
       "cat_id": 2405
@@ -228833,7 +229001,16 @@
       "duty": 2585,
       "hand": 37485,
       "comm": "Свежий октябрьский хит 2026: 4K 160Hz / FHD 320Hz Dual-Mode Mini-LED (1152 зоны, пик 1150 нит), встроенная система Smart TV HyperOS 3.0 и динамики 2×5 Вт с HDMI eARC [Цена витрины: 34 900 ₽ | Пошлина РФ: +2 585 ₽ | ИТОГО «НА РУКИ»: 37 485 ₽]",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/xiaomi-27-monitor-redmi-g-pro-27u-4k-320hz-mini-led-100-srgb-1600nits-ofisnye-monitory-freesync-2069095599/"
+        },
+        {
+          "name": "🛒 Яндекс Маркет",
+          "url": "https://market.yandex.ru/card/monitor-xiaomi-redmi-g-pro-27u-4k-27-p27uda-rgp-3840x2160-144hz-ips-hdr-s-nizkoy-zaderzhkoy/5072775196"
+        }
+      ],
       "min_rub": 31900,
       "idx": 43,
       "cat_id": 2394
@@ -228852,7 +229029,16 @@
       "duty": 1840,
       "hand": 31740,
       "comm": "Честные 10-bit IGZO 4K 165 Гц + зарядка ноутбука USB-C 96W + KVM + колонки 2×3 Вт (вытеснил оверпрайс Carrera CRL325) (27″ 4K 165Hz IGZO Fast IPS USB-C 96W KVM).",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=ViewSonic+VX2781-4K-PRO-6"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=ViewSonic+VX2781-4K-PRO-6"
+        }
+      ],
       "min_rub": 27800,
       "cat_id": 2601
     },
@@ -229027,7 +229213,12 @@
       "duty": 3500,
       "hand": 43000,
       "comm": "Бюджетный вход в 26.5″ 320 Гц QD-OLED Gen 4 (~43 000 ₽ на руки с пошлиной); свежий обзор «Джун»",
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/titan-army-26-5-monitor-g27p9-ultra-4th-gen-qd-oled-penta-tandem-2k-320-gts-0-03-ms-true-black-5617359905/"
+        }
+      ],
       "min_rub": 39500,
       "cat_id": 2754
     },
@@ -229377,7 +229568,16 @@
       "spk": "Нет встроенных колонок (Только 3.5 мм аудиовыход на наушники/внешнюю акустику)",
       "rub": 85100,
       "usd": 901,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=ASUS+ROG+Swift+OLED+PG259QWS+Ace"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=ASUS+ROG+Swift+OLED+PG259QWS+Ace"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/b93610d7",
       "cat_id": 1
@@ -229420,7 +229620,16 @@
       "spk": "Нет (оптический выход S/PDIF + 3.5 мм)",
       "rub": 102900,
       "usd": 1099,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/product/monitor-asus-32-pg32ucdm3-qd-oled-4k-cher-1ms-hdmi-dp-usb-m-m-has-piv-2169220/"
+        },
+        {
+          "name": "🛒 ОнлайнТрейд",
+          "url": "https://www.onlinetrade.ru/catalogue/monitory-c23/asus/monitor_asus_32_rog_swift_pg32ucdm3_chernyy_qd_oled_led_1ms_16_9_hdmi_m_m_matovaya_has_piv_1000_1_100_90lm0cl0_b01971-5303648.html"
+        }
+      ],
       "rev_auth": "Сайт: RTINGS",
       "rev_url": "https://www.rtings.com/monitor/reviews/asus/rog-swift-oled-pg32ucdm-gen3",
       "cat_id": 2538
@@ -229439,7 +229648,16 @@
       "spk": "Да: мощные встроенные стереодинамики 2×8 Вт + KVM + USB-C 65W",
       "rub": 79200,
       "usd": 838,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=AOC+AGON+Pro+AGP327UZD+2026"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=AOC+AGON+Pro+AGP327UZD+2026"
+        }
+      ],
       "rev_auth": "Сайт: ITHome",
       "rev_url": "https://www.ithome.com/0/986/842.htm",
       "cat_id": 1513
@@ -229560,7 +229778,16 @@
       "rub": 64900,
       "usd": 686,
       "cny": 4910,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=ViewSonic+VX27G70Z-2K-5"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=ViewSonic+VX27G70Z-2K-5"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/644110c9",
       "idx": 8,
@@ -229585,7 +229812,16 @@
       "rub": 69900,
       "usd": 739,
       "cny": 5290,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Dell+Alienware+AW2527HX"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Dell+Alienware+AW2527HX"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/879910b7",
       "idx": 9,
@@ -229610,7 +229846,16 @@
       "rub": 79900,
       "usd": 845,
       "cny": 6050,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Lenovo+ThinkVision+P27UL-40"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Lenovo+ThinkVision+P27UL-40"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/821710ad",
       "idx": 10,
@@ -229635,7 +229880,16 @@
       "rub": 139000,
       "usd": 1470,
       "cny": 10530,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Samsung+Odyssey+OLED+G9+G95SJ"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Samsung+Odyssey+OLED+G9+G95SJ"
+        }
+      ],
       "rev_auth": "Сайт: TFTCentral",
       "rev_url": "https://tftcentral.co.uk/news/samsung-unveil-their-latest-gaming-monitors-at-gamescom-2026",
       "idx": 11,
@@ -229655,7 +229909,16 @@
       "spk": "2 × 5 Вт + 3.5 мм аудио",
       "rub": 79900,
       "usd": 829,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=ASRock+Taichi+TCO27USA-W"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=ASRock+Taichi+TCO27USA-W"
+        }
+      ],
       "rev_auth": "DisplaySpecifications / TFTCentral",
       "rev_url": "https://www.displayspecifications.com/en/news/ea7110a5",
       "cat_id": 2556
@@ -229679,7 +229942,16 @@
       "rub": 97200,
       "usd": 1029,
       "cny": 8320,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=MSI+MPG+OLED+322URDX36"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=MSI+MPG+OLED+322URDX36"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://tftcentral.co.uk/news/msi-unveil-the-worlds-first-32-4k-360hz-qd-oled-monitor-with-triple-mode-support",
       "idx": 13,
@@ -229704,7 +229976,16 @@
       "rub": 79900,
       "usd": 845,
       "cny": 6050,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=GIGABYTE+AORUS+Elite+FO27Q54G"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=GIGABYTE+AORUS+Elite+FO27Q54G"
+        }
+      ],
       "rev_auth": "Сайт: TFTCentral",
       "rev_url": "https://tftcentral.co.uk/news/gigabyte-announce-the-aorus-elite-series-at-computex-2026-with-a-range-of-new-displays",
       "idx": 14,
@@ -229729,7 +230010,16 @@
       "rub": 81900,
       "usd": 866,
       "cny": 6200,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 DNS",
+          "url": "https://www.dns-shop.ru/product/91df3302061dd9cb/27-monitor-aoc-ag276uzd-cernyj/"
+        },
+        {
+          "name": "🛒 Ситилинк",
+          "url": "https://www.citilink.ru/product/monitor-aoc-27-ag276uzd-qd-oled-4k-cher-0-03ms-hdmi-dp-usb-m-m-has-piv-2122187/"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/157a106e",
       "idx": 15,
@@ -229784,7 +230074,16 @@
       "rub": 78900,
       "usd": 835,
       "cny": 5980,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=GIGABYTE+AORUS+Elite+FO27U24GP+ICE"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=GIGABYTE+AORUS+Elite+FO27U24GP+ICE"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/Gigabyte-prepping-27-inch-4K-gaming-monitor-with-striking-design-glossy-WOLED-panel.1376428.0.html",
       "idx": 17,
@@ -229809,7 +230108,16 @@
       "rub": 106900,
       "usd": 1149,
       "cny": 8199,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Samsung+Odyssey+OLED+G8+G80SJ"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Samsung+Odyssey+OLED+G8+G80SJ"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/b5201080",
       "idx": 18,
@@ -229857,7 +230165,16 @@
       "spk": "Нет встроенных колонок (Только 3.5 мм аудиовыход на наушники/внешнюю акустику)",
       "rub": 92000,
       "usd": 974,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=HKC+M10+Ultra"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=HKC+M10+Ultra"
+        }
+      ],
       "rev_auth": "Сайт: TFTCentral",
       "rev_url": "https://tftcentral.co.uk/news/hkc-m10-ultra-announced-with-the-worlds-first-rgb-mini-led-backlight",
       "cat_id": 560
@@ -229960,7 +230277,16 @@
       "spk": "Нет встроенных колонок (Только 3.5 мм аудиовыход на наушники/внешнюю акустику)",
       "rub": 69000,
       "usd": 730,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=RedMagic+5K+Mini-LED+Gaming+Monitor"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=RedMagic+5K+Mini-LED+Gaming+Monitor"
+        }
+      ],
       "rev_auth": "Сайт: VideoCardz",
       "rev_url": "https://www.displayspecifications.com/ru/news/3f4010cc",
       "cat_id": 2180
@@ -229979,7 +230305,16 @@
       "spk": "Нет (выход 3.5 мм + держатель гарнитуры)",
       "rub": 54900,
       "usd": 569,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=AOC+AGON+Pro+AGP257FT"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=AOC+AGON+Pro+AGP257FT"
+        }
+      ],
       "rev_auth": "Сайт: TFTCentral",
       "rev_url": "https://tftcentral.co.uk/news/aoc-agon-pro-agp257ft-offers-a-24-5-1080p-1050hz-esports-gaming-display",
       "cat_id": 2557
@@ -230083,7 +230418,16 @@
       "rub": 34900,
       "usd": 369,
       "cny": 2650,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🛒 Ozon",
+          "url": "https://www.ozon.ru/product/xiaomi-27-monitor-redmi-g-pro-27u-4k-320hz-mini-led-100-srgb-1600nits-ofisnye-monitory-freesync-2069095599/"
+        },
+        {
+          "name": "🛒 Яндекс Маркет",
+          "url": "https://market.yandex.ru/card/monitor-xiaomi-redmi-g-pro-27u-4k-27-p27uda-rgp-3840x2160-144hz-ips-hdr-s-nizkoy-zaderzhkoy/5072775196"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/b26b10d1",
       "idx": 29,
@@ -230108,7 +230452,16 @@
       "rub": 58900,
       "usd": 623,
       "cny": 4460,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=TCL+27P2A+Ultra"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=TCL+27P2A+Ultra"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.notebookcheck.net/TCL-P2A-Ultra-Super-fast-mini-LED-gaming-monitor-arrives-with-peak-1040-Hz-refresh-rate.1243267.0.html",
       "idx": 30,
@@ -230133,7 +230486,16 @@
       "rub": 85200,
       "usd": 902,
       "cny": 5290,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=MSI+MPG+271KRAW18"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=MSI+MPG+271KRAW18"
+        }
+      ],
       "rev_auth": "Сайт: DisplaySpecifications",
       "rev_url": "https://www.displayspecifications.com/en/news/e3441006",
       "idx": 31,
@@ -230158,7 +230520,16 @@
       "rub": 41000,
       "usd": 354,
       "cny": 2950,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=AOC+AGON+Pro+AGP277QKM"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=AOC+AGON+Pro+AGP277QKM"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.ixbt.com/news/2026/10/17/za-etot-monitor-s-podsvetkoi-qd-miniled-prosiat-485-dollarov-predstavlen-aoc-agon-pro-agp277qkm.html",
       "idx": 32,
@@ -230178,7 +230549,16 @@
       "spk": "Да: встроенные стереодинамики 2×1.5 Вт + USB-C PD + USB-хаб",
       "rub": 54900,
       "usd": 579,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=NPC+NexDisplay+Mini+Pro"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=NPC+NexDisplay+Mini+Pro"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/This-portable-16-inch-monitor-offers-1-261-nits-240Hz-and-2-000-mini-LED-zones.1288468.0.html",
       "cat_id": 2598
@@ -230202,7 +230582,16 @@
       "rub": 74900,
       "usd": 792,
       "cny": 5999,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Hisense+GX+Ultra"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Hisense+GX+Ultra"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/Hisense-GX-Ultra-5K-gaming-monitor-with-RGB-mini-LED-panel-listed-for-pre-order-in-China.1291467.0.html",
       "idx": 34,
@@ -230227,7 +230616,16 @@
       "rub": 59100,
       "usd": 625,
       "cny": 4499,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=AOC+AGON+Pro+AGP277KXM+Ultra"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=AOC+AGON+Pro+AGP277KXM+Ultra"
+        }
+      ],
       "rev_auth": "Сайт: NotebookCheck",
       "rev_url": "https://www.notebookcheck.net/AOC-intros-new-5K-gaming-monitor-with-excellent-color-coverage-and-2000-dimming-zones.1382591.0.html",
       "idx": 35,
@@ -230293,7 +230691,16 @@
       "spk": "Нет встроенных колонок (Только 3.5 мм аудиовыход на наушники/внешнюю акустику)",
       "rub": 95200,
       "usd": 1007,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=Dell+Alienware+AW3226Q"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=Dell+Alienware+AW3226Q"
+        }
+      ],
       "rev_auth": "Сайт: TFTCentral",
       "rev_url": "https://tftcentral.co.uk/reviews/alienware-aw3226q",
       "cat_id": 956
@@ -230312,7 +230719,16 @@
       "spk": "Нет встроенных колонок (Только 3.5 мм аудиовыход на наушники/внешнюю акустику)",
       "rub": 83600,
       "usd": 885,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=LG+27GM950B"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=LG+27GM950B"
+        }
+      ],
       "rev_auth": "RTINGS (Лучший 5K Mini-LED монитор 2026 — 2304 зоны)",
       "rev_url": "https://www.rtings.com/monitor/reviews/best/mini-led",
       "cat_id": 402
@@ -230331,7 +230747,16 @@
       "spk": "—",
       "rub": 0,
       "usd": 0,
-      "stores": [],
+      "stores": [
+        {
+          "name": "🔎 Поиск Ozon",
+          "url": "https://www.ozon.ru/search/?text=KOORUI+S2741LM"
+        },
+        {
+          "name": "🔎 Яндекс Маркет",
+          "url": "https://market.yandex.ru/search?text=KOORUI+S2741LM"
+        }
+      ],
       "rev_auth": "—",
       "rev_url": "https://tftcentral.co.uk/reviews/koorui-s2741lm",
       "cat_id": 2759

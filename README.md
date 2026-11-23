@@ -1,4 +1,4 @@
-# 🖥️ monitor_full_database — Инженерная база мониторов
+# 🖥️ monitor_full_database
 
 ![Модели](https://img.shields.io/badge/Моделей-2%20710-005fb8?style=for-the-badge)
 ![Бренды](https://img.shields.io/badge/Брендов-85-0f7b0f?style=for-the-badge)
@@ -10,6 +10,19 @@
 Открытая инженерная база мониторов (**2 710 моделей**, **85 брендов**, 361 OLED, 235 Mini-LED) с единым источником истины (`database_master.json`), книгой Excel на **18 вкладок** (0 ошибок формул), плоской выгрузкой CSV (**30 столбцов**), полностью автономным веб-порталом в стиле **WinUI 3 / Fluent Design 2** (Zero-CDN), статическим **JSON API (`api/v1/`)**, **Тест-Лабораторией и Режимом ПВЗ**, CI/CD на GitHub Actions и **Telegram-ботом** подбора.
 
 🌐 **Живой портал (GitHub Pages):** https://tapocket.github.io/monitor_full_database/
+
+
+## 📸 Скриншоты
+
+![monitor_full_database — Обложка портала](og-cover.png)
+
+| Обзор каталога (Excel — 18 вкладок) | Витрина «Рынок РФ» |
+| :---: | :---: |
+| ![Обзор каталога](docs/screenshots/excel_overview.png) | ![Рынок РФ](docs/screenshots/excel_market_rf.png) |
+
+| Сводная аналитика по 85 брендам | Тесты и проверка экрана |
+| :---: | :---: |
+| ![Сводная по брендам](docs/screenshots/excel_brands_summary.png) | ![Тесты экрана](docs/screenshots/excel_tests_sheet.png) |
 
 ## ✨ Главные возможности портала
 
@@ -28,7 +41,7 @@
   * Автоподбор **похожих аналогов** (дешевле или с гарантией РФ) с переходом в сравнение в 1 клик.
 * **Тест-Лаборатория и Режим ПВЗ (`#test=pvz`, `#test=guided`):**
   * 14-шаговый тест экрана (битые пиксели, 5% Grey OLED, FALD, 3× HiDPI, осциллограф Frame-Time), мобильный чек-лист приёмки и база сервисных меню для 47 брендов.
-  * Прямые карточки магазинов РФ: **381 прямая карточка DNS** (`/product/`), Ситилинк, Регард, ОнлайнТрейд, Ozon, Яндекс Маркет и AliExpress.
+  * Прямые карточки магазинов РФ: **415+ прямых карточек DNS** (`/product/`), Ситилинк, Регард, ОнлайнТрейд, Ozon, Яндекс Маркет и AliExpress.
 
 ## 📡 Публичный статический JSON API (`api/v1/`)
 
