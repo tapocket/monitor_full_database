@@ -111,10 +111,10 @@ def find_triggered_alerts(snapshot_path: str = SNAPSHOT_PATH, db_path: str = ALE
 
 
 def load_service_menus() -> list[dict]:
-    if not os.path.exists(MASTER_JSON):
+    if not os.path.exists(MASTER_PATH):
         return []
     try:
-        with open(MASTER_JSON, "r", encoding="utf-8") as fp:
+        with open(MASTER_PATH, "r", encoding="utf-8") as fp:
             data = json.load(fp)
         return (data.get("ref_sheets") or {}).get("service_menus") or []
     except Exception:
