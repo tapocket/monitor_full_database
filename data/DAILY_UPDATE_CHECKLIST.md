@@ -1,10 +1,10 @@
-# Ежедневный чеклист обновления `monitor_full_database` (2026-11-23)
+# Ежедневный чеклист обновления `monitor_full_database` (2026-11-24)
 
 ## Сводка состояния базы
 - Всего моделей в каталоге: **2710** (витрина РФ: 53, флагманы: 41)
 - Прямые карточки DNS `/product/`: **416** | Целевой поиск DNS `/search/`: **33**
-- История цен (`data/price_history/`): **1** файл(ов), **769** записей
-- Битые ссылки из последнего CI-аудита (404/410): **0**
+- История цен (`data/price_history/`): **1** файл(ов), **940** записей
+- Битые ссылки из последнего CI-аудита (404/410): **2**
 
 ## 1. Приоритет: новинки 2026 (OLED / Mini-LED) без ссылки на обзор
 Найдено **122** моделей (показаны первые 15):
@@ -53,9 +53,31 @@
 - [ ] `#413` **LG 34U601B** (22 699 ₽)
 - [ ] `#392` **LG 27G550B** (21 299 ₽)
 
+## 4. Битые ссылки (404/410) к замене
+
+- [ ] **ASUS TUF Gaming VG27UQEL5A** (410): https://www.regard.ru/product/798417/monitor-asus-27-vg27uqel5a-tuf-gaming
+- [ ] **ASUS ROG Strix OLED XG27UCDMG** (410): https://www.dns-shop.ru/product/663356be23d0d9cb/265-monitor-asus-rog-strix-oled-xg27ucdmg-cernyj/
+
 ## Команды для обновления
 ```bash
 python3 scripts/add_or_update_monitor.py --help
 python3 build_database.py --master database_master.json --template-xlsx monitor_full_database.xlsx --template-html monitor_full_database.html --outdir . --recalc --verify
 python3 scripts/pre_deploy_check.py
 ```
+
+## 5. Свежие обзоры и новости (RSS-радар TFTCentral / «Джун»)
+
+- [ ] **[TFTCentral]** The Best Black Friday Monitor Deals – 2026 Tracker — https://tftcentral.co.uk/articles/the-best-black-friday-monitor-deals-2026-tracker
+- [ ] **[TFTCentral]** The Best Asus Monitor Black Friday Deals for 2026 — https://tftcentral.co.uk/articles/the-best-asus-monitor-black-friday-deals-for-2026
+- [ ] **[TFTCentral]** AOC Launch Their Black Friday Monitor Deals for 2026 [USA] — https://tftcentral.co.uk/articles/aoc-launch-their-black-friday-monitor-deals-for-2026-usa
+- [ ] **[TFTCentral]** All the Best Gigabyte Black Friday Monitor Deals for 2026 Now Live! — https://tftcentral.co.uk/articles/all-the-best-gigabyte-black-friday-monitor-deals-for-2026-now-live
+- [ ] **[TFTCentral]** New OLED Monitors for 2027, Buy Now or Wait? — https://tftcentral.co.uk/videos/new-oled-monitors-for-2027-buy-now-or-wait
+- [ ] **[TFTCentral]** The Best Black Friday MSI Monitor Deals Are Now Live for 2026 [UK] — https://tftcentral.co.uk/articles/the-best-black-friday-msi-monitor-deals-are-now-live-for-2026
+- [ ] **[TFTCentral]** MSI MEG X — https://tftcentral.co.uk/reviews/msi-meg-x
+- [ ] **[TFTCentral]** Alienware Fixed the #1 Issue with the AW3926QW OLED — https://tftcentral.co.uk/videos/alienware-fixed-the-1-issue-with-the-aw3926qw-oled
+- [ ] **[TFTCentral]** The First HDMI 2.2 Ultra96 Certified Cables Arrive, Ready for Future Devices — https://tftcentral.co.uk/news/the-first-hdmi-2-2-ultra96-certified-cables-arrive-ready-for-future-devices
+- [ ] **[TFTCentral]** The Philips 36M4C5500P is the World’s First 36” Ultrawide Gaming Monitor — https://tftcentral.co.uk/news/the-philips-36m4c5500p-is-the-worlds-first-36-ultrawide-gaming-monitor
+- [ ] **[TFTCentral]** Philips 25M4P5200T – More Details of this 24.5″ 1080p 1000Hz Panel Revealed — https://tftcentral.co.uk/news/philips-25m4p5200t-more-details-of-this-24-5-1080p-1000hz-panel-revealed
+- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/09Ij9qgFna4
+- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/eMZ252d84vk
+- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/fMYCpEWNhZA
