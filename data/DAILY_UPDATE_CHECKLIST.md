@@ -1,9 +1,9 @@
-# Ежедневный чеклист обновления `monitor_full_database` (2026-11-26)
+# Ежедневный чеклист обновления `monitor_full_database` (2026-11-27)
 
 ## Сводка состояния базы
 - Всего моделей в каталоге: **2710** (витрина РФ: 53, флагманы: 41)
 - Прямые карточки DNS `/product/`: **416** | Целевой поиск DNS `/search/`: **33**
-- История цен (`data/price_history/`): **1** файл(ов), **1282** записей
+- История цен (`data/price_history/`): **1** файл(ов), **1453** записей
 - Битые ссылки из последнего CI-аудита (404/410): **2**
 
 ## 1. Приоритет: новинки 2026 (OLED / Mini-LED) без ссылки на обзор
@@ -67,6 +67,8 @@ python3 scripts/pre_deploy_check.py
 
 ## 5. Свежие обзоры и новости (RSS-радар TFTCentral / «Джун»)
 
+- [ ] **[TFTCentral]** Asus ROG Swift PG259QWS Ace — https://tftcentral.co.uk/best-settings/asus-rog-swift-pg259qws-ace-2
+- [ ] **[TFTCentral]** Asus ROG Swift PG259QWS Ace — https://tftcentral.co.uk/reviews/asus-rog-swift-pg259qws-ace
 - [ ] **[TFTCentral]** The Best Black Friday Monitor Deals – 2026 Tracker — https://tftcentral.co.uk/articles/the-best-black-friday-monitor-deals-2026-tracker
 - [ ] **[TFTCentral]** The Best Asus Monitor Black Friday Deals for 2026 — https://tftcentral.co.uk/articles/the-best-asus-monitor-black-friday-deals-for-2026
 - [ ] **[TFTCentral]** The Best Black Friday MSI Monitor Deals Are Now Live for 2026 — https://tftcentral.co.uk/articles/the-best-black-friday-msi-monitor-deals-are-now-live-for-2026
@@ -77,7 +79,6 @@ python3 scripts/pre_deploy_check.py
 - [ ] **[TFTCentral]** AOC Launch Their Black Friday Monitor Deals for 2026 [USA] — https://tftcentral.co.uk/articles/aoc-launch-their-black-friday-monitor-deals-for-2026-usa
 - [ ] **[TFTCentral]** New OLED Monitors for 2027, Buy Now or Wait? — https://tftcentral.co.uk/videos/new-oled-monitors-for-2027-buy-now-or-wait
 - [ ] **[TFTCentral]** MSI MEG X — https://tftcentral.co.uk/reviews/msi-meg-x
-- [ ] **[TFTCentral]** Alienware Fixed the #1 Issue with the AW3926QW OLED — https://tftcentral.co.uk/videos/alienware-fixed-the-1-issue-with-the-aw3926qw-oled
 - [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/09Ij9qgFna4
 - [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/eMZ252d84vk
 - [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/fMYCpEWNhZA
