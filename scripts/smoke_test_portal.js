@@ -34,7 +34,7 @@ if (!scripts.length) {
   process.exit(1);
 }
 let js = scripts[scripts.length - 1][1];
-if (html.includes('src="data/app.js"')) {
+if (/src="data\/app\.js(?:\?v=[0-9a-f]+)?"/.test(html)) {
   const appJsPath = require('path').join(require('path').dirname(htmlPath), 'data', 'app.js');
   if (!fs.existsSync(appJsPath)) { console.error('FAIL: missing data/app.js'); process.exit(1); }
   js = js + '\n' + fs.readFileSync(appJsPath, 'utf8');

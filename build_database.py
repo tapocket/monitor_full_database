@@ -1034,9 +1034,12 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
             app_js_path = os.path.join(data_dir, "app.js")
             with open(app_js_path, "w", encoding="utf-8") as fp_app:
                 fp_app.write(app_js_code)
+            import hashlib as _hl
+            _db_v = _hl.sha256(open(payload_js_path, "rb").read()).hexdigest()[:8]
+            _app_v = _hl.sha256(app_js_code.encode("utf-8")).hexdigest()[:8]
             split_html = (
                 split_html[:sc_pos]
-                + '<script src="data/db_payload.js"></script>\n<script src="data/app.js"></script>'
+                + f'<script src="data/db_payload.js?v={_db_v}"></script>\n<script src="data/app.js?v={_app_v}"></script>'
                 + split_html[sc_end + len("</script>"):]
             )
             index_html_path = os.path.join(out_dir, "index.html")

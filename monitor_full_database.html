@@ -30,6 +30,7 @@ button{background-color:transparent;background-image:none;cursor:pointer}
 table{text-indent:0;border-color:inherit;border-collapse:collapse}
 a{color:inherit;text-decoration:inherit}
 .absolute{position:absolute}
+.accent-amber-500{accent-color:#f59e0b}
 .accent-amber-600{accent-color:#d97706}
 .accent-amber-700{accent-color:#b45309}
 .accent-blue-600{accent-color:#2563eb}
@@ -43,7 +44,6 @@ a{color:inherit;text-decoration:inherit}
 .accent-lime-600{accent-color:#65a30d}
 .accent-lime-700{accent-color:#4d7c0f}
 .accent-orange-600{accent-color:#ea580c}
-.accent-rose-600{accent-color:#e11d48}
 .accent-sky-600{accent-color:#0284c7}
 .accent-sky-700{accent-color:#0369a1}
 .accent-slate-700{accent-color:#334155}
@@ -83,7 +83,6 @@ a{color:inherit;text-decoration:inherit}
 .bg-cyan-600{background-color:#0891b2}
 .bg-cyan-700{background-color:#0e7490}
 .bg-emerald-100{background-color:#d1fae5}
-.bg-emerald-100\/90{background-color:rgba(209,250,229,0.9)}
 .bg-emerald-400{background-color:#34d399}
 .bg-emerald-50{background-color:#ecfdf5}
 .bg-emerald-50\/50{background-color:rgba(236,253,245,0.5)}
@@ -125,7 +124,6 @@ a{color:inherit;text-decoration:inherit}
 .bg-neutral-900{background-color:#171717}
 .bg-neutral-950{background-color:#0a0a0a}
 .bg-orange-100\/90{background-color:rgba(255,237,213,0.9)}
-.bg-orange-50{background-color:#fff7ed}
 .bg-orange-50\/70{background-color:rgba(255,247,237,0.7)}
 .bg-pink-50\/70{background-color:rgba(253,242,248,0.7)}
 .bg-purple-50{background-color:#faf5ff}
@@ -136,8 +134,6 @@ a{color:inherit;text-decoration:inherit}
 .bg-red-100{background-color:#fee2e2}
 .bg-red-50\/70{background-color:rgba(254,242,242,0.7)}
 .bg-rose-100{background-color:#ffe4e6}
-.bg-rose-100\/80{background-color:rgba(255,228,230,0.8)}
-.bg-rose-100\/90{background-color:rgba(255,228,230,0.9)}
 .bg-rose-400{background-color:#fb7185}
 .bg-rose-50{background-color:#fff1f2}
 .bg-rose-50\/60{background-color:rgba(255,241,242,0.6)}
@@ -195,7 +191,6 @@ a{color:inherit;text-decoration:inherit}
 .border-amber-400{border-color:#fbbf24}
 .border-amber-400\/50{border-color:rgba(251,191,36,0.5)}
 .border-amber-400\/60{border-color:rgba(251,191,36,0.6)}
-.border-amber-500{border-color:#f59e0b}
 .border-amber-500\/50{border-color:rgba(245,158,11,0.5)}
 .border-b{border-bottom-width:1px;border-bottom-style:solid}
 .border-blue-200{border-color:#bfdbfe}
@@ -225,7 +220,6 @@ a{color:inherit;text-decoration:inherit}
 .border-indigo-500\/40{border-color:rgba(99,102,241,0.4)}
 .border-lime-300{border-color:#bef264}
 .border-lime-400{border-color:#a3e635}
-.border-orange-300{border-color:#fdba74}
 .border-orange-400{border-color:#fb923c}
 .border-pink-300{border-color:#f9a8d4}
 .border-pink-400{border-color:#f472b6}
@@ -303,9 +297,7 @@ a{color:inherit;text-decoration:inherit}
 .from-amber-500{--tw-gradient-from:#f59e0b}
 .from-emerald-50{--tw-gradient-from:#ecfdf5}
 .from-emerald-600{--tw-gradient-from:#059669}
-.from-indigo-600{--tw-gradient-from:#4f46e5}
 .from-sky-50\/80{--tw-gradient-from:rgba(240,249,255,0.8)}
-.from-sky-600{--tw-gradient-from:#0284c7}
 .from-slate-900{--tw-gradient-from:#0f172a}
 .from-slate-950{--tw-gradient-from:#020617}
 .from-teal-50\/80{--tw-gradient-from:rgba(240,253,250,0.8)}
@@ -342,7 +334,6 @@ a{color:inherit;text-decoration:inherit}
 .h-full{height:100%}
 .hidden{display:none}
 .hover\:bg-amber-100:hover{background-color:#fef3c7}
-.hover\:bg-amber-200:hover{background-color:#fde68a}
 .hover\:bg-amber-300:hover{background-color:#fcd34d}
 .hover\:bg-amber-400:hover{background-color:#fbbf24}
 .hover\:bg-amber-500:hover{background-color:#f59e0b}
@@ -370,7 +361,6 @@ a{color:inherit;text-decoration:inherit}
 .hover\:bg-indigo-500:hover{background-color:#6366f1}
 .hover\:bg-indigo-600:hover{background-color:#4f46e5}
 .hover\:bg-lime-400:hover{background-color:#a3e635}
-.hover\:bg-orange-100:hover{background-color:#ffedd5}
 .hover\:bg-orange-600:hover{background-color:#ea580c}
 .hover\:bg-purple-100:hover{background-color:#f3e8ff}
 .hover\:bg-purple-400:hover{background-color:#c084fc}
@@ -400,15 +390,9 @@ a{color:inherit;text-decoration:inherit}
 .hover\:bg-white:hover{background-color:#ffffff}
 .hover\:bg-white\/20:hover{background-color:rgba(255,255,255,0.2)}
 .hover\:border-blue-500:hover{border-color:#3b82f6}
-.hover\:from-emerald-500:hover{--tw-gradient-from:#10b981}
-.hover\:from-indigo-500:hover{--tw-gradient-from:#6366f1}
-.hover\:from-sky-500:hover{--tw-gradient-from:#0ea5e9}
 .hover\:text-sky-600:hover{color:#0284c7}
 .hover\:text-slate-800:hover{color:#1e293b}
 .hover\:text-white:hover{color:#ffffff}
-.hover\:to-blue-500:hover{--tw-gradient-to:#3b82f6}
-.hover\:to-teal-500:hover{--tw-gradient-to:#14b8a6}
-.hover\:to-violet-500:hover{--tw-gradient-to:#8b5cf6}
 .hover\:underline:hover{text-decoration-line:underline}
 .inline-block{display:inline-block}
 .inline-flex{display:inline-flex}
@@ -640,7 +624,6 @@ a{color:inherit;text-decoration:inherit}
 .text-violet-950{color:#2e1065}
 .text-white{color:#ffffff}
 .text-xs{font-size:0.75rem;line-height:1rem}
-.to-blue-600{--tw-gradient-to:#2563eb}
 .to-emerald-50\/80{--tw-gradient-to:rgba(236,253,245,0.8)}
 .to-indigo-50\/80{--tw-gradient-to:rgba(238,242,255,0.8)}
 .to-indigo-950{--tw-gradient-to:#1e1b4b}
@@ -649,8 +632,6 @@ a{color:inherit;text-decoration:inherit}
 .to-sky-600{--tw-gradient-to:#0284c7}
 .to-slate-900{--tw-gradient-to:#0f172a}
 .to-slate-950{--tw-gradient-to:#020617}
-.to-teal-600{--tw-gradient-to:#0d9488}
-.to-violet-600{--tw-gradient-to:#7c3aed}
 .top-0{top:0px}
 .top-full{top:100%}
 .tracking-tight{letter-spacing:-0.025em}
@@ -674,6 +655,7 @@ a{color:inherit;text-decoration:inherit}
 .w-52{width:13rem}
 .w-60{width:15rem}
 .w-64{width:16rem}
+.w-80{width:20rem}
 .w-\[62\%\]{width:62%}
 .w-full{width:100%}
 .whitespace-nowrap{white-space:nowrap}
@@ -710,6 +692,7 @@ html.dark .dark\:border-purple-600{border-color:#9333ea}
 html.dark .dark\:border-sky-800{border-color:#075985}
 html.dark .dark\:border-slate-600{border-color:#475569}
 html.dark .dark\:border-slate-700{border-color:#334155}
+html.dark .dark\:border-slate-700\/70{border-color:rgba(51,65,85,0.7)}
 html.dark .dark\:border-slate-800{border-color:#1e293b}
 html.dark .dark\:border-violet-800{border-color:#5b21b6}
 html.dark .dark\:divide-slate-700 > :not([hidden]) ~ :not([hidden]){border-color:#334155}
@@ -2112,8 +2095,9 @@ body {
  <!-- Row 1: 6 Primary Buyer Selectors + Found Counter & Reset -->
  <div class="flex flex-wrap items-center justify-between gap-2.5">
  <div class="flex flex-wrap items-center gap-2.5">
+ <div class="flex flex-wrap items-center gap-2">
  <div class="flex items-center gap-1.5">
- <label class="font-bold text-slate-700 whitespace-nowrap">Сортировка:</label>
+ <label class="font-bold text-slate-700 dark:text-slate-300 whitespace-nowrap">Сортировка:</label>
  <select id="selCatalogSort" class="border border-slate-300 rounded-lg px-2.5 py-1 bg-white font-semibold">
  <option value="default" selected>По умолчанию (Бренд и Год)</option>
  <option value="hand_asc">Цена «на руки» с пошлиной РФ (дешевле ↑)</option>
@@ -2126,7 +2110,7 @@ body {
  </select>
  </div>
  <div class="flex items-center gap-1.5">
- <label class="font-bold text-slate-700 whitespace-nowrap">Бюджет «на руки»:</label>
+ <label class="font-bold text-slate-700 dark:text-slate-300 whitespace-nowrap">Бюджет:</label>
  <select id="fltCatMaxHand" class="border border-slate-300 rounded-lg px-2 py-1 bg-white font-semibold">
  <option value="500000" selected>Любой бюджет</option>
  <option value="15000">До 15 000 ₽ на руки</option>
@@ -2138,8 +2122,49 @@ body {
  </select>
  </div>
  <div class="flex items-center gap-1.5">
- <label class="font-bold text-indigo-900 whitespace-nowrap" title="Фильтр по официальным поколениям матриц Samsung Display QD-OLED, LG Display WOLED и Mini-LED FALD">🧬 Поколение:</label>
- <select id="fltCatPanelGen" class="border-2 border-indigo-300 rounded-lg px-2 py-1 bg-indigo-50/60 text-indigo-950 font-bold">
+ <label class="font-bold text-slate-700 dark:text-slate-300 whitespace-nowrap">Магазин:</label>
+ <select id="fltCatStorePlatform" class="border-2 border-emerald-400 rounded-lg px-2 py-1 bg-emerald-50/70 text-emerald-950 font-bold">
+ <option value="all" selected>Все магазины</option>
+ <option value="regard">🛒 Регард (regard.ru — проверка пикселей)</option>
+ <option value="dns">🛒 DNS (dns-shop.ru — розница РФ)</option>
+ <option value="citilink">🛒 Ситилинк (citilink.ru)</option>
+ <option value="onlinetrade">🛒 ОнлайнТрейд (onlinetrade.ru — ON-бонусы)</option>
+ <option value="ozon">🛒 Ozon (ozon.ru / Ozon Global)</option>
+ <option value="wb">🛒 Wildberries (wildberries.ru)</option>
+ <option value="ym">🛒 Яндекс Маркет (market.yandex.ru)</option>
+ <option value="ali">🛒 AliExpress (aliexpress.ru)</option>
+ </select>
+ </div>
+ <span class="text-slate-600 dark:text-slate-400 ml-auto text-xs">Найдено: <strong id="lblFilteredCount" class="text-slate-900 dark:text-white">0</strong> из <strong id="lblTotalModels" class="text-slate-900 dark:text-white">0</strong> (<strong id="lblActiveBrands" class="text-slate-900 dark:text-white">0</strong> брендов • <strong id="lblActiveSubBrands" class="text-slate-900 dark:text-white">0</strong> суббр.)</span>
+ </div>
+ <div class="flex flex-wrap items-center justify-between gap-2 pt-1.5 border-t border-slate-200/70 dark:border-slate-700/70">
+ <div class="flex flex-wrap items-center gap-1.5">
+ <label class="inline-flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 px-2.5 py-1 rounded-lg cursor-pointer text-xs">
+ <input type="checkbox" id="chkCatOnlyRu" class="accent-blue-600" /> Только розница РФ
+ </label>
+ <label class="inline-flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 px-2.5 py-1 rounded-lg cursor-pointer text-xs">
+ <input type="checkbox" id="chkCatOnly2026" class="accent-blue-600" /> Новинки 2026 (<span id="lblOnly2026Count">0</span>)
+ </label>
+ <label class="inline-flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 px-2.5 py-1 rounded-lg cursor-pointer text-xs">
+ <input type="checkbox" id="chkCatHdr1000Plus" class="accent-blue-600" /> HDR ≥ 1000 нит (<span id="lblHdr1000PlusCount">0</span>)
+ </label>
+ <label class="inline-flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 px-2.5 py-1 rounded-lg cursor-pointer text-xs">
+ <input type="checkbox" id="chkCatOnlyDjun" class="accent-blue-600" /> С обзором Джуна (<span id="lblDjunCount">0</span>)
+ </label>
+ <label class="inline-flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 px-2.5 py-1 rounded-lg cursor-pointer text-xs">
+ <input type="checkbox" id="chkCatOnlyFav" class="accent-amber-500" /> Избранное (<span id="lblFavCount">0</span>)
+ </label>
+ </div>
+ <div class="flex flex-wrap items-center gap-1.5">
+ <button type="button" id="btnShareUrl" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-600 transition" title="Скопировать ссылку на текущую выборку и фильтры">Ссылка</button>
+ <button type="button" id="btnExportCatalogCsv" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-600 transition" title="Скачать текущую выборку в CSV для Excel">CSV</button>
+ <button type="button" id="btnResetFilters" class="px-2.5 py-1 rounded-lg text-xs font-bold text-blue-600 dark:text-sky-400 hover:underline">Сбросить</button>
+ <details id="dtlCatalogViewTools" class="relative">
+ <summary class="list-none cursor-pointer px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-100 hover:bg-slate-700 border border-slate-600 select-none">Вид и доп. ▾</summary>
+ <div class="absolute right-0 mt-1.5 w-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl shadow-2xl p-3 z-40 space-y-2.5 text-xs">
+ <div class="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px]">Доп. фильтры</div>
+ <div class="space-y-1.5">
+ <div><label class="block text-[11px] font-semibold mb-0.5">Поколение матрицы:</label><select id="fltCatPanelGen" class="border-2 border-indigo-300 rounded-lg px-2 py-1 bg-indigo-50/60 text-indigo-950 font-bold">
  <option value="all" selected>Все поколения матриц</option>
  <optgroup label="Официальные поколения OLED (Samsung / LG / CSOT)">
  <option value="oled_all">🔥 Все OLED (QD-OLED + WOLED + IJP)</option>
@@ -2164,114 +2189,42 @@ body {
  <option value="fast_ips">Fast IPS / Oxide IPS (Без FALD)</option>
  <option value="fast_va">Fast HVA / VA (Без FALD)</option>
  </optgroup>
- </select>
- </div>
- <div class="flex items-center gap-1.5">
- <label class="font-bold text-amber-900 dark:text-amber-300 whitespace-nowrap" title="Фильтр по числу зон локального затемнения Mini-LED FALD, попиксельному самосветящемуся OLED и высокому нативному контрасту IPS Black / VA">🔆 Зоны FALD / Контраст:</label>
- <select id="fltCatLocalDimmingTier" class="border-2 border-amber-400 rounded-lg px-2 py-1 bg-amber-50/70 text-amber-950 font-bold">
+ </select></div>
+ <div><label class="block text-[11px] font-semibold mb-0.5">Зоны FALD / Контраст:</label><select id="fltCatLocalDimmingTier" class="border-2 border-amber-400 rounded-lg px-2 py-1 bg-amber-50/70 text-amber-950 font-bold">
  <option value="all" selected>Любая подсветка</option>
  <option value="oled_per_pixel">🖤 Попиксельный OLED / QD-OLED (~8.3 млн точек, ∞:1)</option>
  <option value="miniled_2000_plus">🏆 Экстремальный Mini-LED (≥ 2000 зон FALD)</option>
  <option value="miniled_1000_1999">🌟 Продвинутый Mini-LED (1000–1999 зон FALD)</option>
  <option value="miniled_300_999">🔆 Базовый Mini-LED (300–999 зон FALD)</option>
  <option value="high_native_cr">🛡 Высокий нативный контраст без FALD (IPS Black 2000:1+ и VA ≥ 3000:1)</option>
- </select>
- </div>
- <div class="flex items-center gap-1.5">
- <label class="font-bold text-purple-900 dark:text-purple-300 whitespace-nowrap" title="Фильтр по соотношению сторон экрана: классический 16:9, рабочий 16:10 / 3:2, ультраширокий 21:9 и супер-ультраширокий 32:9">📐 Формат:</label>
- <select id="fltCatAspectRatio" class="border-2 border-purple-400 rounded-lg px-2 py-1 bg-purple-50/70 text-purple-950 font-bold">
+ </select></div>
+ <div><label class="block text-[11px] font-semibold mb-0.5">Формат экрана:</label><select id="fltCatAspectRatio" class="border-2 border-purple-400 rounded-lg px-2 py-1 bg-purple-50/70 text-purple-950 font-bold">
  <option value="all" selected>Любое соотношение сторон</option>
  <option value="aspect_16_9">🖥 Классический 16:9 (FHD / QHD / 4K / 5K — игры, консоли, монтаж)</option>
  <option value="aspect_16_10">📄 Рабочий вертикальный 16:10 / 3:2 (WUXGA / WQXGA+ — код, таблицы, документы)</option>
  <option value="aspect_21_9">🎬 Ультраширокий 21:9 (UWQHD 3440×1440 / 5K2K 5120×2160 — кино и таймлайны)</option>
  <option value="aspect_32_9">🏎 Супер-ультраширокий 32:9 (5120×1440 / 7680×2160 — замена 2 мониторов и симрейсинг)</option>
- </select>
+ </select></div>
+ <label class="flex items-center gap-1.5 cursor-pointer"><input type="checkbox" id="chkCatRetailPixelCheck" class="accent-blue-600" /> Проверка пикселей РФ (<span id="lblRetailPixelCheckCount">0</span>)</label>
+ <label class="flex items-center gap-1.5 cursor-pointer"><input type="checkbox" id="chkCatBestBudget25k" class="accent-blue-600" /> Топ до 25 000 ₽ (<span id="lblBestBudget25kCount">0</span>)</label>
  </div>
- <div class="flex items-center gap-1.5">
- <label class="font-bold text-emerald-900 dark:text-emerald-300 whitespace-nowrap" title="Фильтр по наличию прямой карточки товара в конкретном магазине РФ или трансграничном маркетплейсе">🛒 Магазин:</label>
- <select id="fltCatStorePlatform" class="border-2 border-emerald-400 rounded-lg px-2 py-1 bg-emerald-50/70 text-emerald-950 font-bold">
- <option value="all" selected>Все магазины</option>
- <option value="regard">🛒 Регард (regard.ru — проверка пикселей)</option>
- <option value="dns">🛒 DNS (dns-shop.ru — розница РФ)</option>
- <option value="citilink">🛒 Ситилинк (citilink.ru)</option>
- <option value="onlinetrade">🛒 ОнлайнТрейд (onlinetrade.ru — ON-бонусы)</option>
- <option value="ozon">🛒 Ozon (ozon.ru / Ozon Global)</option>
- <option value="wb">🛒 Wildberries (wildberries.ru)</option>
- <option value="ym">🛒 Яндекс Маркет (market.yandex.ru)</option>
- <option value="ali">🛒 AliExpress (aliexpress.ru)</option>
- </select>
+ <div class="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] pt-1 border-t border-slate-200 dark:border-slate-700">Отображение таблицы</div>
+ <div class="flex flex-wrap gap-1.5">
+ <button type="button" id="btnToggleCatalogGridView" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Таблица ↔ Плитка</button>
+ <button type="button" id="btnToggleCompactRows" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Компактно</button>
+ <button type="button" id="btnToggleSelectedOnlyFilter" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Только выбранные (<span id="lblSelectedOnlyBtnCnt">0</span>)</button>
  </div>
- </div>
- <div class="flex flex-wrap items-center gap-2.5">
- <span class="text-slate-600">Найдено: <strong id="lblFilteredCount" class="text-slate-900">0</strong> из <strong id="lblTotalModels" class="text-slate-900">0</strong> моделей (<strong id="lblActiveBrands" class="text-slate-900">0</strong> брендов • <strong id="lblActiveSubBrands" class="text-slate-900">0</strong> суббрендов)</span>
- <button type="button" id="btnToggleSelectedOnlyFilter" class="bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-400 px-2 py-0.5 rounded-lg font-extrabold transition" title="Показать в таблице только те мониторы, которые вы отметили галочкой в Сравнение или сердечком в Избранное">📌 Только выбранные (<span id="lblSelectedOnlyBtnCnt">0</span>)</button>
- <button type="button" id="btnToggleCompactRows" class="bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 px-2 py-0.5 rounded-lg font-bold transition" title="Переключить плотность строк таблицы каталога (Компактный режим помещает на 40% больше мониторов на один экран без прокрутки)">📐 Компактно</button>
- <button type="button" id="btnExportUserPricesJson" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 px-2 py-0.5 rounded-lg font-bold transition" title="Сохранить все скорректированные вами цены ДНС (✏️ Цена), список Избранного и Сравнения в портативный JSON-файл для переноса между ПК и смартфоном">💾 Экспорт цен/избранного</button>
- <button type="button" id="btnImportUserPricesJson" class="bg-teal-50 hover:bg-teal-100 text-teal-900 border border-teal-300 px-2 py-0.5 rounded-lg font-bold transition" title="Загрузить ранее сохранённый JSON-файл с пользовательскими ценами ДНС, списком Избранного и Сравнения">📂 Импорт цен</button>
- <input type="file" id="inpImportUserPricesFile" accept=".json,application/json" class="hidden">
- <button type="button" id="btnQuickFilterDnsOnly" class="bg-orange-50 hover:bg-orange-100 text-orange-950 border border-orange-300 px-2 py-0.5 rounded-lg font-bold transition" title="Показать в таблице только модели с проверенной прямой карточкой товара в каталоге ДНС (dns-shop.ru/product/...) и актуальной рублёвой ценой без таможенной пошлины">🟠 Карточки ДНС (<span id="lblDnsDirectModelsCnt">314</span>)</button>
- <button type="button" id="btnFilterMin90d" class="text-amber-600 hover:underline font-extrabold" title="Показать модели с актуальными снимками цен РФ (DNS/Ситилинк/Ozon)">🔥 Снимки цен РФ</button>
-            <button type="button" id="btnShareUrl" class="text-indigo-600 hover:underline font-bold" title="Скопировать ссылку на текущую выборку и фильтры">🔗 Ссылка на выборку</button>
-            <button type="button" id="btnExportCatalogCsv" class="text-emerald-700 dark:text-emerald-400 hover:underline font-bold" title="Скачать текущую отфильтрованную выборку в Excel (CSV UTF-8)">📥 Скачать CSV</button>
- <button id="btnResetFilters" class="text-blue-600 hover:underline font-extrabold">Сбросить всё</button>
- </div>
- </div>
-
- <!-- Row 2: Essential Quick Toggles & Primary Action Bar (Always Visible in both Lite & Pro) -->
- <div class="flex flex-wrap items-center justify-between gap-2 pt-1.5 border-t border-slate-100">
- <div class="flex flex-wrap items-center gap-1.5">
- <label class="inline-flex items-center gap-1.5 font-semibold text-sky-900 bg-sky-50 border border-sky-200 px-2.5 py-1 rounded-lg cursor-pointer">
- <input type="checkbox" id="chkCatOnlyRu" class="accent-sky-600" />
- 🏠 Только розница РФ
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-emerald-950 bg-emerald-100/90 border border-emerald-400 px-2.5 py-1 rounded-lg cursor-pointer" title="Показать мониторы с прямыми карточками в магазинах Регард, DNS, Ситилинк и ОнлайнТрейд, где можно официально проверить экран на битые пиксели до оплаты">
- <input type="checkbox" id="chkCatRetailPixelCheck" class="accent-emerald-700" />
- 🏬 Проверка пикселей (Регард/DNS/Ситилинк/ОТ) (<span id="lblRetailPixelCheckCount">0</span>)
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-emerald-950 bg-emerald-100/90 border border-emerald-500 px-2.5 py-1 rounded-lg cursor-pointer" title="Показать лучшие народные мониторы с итоговой ценой «на руки» до 25 000 ₽ и высоким рейтингом качества (Тир S, A+ или A)">
- <input type="checkbox" id="chkCatBestBudget25k" class="accent-emerald-700" />
- 💎 Топ до 25 000 ₽ (<span id="lblBestBudget25kCount">0</span>)
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-rose-950 bg-rose-100/90 border border-rose-400 px-2.5 py-1 rounded-lg cursor-pointer" title="Показать только свежие мониторы 2026 модельного года">
- <input type="checkbox" id="chkCatOnly2026" class="accent-rose-600" />
- 🔥 Новинки 2026 (<span id="lblOnly2026Count">0</span>)
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-amber-950 bg-amber-100/90 border border-amber-500 px-2.5 py-1 rounded-lg cursor-pointer" title="Показать мониторы с экстремальной пиковой яркостью HDR от 1000 до 2000+ нит (True HDR1000+ Mini-LED и флагманские Tandem OLED / QD-OLED)">
- <input type="checkbox" id="chkCatHdr1000Plus" class="accent-amber-700" />
- 🌟 HDR ≥ 1000 нит (<span id="lblHdr1000PlusCount">0</span>)
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-rose-950 bg-rose-100/80 border border-rose-400 px-2.5 py-1 rounded-lg cursor-pointer" title="Оставить только мониторы, для которых есть прямой видеообзор и инструментальный разбор Джуна (@djunn)">
- <input type="checkbox" id="chkCatOnlyDjun" class="accent-rose-600" />
- 🎬 С обзором Джуна (<span id="lblDjunCount">0</span>)
- </label>
- <label class="inline-flex items-center gap-1.5 font-semibold text-amber-900 bg-amber-50 border border-amber-300 px-2.5 py-1 rounded-lg cursor-pointer">
- <input type="checkbox" id="chkCatOnlyFav" class="accent-amber-600" />
- ⭐ Избранное (<span id="lblFavCount">0</span>)
- </label>
- <button type="button" id="btnCopyFavoritesMarkdown" class="inline-flex items-center gap-1 font-bold text-amber-950 bg-amber-100 hover:bg-amber-200 border border-amber-400 px-2 py-1 rounded-lg transition" title="Скопировать весь ваш список Избранного (⭐) в виде аккуратной шпаргалки с ценами, герцовкой и ссылками для отправки в Telegram или заметки">📋 Скопировать ⭐</button>
- </div>
- <div class="flex flex-wrap items-center gap-1.5">
- <button type="button" id="btnRandomTopMonitor" class="inline-flex items-center gap-1 font-extrabold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 px-2.5 py-1 rounded-lg shadow-sm transition text-xs" title="Открыть карточку случайного эталонного монитора Тир S+ / S из текущей выборки">🎲 Случайный топ</button>
- <button type="button" id="btnShareFilterStateUrl" class="inline-flex items-center gap-1 font-extrabold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 px-2.5 py-1 rounded-lg shadow-sm transition text-xs" title="Скопировать прямую ссылку (#flt=...) со всеми активными фильтрами, чекбоксами и поисковым запросом для сохранения или отправки другу">🔗 Ссылка на фильтр</button>
- <button type="button" id="btnExportFilteredCsv" class="inline-flex items-center gap-1 font-extrabold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 px-2.5 py-1 rounded-lg shadow-sm transition text-xs" title="Скачать все мониторы из текущей отфильтрованной выборки в отдельный файл CSV (UTF-8 BOM для Excel)">📊 Экспорт в CSV</button>
- <button type="button" id="btnCopyFilteredMd" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-2 py-1 rounded-lg transition shadow-sm" title="Скопировать в буфер обмена и скачать сводную Markdown-таблицу Топ-10 моделей из текущей выборки">📋 Топ-10 .MD</button>
- <button type="button" id="btnCopyFilteredTsv" class="bg-teal-700 hover:bg-teal-600 text-white font-bold px-2 py-1 rounded-lg transition shadow-sm" title="Скопировать текущую выборку в буфер обмена в табличном формате TSV для прямой вставки (Ctrl+V) в Excel или Google Таблицы">📊 TSV</button>
- <button type="button" id="btnToggleCatalogGridView" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-600 px-2.5 py-1 rounded-lg font-bold text-xs transition shadow-sm" title="Переключить вид каталога: Подробная таблица ↔ Наглядная плитка карточек">🗂 Таблица ↔ Плитка</button>
- <div class="flex items-center gap-1">
+ <div class="grid grid-cols-2 gap-1.5">
  <select id="selCatalogFontSize" class="border border-slate-300 rounded-lg px-1.5 py-1 bg-white font-semibold text-xs" title="Размер шрифта таблицы">
  <option value="compact">Шрифт 11px</option>
  <option value="normal" selected>Шрифт 12px</option>
  <option value="large">Шрифт 13.5px</option>
  </select>
- </div>
- <div class="flex items-center gap-1">
  <select id="selCatalogRowDensity" class="border-2 border-indigo-300 rounded-lg px-1.5 py-1 bg-indigo-50/70 text-indigo-950 font-bold text-xs" title="Плотность строк таблицы каталога: Кратко (в 2 раза больше моделей на одном экране) / Стандартно / Подробно (с автораскрытием 5 плюсов)">
  <option value="compact">📏 Строки: Кратко (2× больше)</option>
  <option value="normal" selected>📏 Строки: Стандартно</option>
  <option value="detailed">📏 Строки: Подробно (+5 плюсов)</option>
  </select>
- </div>
- <div class="flex items-center gap-1">
  <select id="selCatalogCurrencyView" class="border-2 border-emerald-300 rounded-lg px-1.5 py-1 bg-emerald-50/70 text-emerald-950 font-bold text-xs" title="Формат отображения валют в колонке Цена: можно скрыть доллары/юани для чистого вида или вывести все 3 валюты одновременно">
  <option value="rub_usd" selected>💱 Цена: ₽ + $ (Стандарт)</option>
  <option value="rub_only">🇷🇺 Цена: Только ₽ RUB (Чисто)</option>
@@ -2279,12 +2232,27 @@ body {
  <option value="usd_only">🇺🇸 Цена: Только $ USD</option>
  <option value="cny_only">🇨🇳 Цена: Только ¥ CNY</option>
  </select>
- </div>
- <div id="wrapRenderModeCtrl" class="flex items-center gap-1">
- <select id="selRenderMode" class="border border-slate-300 rounded-lg px-1.5 py-1 bg-white font-semibold text-xs" title="Режим рендера строк">
+ <div id="wrapRenderModeCtrl"><select id="selRenderMode" class="border border-slate-300 rounded-lg px-1.5 py-1 bg-white font-semibold text-xs" title="Режим рендера строк">
  <option value="virtual" selected>По 100 строк (60 FPS)</option>
  <option value="all">Все строки сразу</option>
- </select>
+ </select></div>
+ </div>
+ <div class="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] pt-1 border-t border-slate-200 dark:border-slate-700">Быстрые выборки и экспорт</div>
+ <div class="flex flex-wrap gap-1.5">
+ <button type="button" id="btnQuickFilterDnsOnly" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Карточки DNS (<span id="lblDnsDirectModelsCnt">314</span>)</button>
+ <button type="button" id="btnFilterMin90d" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Снимки цен РФ</button>
+ <button type="button" id="btnRandomTopMonitor" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Случайный топ</button>
+ <button type="button" id="btnCopyFavoritesMarkdown" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Скопировать ★</button>
+ <button type="button" id="btnCopyFilteredMd" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Топ-10 .MD</button>
+ <button type="button" id="btnCopyFilteredTsv" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">TSV</button>
+ <button type="button" id="btnExportUserPricesJson" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Экспорт цен</button>
+ <button type="button" id="btnImportUserPricesJson" class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 font-semibold">Импорт цен</button>
+ <input type="file" id="inpImportUserPricesFile" accept=".json,application/json" class="hidden" />
+ <button type="button" id="btnShareFilterStateUrl" class="hidden"></button>
+ <button type="button" id="btnExportFilteredCsv" class="hidden"></button>
+ </div>
+ </div>
+ </details>
  </div>
  </div>
  </div>

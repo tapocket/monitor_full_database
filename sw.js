@@ -1,10 +1,8 @@
-const CACHE_NAME = "monitor-db-cache-2026-11-28h";
+const CACHE_NAME = "monitor-db-cache-2026-11-28i";
 const PRECACHE_URLS = [
   "./",
-  "./index.html",
-  "./data/db_payload.js",
-  "./data/app.js",
-  "./manifest.webmanifest"
+  "./manifest.webmanifest",
+  "./favicon.svg"
 ];
 
 self.addEventListener("install", (event) => {
@@ -23,18 +21,21 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Network-First: fresh HTML & data/db_payload.js online, instant offline fallback from cache
+// Strict Network-First with cache:'no-cache' for HTML/JS so stale app.js never mixes with fresh index.html
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  const req = event.request;
+  const url = req.url || "";
+  const isCode = req.mode === "navigate" || /\.(html|js)(\?|$)/i.test(url);
   event.respondWith(
-    fetch(event.request)
+    fetch(req, isCode ? { cache: "no-cache" } : undefined)
       .then((response) => {
         if (response && response.status === 200) {
           const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone)).catch(() => {});
+          caches.open(CACHE_NAME).then((cache) => cache.put(req, clone)).catch(() => {});
         }
         return response;
       })
-      .catch(() => caches.match(event.request).then((c) => c || caches.match("./index.html") || caches.match("./monitor_full_database.html")))
+      .catch(() => caches.match(req).then((c) => c || caches.match("./index.html") || caches.match("./monitor_full_database.html")))
   );
 });
