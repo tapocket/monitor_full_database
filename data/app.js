@@ -9800,6 +9800,10 @@ const r = DB.catalog.find(x => x.id === id);
 if (!r) return;
 pushRecentlyViewedMonitor(r.id);
 document.getElementById("mdlTitle").textContent = `${r.brand} — ${r.model} (${r.year} г., ${r.rel_date || ""})`;
+const _cmpBtnHdr = document.getElementById("btnModalCompareToggle");
+if (_cmpBtnHdr) _cmpBtnHdr.textContent = compareIds.has(r.id) ? "✅ В сравнении" : "⚖️ Сравнить";
+const _issHdr = document.getElementById("lnkModalReportIssueHdr");
+if (_issHdr) _issHdr.href = "https://github.com/tapocket/monitor_full_database/issues/new?template=fix-error.yml&title=" + encodeURIComponent("[Ошибка] " + (r.brand || "") + " " + (r.model || ""));
 const dutyLine = r.duty > 0
 ? `Цена витрины: <strong>${r.rub.toLocaleString("ru-RU")} ₽</strong> ($${r.usd} / ¥${r.cny}) + Таможенная пошлина РФ (>200€): <strong>+${r.duty.toLocaleString("ru-RU")} ₽</strong> = <strong>${r.hand.toLocaleString("ru-RU")} ₽ ИТОГО «НА РУКИ»</strong>`
 : `<strong>${r.rub.toLocaleString("ru-RU")} ₽</strong> ($${r.usd} / ¥${r.cny}) — Пошлина РФ: 0 ₽ (Итого на руки: ${r.hand.toLocaleString("ru-RU")} ₽)`;
@@ -11404,14 +11408,14 @@ if (btnPrRep) {
 btnPrRep.addEventListener("click", printPvzInspectionActOnly);
 }
 initBuiltInTestLab();
-document.getElementById("btnModalToggleQrCard").addEventListener("click", () => {
+const _el_btnModalToggleQrCard = document.getElementById("btnModalToggleQrCard"); if (_el_btnModalToggleQrCard) _el_btnModalToggleQrCard.addEventListener("click", () => {
 const qrBox = document.getElementById("divModalQrShareCard");
 if (qrBox) {
 qrBox.classList.toggle("hidden");
 showToast("📱 Мобильная карточка и QR-код для ПВЗ открыты!");
 }
 });
-document.getElementById("btnModalCopySocialPost").addEventListener("click", () => {
+const _el_btnModalCopySocialPost = document.getElementById("btnModalCopySocialPost"); if (_el_btnModalCopySocialPost) _el_btnModalCopySocialPost.addEventListener("click", () => {
 const r = DB.catalog.find(x => x.id === currentModalModelId);
 if (!r) return;
 const txt = generateSocialExpertPostText(r);
@@ -11687,7 +11691,7 @@ a.click();
 }
 showToast("🖨 Печатный А4-паспорт модели и чек-лист ПВЗ сформирован!");
 });
-document.getElementById("btnModalDownloadSrgbLut").addEventListener("click", () => {
+const _el_btnModalDownloadSrgbLut = document.getElementById("btnModalDownloadSrgbLut"); if (_el_btnModalDownloadSrgbLut) _el_btnModalDownloadSrgbLut.addEventListener("click", () => {
 const r = DB.catalog.find(x => x.id === currentModalModelId);
 if (!r) return;
 const txt = computeCie1931PrimariesAndLutText(r);
@@ -11698,7 +11702,7 @@ a.download = `${r.model.replace(/[^a-zA-Z0-9_-]/g, "_")}_sRGB_CIE1931_Profile.tx
 a.click();
 showToast("🎨 Профиль координат CIE 1931 и sRGB Gamma 2.20 скачан!");
 });
-document.getElementById("btnModalDownloadCru").addEventListener("click", () => {
+const _el_btnModalDownloadCru = document.getElementById("btnModalDownloadCru"); if (_el_btnModalDownloadCru) _el_btnModalDownloadCru.addEventListener("click", () => {
 const r = DB.catalog.find(x => x.id === currentModalModelId);
 if (!r) return;
 const g = computePhysicalSizeAndRetina(r);
@@ -12880,13 +12884,35 @@ document.getElementById("divEncyclopediaCards").innerHTML = items.map(a => `
 </div>
 `).join("");
 }
+let _lastPicksSubTab = "market";
+let _lastRefSubTab = "panels_oem";
 function switchTab(tabName) {
-currentTab = tabName;
+let resolved = tabName || "catalog";
+if (resolved === "picks") resolved = _lastPicksSubTab;
+if (resolved === "reference") resolved = _lastRefSubTab;
+if (resolved === "market" || resolved === "flagships") _lastPicksSubTab = resolved;
+if (["panels_oem", "revisions", "brands_srv", "encyclopedia"].includes(resolved)) _lastRefSubTab = resolved;
+currentTab = resolved;
+const parentTab = (resolved === "market" || resolved === "flagships")
+? "picks"
+: (["panels_oem", "revisions", "brands_srv", "encyclopedia"].includes(resolved) ? "reference" : resolved);
 document.querySelectorAll(".tab-btn").forEach(b => {
-b.className = b.dataset.tab === tabName
-? "tab-btn bg-blue-600 text-white px-2.5 py-1.5 rounded-t whitespace-nowrap"
-: "tab-btn text-slate-300 hover:text-white px-2.5 py-1.5 rounded-t whitespace-nowrap";
+const isAct = b.dataset.tab === parentTab;
+b.classList.toggle("active", isAct);
+b.classList.toggle("bg-blue-600", isAct);
+b.classList.toggle("text-white", isAct);
+b.classList.toggle("text-slate-300", !isAct);
 });
+const subPicks = document.getElementById("divSubTabsPicks");
+if (subPicks) {
+subPicks.classList.toggle("hidden", parentTab !== "picks");
+subPicks.querySelectorAll(".subtab-pill").forEach(p => p.classList.toggle("active", p.dataset.subtab === resolved));
+}
+const subRef = document.getElementById("divSubTabsRef");
+if (subRef) {
+subRef.classList.toggle("hidden", parentTab !== "reference");
+subRef.querySelectorAll(".subtab-pill").forEach(p => p.classList.toggle("active", p.dataset.subtab === resolved));
+}
 const mapSec = {
 catalog: "secCatalog",
 finder: "secFinder",
@@ -12901,17 +12927,18 @@ guide: "secGuide",
 tests: "secTests",
 };
 Object.entries(mapSec).forEach(([k, secId]) => {
-document.getElementById(secId).classList.toggle("hidden", k !== tabName);
+const el = document.getElementById(secId);
+if (el) el.classList.toggle("hidden", k !== resolved);
 });
-if (tabName === "catalog") renderCatalog();
-if (tabName === "finder") renderFinder();
-if (tabName === "compare") renderCompare();
-ensureTabRendered(tabName);
+if (resolved === "catalog") renderCatalog();
+if (resolved === "finder") renderFinder();
+if (resolved === "compare") renderCompare();
+ensureTabRendered(resolved);
 try {
 if (typeof window !== "undefined" && window.history && window.history.replaceState && window.location) {
 const curHash = (window.location.hash || "").replace(/^#/, "");
 const sp = new URLSearchParams(curHash);
-if (tabName && tabName !== "catalog") sp.set("tab", tabName);
+if (resolved && resolved !== "catalog") sp.set("tab", resolved);
 else sp.delete("tab");
 const nextHash = sp.toString();
 const nextUrl = nextHash ? ("#" + nextHash) : (window.location.pathname + window.location.search);
@@ -12921,6 +12948,9 @@ window.history.replaceState(null, "", nextUrl);
 }
 } catch(e) {}
 }
+document.querySelectorAll(".subtab-pill").forEach(btn => {
+btn.addEventListener("click", () => switchTab(btn.dataset.subtab));
+});
 const _lazyTabRendered = { market: false, flagships: false, reference: false, encyclopedia: false };
 function ensureTabRendered(tabName) {
 if (tabName === "market" && !_lazyTabRendered.market) { _lazyTabRendered.market = true; renderMarket(); }
@@ -13305,6 +13335,23 @@ const m = document.getElementById("mdlPvzCard");
 m.classList.add("hidden");
 m.classList.remove("flex");
 });
+const _btnModalCmpTog = document.getElementById("btnModalCompareToggle");
+if (_btnModalCmpTog) {
+_btnModalCmpTog.addEventListener("click", () => {
+if (!currentModalModelId) return;
+if (compareIds.has(currentModalModelId)) {
+compareIds.delete(currentModalModelId);
+showToast("Убрано из сравнения");
+} else {
+if (compareIds.size >= 4) { showToast("В сравнении уже максимум 4 монитора"); return; }
+compareIds.add(currentModalModelId);
+showToast("⚖️ Добавлено в сравнение (Вкладка 3)");
+}
+updateCompareBadge();
+_btnModalCmpTog.textContent = compareIds.has(currentModalModelId) ? "✅ В сравнении" : "⚖️ Сравнить";
+renderCatalog();
+});
+}
 document.getElementById("btnModalOpenPvz").addEventListener("click", () => {
 if (currentModalModelId) {
 document.getElementById("mdlDetail").classList.add("hidden");
@@ -15769,7 +15816,7 @@ document.getElementById("mdlManageDb").classList.add("hidden");
 document.getElementById("mdlManageDb").classList.remove("flex");
 showToast(`✅ Добавлена модель «${brand} ${model}»! Всего: ${DB.catalog.length} моделей, ${new Set(DB.catalog.map(x => x.brand)).size} брендов`);
 });
-document.getElementById("btnModalDeleteModel").addEventListener("click", () => {
+const _el_btnModalDeleteModel = document.getElementById("btnModalDeleteModel"); if (_el_btnModalDeleteModel) _el_btnModalDeleteModel.addEventListener("click", () => {
 if (!currentModalModelId) return;
 const idx = DB.catalog.findIndex(x => x.id === currentModalModelId);
 if (idx === -1) return;

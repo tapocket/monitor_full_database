@@ -276,7 +276,7 @@ if (!html.includes('rel="canonical"') || !html.includes('application/ld+json') |
   console.error('CI_SMOKE_FAIL: missing Wave 26 canonical, JSON-LD, or #divPracticalTipsCard');
   process.exit(1);
 }
-if (!html.includes('tftcentral.co.uk/category/reviews') || !html.includes('rtings.com/monitor') || !html.includes('displayspecifications.com') || !html.includes('t.me/djun1')) {
+if (!html.includes('tftcentral.co.uk/category/reviews') || !html.includes('rtings.com/monitor') || !html.includes('displayspecifications.com') || !html.includes('youtube.com/@djunn/videos')) {
   console.error('CI_SMOKE_FAIL: missing direct source links in footer');
   process.exit(1);
 }
@@ -291,6 +291,21 @@ ensureTabRendered('encyclopedia');
 // 16. Verify Wave 27 deduplicated 26-test lab, HiDPI canvases & enhanced URL hash routing
 if (!js.includes('const LAB_CURATED_ORDER = [') || !html.includes('width="2560" height="640"') || !js.includes('params.has("oled")')) {
   console.error('CI_SMOKE_FAIL: missing Wave 27 LAB_CURATED_ORDER, HiDPI 2560x640 canvas, or #oled=1 URL hash support');
+  process.exit(1);
+}
+// 17. Verify Wave 28 physical removal of 20 deprecated test panels & updated Gosha/Djun attribution
+if (html.includes('id="divLabPanel_tint_d65"') || html.includes('id="divLabPanel_mprt_pwm"') || !html.includes('Таблица «МАНИТОРЫ» (автор Гоша)')) {
+  console.error('CI_SMOKE_FAIL: deprecated panels still present or missing updated Gosha attribution');
+  process.exit(1);
+}
+// 18. Verify Wave 29 clean monitor modal header (4 base buttons + 'Ещё ▾', 9 clutter buttons removed)
+if (!html.includes('id="btnModalCompareToggle"') || !html.includes('id="lnkModalReportIssueHdr"') || html.includes('id="btnModalDownloadCru"') || html.includes('id="btnModalDeleteModel"')) {
+  console.error('CI_SMOKE_FAIL: Wave 29 modal header check failed');
+  process.exit(1);
+}
+// 19. Verify Wave 30 7-tab minimalist navigation, subtabs & unified WinUI 3 theme
+if (!html.includes('id="divSubTabsPicks"') || !html.includes('id="divSubTabsRef"') || !html.includes('id="winui3UnifiedTheme2026"') || !html.includes('Ресурсы для тестов')) {
+  console.error('CI_SMOKE_FAIL: Wave 30 7-tab / unified theme check failed');
   process.exit(1);
 }
 console.log(

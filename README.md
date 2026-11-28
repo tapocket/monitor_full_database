@@ -16,13 +16,11 @@
 
 ![monitor_full_database — Обложка портала](og-cover.png)
 
-| Обзор каталога (Excel — 18 вкладок) | Витрина «Рынок РФ» |
+| Веб-портал (WinUI 3, 7 вкладок) | Обзор каталога (Excel — 18 вкладок) |
 | :---: | :---: |
-| ![Обзор каталога](docs/screenshots/excel_overview.png) | ![Рынок РФ](docs/screenshots/excel_market_rf.png) |
-
-| Сводная аналитика по 85 брендам | Тесты и проверка экрана |
-| :---: | :---: |
-| ![Сводная по брендам](docs/screenshots/excel_brands_summary.png) | ![Тесты экрана](docs/screenshots/excel_tests_sheet.png) |
+| ![Веб-портал WinUI 3](docs/screenshots/portal_winui3_overview.png) | ![Обзор каталога Excel](docs/screenshots/excel_overview.png) |
+| Витрина «Рынок РФ» | Сводная аналитика по 85 брендам |
+| ![Рынок РФ](docs/screenshots/excel_market_rf.png) | ![Сводная по брендам](docs/screenshots/excel_brands_summary.png) |
 
 ## ✨ Главные возможности портала
 
@@ -40,7 +38,7 @@
   * Инженерный аккордеон (5 инструментов): **Совместимость PS5 / Xbox / MacBook / RTX & RX**, SVG-график истории цен, калибровка ICC/OSD/Win11 HDR, расчёт расстояния/PPI/Retina и калькулятор кабеля DP 1.4/2.1/HDMI 2.1 + DSC.
   * Автоподбор **похожих аналогов** (дешевле или с гарантией РФ) с переходом в сравнение в 1 клик.
 * **Тест-Лаборатория и Режим ПВЗ (`#test=pvz`, `#test=guided`):**
-  * 14-шаговый тест экрана (битые пиксели, 5% Grey OLED, FALD, 3× HiDPI, осциллограф Frame-Time), мобильный чек-лист приёмки и база сервисных меню для 47 брендов.
+  * 26 HiDPI-тестов экрана («Ресурсы для тестов») (битые пиксели, 5% Grey OLED, FALD, 3× HiDPI, осциллограф Frame-Time), мобильный чек-лист приёмки и база сервисных меню для 47 брендов.
   * Прямые карточки магазинов РФ: **415+ прямых карточек DNS** (`/product/`), Ситилинк, Регард, ОнлайнТрейд, Ozon, Яндекс Маркет и AliExpress.
 
 ## 📡 Публичный статический JSON API (`api/v1/`)
@@ -107,6 +105,7 @@ python3 scripts/pre_deploy_check.py
 
 ## 🙏 Благодарности и источники
 
-* Особая благодарность автору исходной таблицы сообщества **[«МАНИТОРЫ» (Гоша)](https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660)** за проделанную работу по сбору замеров, кодов матриц и ревизий.
-* Технические обзоры, спецификации и лабораторные тесты: **[TFTCentral](https://tftcentral.co.uk/category/reviews)**, **[RTINGS](https://www.rtings.com/monitor)**, **[DisplaySpecifications](https://www.displayspecifications.com/)**, канал **[«Джун» (Telegram)](https://t.me/djun1)** ([чат](https://t.me/djun_chat), [YouTube-подборка](https://www.youtube.com/watch?v=4EKKtYzLPnE)).
+* **[Таблица «МАНИТОРЫ» (автор Гоша)](https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660)** — особая благодарность автору за проделанную работу по сбору замеров, кодов матриц и ревизий.
+* **[YouTube-канал «Джун»](https://www.youtube.com/@djunn/videos)** — обзоры, практические гайды и разборы рынка мониторов ([Telegram](https://t.me/djun1), [чат](https://t.me/djun_chat)).
+* Технические обзоры, спецификации и лабораторные тесты: **[TFTCentral](https://tftcentral.co.uk/category/reviews)**, **[RTINGS](https://www.rtings.com/monitor)**, **[DisplaySpecifications](https://www.displayspecifications.com/)**.
 * Инструменты и стандарты: **[Blur Busters TestUFO](https://testufo.com/ghosting)**, **[VESA DisplayPort Certified Components](https://vesa.org/displayport-developer/certified-components/)**, **[Microsoft Windows HDR Calibration](https://support.microsoft.com/en-us/windows/hardware/display-graphics/calibrate-your-hdr-display-using-the-windows-hdr-calibration-app)**.

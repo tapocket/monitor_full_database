@@ -320,7 +320,7 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
 
     ws0 = wb["0. ИНФА и Гайд по таблице"]
     ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 69 СТОЛБЦОВ • 18 ВКЛАДОК)"'
-    ws0["A2"] = "Источники и благодарности: таблица «МАНИТОРЫ» (Гоша) https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660 | TFTCentral https://tftcentral.co.uk/category/reviews | RTINGS https://www.rtings.com/monitor | DisplaySpecifications https://www.displayspecifications.com/ | «Джун» https://t.me/djun1 | Blur Busters https://testufo.com/ghosting | VESA https://vesa.org/displayport-developer/certified-components/"
+    ws0["A2"] = "Источники и благодарности: Таблица «МАНИТОРЫ» (автор Гоша) https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660 | YouTube-канал «Джун» https://www.youtube.com/@djunn/videos | TFTCentral https://tftcentral.co.uk/category/reviews | RTINGS https://www.rtings.com/monitor | DisplaySpecifications https://www.displayspecifications.com/ | Blur Busters TestUFO https://testufo.com/ghosting | VESA DisplayPort https://vesa.org/displayport-developer/certified-components/"
 
     ws1 = wb["1. Общая база мониторов"]
     ws1["A1"] = '="ПОЛНАЯ ИНЖЕНЕРНАЯ БАЗА МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ — " & COUNTA(B5:B5000) & " МОДЕЛЕЙ — 69 СТОЛБЦОВ)"'
