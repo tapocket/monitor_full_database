@@ -171,7 +171,7 @@ def load_price_drops(limit: int = 8) -> list[dict]:
             cur_price = mp
         else:
             continue
-        if diff < 1500 or pct < 5.0:
+        if diff < 1500 or pct < 5.0 or pct > 52.0:
             continue
         m_obj = cat_by_name.get(name.lower())
         if not m_obj:
@@ -192,6 +192,9 @@ def load_price_drops(limit: int = 8) -> list[dict]:
             for st in (m_obj.get("stores") or [])
         )
         if not has_direct:
+            continue
+        res_l = str(m_obj.get("res") or "").lower()
+        if cur_price < 10000 and any(k in res_l for k in ("2560", "3840", "3440", "5120", "4k", "qhd", "2k")):
             continue
         drops.append({
             "model": m_obj["model"],

@@ -42,7 +42,7 @@ def main() -> None:
     if not os.path.isfile(os.path.join(out, "index.html")):
         assert copy_if_exists("monitor_full_database.html", out, "index.html"), "Missing both index.html and monitor_full_database.html"
 
-    for df in ("data/db_payload.js", "data/prices_rf_snapshot.json", "data/icc_profiles.json"):
+    for df in ("data/db_payload.js", "data/app.js", "data/prices_rf_snapshot.json", "data/icc_profiles.json"):
         copy_if_exists(df, os.path.join(out, "data"))
 
     for ph in glob.glob("data/price_history/*.jsonl"):

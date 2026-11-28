@@ -1,10 +1,10 @@
-# Ежедневный чеклист обновления `monitor_full_database` (2026-11-27)
+# Ежедневный чеклист обновления `monitor_full_database` (2026-11-23)
 
 ## Сводка состояния базы
 - Всего моделей в каталоге: **2710** (витрина РФ: 53, флагманы: 41)
 - Прямые карточки DNS `/product/`: **416** | Целевой поиск DNS `/search/`: **33**
-- История цен (`data/price_history/`): **1** файл(ов), **1453** записей
-- Битые ссылки из последнего CI-аудита (404/410): **2**
+- История цен (`data/price_history/`): **1** файл(ов), **769** записей
+- Битые ссылки из последнего CI-аудита (404/410): **0**
 
 ## 1. Приоритет: новинки 2026 (OLED / Mini-LED) без ссылки на обзор
 Найдено **122** моделей (показаны первые 15):
@@ -53,32 +53,9 @@
 - [ ] `#413` **LG 34U601B** (22 699 ₽)
 - [ ] `#392` **LG 27G550B** (21 299 ₽)
 
-## 4. Битые ссылки (404/410) к замене
-
-- [ ] **ASUS TUF Gaming VG27UQEL5A** (410): https://www.regard.ru/product/798417/monitor-asus-27-vg27uqel5a-tuf-gaming
-- [ ] **ASUS ROG Strix OLED XG27UCDMG** (410): https://www.dns-shop.ru/product/663356be23d0d9cb/265-monitor-asus-rog-strix-oled-xg27ucdmg-cernyj/
-
 ## Команды для обновления
 ```bash
 python3 scripts/add_or_update_monitor.py --help
 python3 build_database.py --master database_master.json --template-xlsx monitor_full_database.xlsx --template-html monitor_full_database.html --outdir . --recalc --verify
 python3 scripts/pre_deploy_check.py
 ```
-
-## 5. Свежие обзоры и новости (RSS-радар TFTCentral / «Джун»)
-
-- [ ] **[TFTCentral]** Asus ROG Swift PG259QWS Ace — https://tftcentral.co.uk/best-settings/asus-rog-swift-pg259qws-ace-2
-- [ ] **[TFTCentral]** Asus ROG Swift PG259QWS Ace — https://tftcentral.co.uk/reviews/asus-rog-swift-pg259qws-ace
-- [ ] **[TFTCentral]** The Best Black Friday Monitor Deals – 2026 Tracker — https://tftcentral.co.uk/articles/the-best-black-friday-monitor-deals-2026-tracker
-- [ ] **[TFTCentral]** The Best Asus Monitor Black Friday Deals for 2026 — https://tftcentral.co.uk/articles/the-best-asus-monitor-black-friday-deals-for-2026
-- [ ] **[TFTCentral]** The Best Black Friday MSI Monitor Deals Are Now Live for 2026 — https://tftcentral.co.uk/articles/the-best-black-friday-msi-monitor-deals-are-now-live-for-2026
-- [ ] **[TFTCentral]** Samsung Odyssey G60H — https://tftcentral.co.uk/reviews/samsung-odyssey-g60h
-- [ ] **[TFTCentral]** The Asus OLED Buying Guide – Gaming, Content Creation and Productivity — https://tftcentral.co.uk/articles/the-asus-oled-buying-guide-gaming-content-creation-and-productivity
-- [ ] **[TFTCentral]** KTC Tease a New 31.5″ 6K Mini-LED Panel Ahead of CES — https://tftcentral.co.uk/news/ktc-tease-a-new-31-5-6k-mini-led-panel-ahead-of-ces
-- [ ] **[TFTCentral]** All the Best Gigabyte Black Friday Monitor Deals for 2026 Now Live! — https://tftcentral.co.uk/articles/all-the-best-gigabyte-black-friday-monitor-deals-for-2026-now-live
-- [ ] **[TFTCentral]** AOC Launch Their Black Friday Monitor Deals for 2026 [USA] — https://tftcentral.co.uk/articles/aoc-launch-their-black-friday-monitor-deals-for-2026-usa
-- [ ] **[TFTCentral]** New OLED Monitors for 2027, Buy Now or Wait? — https://tftcentral.co.uk/videos/new-oled-monitors-for-2027-buy-now-or-wait
-- [ ] **[TFTCentral]** MSI MEG X — https://tftcentral.co.uk/reviews/msi-meg-x
-- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/09Ij9qgFna4
-- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/eMZ252d84vk
-- [ ] **[Джун (YouTube/TG)]** Видеообзор на канале «Джун» — https://youtu.be/fMYCpEWNhZA

@@ -98,3 +98,8 @@ python3 scripts/pre_deploy_check.py
 * `.github/workflows/build-and-verify.yml` — проверка схемы, `py_compile`, сборка `--recalc --verify` и прогон `scripts/smoke_test_portal.js` на каждом push/PR.
 * `.github/workflows/daily-rates-and-links.yml` — **ежедневное** (раз в сутки) обновление курсов ЦБ РФ, запись истории цен, аудит 120 ссылок магазинов и обзоров (`data/LINK_AUDIT_REPORT.md`), генерация чеклиста `data/DAILY_UPDATE_CHECKLIST.md`, пересборка портала + `api/v1/` и обновление кэша `sw.js`.
 * `.github/workflows/deploy-pages.yml` — автоматический деплой портала и `api/v1/` на GitHub Pages.
+
+## 🙏 Благодарности и источники
+
+* Особая благодарность автору исходной таблицы сообщества **[«МАНИТОРЫ» (Гоша)](https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660)** за проделанную работу по сбору замеров, кодов матриц и ревизий.
+* Технические обзоры и лабораторные измерения: **TFTCentral**, **RTINGS**, **YouTube-канал «Джун»**.

@@ -33,7 +33,12 @@ if (!scripts.length) {
   console.error('FAIL: No <script> found in HTML!');
   process.exit(1);
 }
-const js = scripts[scripts.length - 1][1];
+let js = scripts[scripts.length - 1][1];
+if (html.includes('src="data/app.js"')) {
+  const appJsPath = require('path').join(require('path').dirname(htmlPath), 'data', 'app.js');
+  if (!fs.existsSync(appJsPath)) { console.error('FAIL: missing data/app.js'); process.exit(1); }
+  js = js + '\n' + fs.readFileSync(appJsPath, 'utf8');
+}
 
 const noopCtx = new Proxy({}, {
   get(t, p) {
@@ -121,11 +126,11 @@ if (js.includes('window.__DB_PAYLOAD')) {
   vm.runInContext(fs.readFileSync(payloadPath, 'utf8'), ctx);
 }
 vm.runInContext(
-  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode, normalizeSmartSearchTokens: window.normalizeSmartSearchTokens, buildSelectionCsv: window.buildSelectionCsv, findSimilarAlternatives: window.findSimilarAlternatives, buildCompareVerdictHtml: window.buildCompareVerdictHtml, getTopRfDrops: window.getTopRfDrops, applyCustomDutyScenario: window.applyCustomDutyScenario, resetCustomDutyScenario: window.resetCustomDutyScenario, savePersonalWatch: window.savePersonalWatch, getPersonalWatch: window.getPersonalWatch, collectUnifiedBackup: window.collectUnifiedBackup, applyUnifiedBackup: window.applyUnifiedBackup, buildModelShareMarkdown: window.buildModelShareMarkdown };',
+  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode, normalizeSmartSearchTokens: window.normalizeSmartSearchTokens, buildSelectionCsv: window.buildSelectionCsv, findSimilarAlternatives: window.findSimilarAlternatives, buildCompareVerdictHtml: window.buildCompareVerdictHtml, getTopRfDrops: window.getTopRfDrops, applyCustomDutyScenario: window.applyCustomDutyScenario, resetCustomDutyScenario: window.resetCustomDutyScenario, savePersonalWatch: window.savePersonalWatch, getPersonalWatch: window.getPersonalWatch, collectUnifiedBackup: window.collectUnifiedBackup, applyUnifiedBackup: window.applyUnifiedBackup, buildModelShareMarkdown: window.buildModelShareMarkdown, buildQuickSpecBadgesHtml: window.buildQuickSpecBadgesHtml };',
   ctx
 );
 
-const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode, normalizeSmartSearchTokens, buildSelectionCsv, findSimilarAlternatives, buildCompareVerdictHtml, getTopRfDrops, applyCustomDutyScenario, resetCustomDutyScenario, savePersonalWatch, getPersonalWatch, collectUnifiedBackup, applyUnifiedBackup, buildModelShareMarkdown } = ctx.__EXPORTS;
+const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode, normalizeSmartSearchTokens, buildSelectionCsv, findSimilarAlternatives, buildCompareVerdictHtml, getTopRfDrops, applyCustomDutyScenario, resetCustomDutyScenario, savePersonalWatch, getPersonalWatch, collectUnifiedBackup, applyUnifiedBackup, buildModelShareMarkdown, buildQuickSpecBadgesHtml } = ctx.__EXPORTS;
 if (!DB || !Array.isArray(DB.catalog) || DB.catalog.length < 2700) {
   console.error('FAIL: Invalid DB.catalog length:', DB && DB.catalog && DB.catalog.length);
   process.exit(1);
@@ -259,6 +264,11 @@ if (typeof buildModelShareMarkdown === 'function') {
 // 13. Verify Wave 21 GitHub Issues feedback footer & modal report link
 if (!html.includes('id="ftrCommunityFeedback"') || !html.includes('template=fix-error.yml')) {
   console.error('CI_SMOKE_FAIL: missing GitHub Issues feedback links');
+  process.exit(1);
+}
+// 14. Verify Wave 24 Quick Hardware Spec Badges & Clean Header Tools Menu
+if (!html.includes('id="dtlHeaderToolsMenu"') || typeof buildQuickSpecBadgesHtml !== 'function') {
+  console.error('CI_SMOKE_FAIL: missing #dtlHeaderToolsMenu or buildQuickSpecBadgesHtml');
   process.exit(1);
 }
 console.log(

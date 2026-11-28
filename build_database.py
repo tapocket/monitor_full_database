@@ -320,6 +320,7 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
 
     ws0 = wb["0. ИНФА и Гайд по таблице"]
     ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 69 СТОЛБЦОВ • 18 ВКЛАДОК)"'
+    ws0["A2"] = "Источники и благодарности: TFTCentral, RTINGS, канал «Джун», а также исходная таблица сообщества «МАНИТОРЫ» (Гоша): https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660"
 
     ws1 = wb["1. Общая база мониторов"]
     ws1["A1"] = '="ПОЛНАЯ ИНЖЕНЕРНАЯ БАЗА МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ — " & COUNTA(B5:B5000) & " МОДЕЛЕЙ — 69 СТОЛБЦОВ)"'
@@ -733,6 +734,18 @@ def apply_affiliates_to_copy(master: dict) -> dict:
     return out
 
 
+
+def minify_js_safe(js_code: str) -> str:
+    """Safe line-level JS minifier (strips full-line comments & leading spaces without touching string literals/regex)."""
+    out_lines = []
+    for ln in js_code.splitlines():
+        s = ln.strip()
+        if not s or s.startswith("//"):
+            continue
+        out_lines.append(s)
+    return "\n".join(out_lines) + "\n"
+
+
 def compress_db_for_html(master: dict) -> str:
     """Sparse column-defaults + deep string dictionary + compact store URL encoding (100% lossless sync unpack)."""
     db_obj = {
@@ -848,10 +861,47 @@ def compress_db_for_html(master: dict) -> str:
     if os.path.exists("data/icc_profiles.json"):
         with open("data/icc_profiles.json", "r", encoding="utf-8") as _f_icc:
             rest_obj["icc_profiles"] = json.load(_f_icc)
+    # 4. Lossless phrase-fragment dictionary (_F) for long repeated Russian/spec phrases inside strings
+    frag_freq = Counter()
+    def scan_frags(v):
+        if isinstance(v, str) and len(v) >= 24 and "\x02" not in v:
+            for part in re.split(r"(?:\s•\s|\s\|\s|;\s|\.\s|\s—\s)", v):
+                p = part.strip()
+                if len(p) >= 20:
+                    frag_freq[p] += 1
+        elif isinstance(v, list):
+            for x in v:
+                scan_frags(x)
+        elif isinstance(v, dict):
+            for x in v.values():
+                scan_frags(x)
+
+    scan_frags(dict_strings)
+    scan_frags(sparse_rows)
+    frag_dict = [
+        s for s, c in frag_freq.most_common(900)
+        if c >= 3 and (len(s) * c > len(s) + 6 * c + 8)
+    ]
+    frag_dict.sort(key=len, reverse=True)
+    if frag_dict:
+        frag_to_tok = {s: f"\x02{i}\x03" for i, s in enumerate(frag_dict)}
+        frag_re = re.compile("|".join(re.escape(s) for s in frag_dict))
+        def compress_frags(v):
+            if isinstance(v, str) and len(v) >= 20 and "\x02" not in v:
+                return frag_re.sub(lambda m: frag_to_tok[m.group(0)], v)
+            if isinstance(v, list):
+                return [compress_frags(x) for x in v]
+            if isinstance(v, dict):
+                return {dk: compress_frags(dv) for dk, dv in v.items()}
+            return v
+        dict_strings = [compress_frags(s) for s in dict_strings]
+        sparse_rows = compress_frags(sparse_rows)
+
     payload = {
         "k": all_keys,
         "df": col_defaults,
         "d": dict_strings,
+        "f": frag_dict,
         "up": url_prefixes,
         "sc": stores_col,
         "r": sparse_rows,
@@ -862,8 +912,11 @@ def compress_db_for_html(master: dict) -> str:
     unpack_js = (
         "const DB = (() => {\n"
         f"  const _P = {payload_json};\n"
-        "  const _K = _P.k, _DF = _P.df, _D = _P.d, _UP = _P.up, _SC = _P.sc, _kl = _K.length;\n"
+        "  const _K = _P.k, _DF = _P.df, _F = _P.f || [], _UP = _P.up, _SC = _P.sc, _kl = _K.length;\n"
+        "  const _unf = s => (typeof s === 'string' && s.indexOf('\\x02') !== -1) ? s.replace(/\\x02(\\d+)\\x03/g, (_, i) => _F[+i]) : s;\n"
+        "  const _D = _P.d.map(_unf);\n"
         "  const _dec = v => {\n"
+        "    if (typeof v === 'string') return _unf(v);\n"
         "    if (Array.isArray(v)) {\n"
         "      if (v.length === 1 && typeof v[0] === 'number') return _D[v[0]];\n"
         "      return v.map(_dec);\n"
@@ -974,14 +1027,22 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
         with open(payload_js_path, "w", encoding="utf-8") as fp_js:
             fp_js.write("window.__DB_PAYLOAD=" + payload_rhs + ";\n")
         split_html = html[:p_start] + "  const _P = window.__DB_PAYLOAD;" + html[p_end:]
-        # Inject <script src="data/db_payload.js"></script> right before the last <script>
-        last_sc = split_html.rfind("<script", 0, p_start)
-        if last_sc != -1:
-            split_html = split_html[:last_sc] + '<script src="data/db_payload.js"></script>\n' + split_html[last_sc:]
-        index_html_path = os.path.join(out_dir, "index.html")
-        with open(index_html_path, "w", encoding="utf-8") as fp_idx:
-            fp_idx.write(split_html)
-        print(f"[WEB]  Built fast split web portal: {index_html_path} ({os.path.getsize(index_html_path):,} bytes) + {payload_js_path} ({os.path.getsize(payload_js_path):,} bytes)")
+        sc_pos = split_html.rfind("<script>", 0, p_start)
+        sc_end = split_html.find("</script>", sc_pos) if sc_pos != -1 else -1
+        if sc_pos != -1 and sc_end != -1:
+            app_js_code = minify_js_safe(split_html[sc_pos + len("<script>"):sc_end])
+            app_js_path = os.path.join(data_dir, "app.js")
+            with open(app_js_path, "w", encoding="utf-8") as fp_app:
+                fp_app.write(app_js_code)
+            split_html = (
+                split_html[:sc_pos]
+                + '<script src="data/db_payload.js"></script>\n<script src="data/app.js"></script>'
+                + split_html[sc_end + len("</script>"):]
+            )
+            index_html_path = os.path.join(out_dir, "index.html")
+            with open(index_html_path, "w", encoding="utf-8") as fp_idx:
+                fp_idx.write(split_html)
+            print(f"[WEB]  Built ultra-fast split portal: {index_html_path} ({os.path.getsize(index_html_path):,} bytes) + data/app.js ({os.path.getsize(app_js_path):,} bytes) + data/db_payload.js ({os.path.getsize(payload_js_path):,} bytes)")
 
 
 def recalculate_xlsx_libreoffice(xlsx_path: str) -> None:
