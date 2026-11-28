@@ -10544,7 +10544,7 @@ return `<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-2
 }
 }
 }
-let virtualRenderLimit = 100;
+let virtualRenderLimit = 60;
 document.getElementById("tblCatalogBody").addEventListener("click", e => {
 const btn = e.target.closest(".mdl-open-btn");
 if (btn) {
@@ -12906,8 +12906,32 @@ document.getElementById(secId).classList.toggle("hidden", k !== tabName);
 if (tabName === "catalog") renderCatalog();
 if (tabName === "finder") renderFinder();
 if (tabName === "compare") renderCompare();
-if (tabName === "encyclopedia") renderEncyclopedia();
+ensureTabRendered(tabName);
+try {
+if (typeof window !== "undefined" && window.history && window.history.replaceState && window.location) {
+const curHash = (window.location.hash || "").replace(/^#/, "");
+const sp = new URLSearchParams(curHash);
+if (tabName && tabName !== "catalog") sp.set("tab", tabName);
+else sp.delete("tab");
+const nextHash = sp.toString();
+const nextUrl = nextHash ? ("#" + nextHash) : (window.location.pathname + window.location.search);
+if (window.location.hash !== (nextHash ? "#" + nextHash : "")) {
+window.history.replaceState(null, "", nextUrl);
 }
+}
+} catch(e) {}
+}
+const _lazyTabRendered = { market: false, flagships: false, reference: false, encyclopedia: false };
+function ensureTabRendered(tabName) {
+if (tabName === "market" && !_lazyTabRendered.market) { _lazyTabRendered.market = true; renderMarket(); }
+if (tabName === "flagships" && !_lazyTabRendered.flagships) { _lazyTabRendered.flagships = true; renderFlagships(); }
+if ((tabName === "panels_oem" || tabName === "revisions" || tabName === "brands_srv" || tabName === "tests") && !_lazyTabRendered.reference) {
+_lazyTabRendered.reference = true;
+renderReferenceSheets();
+}
+if (tabName === "encyclopedia" && !_lazyTabRendered.encyclopedia) { _lazyTabRendered.encyclopedia = true; renderEncyclopedia(); }
+}
+window.ensureTabRendered = ensureTabRendered;
 document.querySelectorAll(".tab-btn").forEach(btn => {
 btn.addEventListener("click", () => switchTab(btn.dataset.tab));
 });
@@ -12917,7 +12941,7 @@ compareIds.clear();
 updateCompareBadge();
 renderCompare();
 });
-document.getElementById("fltSearch").addEventListener("input", renderCatalog);
+document.getElementById("fltSearch").addEventListener("input", () => { virtualRenderLimit = 60; renderCatalog(); });
 document.getElementById("fltCatMaxHand").addEventListener("change", renderCatalog);
 document.getElementById("chkCatOnlyRu").addEventListener("change", renderCatalog);
 document.getElementById("chkCatNoTierE").addEventListener("change", renderCatalog);
@@ -13235,8 +13259,32 @@ updateCompareBadge();
 if (params.has("tab")) {
 switchTab(params.get("tab"));
 }
-if (params.has("mdl")) {
-const mid = Number(params.get("mdl"));
+if (params.has("oled") && params.get("oled") === "1") {
+catalogMultiState.panel.add("OLED");
+}
+if (params.has("miniled") && params.get("miniled") === "1") {
+catalogMultiState.panel.add("Mini-LED");
+}
+if (params.has("max")) {
+const maxV = Number(params.get("max"));
+const maxEl = document.getElementById("fltCatMaxHand");
+if (maxEl && maxV > 0) maxEl.value = String(maxV);
+}
+if (params.has("ru") && params.get("ru") === "1") {
+const ruEl = document.getElementById("chkCatOnlyRu");
+if (ruEl) ruEl.checked = true;
+}
+if (params.has("2026") && params.get("2026") === "1") {
+const yEl = document.getElementById("chkCatOnly2026");
+if (yEl) yEl.checked = true;
+}
+if (params.has("reviewed") && params.get("reviewed") === "1") {
+const rvEl = document.getElementById("chkCatOnlyReviewed");
+if (rvEl) rvEl.checked = true;
+}
+const rawMdl = params.get("mdl") || params.get("model");
+if (rawMdl) {
+const mid = Number(rawMdl);
 if (mid && DB.catalog.some(x => x.id === mid)) {
 openModelModal(mid);
 }
@@ -15771,10 +15819,7 @@ syncAllDynamicStats();
 buildFinderCheckboxesUI();
 restoreStateFromUrlHash();
 renderCatalog();
-renderMarket();
-renderFlagships();
-renderReferenceSheets();
-renderEncyclopedia();
+ensureTabRendered(currentTab);
 (() => {
 const catTabs = document.querySelectorAll('.lab-cat-tab');
 const labBtns = Array.from(document.querySelectorAll('.lab-tool-btn'));
@@ -16327,13 +16372,41 @@ wrap.appendChild(menu);
 toolbar.insertBefore(wrap, btnCompare);
 } catch (e) {}
 }
+const LAB_CURATED_ORDER = [
+{ id: "pixels", label: "1. 🔲 Битые пиксели, заливки и 5% серый (OLED)" },
+{ id: "glow_bleed_detector", label: "2. 🔦 IPS Glow vs Backlight Bleed и углы обзора" },
+{ id: "nine_zone_tint", label: "3. ⚖️ 9-зонный тинт и равномерность белого 6500K" },
+{ id: "pixel_grid_photo", label: "4. 📸 Сетка секторов (A1–H6) для фото дефектов в ПВЗ" },
+{ id: "audio_stereo_dac", label: "5. 🔊 Динамики L/R, фаза и 3.5 мм ЦАП монитора" },
+{ id: "ufo", label: "6. 🛸 UFO: отклик, шлейфы, Overdrive и пропуск кадров" },
+{ id: "hz_divider", label: "7. 🏁 Сравнение 60 vs 120 vs 240 vs Макс. Гц" },
+{ id: "vrr_coil", label: "8. 📉 VRR Flicker (G-Sync / FreeSync) и писк БП" },
+{ id: "strobe_crosstalk", label: "9. ⚡ Строб BFI / DyAc / Pulsar (Strobe Crosstalk 5 зон)" },
+{ id: "pixel_walk_inversion", label: "10. 🏁 Инверсия пикселей (Pixel Walk / Vcom Flicker)" },
+{ id: "reaction_lag", label: "11. 🎯 Время реакции и задержка кадра (60–540 Гц)" },
+{ id: "dsc_handshake_timer", label: "12. ⏱ Секундомер Alt+Tab и задержки DSC 1.2a" },
+{ id: "mouse_polling_sync", label: "13. 🖱 Частота опроса мыши (125–8000 Гц) и синхронизация" },
+{ id: "cinema_judder", label: "14. 🎬 Детектор рывков кино 24p (3:2 Pulldown Judder)" },
+{ id: "fald", label: "15. 🌑 Ореолы зон Mini-LED (FALD Blooming) и OLED ABL" },
+{ id: "near_black_banding", label: "16. 🌫 Однородность 1%–15% серого (OLED Banding и Black Crush)" },
+{ id: "real_hdr", label: "17. 🌞 Реальный HDR (окна APL 2%–100% и клиппинг PQ)" },
+{ id: "gradients", label: "18. 🌈 Градиенты 8/10-бит, тени (RGB 1–24) и света (235–254)" },
+{ id: "srgb_p3_clamp", label: "19. 🎨 Перенасыщение Wide-Gamut P3, sRGB Clamp и Windows ACM" },
+{ id: "color_blind_hue", label: "20. 👁 Различимость оттенков (Hue Step 1°–5°) и цветовое зрение" },
+{ id: "sharpness_geo", label: "21. 🎯 Резкость (Sharpness), сетка 1:1 и Звезда Сименса" },
+{ id: "subpixel_fringing", label: "22. 🔬 Микроскоп субпикселей и цветной каймы OLED (1px)" },
+{ id: "chroma_444", label: "23. 🔤 Chroma 4:4:4 vs 4:2:0 и микротекст 6–14px" },
+{ id: "code_excel_themes", label: "24. ⌨️ Чтение кода (IDE), Excel и масштабирование шрифтов" },
+{ id: "real_size_ruler", label: "25. 📐 Экранная линейка (см / дюймы) и сравнение 24″–34″" },
+{ id: "aspect_crop_sim", label: "26. 🖥 Режимы скейлинга, Dual-Mode и кроп 24.5″ / 21:9" }
+];
+const LAB_CURATED_MAP = new Map(LAB_CURATED_ORDER.map((x, idx) => [x.id, { ...x, num: idx + 1 }]));
 const LAB_CATEGORIES = [
-{ id: "top8", label: "⭐ Главные 8 (Старт)", tools: ["pixels", "ufo", "fald", "gradients", "sharpness_geo", "vrr_coil", "near_black_banding", "real_hdr"] },
-{ id: "pvz", label: "🔍 Приёмка в ПВЗ (5)", tools: ["pixels", "glow_bleed_detector", "nine_zone_tint", "pixel_grid_photo", "audio_stereo_dac"] },
-{ id: "motion", label: "⚡ Отклик и Гц (5)", tools: ["ufo", "hz_divider", "strobe_crosstalk", "reaction_lag", "dsc_handshake_timer"] },
-{ id: "oled_color", label: "🌑 OLED, HDR и Цвет (6)", tools: ["fald", "near_black_banding", "real_hdr", "gradients", "srgb_p3_clamp", "subpixel_fringing"] },
-{ id: "text", label: "🔤 Текст и Геометрия (4)", tools: ["sharpness_geo", "subpixel_fringing", "chroma_444", "real_size_ruler"] },
-{ id: "all", label: "📦 Архив всех 46", tools: null }
+{ id: "pvz", label: "🔍 1. Приёмка ПВЗ (1–5)", tools: ["pixels", "glow_bleed_detector", "nine_zone_tint", "pixel_grid_photo", "audio_stereo_dac"] },
+{ id: "motion", label: "⚡ 2. Отклик, Гц и VRR (6–14)", tools: ["ufo", "hz_divider", "vrr_coil", "strobe_crosstalk", "pixel_walk_inversion", "reaction_lag", "dsc_handshake_timer", "mouse_polling_sync", "cinema_judder"] },
+{ id: "oled_color", label: "🌑 3. OLED, HDR и Цвет (15–20)", tools: ["fald", "near_black_banding", "real_hdr", "gradients", "srgb_p3_clamp", "color_blind_hue"] },
+{ id: "text", label: "🔤 4. Резкость и Шрифты (21–26)", tools: ["sharpness_geo", "subpixel_fringing", "chroma_444", "code_excel_themes", "real_size_ruler", "aspect_crop_sim"] },
+{ id: "all", label: "📦 Все 26 тестов (1–26)", tools: LAB_CURATED_ORDER.map(x => x.id) }
 ];
 const LAB_GUIDES = {
 pixels: {
@@ -16343,13 +16416,13 @@ ok: "Однородное поле без светящихся цветных т
 bad: "Яркие «горящие» субпиксели в центре, тёмные пятна/пыль под матрицей или резкие вертикальные полосы на 5% сером у OLED."
 },
 ufo: {
-title: "Отклик матрицы, шлейфы и Overdrive (UFO • 1440×360)",
+title: "Отклик матрицы, шлейфы и Overdrive (UFO • 2560×640 HiDPI)",
 check: "Следите взглядом за движущимся НЛО на тёмном, сером и светлом фоне; подберите режим Overdrive в меню монитора.",
 ok: "Контуры НЛО и 3 жёлтых окна чёткие, без длинного чёрного хвоста (на VA) и без белых/инверсных ореолов на светлом фоне.",
 bad: "Тёмные разводы на чёрном (VA Black Smearing) или яркие белые контуры позади НЛО — снизьте Overdrive на 1 ступень."
 },
 fald: {
-title: "Ореолы зон Mini-LED (FALD Blooming • 1440×420) и OLED ABL",
+title: "Ореолы зон Mini-LED (FALD Blooming • 2560×740 HiDPI) и OLED ABL",
 check: "Перемещайте светлый объект на абсолютно чёрном фоне при высокой яркости (особенно в HDR).",
 ok: "Чёткий контур без широкого серого облака вокруг; на OLED ореолы отсутствуют полностью (0%).",
 bad: "Крупные квадратные засветы вокруг курсора или сильное «дыхание» яркости на соседних участках."
@@ -16361,7 +16434,7 @@ ok: "Плавный переход без резких ступенек (бан�
 bad: "Все тёмные квадраты сливаются в чёрный (Black Crush) или видны грубые цветные полосы — проверьте режим 10-bit и Full RGB 0–255."
 },
 sharpness_geo: {
-title: "Резкость (Sharpness), сетка 1:1 и Звезда Сименса (1440×360)",
+title: "Резкость (Sharpness), сетка 1:1 и Звезда Сименса (2560×640 HiDPI)",
 check: "Смотрите на тонкие линии 1 px и центр звезды Сименса в родном разрешении монитора (масштаб 100%).",
 ok: "Линии ровные без двойных белых контуров; в центре звезды нет цветного муара.",
 bad: "Белые ореолы вокруг линий — резкость (Sharpness) в OSD завышена, снизьте до заводского нейтрального значения (обычно 50 или 0)."
@@ -16395,7 +16468,29 @@ if (!btnWrap || !toolBtns.length) return;
 const catBar = document.createElement("div");
 catBar.id = "divModernLabCategories";
 catBar.className = "flex flex-wrap items-center gap-1.5 pt-1";
-let activeCatId = "top8";
+const btnByTool = new Map(toolBtns.map(b => [b.dataset.labTool, b]));
+toolBtns.forEach(btn => {
+const meta = LAB_CURATED_MAP.get(btn.dataset.labTool);
+if (!meta) {
+btn.setAttribute("data-lab-deprecated", "1");
+btn.style.display = "none";
+} else {
+btn.textContent = meta.label;
+btn.removeAttribute("data-lab-deprecated");
+const panel = document.getElementById("divLabPanel_" + meta.id);
+if (panel) {
+const hEl = panel.querySelector(".font-bold.text-sm");
+if (hEl && /Стенд №\d+/.test(hEl.textContent)) {
+hEl.textContent = hEl.textContent.replace(/Стенд №\d+/, "Стенд №" + meta.num);
+}
+}
+}
+});
+LAB_CURATED_ORDER.forEach(item => {
+const b = btnByTool.get(item.id);
+if (b && btnWrap.appendChild) btnWrap.appendChild(b);
+});
+let activeCatId = "pvz";
 function applyCategory(catId) {
 activeCatId = catId;
 const cat = LAB_CATEGORIES.find(c => c.id === catId) || LAB_CATEGORIES[0];
@@ -16510,7 +16605,7 @@ document.addEventListener("fullscreenchange", () => {
 const activeBtn = lab.querySelector('.lab-tool-btn[data-lab-tool="' + currentToolId + '"]');
 if (activeBtn) setTimeout(() => activeBtn.click(), 60);
 });
-applyCategory("top8");
+applyCategory("pvz");
 updateGuide("pixels", "");
 } catch (e) {}
 }

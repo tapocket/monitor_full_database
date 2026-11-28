@@ -320,7 +320,7 @@ def upgrade_xlsx(master: dict, template_xlsx: str, out_xlsx: str) -> None:
 
     ws0 = wb["0. ИНФА и Гайд по таблице"]
     ws0["A1"] = '="ИНФО И ПУТЕВОДИТЕЛЬ ПО ИНЖЕНЕРНОЙ БАЗЕ МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ • " & COUNTA(\'1. Общая база мониторов\'!B5:B5000) & " МОДЕЛЕЙ • 69 СТОЛБЦОВ • 18 ВКЛАДОК)"'
-    ws0["A2"] = "Источники и благодарности: TFTCentral, RTINGS, канал «Джун», а также исходная таблица сообщества «МАНИТОРЫ» (Гоша): https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660"
+    ws0["A2"] = "Источники и благодарности: таблица «МАНИТОРЫ» (Гоша) https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660 | TFTCentral https://tftcentral.co.uk/category/reviews | RTINGS https://www.rtings.com/monitor | DisplaySpecifications https://www.displayspecifications.com/ | «Джун» https://t.me/djun1 | Blur Busters https://testufo.com/ghosting | VESA https://vesa.org/displayport-developer/certified-components/"
 
     ws1 = wb["1. Общая база мониторов"]
     ws1["A1"] = '="ПОЛНАЯ ИНЖЕНЕРНАЯ БАЗА МОНИТОРОВ monitor_full_database (" & COUNTA(\'13. Сводная по брендам\'!A5:A500) & " БРЕНДОВ — " & COUNTA(B5:B5000) & " МОДЕЛЕЙ — 69 СТОЛБЦОВ)"'
@@ -1101,7 +1101,7 @@ def verify_outputs(master: dict, out_csv: str, out_xlsx: str, out_html: str) -> 
     # 3. Verify HTML JS syntax & lossless DB unpack via Node
     with open(out_html, "r", encoding="utf-8") as fp:
         html_txt = fp.read()
-    m_sc = re.search(r"<script(?![^>]*src)[^>]*>([\s\S]*?)</script>", html_txt, flags=re.I)
+    m_sc = re.search(r"<script(?![^>]*(?:src|ld\+json))[^>]*>([\s\S]*?)</script>", html_txt, flags=re.I)
     assert m_sc, "Main script block not found in HTML"
     tmp_js = "/tmp/verify_built_main.js"
     with open(tmp_js, "w", encoding="utf-8") as fp:

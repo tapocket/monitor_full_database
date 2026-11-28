@@ -126,11 +126,11 @@ if (js.includes('window.__DB_PAYLOAD')) {
   vm.runInContext(fs.readFileSync(payloadPath, 'utf8'), ctx);
 }
 vm.runInContext(
-  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode, normalizeSmartSearchTokens: window.normalizeSmartSearchTokens, buildSelectionCsv: window.buildSelectionCsv, findSimilarAlternatives: window.findSimilarAlternatives, buildCompareVerdictHtml: window.buildCompareVerdictHtml, getTopRfDrops: window.getTopRfDrops, applyCustomDutyScenario: window.applyCustomDutyScenario, resetCustomDutyScenario: window.resetCustomDutyScenario, savePersonalWatch: window.savePersonalWatch, getPersonalWatch: window.getPersonalWatch, collectUnifiedBackup: window.collectUnifiedBackup, applyUnifiedBackup: window.applyUnifiedBackup, buildModelShareMarkdown: window.buildModelShareMarkdown, buildQuickSpecBadgesHtml: window.buildQuickSpecBadgesHtml };',
+  js + '\n;globalThis.__EXPORTS = { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute: window.__applyHashRoute, openPvzExpressMode: window.openPvzExpressMode, normalizeSmartSearchTokens: window.normalizeSmartSearchTokens, buildSelectionCsv: window.buildSelectionCsv, findSimilarAlternatives: window.findSimilarAlternatives, buildCompareVerdictHtml: window.buildCompareVerdictHtml, getTopRfDrops: window.getTopRfDrops, applyCustomDutyScenario: window.applyCustomDutyScenario, resetCustomDutyScenario: window.resetCustomDutyScenario, savePersonalWatch: window.savePersonalWatch, getPersonalWatch: window.getPersonalWatch, collectUnifiedBackup: window.collectUnifiedBackup, applyUnifiedBackup: window.applyUnifiedBackup, buildModelShareMarkdown: window.buildModelShareMarkdown, buildQuickSpecBadgesHtml: window.buildQuickSpecBadgesHtml, ensureTabRendered: window.ensureTabRendered };',
   ctx
 );
 
-const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode, normalizeSmartSearchTokens, buildSelectionCsv, findSimilarAlternatives, buildCompareVerdictHtml, getTopRfDrops, applyCustomDutyScenario, resetCustomDutyScenario, savePersonalWatch, getPersonalWatch, collectUnifiedBackup, applyUnifiedBackup, buildModelShareMarkdown, buildQuickSpecBadgesHtml } = ctx.__EXPORTS;
+const { DB, compareIds, openModelModal, renderFinder, renderCompare, applyHashRoute, openPvzExpressMode, normalizeSmartSearchTokens, buildSelectionCsv, findSimilarAlternatives, buildCompareVerdictHtml, getTopRfDrops, applyCustomDutyScenario, resetCustomDutyScenario, savePersonalWatch, getPersonalWatch, collectUnifiedBackup, applyUnifiedBackup, buildModelShareMarkdown, buildQuickSpecBadgesHtml, ensureTabRendered } = ctx.__EXPORTS;
 if (!DB || !Array.isArray(DB.catalog) || DB.catalog.length < 2700) {
   console.error('FAIL: Invalid DB.catalog length:', DB && DB.catalog && DB.catalog.length);
   process.exit(1);
@@ -269,6 +269,28 @@ if (!html.includes('id="ftrCommunityFeedback"') || !html.includes('template=fix-
 // 14. Verify Wave 24 Quick Hardware Spec Badges & Clean Header Tools Menu
 if (!html.includes('id="dtlHeaderToolsMenu"') || typeof buildQuickSpecBadgesHtml !== 'function') {
   console.error('CI_SMOKE_FAIL: missing #dtlHeaderToolsMenu or buildQuickSpecBadgesHtml');
+  process.exit(1);
+}
+// 15. Verify Wave 26 SEO (canonical + JSON-LD), Lazy-Init ensureTabRendered, practical tips & all-source footer links
+if (!html.includes('rel="canonical"') || !html.includes('application/ld+json') || !html.includes('id="divPracticalTipsCard"')) {
+  console.error('CI_SMOKE_FAIL: missing Wave 26 canonical, JSON-LD, or #divPracticalTipsCard');
+  process.exit(1);
+}
+if (!html.includes('tftcentral.co.uk/category/reviews') || !html.includes('rtings.com/monitor') || !html.includes('displayspecifications.com') || !html.includes('t.me/djun1')) {
+  console.error('CI_SMOKE_FAIL: missing direct source links in footer');
+  process.exit(1);
+}
+if (typeof ensureTabRendered !== 'function') {
+  console.error('CI_SMOKE_FAIL: missing ensureTabRendered lazy-init dispatcher');
+  process.exit(1);
+}
+ensureTabRendered('market');
+ensureTabRendered('flagships');
+ensureTabRendered('panels_oem');
+ensureTabRendered('encyclopedia');
+// 16. Verify Wave 27 deduplicated 26-test lab, HiDPI canvases & enhanced URL hash routing
+if (!js.includes('const LAB_CURATED_ORDER = [') || !html.includes('width="2560" height="640"') || !js.includes('params.has("oled")')) {
+  console.error('CI_SMOKE_FAIL: missing Wave 27 LAB_CURATED_ORDER, HiDPI 2560x640 canvas, or #oled=1 URL hash support');
   process.exit(1);
 }
 console.log(

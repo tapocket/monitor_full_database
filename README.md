@@ -99,7 +99,14 @@ python3 scripts/pre_deploy_check.py
 * `.github/workflows/daily-rates-and-links.yml` — **ежедневное** (раз в сутки) обновление курсов ЦБ РФ, запись истории цен, аудит 120 ссылок магазинов и обзоров (`data/LINK_AUDIT_REPORT.md`), генерация чеклиста `data/DAILY_UPDATE_CHECKLIST.md`, пересборка портала + `api/v1/` и обновление кэша `sw.js`.
 * `.github/workflows/deploy-pages.yml` — автоматический деплой портала и `api/v1/` на GitHub Pages.
 
+## 💡 Практическая настройка монитора (2026)
+
+* **HDR и ACM в Windows 11:** откалибруйте уровень чёрного (0 нит для OLED) и пик яркости через официальное приложение [Microsoft Windows HDR Calibration](https://support.microsoft.com/en-us/windows/hardware/display-graphics/calibrate-your-hdr-display-using-the-windows-hdr-calibration-app); при включённом Auto Color Management (ACM) не накладывайте сторонний ICC-профиль, чтобы избежать двойной цветокоррекции.
+* **Кабели DisplayPort 2.1 (4K 240 Гц+ без DSC):** для полной полосы UHBR20 (80 Гбит/с) используйте сертифицированные кабели DP80 или активные [DP80LL](https://vesa.org/press/vesa-to-update-displayport-2-1-with-new-active-cable-specification-for-up-to-3x-longer-dp80-cables/) из официального реестра [VESA Certified Components](https://vesa.org/displayport-developer/certified-components/).
+* **Подбор Overdrive без артефактов:** проверяйте режимы разгона матрицы на [Blur Busters TestUFO Ghosting](https://testufo.com/ghosting), выбирая пресет без светлых ореолов (inverse ghosting).
+
 ## 🙏 Благодарности и источники
 
 * Особая благодарность автору исходной таблицы сообщества **[«МАНИТОРЫ» (Гоша)](https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660)** за проделанную работу по сбору замеров, кодов матриц и ревизий.
-* Технические обзоры и лабораторные измерения: **TFTCentral**, **RTINGS**, **YouTube-канал «Джун»**.
+* Технические обзоры, спецификации и лабораторные тесты: **[TFTCentral](https://tftcentral.co.uk/category/reviews)**, **[RTINGS](https://www.rtings.com/monitor)**, **[DisplaySpecifications](https://www.displayspecifications.com/)**, канал **[«Джун» (Telegram)](https://t.me/djun1)** ([чат](https://t.me/djun_chat), [YouTube-подборка](https://www.youtube.com/watch?v=4EKKtYzLPnE)).
+* Инструменты и стандарты: **[Blur Busters TestUFO](https://testufo.com/ghosting)**, **[VESA DisplayPort Certified Components](https://vesa.org/displayport-developer/certified-components/)**, **[Microsoft Windows HDR Calibration](https://support.microsoft.com/en-us/windows/hardware/display-graphics/calibrate-your-hdr-display-using-the-windows-hdr-calibration-app)**.

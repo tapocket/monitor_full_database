@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tapocket.github.io/monitor_full_database/sitemap.xml
