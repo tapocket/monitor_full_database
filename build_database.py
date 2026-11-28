@@ -685,6 +685,54 @@ def load_price_history_map(catalog: list, history_dir: str = "data/price_history
     return out
 
 
+
+def load_affiliates_config(path: str = "config/affiliates.json") -> dict:
+    if not os.path.exists(path):
+        return {"enabled": False}
+    try:
+        with open(path, "r", encoding="utf-8") as fp:
+            return json.load(fp)
+    except Exception:
+        return {"enabled": False}
+
+
+def apply_affiliate_url(url: str, cfg: dict) -> str:
+    if not url or not cfg or not cfg.get("enabled"):
+        return url
+    import urllib.parse as _up
+    u_low = url.lower()
+    ym = cfg.get("yandex_market") or {}
+    if "market.yandex.ru" in u_low and ym.get("clid"):
+        parts = _up.urlsplit(url)
+        qs = dict(_up.parse_qsl(parts.query, keep_blank_values=True))
+        qs["clid"] = str(ym["clid"])
+        if ym.get("vid"):
+            qs["vid"] = str(ym["vid"])
+        if ym.get("erid"):
+            qs["erid"] = str(ym["erid"])
+        return _up.urlunsplit((parts.scheme, parts.netloc, parts.path, _up.urlencode(qs), parts.fragment))
+    adm = cfg.get("admitad_deeplinks") or {}
+    for dom, prefix in adm.items():
+        if prefix and dom.lower() in u_low:
+            sep = "" if prefix.endswith("=") else ("&ulp=" if "?" in prefix else "?ulp=")
+            return f"{prefix}{sep}{_up.quote(url, safe='')}"
+    return url
+
+
+def apply_affiliates_to_copy(master: dict) -> dict:
+    cfg = load_affiliates_config()
+    if not cfg.get("enabled"):
+        return master
+    import copy as _copy
+    out = _copy.deepcopy(master)
+    for arr_name in ("catalog", "market_rf", "flagships"):
+        for item in out.get(arr_name, []):
+            for st in (item.get("stores") or []):
+                if isinstance(st, dict) and st.get("url"):
+                    st["url"] = apply_affiliate_url(st["url"], cfg)
+    return out
+
+
 def compress_db_for_html(master: dict) -> str:
     """Sparse column-defaults + deep string dictionary + compact store URL encoding (100% lossless sync unpack)."""
     db_obj = {
@@ -1103,8 +1151,9 @@ def main():
 
     build_csv(master, out_csv)
     upgrade_xlsx(master, args.template_xlsx, out_xlsx)
-    build_html(master, args.template_html, out_html)
-    build_static_api(master, args.outdir)
+    portal_master = apply_affiliates_to_copy(master)
+    build_html(portal_master, args.template_html, out_html)
+    build_static_api(portal_master, args.outdir)
 
     if args.recalc:
         recalculate_xlsx_libreoffice(out_xlsx)

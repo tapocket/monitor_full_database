@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "yandex_market": {
+    "clid": "",
+    "vid": "monitor_full_database",
+    "erid": ""
+  },
+  "admitad_deeplinks": {
+    "citilink.ru": "",
+    "ozon.ru": "",
+    "regard.ru": "",
+    "onlinetrade.ru": "",
+    "aliexpress.ru": ""
+  },
+  "note": "Укажите ваш clid от Яндекс Дистрибуции и/или Admitad deeplink-префиксы (например https://ad.admitad.com/g/xxxx/?ulp=), затем поменяйте enabled на true и пересоберите базу."
+}

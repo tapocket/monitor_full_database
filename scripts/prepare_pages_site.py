@@ -34,6 +34,7 @@ def main() -> None:
         "sw.js",
         "favicon.svg",
         "og-cover.png",
+        "yandex_verify.html",
     ]
     copied_root = [f for f in root_files if copy_if_exists(f, out)]
 

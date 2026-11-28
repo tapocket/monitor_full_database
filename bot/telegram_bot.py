@@ -217,6 +217,78 @@ def load_price_drops(limit: int = 8) -> list[dict]:
     return diversified
 
 
+
+
+def _load_affiliates() -> dict:
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    p = os.path.join(base_dir, "config", "affiliates.json")
+    if not os.path.exists(p):
+        return {"enabled": False}
+    try:
+        with open(p, "r", encoding="utf-8") as fp:
+            return json.load(fp)
+    except Exception:
+        return {"enabled": False}
+
+
+AFFILIATES_CFG = _load_affiliates()
+
+
+def wrap_affiliate_url(url: str) -> str:
+    if not url or not AFFILIATES_CFG.get("enabled"):
+        return url
+    u_low = url.lower()
+    ym = AFFILIATES_CFG.get("yandex_market") or {}
+    if "market.yandex.ru" in u_low and ym.get("clid"):
+        parts = urllib.parse.urlsplit(url)
+        qs = dict(urllib.parse.parse_qsl(parts.query, keep_blank_values=True))
+        qs["clid"] = str(ym["clid"])
+        if ym.get("vid"):
+            qs["vid"] = str(ym["vid"])
+        if ym.get("erid"):
+            qs["erid"] = str(ym["erid"])
+        return urllib.parse.urlunsplit((parts.scheme, parts.netloc, parts.path, urllib.parse.urlencode(qs), parts.fragment))
+    adm = AFFILIATES_CFG.get("admitad_deeplinks") or {}
+    for dom, prefix in adm.items():
+        if prefix and dom.lower() in u_low:
+            sep = "" if prefix.endswith("=") else ("&ulp=" if "?" in prefix else "?ulp=")
+            return f"{prefix}{sep}{urllib.parse.quote(url, safe='')}"
+    return url
+
+
+def is_pro_user(chat_id: int) -> bool:
+    raw = os.environ.get("PRO_USER_IDS", "")
+    ids = {x.strip() for x in raw.split(",") if x.strip()}
+    return str(chat_id) in ids
+
+
+def get_free_alerts_limit() -> int:
+    try:
+        return max(1, int(os.environ.get("FREE_ALERTS_LIMIT", "3")))
+    except Exception:
+        return 3
+
+
+async def cmd_pro(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    lim = get_free_alerts_limit()
+    pro_url = os.environ.get("PRO_CONTACT_URL", "").strip() or PORTAL_URL
+    is_pro = is_pro_user(update.effective_chat.id)
+    status_line = "✅ *Ваш статус: Pro активен (безлимит алертов)*" if is_pro else f"🔹 *Ваш статус: Базовый (до {lim} активных алертов)*"
+    text = (
+        "💎 *monitor_full_database Pro и персональный подбор*\n\n"
+        f"{status_line}\n\n"
+        "Что даёт Pro-подписка / личный подбор:\n"
+        "• 🔔 Безлимит на подписки о снижении цены (`/alert`)\n"
+        "• ⚡ Приоритетные уведомления о появлении дефицитных OLED и Mini-LED в РФ\n"
+        "• 🎯 Личный подбор 3 лучших моделей под ваш ПК, стол и бюджет с проверкой ревизии матрицы\n\n"
+        "💡 Вся база из 2 710 моделей, поиск, сравнение и тест ПВЗ навсегда остаются бесплатными."
+    )
+    kb = InlineKeyboardMarkup([
+        [InlineKeyboardButton("💬 Подключить Pro / Заказать подбор", url=pro_url)],
+        [InlineKeyboardButton("🌐 Открыть веб-портал", url=PORTAL_URL)],
+    ])
+    await update.message.reply_text(text, parse_mode="Markdown", reply_markup=kb)
+
 def fmt_rub(val) -> str:
     return f"{int(round(float(val or 0))):,}".replace(",", " ")
 
@@ -585,6 +657,16 @@ async def cmd_alert(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     target = int(args[-1])
     model_q = " ".join(args[:-1]).strip()
+    if not is_pro_user(update.effective_chat.id):
+        cur_alerts = list_alerts(update.effective_chat.id)
+        lim = get_free_alerts_limit()
+        if len(cur_alerts) >= lim:
+            await update.message.reply_text(
+                f"🔔 В базовом тарифе доступно до *{lim}* активных подписок (у вас уже {len(cur_alerts)}).\n"
+                "Удалите старую через `/delalert <id>` или откройте безлимит в `/pro`.",
+                parse_mode="Markdown",
+            )
+            return
     aid = add_alert(update.effective_chat.id, model_q, target)
     await update.message.reply_text(
         f"🔔 Подписка `#{aid}` создана: уведомлю, когда *{model_q}* станет дешевле *{fmt_rub(target)} ₽*.",
@@ -757,7 +839,7 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         store_btns = []
         for st in (m.get("stores") or [])[:2]:
             if isinstance(st, dict) and st.get("url"):
-                store_btns.append(InlineKeyboardButton(str(st.get("name", "Магазин"))[:18], url=st["url"]))
+                store_btns.append(InlineKeyboardButton(str(st.get("name", "Магазин"))[:18], url=wrap_affiliate_url(st["url"])))
         if store_btns:
             inline_kb_rows.append(store_btns)
         results.append(
@@ -799,6 +881,7 @@ async def post_init(app: Application) -> None:
             BotCommand("miniled", "Топ Mini-LED мониторов (можно указать бюджет)"),
             BotCommand("drops", "Скидки и выгодные цены в РФ"),
             BotCommand("digest", "Еженедельный дайджест новинок и скидок"),
+            BotCommand("pro", "Pro-подписка (безлимит алертов) и подбор"),
             BotCommand("model", "Полная карточка модели"),
             BotCommand("compare", "Сравнение: /compare A vs B"),
             BotCommand("pvz", "Чек-лист ПВЗ и сервисные меню (/pvz ASUS)"),
@@ -851,6 +934,7 @@ def main() -> None:
     app.add_handler(CommandHandler("miniled", cmd_miniled))
     app.add_handler(CommandHandler("drops", cmd_drops))
     app.add_handler(CommandHandler("digest", cmd_digest))
+    app.add_handler(CommandHandler("pro", cmd_pro))
     app.add_handler(CommandHandler("model", cmd_model))
     app.add_handler(CommandHandler("compare", cmd_compare))
     app.add_handler(CommandHandler("alert", cmd_alert))
