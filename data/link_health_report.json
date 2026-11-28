@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-27T16:24:07.709999Z",
+  "checked_at": "2026-11-28T15:17:00.919118Z",
   "total_checked": 120,
-  "ok": 86,
-  "restricted": 32,
+  "ok": 81,
+  "restricted": 36,
   "dead": 2,
-  "error": 0,
+  "error": 1,
   "dead_urls": [
     {
       "model": "ASUS TUF Gaming VG27UQEL5A",

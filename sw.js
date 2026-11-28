@@ -1,4 +1,4 @@
-const CACHE_NAME = "monitor-db-cache-2026-11-28q";
+const CACHE_NAME = "monitor-db-cache-2026-11-28";
 const PRECACHE_URLS = [
   "./",
   "./manifest.webmanifest",
