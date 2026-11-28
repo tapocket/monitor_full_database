@@ -9,7 +9,13 @@
     "total_models": 2710,
     "stores_audit_date": "2026-11-21",
     "stores_audit_updated": 359,
-    "updated": "2026-11-23"
+    "updated": "2026-11-23",
+    "cbr_rates": {
+      "USD_RUB": 82.27,
+      "EUR_RUB": 90.29,
+      "CNY_RUB": 12.33
+    },
+    "rates_updated_at": "2026-11-27"
   },
   "brand_normalization_rules": {
     "ARDOR GAMING": [
