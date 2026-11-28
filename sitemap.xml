@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tapocket.github.io/monitor_full_database/</loc>
-    <lastmod>2026-11-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/oled/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/miniled/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/budget-25k/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/4k-240hz/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/ultrawide/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/ps5-pro/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/macbook-hidpi/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/27-qhd/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tapocket.github.io/monitor_full_database/seo/tests/</loc><lastmod>2026-11-28</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
 </urlset>

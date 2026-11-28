@@ -38,6 +38,8 @@ if (/src="data\/app\.js(?:\?v=[0-9a-f]+)?"/.test(html)) {
   const appJsPath = require('path').join(require('path').dirname(htmlPath), 'data', 'app.js');
   if (!fs.existsSync(appJsPath)) { console.error('FAIL: missing data/app.js'); process.exit(1); }
   js = js + '\n' + fs.readFileSync(appJsPath, 'utf8');
+  const extJsPath = require('path').join(require('path').dirname(htmlPath), 'data', 'app_extras.js');
+  if (fs.existsSync(extJsPath)) js = js + '\n' + fs.readFileSync(extJsPath, 'utf8');
 }
 
 const noopCtx = new Proxy({}, {
@@ -306,6 +308,21 @@ if (!html.includes('id="btnModalCompareToggle"') || !html.includes('id="lnkModal
 // 19. Verify Wave 30 7-tab minimalist navigation, subtabs & unified WinUI 3 theme
 if (!html.includes('id="divSubTabsPicks"') || !html.includes('id="divSubTabsRef"') || !html.includes('id="winui3UnifiedTheme2026"') || !html.includes('Ресурсы для тестов')) {
   console.error('CI_SMOKE_FAIL: Wave 30 7-tab / unified theme check failed');
+  process.exit(1);
+}
+// 20. Verify Wave 32 clean 18-parameter verified modal specs (no 62-param boilerplate table)
+if (!js.includes('id="divCleanSpecsTable"') || js.includes('Полная спецификация монитора (62 параметра)')) {
+  console.error('CI_SMOKE_FAIL: Wave 32 clean 18-param modal specs check failed');
+  process.exit(1);
+}
+// 21. Verify Wave 33 unified engineering filters, True HDR filter, PPI calculator & compare leaders
+if (!html.includes('id="dtlEngFiltersUnified"') || !html.includes('id="chkCatTrueHdr"') || !js.includes('Оптимальная дистанция:') || !js.includes('divCompareQuickWinners')) {
+  console.error('CI_SMOKE_FAIL: Wave 33 feature check failed');
+  process.exit(1);
+}
+// 22. Verify Wave 34 4K 1:1 Fullscreen, PVZ verdict bar, Picks filters & Finder why-match
+if (!html.includes('id="btnLabNativeFullscreen1to1"') || !html.includes('id="divPvzVerdictBar"') || !html.includes('id="divPicksQuickFilter"') || !js.includes('Почему подходит:')) {
+  console.error('CI_SMOKE_FAIL: Wave 34 feature check failed');
   process.exit(1);
 }
 console.log(

@@ -735,6 +735,16 @@ def apply_affiliates_to_copy(master: dict) -> dict:
 
 
 
+
+def minify_css_safe(css: str) -> str:
+    """Safe zero-risk CSS minifier: strips /* comments */ and redundant whitespace."""
+    css = re.sub(r"/\*(?!\s*Local Compiled Tailwind)[\s\S]*?\*/", "", css)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{}:;,])\s*", r"\1", css)
+    css = css.replace(";}", "}")
+    return css.strip()
+
+
 def minify_js_safe(js_code: str) -> str:
     """Safe line-level JS minifier (strips full-line comments & leading spaces without touching string literals/regex)."""
     out_lines = []
@@ -878,10 +888,22 @@ def compress_db_for_html(master: dict) -> str:
 
     scan_frags(dict_strings)
     scan_frags(sparse_rows)
+    extra_url_frags = [
+        "https://www.rtings.com/monitor/reviews/",
+        "https://tftcentral.co.uk/reviews/",
+        "https://www.youtube.com/watch?v=",
+        "https://youtu.be/",
+        "https://www.displayspecifications.com/en/model/",
+        "https://www.techpowerup.com/review/",
+        "https://www.notebookcheck.net/",
+    ]
     frag_dict = [
-        s for s, c in frag_freq.most_common(900)
+        s for s, c in frag_freq.most_common(1200)
         if c >= 3 and (len(s) * c > len(s) + 6 * c + 8)
     ]
+    for uf in extra_url_frags:
+        if uf not in frag_dict:
+            frag_dict.append(uf)
     frag_dict.sort(key=len, reverse=True)
     if frag_dict:
         frag_to_tok = {s: f"\x02{i}\x03" for i, s in enumerate(frag_dict)}
@@ -1030,22 +1052,42 @@ def build_html(master: dict, template_html: str, out_html: str) -> None:
         sc_pos = split_html.rfind("<script>", 0, p_start)
         sc_end = split_html.find("</script>", sc_pos) if sc_pos != -1 else -1
         if sc_pos != -1 and sc_end != -1:
-            app_js_code = minify_js_safe(split_html[sc_pos + len("<script>"):sc_end])
+            import hashlib as _hl
+            raw_js = split_html[sc_pos + len("<script>"):sc_end]
+            ext_marker = "// === EXPRESS 3-MINUTE PVZ WIZARD"
+            ext_pos = raw_js.find(ext_marker)
+            if ext_pos != -1:
+                core_js = minify_js_safe(raw_js[:ext_pos])
+                extras_js = minify_js_safe(raw_js[ext_pos:])
+            else:
+                core_js = minify_js_safe(raw_js)
+                extras_js = ""
             app_js_path = os.path.join(data_dir, "app.js")
             with open(app_js_path, "w", encoding="utf-8") as fp_app:
-                fp_app.write(app_js_code)
-            import hashlib as _hl
+                fp_app.write(core_js)
             _db_v = _hl.sha256(open(payload_js_path, "rb").read()).hexdigest()[:8]
-            _app_v = _hl.sha256(app_js_code.encode("utf-8")).hexdigest()[:8]
-            split_html = (
-                split_html[:sc_pos]
-                + f'<script src="data/db_payload.js?v={_db_v}"></script>\n<script src="data/app.js?v={_app_v}"></script>'
-                + split_html[sc_end + len("</script>"):]
+            _app_v = _hl.sha256(core_js.encode("utf-8")).hexdigest()[:8]
+            tags = f'<script src="data/db_payload.js?v={_db_v}"></script>\n<script src="data/app.js?v={_app_v}"></script>'
+            ext_info = ""
+            if extras_js:
+                ext_js_path = os.path.join(data_dir, "app_extras.js")
+                with open(ext_js_path, "w", encoding="utf-8") as fp_ext:
+                    fp_ext.write(extras_js)
+                _ext_v = _hl.sha256(extras_js.encode("utf-8")).hexdigest()[:8]
+                tags += f'\n<script src="data/app_extras.js?v={_ext_v}"></script>'
+                ext_info = f" + data/app_extras.js ({os.path.getsize(ext_js_path):,} bytes)"
+            # Safely minify <style> blocks in split index.html only (keep template readable)
+            split_prefix = re.sub(
+                r"(<style[^>]*>)([\s\S]*?)(</style>)",
+                lambda m: m.group(1) + minify_css_safe(m.group(2)) + m.group(3),
+                split_html[:sc_pos],
+                flags=re.I,
             )
+            split_html = split_prefix + tags + split_html[sc_end + len("</script>"):]
             index_html_path = os.path.join(out_dir, "index.html")
             with open(index_html_path, "w", encoding="utf-8") as fp_idx:
                 fp_idx.write(split_html)
-            print(f"[WEB]  Built ultra-fast split portal: {index_html_path} ({os.path.getsize(index_html_path):,} bytes) + data/app.js ({os.path.getsize(app_js_path):,} bytes) + data/db_payload.js ({os.path.getsize(payload_js_path):,} bytes)")
+            print(f"[WEB]  Built ultra-fast split portal: {index_html_path} ({os.path.getsize(index_html_path):,} bytes) + data/app.js ({os.path.getsize(app_js_path):,} bytes){ext_info} + data/db_payload.js ({os.path.getsize(payload_js_path):,} bytes)")
 
 
 def recalculate_xlsx_libreoffice(xlsx_path: str) -> None:
@@ -1195,6 +1237,191 @@ def build_static_api(master: dict, outdir: str) -> None:
     print(f"[API]  Built static JSON API in {api_dir} (summary, oled={len(oled_rows)}, miniled={len(miniled_rows)}, market_rf, flagships, brands)")
 
 
+
+def build_seo_landing_pages(master: dict, out_dir: str) -> None:
+    """Generate 5 lightweight Zero-CDN WinUI 3 SEO landing pages (/seo/...) and refresh sitemap.xml."""
+    import datetime, html as _html
+    base_url = "https://tapocket.github.io/monitor_full_database"
+    cat = master.get("catalog") or []
+    tier_rank = {"S+": 0, "S": 1, "A+": 2, "A": 3, "B": 4}
+
+    def sort_key(r):
+        t = tier_rank.get(str(r.get("tier") or "").split()[0], 9)
+        has_direct = 0 if any(isinstance(s, dict) and "/product/" in str(s.get("url", "")) for s in (r.get("stores") or [])) else 1
+        return (t, has_direct, int(r.get("hand") or 9999999))
+
+    pages = [
+        (
+            "oled",
+            "Лучшие OLED и QD-OLED мониторы 2026 — цены РФ и замеры",
+            "Топ OLED, QD-OLED и Tandem WOLED мониторов 2026 года с ценами РФ с учётом пошлины, замерами яркости HDR и прямыми ссылками на магазины.",
+            f"{base_url}/#oled=1",
+            sorted([r for r in cat if "oled" in str(r.get("ptype") or "").lower() and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "miniled",
+            "Лучшие Mini-LED мониторы 2026 с зонами FALD — цены РФ",
+            "Рейтинг лучших Mini-LED мониторов с локальным затемнением (336–9216 зон FALD), высокой пиковой яркостью HDR и актуальными ценами в России.",
+            f"{base_url}/#miniled=1",
+            sorted([r for r in cat if (r.get("zones") if isinstance(r.get("zones"), (int, float)) else 0) >= 300 and "oled" not in str(r.get("ptype") or "").lower() and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "budget-25k",
+            "Лучшие мониторы до 25 000 ₽ в России (2026)",
+            "Проверенные бюджетные игровые и рабочие мониторы с итоговой ценой на руки до 25 000 ₽: IPS, VA, 180–300 Гц и прямые ссылки РФ.",
+            f"{base_url}/#max=25000",
+            sorted([r for r in cat if 0 < int(r.get("hand") or 0) <= 25000], key=sort_key)[:25],
+        ),
+        (
+            "4k-240hz",
+            "Лучшие 4K 240 Гц мониторы 2026 для ПК и PS5 Pro",
+            "Каталог флагманских 4K (3840×2160) мониторов с частотой 240 Гц+, HDMI 2.1, DisplayPort 2.1 и реальными замерами отклика.",
+            f"{base_url}/#res=4K",
+            sorted([r for r in cat if "3840" in str(r.get("res") or "") and int((re.search(r"(\d{2,3})", str(r.get("hz") or "0").split("/")[0]) or [0, 0])[1]) >= 240 and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "ultrawide",
+            "Лучшие ультраширокие мониторы 34″–49″ (21:9 и 32:9) 2026",
+            "Топ изогнутых и плоских UltraWide мониторов 34–49 дюймов (UWQHD 3440×1440, 5K2K, DQHD) с OLED и Mini-LED, цены РФ и замеры.",
+            f"{base_url}/#diag=34",
+            sorted([r for r in cat if float(r.get("diag") or 0) >= 34 and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "ps5-pro",
+            "Лучшие мониторы для PS5 / PS5 Pro и Xbox Series X (HDMI 2.1, 4K 120 Гц+)",
+            "Проверенные 4K и QHD мониторы с полноценным HDMI 2.1 (48 Гбит/с), поддержкой VRR и HDR для консолей PlayStation 5 Pro и Xbox Series X.",
+            f"{base_url}/#res=4K",
+            sorted([r for r in cat if "hdmi 2.1" in str(r.get("ports") or "").lower() and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "macbook-hidpi",
+            "Лучшие 4K и 5K HiDPI мониторы для MacBook (USB-C Power Delivery)",
+            "Мониторы с высокой плотностью пикселей (4K/5K 140–218 PPI), точной цветопередачей и зарядкой MacBook по одному кабелю USB-C PD.",
+            f"{base_url}/#res=4K",
+            sorted([r for r in cat if ("3840" in str(r.get("res") or "") or "5120" in str(r.get("res") or "")) and ("usb-c" in str(r.get("ports") or "").lower() or "thunderbolt" in str(r.get("ports") or "").lower()) and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "27-qhd",
+            "Лучшие игровые мониторы 27″ QHD (2560×1440) 180–360 Гц (2026)",
+            "Оптимальные 27-дюймовые 2K мониторы для игр и работы: Fast IPS, Mini-LED и OLED с высокой герцовкой и проверенными ценами в России.",
+            f"{base_url}/#diag=27&res=QHD",
+            sorted([r for r in cat if 26.5 <= float(r.get("diag") or 0) <= 27.5 and "2560" in str(r.get("res") or "") and int(r.get("hand") or 0) > 0], key=sort_key)[:25],
+        ),
+        (
+            "tests",
+            "Онлайн-тест монитора на битые пиксели, засветы, UFO и HDR (26 HiDPI-стендов)",
+            "Бесплатный офлайн-набор из 26 HiDPI-тестов для проверки монитора в ПВЗ и дома: битые пиксели, IPS Glow, 9-зонный тинт, UFO Ghosting, VRR Flicker и резкость 1:1.",
+            f"{base_url}/#tab=tests",
+            [],
+        ),
+    ]
+
+    seo_root = os.path.join(out_dir, "seo")
+    os.makedirs(seo_root, exist_ok=True)
+    today = datetime.date.today().isoformat()
+    sitemap_urls = [(f"{base_url}/", "1.0")]
+
+    seo_nav_links = " • ".join(
+        f"<a href='{base_url}/seo/{sl}/'>{_html.escape(sl)}</a>" for sl, *_ in pages
+    )
+    for slug, title, desc, cta_url, items in pages:
+        pdir = os.path.join(seo_root, slug)
+        os.makedirs(pdir, exist_ok=True)
+        canon = f"{base_url}/seo/{slug}/"
+        sitemap_urls.append((canon, "0.85"))
+        if items:
+            trs = []
+            for idx, r in enumerate(items, 1):
+                nm = _html.escape(f"{r.get('brand', '')} {r.get('model', '')}".strip())
+                spec = _html.escape(f"{r.get('diag', '')}″ • {r.get('res', '')} • {r.get('hz', '')} Гц")
+                pan = _html.escape(str(r.get("ptype") or ""))
+                pr = f"{int(r.get('hand') or 0):,}".replace(",", " ") + " ₽"
+                tier = _html.escape(str(r.get("tier") or ""))
+                mdl_link = f"{base_url}/#model={r.get('id')}"
+                trs.append(
+                    f"<tr><td>{idx}</td><td><a href='{mdl_link}'><strong>{nm}</strong></a></td>"
+                    f"<td>{tier}</td><td>{spec}</td><td>{pan}</td><td><strong>{pr}</strong></td></tr>"
+                )
+            rows_html = (
+                "<div class='tbl-wrap'><table><thead><tr><th>#</th><th>Модель</th><th>Тир</th>"
+                "<th>Экран</th><th>Матрица</th><th>Цена «на руки»</th></tr></thead><tbody>"
+                + "".join(trs) + "</tbody></table></div>"
+            )
+        else:
+            rows_html = (
+                "<div class='grid'>"
+                "<div class='card'><h3>1. Приёмка в ПВЗ (1–5)</h3><p>Битые пиксели, 5% серый OLED, IPS Glow vs Bleed, 9-зонный тинт 6500K, сетка A1–H6 и тест звука L/R.</p></div>"
+                "<div class='card'><h3>2. Отклик, Гц и VRR (6–14)</h3><p>UFO Ghosting / Overdrive, сравнение 60–240+ Гц, VRR Flicker, BFI/DyAc строб, инверсия пикселей и DSC-секундомер.</p></div>"
+                "<div class='card'><h3>3. OLED, HDR и цвет (15–20)</h3><p>FALD Blooming, 1–15% Grey Banding, реальный HDR (APL 2–100%), 10-битные градиенты и Wide-Gamut P3 / sRGB Clamp.</p></div>"
+                "<div class='card'><h3>4. Резкость и шрифты (21–26)</h3><p>Сетка 1:1 и Звезда Сименса, микроскоп субпикселей, Chroma 4:4:4, чтение кода IDE/Excel и экранная линейка.</p></div>"
+                "</div>"
+            )
+
+        page_html = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{_html.escape(title)} | monitor_full_database</title>
+  <meta name="description" content="{_html.escape(desc)}" />
+  <meta name="yandex-distribution-verification" content="xkr6xrfzbxub7md6" />
+  <link rel="canonical" href="{canon}" />
+  <link rel="icon" type="image/svg+xml" href="{base_url}/favicon.svg" />
+  <style>
+    :root {{ --bg:#f8fafc; --card:#fff; --b:#e2e8f0; --t:#0f172a; --m:#475569; --a:#005fb8; }}
+    @media (prefers-color-scheme:dark) {{ :root {{ --bg:#0b1120; --card:#111827; --b:#1e293b; --t:#f1f5f9; --m:#94a3b8; --a:#38bdf8; }} }}
+    body {{ margin:0; font-family:"Segoe UI",-apple-system,Roboto,sans-serif; background:var(--bg); color:var(--t); line-height:1.5; }}
+    header {{ background:#0f172a; color:#fff; padding:14px 20px; border-bottom:1px solid #1e293b; }}
+    .in {{ max-width:1120px; margin:0 auto; padding:24px 20px 44px; }}
+    .hdr-in {{ max-width:1120px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }}
+    .hdr-in a {{ color:#fff; text-decoration:none; font-weight:800; }}
+    h1 {{ margin:0 0 10px; font-size:clamp(22px,3.2vw,32px); }}
+    .lead {{ color:var(--m); margin:0 0 20px; max-width:820px; }}
+    .btn {{ display:inline-block; background:#005fb8; color:#fff; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:700; font-size:14px; margin-bottom:22px; }}
+    .tbl-wrap {{ overflow-x:auto; background:var(--card); border:1px solid var(--b); border-radius:14px; }}
+    table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
+    th,td {{ padding:10px 12px; border-bottom:1px solid var(--b); text-align:left; }}
+    th {{ background:#0f172a; color:#f8fafc; font-size:12px; }}
+    td a {{ color:var(--a); text-decoration:none; }}
+    td a:hover {{ text-decoration:underline; }}
+    .grid {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }}
+    .card {{ background:var(--card); border:1px solid var(--b); border-radius:12px; padding:16px; }}
+    .card h3 {{ margin:0 0 6px; font-size:15px; }}
+    .card p {{ margin:0; font-size:13px; color:var(--m); }}
+    footer {{ margin-top:28px; padding-top:16px; border-top:1px solid var(--b); font-size:12px; color:var(--m); }}
+    footer a {{ color:var(--a); text-decoration:none; }}
+  </style>
+</head>
+<body>
+  <header><div class="hdr-in"><a href="{base_url}/">monitor_full_database</a><a href="{cta_url}" style="font-size:13px;color:#38bdf8;">Открыть интерактивный портал →</a></div></header>
+  <main class="in">
+    <h1>{_html.escape(title)}</h1>
+    <p class="lead">{_html.escape(desc)}</p>
+    <a class="btn" href="{cta_url}">Открыть полную интерактивную выборку →</a>
+    {rows_html}
+    <nav style='margin-top:24px;font-size:12.5px;color:var(--m);'><strong>Другие подборки:</strong> {seo_nav_links}</nav>
+    <footer>
+      Источники: <a href="https://docs.google.com/spreadsheets/d/1wTcNBG28l6VL7BXuO_vIlj0ncRNvrCEExy-iGrNFARU/edit?gid=830910660#gid=830910660" target="_blank" rel="noopener">Таблица «МАНИТОРЫ» (автор Гоша)</a> •
+      <a href="https://www.youtube.com/@djunn/videos" target="_blank" rel="noopener">YouTube-канал «Джун»</a> •
+      <a href="https://tftcentral.co.uk/category/reviews" target="_blank" rel="noopener">TFTCentral</a> •
+      <a href="https://www.rtings.com/monitor" target="_blank" rel="noopener">RTINGS</a>
+    </footer>
+  </main>
+</body>
+</html>
+"""
+        with open(os.path.join(pdir, "index.html"), "w", encoding="utf-8") as fp_s:
+            fp_s.write(page_html)
+
+    sm_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u, prio in sitemap_urls:
+        sm_lines.append(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>{prio}</priority></url>")
+    sm_lines.append("</urlset>")
+    with open(os.path.join(out_dir, "sitemap.xml"), "w", encoding="utf-8") as fp_sm:
+        fp_sm.write("\n".join(sm_lines))
+    print(f"[SEO]  Built {len(pages)} static SEO pages in {seo_root}/ & updated sitemap.xml ({len(sitemap_urls)} URLs)")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build monitor_full_database from Single Source of Truth")
     parser.add_argument("--master", default="database_master.json", help="Path to database_master.json")
@@ -1218,6 +1445,7 @@ def main():
     portal_master = apply_affiliates_to_copy(master)
     build_html(portal_master, args.template_html, out_html)
     build_static_api(portal_master, args.outdir)
+    build_seo_landing_pages(portal_master, args.outdir)
 
     if args.recalc:
         recalculate_xlsx_libreoffice(out_xlsx)

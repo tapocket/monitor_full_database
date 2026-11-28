@@ -385,6 +385,9 @@ def format_model_card(m: dict) -> str:
     stores = [s for s in (m.get("stores") or []) if isinstance(s, dict) and s.get("url")]
     rf_count = sum(1 for s in stores if any(k in str(s.get("name", "")).lower() for k in ("dns", "ситилинк", "регард", "онлайнтрейд")))
     pvz_note = f"Розница РФ ({rf_count} маг., локальная гарантия)" if rf_count > 0 else "Маркетплейс / зарубеж (проверьте матрицу в ПВЗ)"
+    ppi_info = compute_ppi_and_distance(m)
+    if ppi_info:
+        lines.append(f"📐 Плотность и посадка: {ppi_info}")
     return (
         f"🖥 *{m['model']}*\n"
         f"• Бренд: {m.get('brand_canonical', m.get('brand'))} | Год: {m.get('year')} | Тир: `{str(m.get('tier',''))[:1]}`\n"
@@ -478,6 +481,82 @@ async def cmd_find(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 
+
+def compute_ppi_and_distance(m: dict) -> str:
+    """Calculate exact PPI, optimal eye distance (cm) and recommended OS scaling."""
+    diag = float(m.get("diag") or 0)
+    res_s = str(m.get("res") or "")
+    rm = re.search(r"(\d{3,4})\s*[xх×]\s*(\d{3,4})", res_s)
+    if diag <= 0 or not rm:
+        return ""
+    w_px, h_px = int(rm.group(1)), int(rm.group(2))
+    ppi = round(((w_px ** 2 + h_px ** 2) ** 0.5) / diag)
+    dist_cm = round(diag * 2.54 * 0.95)
+    scale = "150–200% (HiDPI)" if ppi >= 155 else ("125–150%" if ppi >= 125 else "100%")
+    return f"{ppi} PPI • дистанция ~{dist_cm}–{dist_cm + 15} см • масштаб {scale}"
+
+
+def filter_true_hdr(max_rub: int | None = None, limit: int = 5) -> list[dict]:
+    """Return top True HDR models (OLED or Mini-LED >= 300 zones)."""
+    pool = []
+    for r in CATALOG:
+        ptype = str(r.get("ptype") or "").lower()
+        zones = r.get("zones") if isinstance(r.get("zones"), (int, float)) else 0
+        if not ("oled" in ptype or zones >= 300):
+            continue
+        hand = int(r.get("hand") or 0)
+        if max_rub and (hand <= 0 or hand > max_rub):
+            continue
+        pool.append(r)
+    tier_rank = {"S+": 0, "S": 1, "A+": 2, "A": 3, "B": 4}
+    pool.sort(key=lambda x: (tier_rank.get(str(x.get("tier") or "").split()[0], 9), int(x.get("hand") or 9999999)))
+    return pool[:limit]
+
+
+
+def pick_monitor_of_the_day() -> dict | None:
+    """Deterministic daily S-Tier monitor highlight with a direct RF store card."""
+    import datetime as _dt
+    pool = [
+        r for r in CATALOG
+        if str(r.get("tier") or "").startswith("S")
+        and int(r.get("hand") or 0) > 0
+        and any(isinstance(s, dict) and "/product/" in str(s.get("url", "")) for s in (r.get("stores") or []))
+    ]
+    if not pool:
+        pool = [r for r in CATALOG if str(r.get("tier") or "").startswith("S")]
+    if not pool:
+        return None
+    idx = _dt.date.today().toordinal() % len(pool)
+    return pool[idx]
+
+
+async def cmd_pick(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    m = pick_monitor_of_the_day()
+    if not m:
+        await update.message.reply_text("Сегодня подборка недоступна.")
+        return
+    await update.message.reply_text(
+        "🔥 *Подбор дня (S-Tier с прямой карточкой РФ):*\n\n" + format_model_card(m),
+        parse_mode="Markdown",
+        reply_markup=model_card_keyboard(m),
+    )
+
+
+async def cmd_truehdr(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    max_rub = None
+    for tok in (context.args or []):
+        if tok.isdigit() and int(tok) >= 10000:
+            max_rub = int(tok)
+            break
+    results = filter_true_hdr(max_rub=max_rub, limit=5)
+    if not results:
+        await update.message.reply_text("Настоящие HDR-мониторы (OLED / Mini-LED ≥300 зон) по этому бюджету не найдены. Пример: `/truehdr 60000`.", parse_mode="Markdown", reply_markup=main_menu_keyboard())
+        return
+    title = f"☀️ *Топ настоящих HDR-мониторов" + (f" до {max_rub:,} ₽".replace(",", " ") if max_rub else "") + ":*"
+    await send_search_results(update.message.reply_text, results, title)
+
+
 async def cmd_oled(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     tokens = ["oled"] + list(context.args or [])
     results = search_models(tokens, limit=5)
@@ -548,7 +627,7 @@ def build_weekly_digest_text() -> tuple[str, InlineKeyboardMarkup]:
     kb = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("🌐 Открыть портал", url=PORTAL_URL),
-            InlineKeyboardButton("📱 Режим ПВЗ", url=f"{PORTAL_URL.rstrip('/')}/#test=pvz"),
+            InlineKeyboardButton("📱 Режим ПВЗ", url=f"{PORTAL_URL.rstrip('/')}/#tab=tests"),
         ],
         [
             InlineKeyboardButton("📉 Все скидки (/drops)", callback_data="menu:drops"),
@@ -712,7 +791,7 @@ PVZ_TEXT = (
 async def cmd_pvz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     pvz_kb = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("📱 Открыть Режим ПВЗ", url=f"{PORTAL_URL.rstrip('/')}/#test=pvz"),
+            InlineKeyboardButton("📱 Открыть Режим ПВЗ", url=f"{PORTAL_URL.rstrip('/')}/#tab=tests"),
             InlineKeyboardButton("🧪 14-шаговый тест", url=f"{PORTAL_URL.rstrip('/')}/#test=guided"),
         ],
         [InlineKeyboardButton("🎯 Новый подбор", callback_data="menu:pick")],
@@ -934,6 +1013,8 @@ def main() -> None:
     app.add_handler(CommandHandler("start", cmd_start))
     app.add_handler(CommandHandler("find", cmd_find))
     app.add_handler(CommandHandler("oled", cmd_oled))
+    app.add_handler(CommandHandler("truehdr", cmd_truehdr))
+    app.add_handler(CommandHandler("pick", cmd_pick))
     app.add_handler(CommandHandler("miniled", cmd_miniled))
     app.add_handler(CommandHandler("drops", cmd_drops))
     app.add_handler(CommandHandler("digest", cmd_digest))
